@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Robbins, "League Spartan", sans-serif;
+  color: var(---);
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Main Color Palette */
+  --primary-brand-color-300: #33c9ff;
+  --primary-brand-color-400: #00baff;
+  --primary-brand-color-600: #00a2ff;
+  --primary-brand-color-800: #00a2ff;
+  --primary-brand-color-900: #0499f0;
+  --primary-brand-color-alternate-400: #fff;
+  --primary-brand-color-alternate-600: #fff;
+  --primary-brand-color-alternate-800: #fff;
+  --primary-brand-color-alternate-400-light: #cff;
+  --secondary-brand-color-400: #ffea00;
+  --secondary-brand-color-600: #ffd200;
+  --secondary-brand-color-800: #ffd200;
+  --secondary-brand-color-900: #face09;
+  --secondary-brand-color-alternate-400: #0b212a;
+  --secondary-brand-color-alternate-600: #0b212a;
+  --secondary-brand-color-alternate-800: #0b212a;
+  --primary-background-color: #fff;
+  --primary-text-color-800: #202730;
+  --primary-text-color-200: #7990a1;
+  --primary-opposite-background-color-300: #10303d;
+  --primary-opposite-background-color-400: #0b212a;
+  --primary-opposite-text-color-800: #202730;
+  --primary-opposite-text-color-200: #7990a1;
+  --primary-opposite-text-color-300: #63707a;
+  --primary-opposite-link-color: var(--primary-brand-color-400);
+  --primary-opposite-link-hover-color: var(--primary-brand-color-800);
+
+  /* Backup colors */
+  --primary-hue: 197;
+  --black-lightness: 15%;
+  --dark-lightness: 44%;
+  --light-lightness: 94%;
+  --white-lightness: 100%;
+  --color-primary: hsl(var(--primary-hue), 10%, 10%);
+  --color-white: hsl(0, 5%, var(--white-lightness));
+  --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+  --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+
+  /* GENERAL CONTAINER VARIABLES */
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+
+  /* BORDER RADIUS VARIABLES */
+  --border-radius-1: 0.8rem;
+  --border-radius-2: 0.4rem;
+  --border-radius-3: 0.2rem;
+
+  /* GENERAL TRANSITION VARIABLE */
+  --transition: all 500ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+} */
+
+body {
+  font-family: Robbins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  height: 100%;
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* General Container Class */
+.container {
+  width: var(--container-width-lg);
+  margin-inline: auto;
+  max-width: 1920px;
+}
+
+/* General Section styles */
+section {
+  padding: 10rem 0;
+  background-color: var(--color-light);
+  transition: var(--transition);
+}
+
+section:nth-child(even) {
+  background-color: var(--color-white);
+}
+
+section > h2,
+h1 {
+  text-align: center;
+}
+
+section > h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+section > p {
+  text-align: center;
+  margin: 0.5rem auto 4rem;
+  width: 40%;
+}
+
+a {
+  /* color: var(--color-white); */
+  transition: var(--transition);
+}
+
+/* General Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+/* General Image styles */
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* General Button Styles */
+button {
+  background: var(--primary-brand-color-400);
+  color: var(--primary-brand-color-alternate-400);
+  border-radius: 0.31rem;
+  letter-spacing: 1px;
+  border: none;
+  padding: 0.6rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  font-family: inherit;
+  color: var(--color-black);
+  background-color: var(--color-light);
+  transition: 0.3s;
+  cursor: pointer;
+  width: fit-content;
+  display: inline-block;
+  display: flex;
+  padding: 18px 32px;
+  align-items: center;
+  border: none;
+  gap: 1rem;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-0.5rem);
+}
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+button.white {
+  background: var(--color-white);
+}
+
+button.white:hover {
+  background: transparent;
+  border-color: var(--color-white);
+}
+
+button.primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+button.primary:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+button.sm {
+  padding: 0.5rem 1.2rem;
+}
+
+/* Theme change using React */
+main {
+  color: var(--color-dark);
+  --color-primary: hsl(var(--primary-hue), 89%, 41%);
+}
+
+main.color-1 {
+  --primary-hue: 270;
+}
+main.color-2 {
+  --primary-hue: 110;
+}
+main.color-3 {
+  --primary-hue: 240;
+}
+main.color-4 {
+  --primary-hue: 325;
+}
+main.color-5 {
+  --primary-hue: 0;
+}
+main.color-6 {
+  --primary-hue: 55;
+}
+
+/* Responsive Media Queries (tablets) */
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    padding: 8rem 0;
+  }
+
+  section > p {
+    width: 72%;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive Media Queries (Phones) */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  button {
+    padding: 0.6rem 1.5rem;
+  }
+
+  section > p {
+    width: var(--container-width-md);
+  }
+}
