@@ -1,0 +1,147 @@
+#header {
+  display: grid;
+  place-items: center;
+  margin-top: 230px;
+  background: var(--color-white);
+  transition: var(--transition);
+  margin-bottom: 100px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+  gap: 10rem;
+}
+
+.hero .content {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.hero__details {
+  text-align: left;
+}
+
+.hello {
+  text-align: left;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 40px;
+}
+
+.job {
+  color: var(--primary-text-color-500);
+  margin-bottom: 10px;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 0.1px;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+.name {
+  color: var(--primary-text-color-800);
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.icons {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-size: 29px;
+}
+
+.icons svg {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.icons svg:hover {
+  color: var(--primary-brand-color-400);
+}
+
+.portfolio-btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: var(--primary-brand-color-400);
+  color: var(--primary-brand-color-alternate-400);
+}
+
+.portfolio-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-3px);
+  transition: 300ms ease-in;
+}
+
+.self-photo {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 25rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.self-photo img {
+  max-height: 100%;
+  max-height: 100%;
+  border: 10px solid var(--primary-opposite-text-color-800);
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    gap: 5rem;
+    margin-top: -40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+  }
+
+  .hero__details h1 {
+    font-size: 50px;
+  }
+
+  .hero__details h1,
+  .job,
+  .icons {
+    text-align: center;
+    justify-content: center;
+  }
+
+  a .btn.portfolio-btn {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}

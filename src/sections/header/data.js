@@ -1,20 +1,28 @@
-// import { AiOutlineInstagram } from "react-icons/ai";
-// import { AiOutlineTwitter } from "react-icons/ai";
-// import { AiOutlineDribbble } from "react-icons/ai";
-// import { AiFillGithub } from "react-icons/ai";
+// import { FaLinkedin, FaTwitter, FaDribbble, FaGithub } from "react-icons/fa";
 
-// const data = [
-//   { id: 1, link: "https://instagram.com", icon: <AiOutlineInstagram /> },
-//   { id: 2, link: "https://twitter.com", icon: <AiOutlineTwitter /> },
-//   { id: 3, link: "https://dribbble.com", icon: <AiOutlineDribbble /> },
-//   { id: 4, link: "https://github.com", icon: <AiFillGithub /> },
-// ];
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
-// import { Linkedin } from "lucide-react";
-
-const data = [
-  { id: 1, link: "https://github.com", title: "github" },
-  { id: 2, link: "https://linkedin.com", title: "linkedin" },
+const data2 = [
+  {
+    id: 1,
+    link: "https://instagram.com",
+    title: "LinkedIn",
+    icon: <AiFillLinkedin />,
+  },
+  {
+    id: 2,
+    link: "https://github.com",
+    title: "GitHub",
+    icon: <AiFillGithub />,
+  },
 ];
 
-export default data;
+export default data2;
+
+// const data = [
+//   { id: 1, link: "https://instagram.com", icon: <FaLinkedin /> },
+//   { id: 2, link: "https://twitter.com", icon: <FaTwitter /> },
+//   { id: 3, link: "https://dribbble.com", icon: <FaDribbble /> },
+//   { id: 4, link: "https://github.com", icon: <FaGithub /> },
+// ];

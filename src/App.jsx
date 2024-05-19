@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import Navbar from "./sections/navbar/Navbar";
 import Header from "./sections/header/Header";
 import About from "./sections/about/About";

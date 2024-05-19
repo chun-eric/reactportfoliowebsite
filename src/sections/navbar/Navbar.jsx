@@ -34,10 +34,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
         <div className='navbar__btns'>
           <a href='#' id='theme__icon'>
             <MdOutlineDarkMode className='icon contact' />
           </a>
+
           <button className='btn-contact'>Contact</button>
         </div>
 

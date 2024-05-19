@@ -39,6 +39,7 @@
   --secondary-brand-color-alternate-800: #0b212a;
   --primary-background-color: #fff;
   --primary-text-color-800: #202730;
+  --primary-text-color-500: #66686b;
   --primary-text-color-200: #7990a1;
   --primary-opposite-background-color-300: #10303d;
   --primary-opposite-background-color-400: #0b212a;
@@ -300,7 +301,7 @@ main.color-6 {
     font-size: 1rem;
   }
   button {
-    padding: 0.6rem 1.5rem;
+    padding: 1.2rem 1.5rem;
   }
 
   section > p {
