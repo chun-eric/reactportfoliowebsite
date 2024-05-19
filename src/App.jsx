@@ -16,7 +16,7 @@ function App() {
   return (
     <main>
       <Navbar />
-      <Header />
+      <Header style={{ backgroundColor: "background-color: #f9f9f9;" }} />
       <About />
       <Services />
       <Portfolio />
