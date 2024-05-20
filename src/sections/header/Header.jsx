@@ -40,7 +40,7 @@ const Header = () => {
               <div className='hero__details'>
                 <h1 className='hello'>A Front-End React Developer</h1>
                 <h3 className='job'>
-                  Hi, I'm <span className='name'>Eric</span> a Front-End
+                  Hi, I'm <span className='firstName'>Eric</span> a Front-End
                   Developer and aspiring Cybersecurity consultant based in
                   Osaka, Japan.
                 </h3>

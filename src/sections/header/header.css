@@ -62,7 +62,7 @@
   font-size: 1.6rem;
 }
 
-.name {
+.firstName {
   color: var(--primary-text-color-800);
   font-size: 28px;
   font-weight: bold;
@@ -143,6 +143,13 @@
   .icons {
     text-align: center;
     justify-content: center;
+  }
+
+  h3.job {
+    padding-top: 30px;
+    width: 70%;
+    text-wrap: wrap;
+    margin: 0 auto;
   }
 
   a .btn.portfolio-btn {
