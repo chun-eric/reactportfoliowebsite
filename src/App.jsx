@@ -20,10 +20,10 @@ function App() {
       <Header style={{ backgroundColor: "background-color: #f9f9f9;" }} />
       <Skills />
       <About />
-      <Services />
+      {/* <Services /> */}
       <Portfolio />
-      <Testimonials />
-      <FAQs />
+      {/* <Testimonials /> */}
+      {/* <FAQs /> */}
       <Contact />
       <Footer />
     </main>
