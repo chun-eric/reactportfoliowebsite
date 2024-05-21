@@ -8,9 +8,9 @@ const Project = ({ project }) => {
         <img src={project.image} alt='Portfolio Project Image' />
       </div>
       <h4>{project.title}</h4>
-      <p>{project.desc}</p>
+      <p className='card-description'>{project.desc}</p>
       <div className='portfolio__project-cta'>
-        <a href={project.demo} className='btn sm' rel='noopener noreferrer'>
+        {/* <a href={project.demo} className='btn sm' rel='noopener noreferrer'>
           Demo
         </a>
         <a
@@ -19,7 +19,7 @@ const Project = ({ project }) => {
           rel='noopener noreferrer'
         >
           GitHub
-        </a>
+        </a> */}
       </div>
     </Card>
   );

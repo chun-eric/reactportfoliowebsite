@@ -195,7 +195,7 @@ button {
   box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
   font-family: inherit;
   color: var(--color-black);
-  background-color: var(--color-light);
+  background-color: var(--primary-brand-color-400);
   transition: 0.3s;
   cursor: pointer;
   width: fit-content;
