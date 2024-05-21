@@ -3,7 +3,7 @@ import "./data";
 
 const About = () => {
   return (
-    <section id='about'>
+    <div id='about'>
       <div
       // class='about-me'
       // data-aos='fade-up'
@@ -30,7 +30,7 @@ const About = () => {
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 import data from "./data";
 import "./skills.css";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+// import { Badge } from "@/components/ui/badge";
+// import { Button } from "@/components/ui/button";
 
 const Skills = () => {
   return (
