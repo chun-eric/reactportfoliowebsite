@@ -9,6 +9,7 @@ const Portfolio = () => {
 
   // get all the categories
   const categories = data.map((item) => item.category);
+
   // Get unique categories only remove duplicates
   const uniqueCategories = ["All", ...new Set(categories)];
 

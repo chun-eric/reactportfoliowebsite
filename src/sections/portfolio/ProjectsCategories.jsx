@@ -3,7 +3,10 @@ import CategoryButton from "./CategoryButton";
 import { useState } from "react";
 
 const ProjectsCategories = ({ categories, onFilterProjects }) => {
+  // state to keep track of active category
   const [active, setActive] = useState("All");
+
+  // function to change active category
   const changeCategoryHandler = (active) => {
     setActive(active);
     onFilterProjects(active);

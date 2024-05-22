@@ -184,7 +184,7 @@ img {
 
 /* General Button Styles */
 button {
-  background: var(--primary-brand-color-400);
+  background: var(--primary-brand-color-600);
   color: var(--primary-brand-color-alternate-400);
   border-radius: 0.31rem;
   letter-spacing: 1px;
@@ -227,7 +227,7 @@ button.white:hover {
 }
 
 button.primary {
-  background: var(--color-primary);
+  background: var(--primary-brand-color-400);
   color: white;
 }
 

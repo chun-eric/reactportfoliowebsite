@@ -3,66 +3,66 @@ import "./data";
 import { useState, useEffect } from "react";
 
 /* Form Submission and Error Handling */
-const emailInput = document.getElementById("email");
-const emailError = document.getElementById("email-error");
-const emailSuccess = document.getElementById("email-success");
-const form = document.getElementById("form");
-const submitButton = document.getElementById("submit--button");
+// const emailInput = document.getElementById("email");
+// const emailError = document.getElementById("email-error");
+// const emailSuccess = document.getElementById("email-success");
+// const form = document.getElementById("form");
+// const submitButton = document.getElementById("submit--button");
 
-console.log(form);
+// console.log(form);
 
-// remove error styling
-function removeError() {
-  emailError.innerHTML = "";
-  emailInput.style.borderBottomColor = "transparent";
-}
+// // remove error styling
+// function removeError() {
+//   emailError.innerHTML = "";
+//   emailInput.style.borderBottomColor = "transparent";
+// }
 
-// remove success styling
-function removeSuccess() {
-  emailSuccess.innerHTML = "";
-  emailInput.style.borderBottomColor = "transparent";
-}
+// // remove success styling
+// function removeSuccess() {
+//   emailSuccess.innerHTML = "";
+//   emailInput.style.borderBottomColor = "transparent";
+// }
 
-// clearing all inputs
-function clearAll() {
-  form.reset();
-}
+// // clearing all inputs
+// function clearAll() {
+//   form.reset();
+// }
 
-// validating email
-function validateEmail() {
-  if (
-    !emailInput.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)
-  ) {
-    emailError.innerHTML = "Please enter a valid email.";
-    emailError.style.top = "120%";
-    emailInput.style.borderBottomColor = "red";
-    removeSuccess();
+// // validating email
+// function validateEmail() {
+//   if (
+//     !emailInput.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)
+//   ) {
+//     emailError.innerHTML = "Please enter a valid email.";
+//     emailError.style.top = "120%";
+//     emailInput.style.borderBottomColor = "red";
+//     removeSuccess();
 
-    if (emailInput.value == "") {
-      removeError();
-      return true;
-    }
-    return false;
-  }
-  emailSuccess.innerHTML = "Success!";
-  emailSuccess.style.top = "120%";
-  emailInput.style.borderBottomColor = "rgb(64, 179, 11)";
-  removeError();
-  return true;
-}
+//     if (emailInput.value == "") {
+//       removeError();
+//       return true;
+//     }
+//     return false;
+//   }
+//   emailSuccess.innerHTML = "Success!";
+//   emailSuccess.style.top = "120%";
+//   emailInput.style.borderBottomColor = "rgb(64, 179, 11)";
+//   removeError();
+//   return true;
+// }
 
-// changing button effect when clicked
-submitButton.addEventListener("click", () => {
-  // adding a button effect
-  submitButton.classList.add("submit--btn");
-});
+// // changing button effect when clicked
+// submitButton.addEventListener("click", () => {
+//   // adding a button effect
+//   submitButton.classList.add("submit--btn");
+// });
 
-// clear all form fields after submit
-window.onbeforeunload = () => {
-  for (const form of document.getElementsByTagName("form")) {
-    form.reset();
-  }
-};
+// // clear all form fields after submit
+// window.onbeforeunload = () => {
+//   for (const form of document.getElementsByTagName("form")) {
+//     form.reset();
+//   }
+// };
 
 const Contact = () => {
   return (
