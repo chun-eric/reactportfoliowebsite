@@ -1,3 +1,35 @@
+.portfolio__categories {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.btn.cat__btn {
+  padding: 20px 25px;
+  text-transform: capitalize;
+  transition: var(--transition);
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  display: inline-block;
+}
+
+button.btn.cat__btn.skill-btn {
+  display: inline-block;
+  width: fit-content;
+}
+
+.btn.cat__btn:hover {
+  transform: translateY(0);
+  border: 1px solid var(--primary-brand-color-400);
+}
+
+.primary {
+  background: var(--primary-brand-color-400);
+}
+
 .project-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -5,6 +37,21 @@
   margin: 60px auto;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 60px;
+  gap: 20px;
+  columns: 2;
+}
+
+@keyframes animateProject {
+  from {
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in;
+  }
+  to {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-out;
+  }
 }
 
 /* Portfolio card */
@@ -16,15 +63,17 @@
   justify-content: center;
 }
 
-.card:hover::before {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease-in; /* Add this line */
+.card img {
+  transition: 0.3s ease;
 }
 
-.card:hover::after {
-  transform: translateY(5px);
-  transition: transform 0.3s ease-out;
+.card:hover img {
+  transform: scale(1.2);
 }
+
+/* .card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out; /* Add this line */
 
 .card:nth-child(odd) {
   height: 480px;
@@ -98,6 +147,13 @@
   color: white;
   box-sizing: border-box;
   background-color: transparent;
+  transform: translateY(100%);
+  transition: transform 0.35s ease, opacity 0.3s ease;
+}
+
+.project-cards:hover .project__description {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .project__lowerthird {
@@ -149,6 +205,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.button-card {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 120px;
+  max-height: 150px;
+}
+
 .btn.skill-btn.button-card:hover {
   background-color: var(--primary-brand-color-600);
 }
@@ -180,5 +244,18 @@
     height: 100%;
     margin: 0 auto;
     justify-content: center;
+  }
+
+  .btn.cat__btn {
+    display: inline-block;
+    width: 180px;
+  }
+  .btn.cat__btn.skill-btn {
+    display: inline-block;
+    width: 180px;
+  }
+  .btn {
+    display: inline-block;
+    width: fit-content;
   }
 }

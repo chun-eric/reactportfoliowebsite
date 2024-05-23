@@ -106,7 +106,7 @@
 
 .skill-btn {
   display: flex;
-  flex-direction: row;
+  display: inline-block;
   color: black;
   background-color: white;
   border: 1px solid var(--primary-opposite-background-color-300);
@@ -121,8 +121,14 @@
   transform: translateY(-0.08rem);
 }
 
+button.btn.btn-sm.skill-btn {
+  display: inline-block;
+  width: fit-content;
+}
+
 .buttonTitle {
-  font-size: 16px;
+  display: inline-block;
+  font-size: 18px;
 }
 
 /* Media Queries*/
