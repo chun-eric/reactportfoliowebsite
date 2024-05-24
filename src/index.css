@@ -288,6 +288,15 @@ main.color-6 {
   h1 {
     font-size: 2rem;
   }
+
+  .btn--theme.about,
+  .btn.portfolio-btn {
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 /* Responsive Media Queries (Phones) */
@@ -310,5 +319,13 @@ main.color-6 {
 
   section > p {
     width: var(--container-width-md);
+  }
+  .btn--theme.about,
+  .btn.portfolio-btn {
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
   }
 }

@@ -34,7 +34,7 @@ const PortfolioCard = ({ project }) => {
     //   </div>
     // </div>
 
-    <div className='project-cards'>
+    <div className='project-cards-container'>
       <div className='card'>
         <div className='image-wrapper '>
           <img

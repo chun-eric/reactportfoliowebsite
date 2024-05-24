@@ -43,6 +43,9 @@
 
 .hero__details {
   text-align: left;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .hello {
@@ -87,12 +90,17 @@
   color: var(--primary-brand-color-400);
 }
 
-.portfolio-btn {
+button {
+  text-align: center;
+}
+
+button.portfolio-btn {
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   background-color: var(--primary-brand-color-400);
   color: var(--primary-brand-color-alternate-400);
+  width: fit-content;
 }
 
 .portfolio-btn:hover {
@@ -121,17 +129,11 @@
 
 @media screen and (max-width: 1200px) {
   .hero {
-    gap: 5rem;
-    margin-top: -40px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .hero {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     margin-top: -40px;
+    gap: 5rem;
   }
 
   .hero__details h1 {
@@ -152,10 +154,10 @@
     margin: 0 auto;
   }
 
-  a .btn.portfolio-btn {
+  .button-container button {
     text-align: center;
     align-items: center;
-    justify-content: center;
     margin: 0 auto;
+    justify-content: center;
   }
 }

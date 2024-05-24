@@ -79,12 +79,15 @@
   margin-bottom: 30px;
 }
 
-button.btn--theme {
+button.btn--theme--about {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   transform: none;
+  color: white;
+  font-size: 1.4rem;
+  width: fit-content;
 }
 
 button.btn--theme a {
@@ -100,7 +103,7 @@ button.btn--theme a {
 }
 
 /* Media Queries */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .about-me .bio {
     display: flex;
     flex-direction: column;
@@ -117,13 +120,16 @@ button.btn--theme a {
     max-width: 75%;
   }
 
-  .about-me .bio button {
+  .about-me .bio button.btn--theme--about a {
     margin-top: 10px;
     align-items: center;
     justify-content: center;
+    width: fit-content;
   }
 
-  button a {
+  .button-container {
+    text-align: center;
+    align-items: center;
     margin: 0 auto;
   }
 }

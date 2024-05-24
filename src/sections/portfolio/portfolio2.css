@@ -14,6 +14,7 @@
   white-space: nowrap;
   width: 100%;
   display: inline-block;
+  width: fit-content;
 }
 
 button.btn.cat__btn.skill-btn {
@@ -30,19 +31,6 @@ button.btn.cat__btn.skill-btn {
   background: var(--primary-brand-color-400);
 }
 
-.project-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin: 60px auto;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease-in-out;
-  margin-top: 60px;
-  gap: 20px;
-  columns: 2;
-}
-
 @keyframes animateProject {
   from {
     transform: translateY(0px);
@@ -55,12 +43,36 @@ button.btn.cat__btn.skill-btn {
 }
 
 /* Portfolio card */
-.card {
+
+/* .project-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+} */
+
+.project-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 60px auto;
+  justify-content: center;
+  align-items: start;
+  /* columns: 2; */
+  grid-gap: 10px;
+  max-width: 1440px;
+}
+
+.project-cards-container .card {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   justify-content: center;
+  width: 400px;
+  height: 480px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card img {
@@ -75,30 +87,19 @@ button.btn.cat__btn.skill-btn {
   transform: translateY(-5px);
   transition: transform 0.3s ease-in-out; /* Add this line */
 
-.card:nth-child(odd) {
+/* .card:nth-child(odd) {
   height: 480px;
-}
-
+} */
+/* 
 .card:nth-child(even) {
   height: 380px;
-}
+} */
 
 .image-wrapper {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  width: 100% !important;
-  height: 100% !important;
-  position: absolute;
-  inset: 0;
-  top: 0px !important;
-  left: 0px !important;
   border-radius: 20px;
-  /* margin-bottom: 1.5rem; */
 }
 
 .image-wrapper img {
@@ -107,13 +108,6 @@ button.btn.cat__btn.skill-btn {
   position: absolute;
   inset: 0;
   object-fit: cover;
-  top: 0px !important;
-  left: 0px !important;
-}
-
-.cover-image {
-  padding: 0;
-  margin: 0;
 }
 
 .overlay::before {
@@ -181,15 +175,6 @@ button.btn.cat__btn.skill-btn {
   gap: 10px;
 }
 
-.btn {
-  text-transform: capitalize;
-  display: inline-block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
 .btn.skill-btn.button-card {
   background-color: var(--primary-brand-color-400);
   color: white;
@@ -198,19 +183,6 @@ button.btn.cat__btn.skill-btn {
   text-align: center;
   padding: 10px 30px;
   align-items: center;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-card {
-  display: inline-block;
-  white-space: nowrap;
-  max-width: 120px;
-  max-height: 150px;
 }
 
 .btn.skill-btn.button-card:hover {
@@ -230,29 +202,38 @@ button.btn.cat__btn.skill-btn {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1155px) {
   .project-cards {
     grid-template-columns: 1fr;
     align-items: center;
     margin: 0 auto;
     justify-content: center;
     margin: 30px auto;
-    width: 80%;
+    width: 90%;
   }
   .card {
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     justify-content: center;
   }
 
+  .btn--theme.about,
+  button.btn.portfolio-btn {
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .btn.cat__btn {
     display: inline-block;
-    width: 180px;
+    width: fit-content;
   }
   .btn.cat__btn.skill-btn {
     display: inline-block;
-    width: 180px;
+    width: fit-content;
   }
   .btn {
     display: inline-block;

@@ -66,9 +66,11 @@ const Header = () => {
                 <i className='fa fa-linkedin' aria-hidden='true'></i>
               </a> */}
                 </div>
-                <a href='#portfolio'>
-                  <button className='btn portfolio-btn'>Portfolio</button>
-                </a>
+                <div className='button-container'>
+                  <a href='#portfolio'>
+                    <button className='btn portfolio-btn '>Portfolio</button>
+                  </a>
+                </div>
               </div>
             </div>
             <div

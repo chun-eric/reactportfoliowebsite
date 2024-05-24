@@ -25,9 +25,11 @@ const About = () => {
             deadlines ensure that I deliver projects on time, within budget, and
             to exact specifications.
           </p>
-          <button className='btn btn--theme about'>
-            <a href='#contact'>Get In Touch</a>
-          </button>
+          <div className='button-container'>
+            <a href='#contact'>
+              <button className='btn btn--theme--about'> Get In Touch</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
