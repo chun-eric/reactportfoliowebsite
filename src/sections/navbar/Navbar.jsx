@@ -1,20 +1,22 @@
 import data from "./data";
 import "./navbar.css";
 // import { Moon } from "lucide-react";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
+// import {
+//   NavigationMenu,
+//   NavigationMenuContent,
+//   NavigationMenuIndicator,
+//   NavigationMenuItem,
+//   NavigationMenuLink,
+//   NavigationMenuList,
+//   NavigationMenuTrigger,
+//   NavigationMenuViewport,
+// } from "@/components/ui/navigation-menu";
 import { CiDark } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { IconContext } from "react-icons";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 const Navbar = () => {
   return (
@@ -41,6 +43,8 @@ const Navbar = () => {
           </a>
 
           <button className='btn-contact'>Contact</button>
+
+          <GiHamburgerMenu className='btn-hamburger' onClick={{}} />
         </div>
 
         {/* <a href='#' id='close'>

@@ -1,17 +1,16 @@
 #header-section {
   width: 100%;
-
+  height: auto;
   background: #fffefe;
+  margin-bottom: 0px !important;
 }
 
 #header {
   display: grid;
   place-items: center;
   width: 100%;
-  padding-top: 80px;
   background: #fffefe;
   transition: var(--transition);
-  padding-bottom: 100px;
 }
 
 .header__container {
@@ -116,7 +115,6 @@ button.portfolio-btn {
   height: 100%;
   width: 25rem;
   display: flex;
-  justify-content: flex-end;
 }
 
 .self-photo img {

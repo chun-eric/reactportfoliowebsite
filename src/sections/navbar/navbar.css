@@ -10,7 +10,7 @@ nav {
   z-index: 99;
   box-shadow: 0 40px 60px rgba(51, 201, 255, 0.03);
   transition: var(--transition);
-
+  z-index: 500;
   background-color: white;
 }
 .nav__logo {
@@ -56,6 +56,7 @@ nav {
   gap: 2.3rem;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 #theme_icon {
@@ -74,14 +75,24 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  background-color: transparent;
 }
 
 .contact:hover {
   fill: var(--primary-text-color-800);
 }
 
-#theme_icon:hover {
+#theme_icon:hover a {
   fill: black;
+  color: transparent;
+}
+
+#theme_icon {
+  background: none;
+}
+
+svg {
+  background: none;
 }
 
 .btn-contact {
@@ -99,11 +110,31 @@ nav {
   transition: 300ms ease-in;
 }
 
+.btn-hamburger {
+  cursor: pointer;
+  background: none;
+  position: fixed;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+  transition: all 0.3s ease-in;
+  margin-top: 10px;
+  font-size: 2.5rem;
+  color: var(--secondary-brand-color-alternate-800);
+}
+
 @media screen and (max-width: 1024px) {
   .nav__menu {
     display: none;
   }
   .nav {
     transition: none;
+  }
+  .btn-contact {
+    display: none;
+  }
+  .btn-hamburger {
+    display: block;
   }
 }

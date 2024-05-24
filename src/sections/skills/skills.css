@@ -1,6 +1,5 @@
 #skills {
   position: relative;
-  padding-top: 0px;
 }
 
 #skills::before {
@@ -22,11 +21,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto;
   box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+  padding-bottom: 120px;
+  /* padding-top: 60px; */
+  background: transparent;
 }
 
-.skilss-wrapper .skills-title {
+.skils-wrapper .skills-title {
   display: flex;
   align-items: center;
   text-align: center;

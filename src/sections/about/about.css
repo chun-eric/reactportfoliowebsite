@@ -95,7 +95,7 @@ button.btn--theme a {
 }
 
 .about {
-  margin-top: 30px;
+  margin: 100px 0;
   font-weight: 600;
   letter-spacing: 0.5px;
   background-color: var(--primary-brand-color-400);
