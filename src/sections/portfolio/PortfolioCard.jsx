@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
 
 const PortfolioCard = ({ project }) => {
   return (
@@ -34,34 +33,65 @@ const PortfolioCard = ({ project }) => {
     //   </div>
     // </div>
 
+    // <div className='project-cards-container'>
+    //   <div className='card'>
+    //     <div className='image-wrapper '>
+    //       <img
+    //         className='cover-image'
+    //         src={project.image}
+    //         alt='Portfolio Project Image'
+    //       />
+    //     </div>
+    //     <div className='overlay'></div>
+    //     <div className='project__description'>
+    //       <div className='project__lowerthird'>
+    //         <p className='project__title'>{project.title}</p>
+    //         <p className='card-description'>{project.desc}</p>
+    //         <div className='portfolio__project-cta'>
+    //           <button className='btn skill-btn button-card'>
+    //             <p>
+    //               <a href={project.demo} className='' rel='noopener noreferrer'>
+    //                 Demo
+    //               </a>
+    //             </p>
+    //           </button>
+    //           <button className='btn skill-btn button-card'>
+    //             <a href={project.github} rel='noopener noreferrer'>
+    //               Details
+    //             </a>
+    //           </button>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+
     <div className='project-cards-container'>
-      <div className='card'>
-        <div className='image-wrapper '>
-          <img
-            className='cover-image'
-            src={project.image}
-            alt='Portfolio Project Image'
-          />
-        </div>
+      <div className='card-container'>
+        <img
+          className='cover-image'
+          src={project.image}
+          alt='Portfolio Project Image'
+        />
         <div className='overlay'></div>
-        <div className='project__description'>
-          <div className='project__lowerthird'>
-            <p className='project__title'>{project.title}</p>
-            <p className='card-description'>{project.desc}</p>
-            <div className='portfolio__project-cta'>
-              <button className='btn skill-btn button-card'>
-                <p>
-                  <a href={project.demo} className='' rel='noopener noreferrer'>
-                    Demo
-                  </a>
-                </p>
-              </button>
-              <button className='btn skill-btn button-card'>
+        <div className='project-description'>
+          <p className='project-title'>{project.title}</p>
+          <p className='card-description'>{project.desc}</p>
+          <div className='button-card-container'>
+            <button className='btn button-card demo'>
+              <p>
+                <a href={project.demo} className='' rel='noopener noreferrer'>
+                  Demo
+                </a>
+              </p>
+            </button>
+            <button className='btn button-card'>
+              <p>
                 <a href={project.github} rel='noopener noreferrer'>
                   Details
                 </a>
-              </button>
-            </div>
+              </p>
+            </button>
           </div>
         </div>
       </div>

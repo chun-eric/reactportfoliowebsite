@@ -1,6 +1,7 @@
 import data from "./data";
 // import "./portfolio.css";
-import "./portfolio2.css";
+// import "./portfolio2.css";
+import "./portfolio3.css";
 import Projects from "./Projects";
 import ProjectsCategories from "./ProjectsCategories";
 import { useState } from "react";
