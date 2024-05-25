@@ -64,6 +64,10 @@ const Footer = () => {
               </p>
             </div>
           </div>
+          <div className='visitor-counter'>
+            <p> Vistor number:</p>
+            <p className='visitor-count'> 25</p>
+          </div>
 
           <div className='main-footer__lower'>
             <p>

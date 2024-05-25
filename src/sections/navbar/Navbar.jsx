@@ -11,11 +11,9 @@ import "./navbar.css";
 //   NavigationMenuTrigger,
 //   NavigationMenuViewport,
 // } from "@/components/ui/navigation-menu";
-import { CiDark } from "react-icons/ci";
-import { MdDarkMode } from "react-icons/md";
-import { MdOutlineDarkMode } from "react-icons/md";
-import { IconContext } from "react-icons";
+
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Moon } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -38,9 +36,11 @@ const Navbar = () => {
         </ul>
 
         <div className='navbar__btns'>
-          <a href='#' id='theme__icon'>
-            <MdOutlineDarkMode className='icon contact' />
-          </a>
+          <button className='icon_dark_button no-animation'>
+            <a href='#' className=''>
+              <Moon size={30} />
+            </a>
+          </button>
 
           <button className='btn-contact'>Contact</button>
 

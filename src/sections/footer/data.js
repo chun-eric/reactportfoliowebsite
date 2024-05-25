@@ -1,7 +1,7 @@
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 
-const data2 = [
+const data = [
   {
     id: 1,
     link: "https://instagram.com",
@@ -16,4 +16,4 @@ const data2 = [
   },
 ];
 
-export default data2;
+export default data;
