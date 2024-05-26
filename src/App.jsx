@@ -4,7 +4,8 @@ import Header from "./sections/header/Header";
 import About from "./sections/about/About";
 import Portfolio from "./sections/portfolio/Portfolio";
 
-import Contact from "./sections/contact/Contact";
+// import Contact from "./sections/contact/Contact";
+import Contact2 from "./sections/contact/Contact2";
 import Footer from "./sections/footer/Footer";
 // import Card from "./components/Card";
 
@@ -22,7 +23,8 @@ function App() {
       <Portfolio />
       {/* <Testimonials /> */}
       {/* <FAQs /> */}
-      <Contact />
+      {/* <Contact /> */}
+      <Contact2 />
       <Footer />
     </main>
   );

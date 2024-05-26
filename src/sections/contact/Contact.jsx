@@ -1,6 +1,6 @@
 import "./contact.css";
-import "./data";
-import { useState, useEffect } from "react";
+
+import { ValidationError, useForm } from "@formspree/react";
 
 /* Form Submission and Error Handling */
 // const emailInput = document.getElementById("email");
@@ -65,6 +65,23 @@ import { useState, useEffect } from "react";
 // };
 
 const Contact = () => {
+  const [state, handleSubmit, reset] = useForm("xqkolwqa");
+
+  // for the form submitting state
+  if (state.submitting) {
+    return <p>Submitting...</p>;
+  }
+
+  if (state.succeeded) {
+    return (
+      <div>
+        <p>Thanks!</p>;<button onClick={reset}>Reset</button>
+      </div>
+    );
+  }
+
+  //
+
   return (
     <section id='contact' className='contact section-padding'>
       <div
@@ -86,12 +103,7 @@ const Contact = () => {
         </h2>
 
         <div className='contact__form-container'>
-          <form
-            action='https://formspree.io/f/xqkolwqa'
-            className='contact__form'
-            method='POST'
-            id='form'
-          >
+          <form onSubmit={handleSubmit}>
             {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" /> */}
             <input type='hidden' name='_subject' value='New Email Yay!' />
             <div className='contact__form-field'>
@@ -106,13 +118,14 @@ const Contact = () => {
                 name='name'
                 id='name'
               />
+              <ValidationError
+                field='name'
+                prefix='Name'
+                errors={state.errors}
+              />
             </div>
             <div className='contact__form-field' id='email-input-group'>
-              <label
-                className='contact__form-label'
-                htmlFor='email'
-                id='email-label'
-              >
+              <label className='contact__form-label' htmlFor='email'>
                 Email
               </label>
               <input
@@ -123,7 +136,11 @@ const Contact = () => {
                 type='text'
                 name='email'
                 spellCheck='false'
-                onKeyUp='validateEmail()'
+              />
+              <ValidationError
+                field='email'
+                prefix='Email'
+                errors={state.errors}
               />
               <span id='email-error'></span>
               <span id='email-success'></span>
@@ -141,8 +158,14 @@ const Contact = () => {
                 className='contact__form-input'
                 id='message'
               ></textarea>
+              <ValidationError
+                field='message'
+                prefix='Message'
+                errors={state.errors}
+              />
             </div>
             <button
+              disabled={state.submitting}
               type='submit'
               id='submit--button'
               className='btn btn--theme submit--btn'
