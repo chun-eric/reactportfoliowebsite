@@ -82,6 +82,44 @@
   margin-bottom: 60px;
 }
 
+.form-submitted {
+  margin: 0 auto;
+  width: 90%;
+  height: 500px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  background-color: var(--primary-background-color);
+  box-shadow: rgba(51, 201, 255, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: 1px solid rgb(202, 202, 202);
+}
+
+.form-submitted p {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--secondary-brand-color-alternate-800);
+}
+
+.thank-you-span {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-brand-color-400);
+}
+
+.go-back-button {
+  color: white;
+  background-color: var(--secondary-brand-color-alternate-800);
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+}
+.go-back-button:hover {
+  transform: none;
+}
 .form-section {
   display: flex;
   flex-direction: column;
@@ -176,6 +214,27 @@ textarea::placeholder {
 .submit-button:hover {
   transform: none;
   opacity: 0.8;
+}
+
+/* the spinner */
+.spinner {
+  border: 5px solid rgb(192, 192, 192);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 2.5s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  animation-delay: 400ms;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 1024px) {
