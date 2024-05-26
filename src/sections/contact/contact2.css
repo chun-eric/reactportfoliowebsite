@@ -196,6 +196,7 @@ textarea::placeholder {
   }
   .contact__form-container {
     width: 90%;
+    margin-top: 50px;
   }
   .main-container {
     width: 100%;

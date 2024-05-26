@@ -4,7 +4,6 @@ import { useState } from "react";
 import { ValidationError, useForm } from "@formspree/react";
 
 const Contact = () => {
-  // const [state, handleSubmit] = useForm("xqkolwqa");
   // const [email, setEmail] = useState("");
 
   const [state, handleSubmit] = useForm(import.meta.env.VITE_APP_FORM_ID);
@@ -22,8 +21,8 @@ const Contact = () => {
               Contact Me
             </span>
             <span className=' heading-contactme'>
-              Feel free to Contact me by submitting the form below and I will
-              get back to you as soon as possible.
+              Feel free to Contact me by submitting the form below and I'll get
+              back to you as soon as I can.
             </span>
           </h2>
         </div>
