@@ -1,0 +1,90 @@
+/* Navbar Modal */
+
+.navbarmodal-container {
+  width: 300px;
+  height: 100%;
+  z-index: 120;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(248, 248, 248);
+  margin-right: 0;
+  position: fixed;
+  box-shadow: var(--primary-brand-color-400);
+  top: 0px;
+  right: 0px;
+  border-left: 3px solid black;
+  transform: translateX(300px);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+}
+
+.transform-modal {
+  transform: translateX(300px);
+}
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.back-icon {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.back-icon:hover,
+.close-icon:hover {
+  color: var(--primary-brand-color-600);
+}
+.navbar-modal {
+  display: flex;
+}
+
+.menu-listModal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+
+.menu-listModal > li {
+  font-size: 24px;
+}
+
+.menu-listModal > li:hover {
+  color: var(--primary-brand-color-600);
+}
+
+.menu-listModal > li::before {
+}
+
+.menu-listModal > li::before {
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__menu {
+    display: none;
+  }
+  .nav {
+    transition: none;
+  }
+  .btn-contact {
+    display: none;
+  }
+  .btn-hamburger {
+    display: block;
+  }
+  .icon_dark_button {
+    vertical-align: center;
+    margin-top: 15px;
+    margin-right: 60px;
+  }
+  .navbarmodal-container {
+    display: block;
+  }
+}

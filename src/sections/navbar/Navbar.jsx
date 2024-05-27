@@ -1,22 +1,15 @@
 import data from "./data";
 import "./navbar.css";
-// import { Moon } from "lucide-react";
-// import {
-//   NavigationMenu,
-//   NavigationMenuContent,
-//   NavigationMenuIndicator,
-//   NavigationMenuItem,
-//   NavigationMenuLink,
-//   NavigationMenuList,
-//   NavigationMenuTrigger,
-//   NavigationMenuViewport,
-// } from "@/components/ui/navigation-menu";
-
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Moon } from "lucide-react";
+import { Moon, CircleX, MoveLeft } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModal = () => {
+    setShowModal(!showModal);
+  };
   return (
     <nav>
       <div className='container nav__container'>
@@ -41,16 +34,26 @@ const Navbar = () => {
               <Moon size={30} />
             </a>
           </button>
-
           <button className='btn-contact'>Contact</button>
-
-          <GiHamburgerMenu className='btn-hamburger' onClick={{}} />
+          <GiHamburgerMenu className='btn-hamburger' onClick={handleModal} />
         </div>
-
-        {/* <a href='#' id='close'>
-          <i className='fa-solid fa-x' style={{ color: "black" }}></i>
-        </a> */}
       </div>
+      {/* Navbar Modal */}
+      {showModal && (
+        <div className='navbarmodal-container transform-modal'>
+          <div className='navbar-modal'>
+            <MoveLeft className='back-icon' onClick={handleModal} />
+            <CircleX className='close-icon' onClick={handleModal} />
+          </div>
+          <div className='menu-listModal'>
+            {data.map((item) => (
+              <li key={item.id} onClick={{}}>
+                {item.title}
+              </li>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

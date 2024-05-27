@@ -11,20 +11,30 @@ import Footer from "./sections/footer/Footer";
 
 import Skills from "./sections/skills/Skills";
 import "./App.css";
+import { useRef } from "react";
 
 function App() {
+  // refrence for each key section
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const contactRef = useRef(null);
+  const portfolioRef = useRef(null);
+
   return (
     <main>
-      <Navbar />
+      <Navbar
+        refs={{ homeRef, aboutRef, skillsRef, portfolioRef, contactRef }}
+      />
       <Header style={{ backgroundColor: "background-color: #f9f9f9;" }} />
-      <Skills />
-      <About />
+      <Skills refs={{ skillsRef }} />
+      <About refs={{ aboutRef }} />
       {/* <Services /> */}
-      <Portfolio />
+      <Portfolio refs={{ portfolioRef }} />
       {/* <Testimonials /> */}
       {/* <FAQs /> */}
       {/* <Contact /> */}
-      <Contact2 />
+      <Contact2 refs={{ contactRef }} />
       <Footer />
     </main>
   );

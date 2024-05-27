@@ -84,7 +84,7 @@
 
 .form-submitted {
   margin: 0 auto;
-  width: 90%;
+  width: 70%;
   height: 500px;
   margin-bottom: 60px;
   border-radius: 5px;
@@ -218,7 +218,7 @@ textarea::placeholder {
 
 /* the spinner */
 .spinner {
-  border: 5px solid rgb(192, 192, 192);
+  border: 5px solid rgb(253, 253, 253);
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -267,40 +267,7 @@ textarea::placeholder {
     margin-left: 0px;
     font-size: 22px;
   }
-}
-
-@media (max-width: 799px) {
-  /* .main-container {
+  .form-submitted {
     width: 90%;
   }
-  .main-footer__row.main-footer__row-1 {
-    margin-left: 12px;
-  }
-  .btn {
-    width: 100%;
-  }
-  .contact__form-field {
-    margin-bottom: 36px;
-  }
-  .heading-sec__sub {
-    width: 70%;
-  }
-  .contact__form-container {
-    margin-top: 60px;
-    width: 95%;
-    margin-left: 10px;
-    margin-right: 10px;
-  } */
-}
-
-@media (max-width: 477px) {
-  /* .main-footer__row.main-footer__row-1 {
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-
-  .main-footer__row.main-footer__row-2 {
-    margin-left: 18px;
-    margin-bottom: 30px;
-  } */
 }
