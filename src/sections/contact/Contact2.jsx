@@ -31,44 +31,58 @@ const Contact = () => {
   const handleFormSubmit = async (e) => {
     // prevent default form submission
     e.preventDefault();
+
     // starts the loading state
     setLoading(true);
+
     // debug log
     console.log("Form submission started");
 
     // submit the form and save it into a variable
     await handleSubmit(e);
 
-    // if the form is submitted successfully
     if (state.succeeded) {
-      // wait for 1 second to load before showing form submitted container
-      setTimeout(() => {
-        // stops the loading state
-        setLoading(false);
-        // form is submitted
-        setSubmitted(true);
-      }, 1000);
-    } else {
-      // stop loading if submission failed
-      console.log("Form submission failed");
-      setLoading(false);
-      alert("Error submitting form. Please try again.");
+      // set the submitted state to true
+      setSubmitted(true);
     }
-  };
 
-  // const handleContactRedirect = () => {};
+    setLoading(false);
+    console.log("Form submitted successfully");
+  };
 
   // reseting the form function handler
   const handleFormReset = () => {
     // reset name
     setName("");
+
     // reset email
     setEmail("");
+
     // reset message
     setMessage("");
+
     // reset form submission state to show form again
     setSubmitted(false);
+
+    // redirect me bak to the form
+    window.location.href = "#contact";
   };
+
+  // shows new container when form is submitted successfully
+  if (state.succeeded) {
+    return (
+      <div className='form-submitted'>
+        <p>
+          <span className='thank-you-span'>Thank you</span> for your message!{" "}
+          <br />
+          I'll get back to you soon as I can.
+        </p>
+        <button onClick={handleFormReset} className='go-back-button'>
+          Go Back
+        </button>
+      </div>
+    );
+  }
 
   return (
     <section id='contact' className='contact section-padding'>

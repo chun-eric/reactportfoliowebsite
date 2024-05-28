@@ -4,12 +4,29 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Moon, CircleX, MoveLeft } from "lucide-react";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ refs }) => {
   const [showModal, setShowModal] = useState(false);
 
+  // handler function to toggle the modal
   const handleModal = () => {
     setShowModal(!showModal);
   };
+
+  // handler function to scroll to the section
+  const handleScroll = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: "smooth",
+    });
+    setShowModal(false);
+  };
+
+  //  function to convert item title to corresponding ref key
+  const getRefKey = (title) => {
+    const key = `${title.toLowerCase()}Ref`;
+    return refs[key];
+  };
+
   return (
     <nav>
       <div className='container nav__container'>
@@ -47,7 +64,10 @@ const Navbar = () => {
           </div>
           <div className='menu-listModal'>
             {data.map((item) => (
-              <li key={item.id} onClick={{}}>
+              <li
+                key={item.id}
+                onClick={() => handleScroll(getRefKey(item.title))}
+              >
                 {item.title}
               </li>
             ))}

@@ -23,7 +23,8 @@ const data2 = [
   },
 ];
 
-const Header = () => {
+const Header = ({ refs }) => {
+
   return (
     <section id='header-section'>
       <header id='header'>
