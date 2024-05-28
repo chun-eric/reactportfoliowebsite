@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const PortfolioCard = ({ project }) => {
   return (
     <div className='project-cards-container'>
-      <div className='card-container'>
+      <div className='card-container gradient-border'>
         <img
           className='cover-image'
           src={project.image}

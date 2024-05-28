@@ -1,8 +1,10 @@
 import data from "./data";
+
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Moon, CircleX, MoveLeft } from "lucide-react";
 import { useState } from "react";
+import { Navigate } from "react-router-dom";
 
 const Navbar = ({ refs }) => {
   const [showModal, setShowModal] = useState(false);
@@ -13,19 +15,13 @@ const Navbar = ({ refs }) => {
   };
 
   // handler function to scroll to the section
-  const handleScroll = (ref) => {
-    window.scrollTo({
-      top: ref.current.offsetTop,
-      behavior: "smooth",
-    });
-    setShowModal(false);
-  };
-
-  //  function to convert item title to corresponding ref key
-  const getRefKey = (title) => {
-    const key = `${title.toLowerCase()}Ref`;
-    return refs[key];
-  };
+  // const handleScroll = ({ ref }) => {
+  //   window.scrollTo({
+  //     top: ref.current.offsetTop,
+  //     behavior: "smooth",
+  //   });
+  //   setShowModal(false);
+  // };
 
   return (
     <nav>
@@ -51,7 +47,14 @@ const Navbar = ({ refs }) => {
               <Moon size={30} />
             </a>
           </button>
-          <button className='btn-contact'>Contact</button>
+
+          {/* Had a lot of trouble here. Just separated my contact data. It was the most simplest answer. All I needed to do was add #contact to the a href path. */}
+          <button className='btn-contact'>
+            <a href='#contact' style={{ fontSize: "22px" }}>
+              Contact
+            </a>
+          </button>
+
           <GiHamburgerMenu className='btn-hamburger' onClick={handleModal} />
         </div>
       </div>
@@ -64,13 +67,19 @@ const Navbar = ({ refs }) => {
           </div>
           <div className='menu-listModal'>
             {data.map((item) => (
-              <li
-                key={item.id}
-                onClick={() => handleScroll(getRefKey(item.title))}
-              >
-                {item.title}
+              <li key={item.id}>
+                <a href={item.link} className='nav__item'>
+                  {item.title}
+                </a>
               </li>
             ))}
+            <div className='navbar-modal-contact' style={{}}>
+              <li style={{}}>
+                <a href='#contact' style={{ fontSize: "24px" }}>
+                  Contact
+                </a>
+              </li>
+            </div>
           </div>
         </div>
       )}

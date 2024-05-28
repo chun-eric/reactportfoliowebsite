@@ -49,6 +49,14 @@
   --primary-opposite-link-color: var(--primary-brand-color-400);
   --primary-opposite-link-hover-color: var(--primary-brand-color-800);
 
+  /* light dark mode */
+  [data-theme="dark"] {
+    --background: var(--primary-opposite-background-color-300);
+    --text-primary: var(--primary-brand-color-alternate-600);
+    --button-bg: var(--primary-brand-color-alternate-600);
+    --button-text: var(--primary-opposite-background-color-300);
+  }
+
   /* Backup colors */
   --primary-hue: 197;
   --black-lightness: 15%;

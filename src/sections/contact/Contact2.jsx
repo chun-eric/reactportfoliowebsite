@@ -3,7 +3,7 @@ import "./contact2.css";
 import { useState } from "react";
 import { ValidationError, useForm } from "@formspree/react";
 
-const Contact = () => {
+const Contact = ({ ref }) => {
   // formspree form state
   const [state, handleSubmit] = useForm(import.meta.env.VITE_APP_FORM_ID);
   const [loading, setLoading] = useState(false);

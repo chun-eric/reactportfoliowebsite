@@ -89,6 +89,7 @@ nav {
 .icon_dark_button:hover {
   color: var(--primary-opposite-background-color-300);
 }
+
 .contact {
   background-color: transparent;
   transition: none !important;
@@ -166,7 +167,8 @@ nav {
 }
 
 .back-icon:hover,
-.close-icon:hover {
+.close-icon:hover,
+.navbar-modal-contact:hover {
   color: var(--primary-brand-color-600);
 }
 .navbar-modal {
@@ -187,14 +189,16 @@ nav {
   font-size: 24px;
 }
 
-.menu-listModal > li:hover {
-  color: var(--primary-brand-color-600);
+.navbar-modal-contact {
+  padding: 1px;
+  margin-top: -5px;
+  width: 100%;
+  display: block;
+  transition: var(--transition);
 }
 
-.menu-listModal > li::before {
-}
-
-.menu-listModal > li::before {
+.navbar-modal-contact:hover {
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1024px) {

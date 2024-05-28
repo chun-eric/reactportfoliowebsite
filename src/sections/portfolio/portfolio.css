@@ -1,5 +1,6 @@
 section#portfolio {
   margin-top: 160px;
+  padding-top: 150px;
 }
 
 .portfolio__categories {
@@ -58,10 +59,32 @@ button.btn.cat__btn.skill-btn {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   height: 470px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 10px solid var(--primary-opposite-text-color-800);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   animation: animateProject 600ms ease-in-out;
+}
+
+.card-container:hover {
+  border: 10px solid
+    linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+  animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 /* adding some animation on the card-container when clicked*/

@@ -238,13 +238,11 @@ textarea::placeholder {
 }
 
 @media (max-width: 1024px) {
-  .contact-heading {
-    justify-content: left;
+  span .heading-sec__main.heading-sec__main--lt {
+    display: inline-block;
+    margin-left: 3px !important;
   }
 
-  span.heading-sec__main.heading-sec__main--lt {
-    margin-left: 5px;
-  }
   .heading-contactme {
     text-align: left;
     margin-left: 50px;
@@ -258,7 +256,7 @@ textarea::placeholder {
     margin-top: 50px;
   }
   .main-container {
-    width: 100%;
+    width: 80%;
   }
   .btn {
     width: 100%;

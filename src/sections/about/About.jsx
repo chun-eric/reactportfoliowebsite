@@ -5,12 +5,12 @@ const About = () => {
   return (
     <div id='about'>
       <div
-      // class='about-me'
-      // data-aos='fade-up'
-      // data-aos-delay='150'
-      // data-aos-offset='200'
-      // data-aos-duration='1500'
-      // data-aos-easing='ease-in-out'
+        className='about-me'
+        // data-aos='fade-up'
+        // data-aos-delay='150'
+        // data-aos-offset='200'
+        // data-aos-duration='1500'
+        // data-aos-easing='ease-in-out'
       >
         <div className='section-title'>
           <h2 className='title'>About Me</h2>
