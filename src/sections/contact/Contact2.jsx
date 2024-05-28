@@ -48,6 +48,8 @@ const Contact = () => {
 
     setLoading(false);
     console.log("Form submitted successfully");
+
+    handleFormReset;
   };
 
   // reseting the form function handler
@@ -65,7 +67,11 @@ const Contact = () => {
     setSubmitted(false);
 
     // redirect me bak to the form
-    window.location.href = "#contact";
+  };
+
+  // handle function for page refresh
+  const handleRefresh = () => {
+    window.location.reload();
   };
 
   // shows new container when form is submitted successfully
@@ -77,8 +83,12 @@ const Contact = () => {
           <br />
           I'll get back to you soon as I can.
         </p>
-        <button onClick={handleFormReset} className='go-back-button'>
-          Go Back
+        <button
+          style={{ backgroundColor: "#202730", color: "white" }}
+          onClick={handleRefresh}
+          className='form-reset'
+        >
+          Refresh Page
         </button>
       </div>
     );
@@ -98,81 +108,69 @@ const Contact = () => {
             </span>
           </h2>
         </div>
-        {submitted ? (
-          <div className='form-submitted'>
-            <p>
-              <span className='thank-you-span'>Thank you</span> for your
-              message! <br />
-              I'll get back to you soon as I can.
-            </p>
-            <button onClick={handleFormReset} className='go-back-button'>
-              Go Back
+
+        <div className='contact__form-container'>
+          <form onSubmit={handleFormSubmit} className='contact__form'>
+            <div className='form-section'>
+              <label htmlFor='name' className='label'>
+                First Name
+              </label>
+              <input
+                id='name'
+                type='name'
+                name='name'
+                value={name}
+                onChange={handleNameChange}
+              />
+              <ValidationError
+                prefix='Name'
+                field='name'
+                errors={state.errors}
+              />
+            </div>
+            <div className='form-section'>
+              <label htmlFor='email' className='label'>
+                Email Address
+              </label>
+              <input
+                id='email'
+                type='email'
+                name='email'
+                value={email}
+                onChange={handleEmailChange}
+              />
+              <ValidationError
+                prefix='Email'
+                field='email'
+                errors={state.errors}
+              />
+            </div>
+            <div className='form-section'>
+              <label htmlFor='message' className='label'>
+                Message
+              </label>
+              <textarea
+                id='message'
+                name='message'
+                className='textarea'
+                value={message}
+                onChange={handleMessageChange}
+              />
+              <ValidationError
+                prefix='Message'
+                field='message'
+                errors={state.errors}
+              />
+            </div>
+            <button
+              type='submit'
+              disabled={state.submitting || loading}
+              className='submit-button'
+            >
+              {loading ? <span className='spinner'></span> : "Submit"}
             </button>
-          </div>
-        ) : (
-          <div className='contact__form-container'>
-            <form onSubmit={handleFormSubmit} className='contact__form'>
-              <div className='form-section'>
-                <label htmlFor='name' className='label'>
-                  First Name
-                </label>
-                <input
-                  id='name'
-                  type='name'
-                  name='name'
-                  value={name}
-                  onChange={handleNameChange}
-                />
-                <ValidationError
-                  prefix='Name'
-                  field='name'
-                  errors={state.errors}
-                />
-              </div>
-              <div className='form-section'>
-                <label htmlFor='email' className='label'>
-                  Email Address
-                </label>
-                <input
-                  id='email'
-                  type='email'
-                  name='email'
-                  value={email}
-                  onChange={handleEmailChange}
-                />
-                <ValidationError
-                  prefix='Email'
-                  field='email'
-                  errors={state.errors}
-                />
-              </div>
-              <div className='form-section'>
-                <label htmlFor='message' className='label'>
-                  Message
-                </label>
-                <textarea
-                  id='message'
-                  name='message'
-                  className='textarea'
-                  value={message}
-                  onChange={handleMessageChange}
-                />
-                <ValidationError
-                  prefix='Message'
-                  field='message'
-                  errors={state.errors}
-                />
-              </div>
-              <button
-                type='submit'
-                disabled={state.submitting || loading}
-                className='submit-button'
-              >
-                {loading ? <span className='spinner'></span> : "Submit"}
-              </button>
-            </form>
-          </div>
-        )}
+          </form>
+        </div>
       </div>
     </section>
   );
