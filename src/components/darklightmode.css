@@ -1,0 +1,54 @@
+.light-mode {
+  --primary-color: #0f0f11;
+  --scondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+
+.dark-mode {
+  --primary-color: #e1e1ff;
+  --scondary-color: #e1e1ff0;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #e1e1ff;
+}
+
+div.dark_mode {
+  display: block;
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  background: transparent;
+  position: relative;
+}
+
+.dark_mode_input {
+  width: 100%;
+  height: 100%;
+}
+
+.dark_mode_label {
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.sun-icon {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  margin: auto 0;
+}
+
+.moon-icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  margin: auto 0;
+}

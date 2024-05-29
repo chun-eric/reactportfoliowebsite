@@ -126,6 +126,13 @@ nav {
   color: var(--secondary-brand-color-alternate-800);
 }
 
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
 /* Navbar Modal */
 
 .navbarmodal-container {

@@ -3,6 +3,103 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Main Color Palette */
+  --primary-brand-color-300: #33c9ff;
+  --primary-brand-color-400: #00baff;
+  --primary-brand-color-600: #00a2ff;
+  --primary-brand-color-800: #00a2ff;
+  --primary-brand-color-900: #0499f0;
+  --primary-background-color: #fff;
+  --primary-brand-color-alternate-600: #fff;
+  --primary-brand-color-alternate-800: #fff;
+  --primary-brand-color-alternate-400-light: #cff;
+  --secondary-brand-color-400: #ffea00;
+  --secondary-brand-color-600: #ffd200;
+  --secondary-brand-color-800: #ffd200;
+  --secondary-brand-color-900: #face09;
+  --secondary-brand-color-alternate-400: #0b212a;
+  --secondary-brand-color-alternate-600: #0b212a;
+  --secondary-brand-color-alternate-800: #0b212a;
+  --primary-background-color: #fff;
+  --primary-text-color-800: #202730;
+  --primary-text-color-500: #66686b;
+  --primary-text-color-200: #7990a1;
+  --primary-opposite-background-color-300: #10303d;
+  --primary-opposite-background-color-400: #0b212a;
+  --primary-opposite-text-color-800: #202730;
+  --primary-opposite-text-color-200: #7990a1;
+  --primary-opposite-text-color-300: #63707a;
+  --primary-opposite-link-color: var(--primary-brand-color-400);
+  --primary-opposite-link-hover-color: var(--primary-brand-color-800);
+
+  /* light mode on root */
+  --background: var(--primary-background-color);
+  --text-primary: var(--primary-text-color-800);
+  --button-bg: var(--primary-brand-color-400);
+  --button-text: var(--primary-background-color);
+
+  /* Backup colors */
+  --primary-hue: 197;
+  --black-lightness: 15%;
+  --dark-lightness: 44%;
+  --light-lightness: 94%;
+  --white-lightness: 100%;
+  --color-primary: hsl(var(--primary-hue), 10%, 10%);
+  --color-white: hsl(0, 5%, var(--white-lightness));
+  --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+  --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+
+  /* GENERAL CONTAINER VARIABLES */
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+
+  /* BORDER RADIUS VARIABLES */
+  --border-radius-1: 0.8rem;
+  --border-radius-2: 0.4rem;
+  --border-radius-3: 0.2rem;
+
+  /* GENERAL TRANSITION VARIABLE */
+  --transition: all 500ms ease;
+}
+
+:root {
+  --background: #fff;
+  --primary-text: #202730;
+}
+
+/* light dark mode */
+[data-theme="dark"] {
+  --background: var(--primary-background-color);
+  --primary-text: var(--primary-text-color-800);
+  --button-bg: var(--primary-background-color);
+  --button-text: var(--primary-text-color-800);
+}
+
+[data-theme="light"] {
+  --background: var(--primary-background-color);
+  --primary-text: var(--primary-text-color-800);
+  --button-bg: var(--primary-background-color);
+  --button-text: var(--primary-text-color-800);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.9s, color 0.3s;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
 }
 
 .logo {
