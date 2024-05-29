@@ -11,9 +11,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+// import { themeChange } from "theme-change";
 // import DarkLightMode from "../src/components/DarkLightMode";
-
 // import Contact from "./sections/contact/Contact";
 // import Card from "./components/Card";
 
@@ -31,11 +30,10 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <main>
+      <main className='dark light'>
         <Navbar />
         <Header />
         <Skills />
-
         <About />
         <Portfolio />
         <Contact2 />

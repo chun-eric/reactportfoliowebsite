@@ -1,6 +1,13 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
+import ProjectModal from "../projectModal/ProjectModal";
 
 const PortfolioCard = ({ project }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModal = () => {
+    setShowModal(!showModal);
+  };
   return (
     <div
       className='project-cards-container'
@@ -28,7 +35,7 @@ const PortfolioCard = ({ project }) => {
                 </a>
               </p>
             </button>
-            <button className='btn button-card'>
+            <button className='btn button-card' onClick={() => handleModal()}>
               <p>
                 <a href={project.github} rel='noopener noreferrer'>
                   Details
@@ -37,6 +44,7 @@ const PortfolioCard = ({ project }) => {
             </button>
           </div>
         </div>
+        { showModal && <ProjectModal project={project} />}
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 import { CircleX, MoveLeft } from "lucide-react";
 import { useState } from "react";
 

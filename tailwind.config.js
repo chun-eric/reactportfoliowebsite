@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from "daisyui";
 module.exports = {
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx,jsx}",
+    "./components/**/*.{ts,tsx,jsx}",
+    "./app/**/*.{ts,tsx,jsx}",
+    "./src/**/*.{ts,tsx,jsx}",
   ],
   prefix: "",
   theme: {
@@ -72,6 +76,6 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    plugins: ["tailwindcss-animate", "daisyui"],
   },
-  plugins: [require("tailwindcss-animate")],
 };
