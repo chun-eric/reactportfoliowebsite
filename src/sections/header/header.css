@@ -98,7 +98,7 @@ button.portfolio-btn {
   font-weight: 600;
   letter-spacing: 0.5px;
   background-color: var(--primary-brand-color-400);
-  color: var(--primary-brand-color-alternate-400);
+  color: var(--primary-brand-color-alternate-600);
   width: fit-content;
 }
 

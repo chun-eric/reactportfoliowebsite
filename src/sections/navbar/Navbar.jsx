@@ -35,12 +35,15 @@ const Navbar = () => {
 
         <div className='navbar__btns'>
           <button
+            style={{ transition: "all 0.3s ease" }}
             onClick={toggleTheme}
             className='icon_dark_button no-animation theme-toggle'
           >
-            <a href='#'>
-              {theme === "light" ? <Sun size={30} /> : <Moon size={30} />}
-            </a>
+            {theme === "light" ? (
+              <Sun size={30} className='theme-icon' />
+            ) : (
+              <Moon size={30} className='theme-icon' />
+            )}
           </button>
 
           {/* Had a lot of trouble here. Just separated my contact data. It was the most simplest answer. All I needed to do was add #contact to the a href path. */}

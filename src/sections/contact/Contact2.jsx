@@ -95,9 +95,16 @@ const Contact = ({ ref }) => {
   }
 
   return (
-    <section id='contact' className='contact section-padding'>
+    <section id='contact'>
       <div className='main-container'>
-        <div className='contact-heading'>
+        <div
+          className='contact-heading'
+          data-aos='fade-up'
+          data-aos-delay='80'
+          data-aos-offset='150'
+          data-aos-duration='1000'
+          data-aos-easing='ease-in-out'
+        >
           <h2>
             <span className='heading-sec__main heading-sec__main--lt'>
               Contact Me
@@ -109,7 +116,14 @@ const Contact = ({ ref }) => {
           </h2>
         </div>
 
-        <div className='contact__form-container'>
+        <div
+          className='contact__form-container'
+          data-aos='fade-up'
+          data-aos-delay='100'
+          data-aos-offset='200'
+          data-aos-duration='1200'
+          data-aos-easing='ease-in-out'
+        >
           <form onSubmit={handleFormSubmit} className='contact__form'>
             <div className='form-section'>
               <label htmlFor='name' className='label'>

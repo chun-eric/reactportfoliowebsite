@@ -9,15 +9,22 @@ const Skills = () => {
       <div className='skills-wrapper'>
         <div
           className='skills-title'
-          // data-aos='fade-up'
-          // data-aos-delay='100'
-          // data-aos-offset='200'
-          // data-aos-duration='1200'
-          // data-aos-easing='ease-in-out'
+          data-aos='fade-up'
+          data-aos-delay='100'
+          data-aos-offset='200'
+          data-aos-duration='1200'
+          data-aos-easing='ease-in-out'
         >
           <h3 className='title'>Skills</h3>
         </div>
-        <div className='skills-container'>
+        <div
+          className='skills-container'
+          data-aos='fade-up'
+          data-aos-delay='100'
+          data-aos-offset='150'
+          data-aos-duration='1200'
+          data-aos-easing='ease-in-out'
+        >
           <div className='skills-image-container'>
             {data.map((item) => (
               <div key={item.id} className='item'>

@@ -24,7 +24,6 @@ const data2 = [
 ];
 
 const Header = ({ refs }) => {
-
   return (
     <section id='header-section'>
       <header id='header'>
@@ -32,7 +31,7 @@ const Header = ({ refs }) => {
           <div className='hero'>
             <div
               className='content'
-              // data-aos='fade-in'
+              data-aos='fade-in'
               data-aos-delay='150'
               data-aos-offset='200'
               data-aos-duration='1500'
@@ -76,11 +75,11 @@ const Header = ({ refs }) => {
             </div>
             <div
               className='self-photo'
-              // data-aos='fade-left'
-              // data-aos-delay='450'
-              // data-aos-offset='200'
-              // data-aos-duration='1500'
-              // data-aos-easing='ease-in-out'
+              data-aos='fade-left'
+              data-aos-delay='450'
+              data-aos-offset='200'
+              data-aos-duration='1500'
+              data-aos-easing='ease-in-out'
             >
               <img src={HeaderImage} alt='self-logo' />
             </div>

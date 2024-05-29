@@ -12,7 +12,14 @@ const ProjectsCategories = ({ categories, onFilterProjects }) => {
     onFilterProjects(active);
   };
   return (
-    <div className='portfolio__categories'>
+    <div
+      className='portfolio__categories'
+      data-aos='fade-up'
+      data-aos-delay='100'
+      data-aos-offset='200'
+      data-aos-duration='1200'
+      data-aos-easing='ease-in-out'
+    >
       {categories.map((category) => (
         <CategoryButton
           key={category}

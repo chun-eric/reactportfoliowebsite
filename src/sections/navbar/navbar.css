@@ -67,7 +67,7 @@ nav {
 
 .icon {
   font-size: 2rem;
-  color: var(--primary-opposite-text-color-800);
+  color: var(--primary-text-color-800);
   justify-content: center;
   align-items: center;
   margin-top: 10px;
@@ -79,16 +79,21 @@ nav {
   margin: 0;
   background-color: inherit;
   background: inherit;
-  transition: none;
+  transition: all 0.3s ease-in-out;
   transform: none;
   font-size: 20px;
   box-shadow: none;
   margin-top: 10px;
 }
 
-.icon_dark_button:hover {
-  color: var(--primary-opposite-background-color-300);
+.theme-icon {
+  transition: all 0.6s ease-in-out;
+  color: var(--primary-text-color-800);
 }
+
+/* .icon_dark_button:hover {
+  color: var(--primary-opposite-background-color-300);
+} */
 
 .contact {
   background-color: transparent;

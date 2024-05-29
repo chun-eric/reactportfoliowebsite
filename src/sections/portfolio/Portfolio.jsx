@@ -30,11 +30,11 @@ const Portfolio = () => {
     <section id='portfolio'>
       <div
         className='skills-title'
-        // data-aos='fade-up'
-        // data-aos-delay='100'
-        // data-aos-offset='200'
-        // data-aos-duration='1200'
-        // data-aos-easing='ease-in-out'
+        data-aos='fade-up'
+        data-aos-delay='100'
+        data-aos-offset='200'
+        data-aos-duration='1200'
+        data-aos-easing='ease-in-out'
       >
         <h3 className='title'>Projects</h3>
       </div>

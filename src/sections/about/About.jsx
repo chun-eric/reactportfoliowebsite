@@ -6,11 +6,11 @@ const About = () => {
     <div id='about'>
       <div
         className='about-me'
-        // data-aos='fade-up'
-        // data-aos-delay='150'
-        // data-aos-offset='200'
-        // data-aos-duration='1500'
-        // data-aos-easing='ease-in-out'
+        data-aos='fade-up'
+        data-aos-delay='150'
+        data-aos-offset='200'
+        data-aos-duration='1500'
+        data-aos-easing='ease-in-out'
       >
         <div className='section-title'>
           <h2 className='title'>About Me</h2>

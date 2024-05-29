@@ -2,7 +2,14 @@ import PropTypes from "prop-types";
 
 const PortfolioCard = ({ project }) => {
   return (
-    <div className='project-cards-container'>
+    <div
+      className='project-cards-container'
+      data-aos='fade-up'
+      data-aos-delay='100'
+      data-aos-offset='200'
+      data-aos-duration='1200'
+      data-aos-easing='ease-in-out'
+    >
       <div className='card-container gradient-border'>
         <img
           className='cover-image'

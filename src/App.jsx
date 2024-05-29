@@ -7,8 +7,10 @@ import Contact2 from "./sections/contact/Contact2";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Footer from "./sections/footer/Footer";
 import { ThemeProvider } from "./context/ThemeContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // import DarkLightMode from "../src/components/DarkLightMode";
 
@@ -22,8 +24,13 @@ function App() {
 
   const handleToggle = () => {};
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <ThemeProvider data-theme={theme}>
+    <ThemeProvider theme={theme}>
       <main>
         <Navbar />
         <Header />
