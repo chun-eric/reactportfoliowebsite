@@ -2,25 +2,52 @@
 }
 
 .projectmodal-container {
+  width: 545px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 1230;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.overlay-projectmodal {
+  background-color: black;
+  z-index: 200;
   width: 100%;
   height: 100%;
-  background: transparent;
-  display: flex;
-  background-color: #fffdfc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.65;
 }
 
-.overlay {
-  background-color: #3a3939;
-  flex: 3;
+.overlay-projectmodal::after {
+  background: linear-gradient(to bottom, transparent 0%, rgb(70, 70, 70) 100%);
 }
 
-.projectmodal {
-  padding: 30px;
-  width: 544px;
+.container-right {
+  width: fit-content;
+  max-width: 100%;
+  height: 100vh;
+  z-index: 250;
+  align-items: right;
   display: flex;
   flex-direction: column;
+  background-color: transparent;
+  overflow-y: auto;
+}
+.projectmodal {
+  padding: 30px;
   text-align: left;
-  max-width: 544px;
+  background: #fcfaf9;
+  flex-grow: 1;
 }
 
 .projectmodal-top-row {
@@ -57,7 +84,10 @@
   height: 0.7px;
 }
 
-.project-title {
+.project-main-title-modal {
+  margin: 24px 0 8px;
+}
+.project-title-modal {
   color: #000;
   margin: 24px 0 8px;
   font-size: 24px;
@@ -100,7 +130,7 @@
 }
 
 .project-website-heading {
-  margin-top: 10px;
+  margin-top: 50px;
   margin-bottom: 12px;
 }
 
@@ -118,11 +148,12 @@
 .projectmodal-footer {
   width: 100%;
   height: 60px;
-  background-color: #020304;
+  background-color: #10253a;
   vertical-align: middle;
   align-items: center;
   justify-content: center;
   display: flex;
+  padding: 20px 0;
 }
 
 .projectmodal-footer-link p {

@@ -14,7 +14,7 @@ const ProjectModal = () => {
   return (
     <>
       <div className='projectmodal-container '>
-        <div className='overlay'></div>
+        <div className='overlay-projectmodal'></div>
         <div className='container-right'>
           <div className='projectmodal'>
             <div className='projectmodal-top-row'>
@@ -33,7 +33,7 @@ const ProjectModal = () => {
             <div className='separator'>
               <hr className='solid' />
             </div>
-            <h3 className='project-title'>Scoutbar</h3>
+            <h2 className='project-main-title-modal'>Scoutbar</h2>
             <p className='project-modal-text'>
               One line value offer. Manage all your properties in one place.
             </p>
@@ -41,7 +41,7 @@ const ProjectModal = () => {
               <img src='../../assets/images/project1.jpg' alt='' />
             </div>
             <div className='projectmodal-about'>
-              <h3 className='project-title title-name'>About</h3>
+              <h3 className='project-title-modal title-name'>About</h3>
               <p className='project-modal-text '>
                 2 sentence Description. Liveizy About We reduce the cost of
                 living and help you meet your most important living expectations
@@ -50,7 +50,7 @@ const ProjectModal = () => {
               </p>
             </div>
             <div className='projectmodal-tech'>
-              <h3 className='project-title technologies title-name'>
+              <h3 className='project-title-modal technologies title-name'>
                 Technologies
               </h3>
               <p className='project-modal-text '>
@@ -58,11 +58,11 @@ const ProjectModal = () => {
               </p>
             </div>
             <div className='project-website-heading'>
-              <h3 className='project-title title-name'>Website Link</h3>
+              <h3 className='project-title-modal title-name'>Website Link</h3>
               <p className='projectmodal-websitelink'>https://google.ocm</p>
             </div>
             <div className='project-website-heading'>
-              <h3 className='project-title title-name'>Github</h3>
+              <h3 className='project-title-modal title-name'>Github</h3>
               <p className='projectmodal-websitelink'>https://github.com</p>
             </div>
           </div>
