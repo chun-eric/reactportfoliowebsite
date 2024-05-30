@@ -44,7 +44,7 @@ const PortfolioCard = ({ project }) => {
             </button>
           </div>
         </div>
-        { showModal && <ProjectModal project={project} />}
+        {}
       </div>
     </div>
   );

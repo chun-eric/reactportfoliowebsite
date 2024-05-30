@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ProjectModal from "./sections/projectModal/ProjectModal";
 // import { themeChange } from "theme-change";
 // import DarkLightMode from "../src/components/DarkLightMode";
 // import Contact from "./sections/contact/Contact";
@@ -36,6 +37,7 @@ function App() {
         <Skills />
         <About />
         <Portfolio />
+        <ProjectModal />
         <Contact2 />
         <Footer />
       </main>
