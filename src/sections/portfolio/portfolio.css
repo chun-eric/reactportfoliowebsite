@@ -62,7 +62,7 @@ button.btn.cat__btn.skill-btn {
   border: 10px solid var(--primary-opposite-text-color-800);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  animation: animateProject 600ms ease-in-out;
+  background-color: transparent;
 }
 
 .card-container:hover {
@@ -87,23 +87,13 @@ button.btn.cat__btn.skill-btn {
   }
 }
 
-/* adding some animation on the card-container when clicked*/
-@keyframes animateProject {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .cover-image {
   width: 100% !important;
   height: 100% !important;
   position: absolute;
   inset: 0;
   object-fit: cover;
-  transition: 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .project-cards-container:hover .cover-image {
@@ -129,6 +119,7 @@ button.btn.cat__btn.skill-btn {
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
   border-radius: inherit;
+  opacity: 1;
 }
 
 .project-description {
@@ -144,7 +135,7 @@ button.btn.cat__btn.skill-btn {
   box-sizing: border-box;
   background-color: transparent;
   transform: translateY(100%);
-  transition: transform 0.35s ease, opacity 0.3s ease;
+  transition: transform 0.55s ease, opacity 0.3s ease;
 }
 
 /* took me a long time to figure out here. I needed to hover on the entire container of the project-cards-container */
@@ -178,10 +169,12 @@ button.btn.cat__btn.skill-btn {
   background-color: var(--primary-brand-color-400);
   cursor: pointer;
   border: none;
-  cursor: pointer;
   text-align: center;
   padding: 10px 30px;
-  transition: background-color 0.5s ease;
+  transition: background-color 1s ease;
+}
+
+.btn:focus .button-card:focus a:focus {
 }
 
 .button-card-container > .button-card > p a {
@@ -196,6 +189,176 @@ button.btn.cat__btn.skill-btn {
   color: inherit;
   text-decoration: none;
   font-size: 18px;
+}
+
+/* Project Modal Section */
+.projectmodal-container {
+  width: 545px;
+  height: 100vh;
+  max-height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 1230;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  flex: 1;
+  overflow-y: scroll;
+  scrollbar-color: #06d8fd #ffffff;
+}
+
+.overlay-projectmodal {
+  background-color: black;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.65;
+}
+
+.overlay-projectmodal::after {
+  background: linear-gradient(to bottom, transparent 0%, rgb(70, 70, 70) 50%);
+}
+
+.container-right {
+  width: 100%;
+  max-width: 100%;
+  height: fit-content;
+  z-index: 250;
+  align-items: right;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  overflow-y: auto;
+  overflow-x: overlay;
+}
+
+.projectmodal {
+  padding: 30px;
+  text-align: left;
+  background: #fcfaf9;
+}
+
+.projectmodal-top-row {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.back {
+  color: #7e7e7e;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.back-to-projects a {
+  font-weight: 800;
+  font-size: 18px;
+  word-spacing: 1px;
+  letter-spacing: 0.3px;
+  color: black;
+}
+
+.back-to-projects:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.separator hr {
+  margin-top: 10px;
+  border: 0.5px solid #eaeaea;
+  height: 0.7px;
+}
+
+.project-main-title-modal {
+  margin: 24px 0 8px;
+}
+.project-title-modal {
+  color: #000;
+  margin: 24px 0 8px;
+  font-size: 24px;
+}
+
+.project-modal-text {
+  font-size: 18px;
+  letter-spacing: 0.5;
+  word-spacing: 0.5;
+  margin-bottom: 24px;
+}
+
+.projectmodal-image,
+.projectmodal-image img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.projectmodal-about {
+  margin: 24px 0 12px;
+}
+
+.title-name {
+  color: #363636;
+}
+
+.projectmodal-tech .technologies {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.projectmodal-tech > p span {
+  font-weight: bold;
+  color: #000;
+  background-color: #efe9e4;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+.project-website-heading {
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.projectmodal-websitelink {
+  font-size: 17px;
+  color: #363636;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.projectmodal-websitelink:hover {
+  text-decoration: underline;
+}
+
+.projectmodal-footer {
+  width: 100%;
+  height: 60px;
+  background-color: #10253a;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px 0;
+}
+
+.projectmodal-footer-link p {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  justify-content: center;
+  text-align: center;
+  z-index: 1500;
 }
 
 @media screen and (max-width: 1024px) {

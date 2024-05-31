@@ -3,11 +3,15 @@ import { useState } from "react";
 import ProjectModal from "../projectModal/ProjectModal";
 
 const PortfolioCard = ({ project }) => {
-  const [showModal, setShowModal] = useState(false);
+  // state to keep track of Project modal visibility
+  const [showProjectModal, setShowProjectModal] = useState(false);
 
-  const handleModal = () => {
-    setShowModal(!showModal);
+  const handleProjectModal = (value) => {
+    setShowProjectModal(value);
+    setShowProjectModal(!showProjectModal);
   };
+  console.log(showProjectModal);
+
   return (
     <div
       className='project-cards-container'
@@ -35,28 +39,32 @@ const PortfolioCard = ({ project }) => {
                 </a>
               </p>
             </button>
-            <button className='btn button-card' onClick={() => handleModal()}>
-              <p>
-                <a href={project.github} rel='noopener noreferrer'>
-                  Details
-                </a>
-              </p>
+            <button
+              className='btn button-card'
+              onClick={() => handleProjectModal(true)}
+              rel='noopener noreferrer'
+            >
+              <p style={{ color: "white", fontSize: "18px" }}>Details</p>
             </button>
           </div>
         </div>
-        {}
       </div>
+      {showProjectModal && (
+        <ProjectModal project={project} handleProjectModal={showProjectModal} />
+      )}
     </div>
   );
 };
 
 PortfolioCard.propTypes = {
   project: PropTypes.shape({
-    image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
+    about: PropTypes.string.isRequired,
     demo: PropTypes.string.isRequired,
     github: PropTypes.string.isRequired,
+    stack: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
 

@@ -1,14 +1,17 @@
-import { MoveLeft, CircleChevronLeft, Minus } from "lucide-react";
+import { CircleChevronLeft } from "lucide-react";
 import { useState, useEffect } from "react";
-import data from "./data";
-import "./projectmodal.css";
 
-const ProjectModal = ({ props }) => {
-  //
-  const [showProjectModal, setShowProjectModal] = useState(true);
+import "./projectmodal.css";
+import PropTypes from "prop-types";
+
+const ProjectModal = ({ project, handleProjectModal }) => {
+  // destructuring values object
+
+  // state to keep track of modal visibility
+  const [showProjectModal, setShowProjectModal] = useState(handleProjectModal);
 
   const handleModal = () => {
-    setShowProjectModal(false);
+    setShowProjectModal(!showProjectModal);
   };
 
   useEffect(() => {
@@ -40,37 +43,32 @@ const ProjectModal = ({ props }) => {
               <div className='separator'>
                 <hr className='solid' />
               </div>
-              <h2 className='project-main-title-modal'>Scoutbar</h2>
-              <p className='project-modal-text'>
-                One line value offer. Manage all your properties in one place.
-              </p>
+              <h2 className='project-main-title-modal'>{project.title}</h2>
+              <p className='project-modal-text'>{project.desc}</p>
               <div className='projectmodal-image'>
-                <img src='../../assets/images/project1.jpg' alt='' />
+                <img src={project.image} alt='' />
               </div>
               <div className='projectmodal-about'>
                 <h3 className='project-title-modal title-name'>About</h3>
-                <p className='project-modal-text '>
-                  2 sentence Description. Liveizy About We reduce the cost of
-                  living and help you meet your most important living
-                  expectations by increasing easy access to all the necessary
-                  resources needed to improve living standards.
-                </p>
+                <p className='project-modal-text '>{project.about}</p>
               </div>
               <div className='projectmodal-tech'>
                 <h3 className='project-title-modal technologies title-name'>
                   Technologies
                 </h3>
-                <p className='project-modal-text '>
-                  <span>Javascript</span>
-                </p>
+                {project.stack.map((tech, index) => (
+                  <p className='project-modal-text' key={index}>
+                    <span>{tech}</span>
+                  </p>
+                ))}
               </div>
               <div className='project-website-heading'>
                 <h3 className='project-title-modal title-name'>Website Link</h3>
-                <p className='projectmodal-websitelink'>https://google.ocm</p>
+                <p className='projectmodal-websitelink'>{project.demo}</p>
               </div>
               <div className='project-website-heading'>
                 <h3 className='project-title-modal title-name'>Github</h3>
-                <p className='projectmodal-websitelink'>https://github.com</p>
+                <p className='projectmodal-websitelink'>{project.github}</p>
               </div>
             </div>
             <div className='projectmodal-footer'>
@@ -85,4 +83,15 @@ const ProjectModal = ({ props }) => {
   );
 };
 
+ProjectModal.propTypes = {
+  project: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+    about: PropTypes.string.isRequired,
+    demo: PropTypes.string.isRequired,
+    github: PropTypes.string.isRequired,
+    stack: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+};
 export default ProjectModal;
