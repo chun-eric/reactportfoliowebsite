@@ -67,39 +67,39 @@
 
   /* GENERAL TRANSITION VARIABLE */
   --transition: all 500ms ease;
-}
 
-:root {
   --background: #fff;
   --primary-text: #202730;
 }
 
-/* light dark mode */
-[data-theme="dark"] {
-  --background: var(--primary-background-color);
-  --primary-text: var(--primary-text-color-800);
-  --button-bg: var(--primary-background-color);
-  --button-text: var(--primary-text-color-800);
+:root {
+  --background-color: white;
+  --primary-text: black;
+  --button-bg: rgb(42, 139, 204);
+  --button-text: white;
 }
 
-[data-theme="light"] {
-  --background: var(--primary-background-color);
-  --primary-text: var(--primary-text-color-800);
-  --button-bg: var(--primary-background-color);
-  --button-text: var(--primary-text-color-800);
-}
+/* light dark mode */
 
 body {
   background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 0.9s, color 0.3s;
+  color: var(--primary-text);
+  /* transition: background-color 0.9s, color 0.3s; */
 }
 
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--text-color);
+.container {
+  width: var(--container-width-lg);
+  margin-inline: auto;
+  max-width: 1920px;
+}
+.container .dark {
+  background-color: #222;
+  color: #fff;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
 }
 
 .logo {

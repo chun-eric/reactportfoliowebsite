@@ -6,12 +6,13 @@ import About from "./sections/about/About";
 import Contact2 from "./sections/contact/Contact2";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Footer from "./sections/footer/Footer";
-import { ThemeProvider } from "./context/ThemeContext";
 import { useEffect, useState } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ProjectModal from "./sections/projectModal/ProjectModal";
+// import ToggleTheme from "./context/ToggleTheme";
+// import { ThemeProvider } from "./context/ThemeContext";
 // import { themeChange } from "theme-change";
 // import DarkLightMode from "../src/components/DarkLightMode";
 // import Contact from "./sections/contact/Contact";
@@ -20,9 +21,8 @@ import ProjectModal from "./sections/projectModal/ProjectModal";
 import "./App.css";
 
 function App() {
+  // creating theme usestate
   const [theme, setTheme] = useState("light");
-
-  const handleToggle = () => {};
 
   useEffect(() => {
     AOS.init();
@@ -30,18 +30,16 @@ function App() {
   }, []);
 
   return (
-    <ThemeProvider theme={theme}>
-      <main className='dark light'>
-        <Navbar />
-        <Header />
-        <Skills />
-        <About />
-        <Portfolio />
-        <ProjectModal />
-        <Contact2 />
-        <Footer />
-      </main>
-    </ThemeProvider>
+    <div className={`container ${theme}`}>
+      <Navbar theme={theme} setTheme={setTheme} />
+      <Header />
+      <Skills />
+      <About />
+      <Portfolio />
+      <ProjectModal />
+      <Contact2 />
+      <Footer />
+    </div>
   );
 }
 

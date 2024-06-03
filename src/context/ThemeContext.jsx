@@ -16,9 +16,11 @@ export const ThemeProvider = ({ children }) => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
+  console.log(theme);
+
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
+    <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
+      <div className={theme}>{children}</div>
     </ThemeContext.Provider>
   );
 };

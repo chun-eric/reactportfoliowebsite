@@ -81,7 +81,7 @@
 }
 
 /* light dark mode */
-[data-theme="dark"] {
+/* [data-theme="dark"] {
   --background: var(--primary-background-color);
   --primary-text: var(--primary-text-color-800);
   --button-bg: var(--primary-background-color);
@@ -93,9 +93,9 @@
   --primary-text: var(--primary-text-color-800);
   --button-bg: var(--primary-background-color);
   --button-text: var(--primary-text-color-800);
-}
+} */
 
-.light-dark-mode {
+/* .light-dark-mode {
   background-color: var(--background);
   color: var(--primary-text);
   height: 100vh;
@@ -104,7 +104,7 @@
 
 .light-dark-mode .container p {
   color: var(--primary-text);
-}
+} */
 
 /* .theme-toggle {
   background: none;
@@ -121,8 +121,8 @@ body {
   /* background-color: #242424; */
   line-height: 1.6;
   font-weight: 500;
-  background-color: var(--background);
-  color: var(--text-primary);
+  /* background-color: var(--background);
+  color: var(--text-primary); */
   transition: background-color 0.3s, color 0.3s;
   overflow: hidden;
 }
@@ -151,6 +151,17 @@ a:hover {
   width: var(--container-width-lg);
   margin-inline: auto;
   max-width: 1920px;
+  transition: 0.5s;
+  background: white;
+}
+.container.dark > * {
+  background: #121212;
+  color: #fff;
+}
+
+.container.light > * {
+  background: #fff;
+  color: #121212;
 }
 
 /* General Section styles */

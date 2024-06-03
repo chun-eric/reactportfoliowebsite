@@ -13,6 +13,37 @@ nav {
   z-index: 500;
   background-color: white;
 }
+
+/* Dark Mode Navbar*/
+.container.dark .nav__container {
+  background: #121212;
+  color: #fff;
+}
+
+.container.dark .nav__container .nav__item {
+  color: #fff;
+}
+
+.container.dark .nav__container .nav__logo {
+  background: #fff;
+  font-size: 20px;
+}
+.container.dark .nav__container .nav__item:hover::after {
+  content: " ";
+  height: 4px;
+  width: 75%;
+  position: absolute;
+  background-color: var(--primary-background-color);
+  left: 2px;
+  bottom: -4px;
+  transition: all 0.3s ease-in;
+}
+
+.container.dark .nav__container .navbar__btns svg {
+  color: #fff;
+}
+
+/**/
 .nav__logo {
   overflow: hidden;
   border-radius: 50%;

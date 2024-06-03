@@ -1,22 +1,28 @@
 import data from "./data";
-import { useContext } from "react";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Sun, Moon, CircleX, MoveLeft } from "lucide-react";
 import { useState } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
+import PropTypes from "prop-types";
+// import { ThemeContext } from "../../context/ThemeContext";
+// import ToggleTheme from "../../context/ToggleTheme";
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme, className }) => {
   const [showModal, setShowModal] = useState(false);
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  // const { theme, toggleTheme } = useContext(ThemeContext);
 
   // handler function to toggle the modal
   const handleModal = () => {
     setShowModal(!showModal);
   };
 
+  // function to toggle the light dark mode
+  const toggle_mode = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+  console.log(theme);
   return (
-    <nav className='navbar'>
+    <nav className={`navbar ${theme}`}>
       <div className='container nav__container'>
         {/* Logo */}
         <a href='#' id='logo' className='nav__logo'>
@@ -33,10 +39,12 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='navbar__btns'>
+        <div className={`navbar__btns `}>
           <button
-            style={{ transition: "all 0.3s ease" }}
-            onClick={toggleTheme}
+            onClick={() => {
+              toggle_mode();
+            }}
+            // style={{ transition: "all 0.3s ease" }}
             className='icon_dark_button no-animation theme-toggle'
           >
             {theme === "light" ? (
@@ -45,6 +53,7 @@ const Navbar = () => {
               <Moon size={30} className='theme-icon' />
             )}
           </button>
+          {/* <ToggleTheme /> */}
 
           {/* Had a lot of trouble here. Just separated my contact data. It was the most simplest answer. All I needed to do was add #contact to the a href path. */}
           <button className='btn-contact'>
@@ -83,6 +92,11 @@ const Navbar = () => {
       )}
     </nav>
   );
+};
+
+Navbar.PropTypes = {
+  theme: PropTypes.string.isRequired,
+  setTheme: PropTypes.func.isRequired,
 };
 
 export default Navbar;
