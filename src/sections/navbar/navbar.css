@@ -33,6 +33,7 @@ nav.navbar.dark {
 .container.dark .nav__container .nav__logo {
   background: #fff;
   font-size: 20px;
+  padding: 5px;
 }
 .container.dark .nav__container .nav__item:hover::after {
   content: " ";
@@ -92,6 +93,10 @@ nav.navbar.dark {
   left: 2px;
   bottom: -4px;
   transition: all 0.3s ease-in;
+}
+
+.nav__item.dark:hover::after {
+  background-color: var(--primary-brand-color-400);
 }
 
 .navbar__btns {

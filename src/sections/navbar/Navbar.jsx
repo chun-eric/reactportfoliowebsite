@@ -32,7 +32,7 @@ const Navbar = ({ theme, setTheme, className }) => {
         <ul className='nav__menu'>
           {data.map((item) => (
             <li key={item.id}>
-              <a href={item.link} className='nav__item'>
+              <a href={item.link} className={`nav__item ${theme}`}>
                 {item.title}
               </a>
             </li>

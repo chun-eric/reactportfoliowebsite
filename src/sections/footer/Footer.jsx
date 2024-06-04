@@ -3,6 +3,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import logoWhite from "@/assets/logos/svg/logo-white.svg";
 
 const data2 = [
   {
@@ -53,7 +54,7 @@ const Footer = ({ theme }) => {
           <div className='main-footer__row main-footer__row-2'>
             <div className='footer-name-background'>
               <img
-                className='footer-logo footer-name-image'
+                className={`footer-logo footer-name-image ${theme}`}
                 src='https://i.ibb.co/SfjJhVz/logo.png'
                 alt='hero name'
               />

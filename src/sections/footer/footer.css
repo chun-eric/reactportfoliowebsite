@@ -56,6 +56,13 @@
   color: #ffffff;
 }
 
+img.dark {
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 22px;
+}
+
 .main-footer__upper {
   display: flex;
   justify-content: space-between;
