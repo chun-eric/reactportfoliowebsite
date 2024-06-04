@@ -2,6 +2,9 @@
   position: relative;
 }
 
+#skills.dark {
+  background: transparent;
+}
 #skills::before {
   content: " ";
   position: absolute;
@@ -30,6 +33,7 @@
 
 .skills-wrapper.dark {
   color: #fff;
+  background: transparent;
 }
 
 .skils-wrapper .skills-title {

@@ -115,12 +115,13 @@
 
 #root.dark {
   /* background: #161515; */
-  background: linear-gradient(
+
+  /* background: linear-gradient(
     109.6deg,
     rgb(36, 45, 57) 11.2%,
     rgb(16, 37, 60) 51.2%,
     rgb(0, 0, 0) 98.6%
-  );
+  ); */
   color: #fff;
 }
 
@@ -139,13 +140,13 @@ body {
 }
 
 body.dark {
-  /* background: #161515; */
-  background: linear-gradient(
-    109.6deg,
-    rgb(36, 45, 57) 11.2%,
-    rgb(16, 37, 60) 51.2%,
-    rgb(0, 0, 0) 98.6%
-  );
+  /* background: #161515;  */
+  background: #151515;
+  /* background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  ); */
   color: #fff;
 }
 
@@ -178,11 +179,26 @@ a:hover {
 }
 
 .container.dark {
-  background: #161515;
+  /* background: #161515; */
+  /* background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  ); */
+  background: #151515;
 }
 
 .container.dark > * {
-  background: #161515;
+  /* background: #161515; */
+  /* background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  ); */
+  /* background: #1f1e20; */
+  background: #151515;
   color: #fff;
 }
 
@@ -227,10 +243,10 @@ section.dark {
 
 section:nth-child(even) {
   background-color: var(--color-white);
-  background-image: url("https://i.ibb.co/m6QkCm7/background-pattern-2.jpg");
-  background-size: cover;
+  /* background-image: url("https://i.ibb.co/m6QkCm7/background-pattern-2.jpg"); */
+  /* background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 section > h2,

@@ -2,7 +2,7 @@
 import CategoryButton from "./CategoryButton";
 import { useState } from "react";
 
-const ProjectsCategories = ({ categories, onFilterProjects }) => {
+const ProjectsCategories = ({ categories, onFilterProjects, theme }) => {
   // state to keep track of active category
   const [active, setActive] = useState("All");
 
@@ -13,11 +13,11 @@ const ProjectsCategories = ({ categories, onFilterProjects }) => {
   };
   return (
     <div
-      className='portfolio__categories'
+      className={`portfolio__categories ${theme}`}
       data-aos='fade-up'
       data-aos-delay='100'
-      data-aos-offset='200'
-      data-aos-duration='1200'
+      data-aos-offset='100'
+      data-aos-duration='500'
       data-aos-easing='ease-in-out'
     >
       {categories.map((category) => (

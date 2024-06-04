@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import "./projectmodal.css";
 import PropTypes from "prop-types";
 
-const ProjectModal = ({ project, handleProjectModal }) => {
+const ProjectModal = ({ project, handleProjectModal, theme }) => {
   // destructuring values object
 
   // state to keep track of modal visibility
@@ -25,7 +25,7 @@ const ProjectModal = ({ project, handleProjectModal }) => {
   return (
     <>
       {showProjectModal && (
-        <div className='projectmodal-container'>
+        <div className={`projectmodal-container ${theme}`}>
           <div className='overlay-projectmodal'></div>
           <div className='container-right'>
             <div className='projectmodal'>

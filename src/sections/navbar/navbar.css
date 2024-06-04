@@ -9,18 +9,20 @@ nav {
   left: 0;
   z-index: 99;
   box-shadow: 0 40px 60px rgba(51, 201, 255, 0.03);
-  transition: var(--transition);
+  transition: all 0.3s ease;
   z-index: 500;
   background-color: white;
 }
 
 nav.navbar.dark {
-  background-color: #111111;
+  /* background-color: #111111; */
+
   color: #fff;
 }
 /* Dark Mode Navbar*/
 .container.dark .nav__container {
-  background: #111111;
+  /* background: #111111; */
+  background: transparent;
   color: #fff;
 }
 

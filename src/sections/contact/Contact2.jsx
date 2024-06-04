@@ -101,8 +101,8 @@ const Contact = ({ theme }) => {
           className='contact-heading'
           data-aos='fade-up'
           data-aos-delay='80'
-          data-aos-offset='100'
-          data-aos-duration='1000'
+          data-aos-offset='0'
+          data-aos-duration='400'
           data-aos-easing='ease-in-out'
         >
           <h2>
@@ -120,10 +120,10 @@ const Contact = ({ theme }) => {
 
         <div
           className={`contact__form-container ${theme}`}
-          data-aos='fade-up'
-          data-aos-delay='100'
-          data-aos-offset='200'
-          data-aos-duration='1000'
+          // data-aos='fade-up'
+          data-aos-delay='200'
+          // data-aos-offset='200'
+          // data-aos-duration='1000'
           data-aos-easing='ease-in-out'
         >
           <form onSubmit={handleFormSubmit} className='contact__form'>

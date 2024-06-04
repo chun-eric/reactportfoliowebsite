@@ -5,7 +5,7 @@ import Projects from "./Projects";
 import ProjectsCategories from "./ProjectsCategories";
 import { useState } from "react";
 
-const Portfolio = () => {
+const Portfolio = ({ theme }) => {
   const [projects, setProjects] = useState(data);
 
   // get all the categories
@@ -27,7 +27,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id='portfolio'>
+    <section id={`portfolio ${theme}`}>
       <div
         className='skills-title'
         data-aos='fade-up'
@@ -38,7 +38,7 @@ const Portfolio = () => {
       >
         <h3 className='title'>Projects</h3>
       </div>
-      <div className='container portfolio__container'>
+      <div className={`container portfolio__container ${theme}`}>
         <ProjectsCategories
           categories={uniqueCategories}
           onFilterProjects={filterProjectsHandler}

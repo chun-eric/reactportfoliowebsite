@@ -1,6 +1,14 @@
-section#portfolio {
+#portfolio {
   margin-top: 160px;
   padding-top: 150px;
+}
+
+#portfolio.dark {
+  background: transparent;
+}
+
+.portfolio__container.dark {
+  background: transparent;
 }
 
 .portfolio__categories {
@@ -9,6 +17,10 @@ section#portfolio {
   gap: 0.3rem;
   flex-wrap: wrap;
   margin-top: 70px;
+}
+
+.container.portfolio__categories.dark {
+  background: none;
 }
 
 .btn.cat__btn {
@@ -59,10 +71,14 @@ button.btn.cat__btn.skill-btn {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   height: 470px;
-  border: 10px solid var(--primary-opposite-text-color-800);
+  border: 8px solid var(--primary-brand-color-400);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   background-color: transparent;
+}
+
+.card-container.dark {
+  border: 10px solid #ffffff;
 }
 
 .card-container:hover {
