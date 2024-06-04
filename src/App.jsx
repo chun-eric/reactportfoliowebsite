@@ -29,16 +29,38 @@ function App() {
     AOS.refresh();
   }, []);
 
+  // function to set the dark and light theme on the root id
+  useEffect(() => {
+    const rootElement = document.getElementById("root");
+    const bodyElement = document.body;
+    const paragraphElement = document.querySelectorAll("p");
+    // matches all element with class attribute that contains substring 'title'
+    const titleElement = document.querySelectorAll("[class*='title']");
+
+    const elements = [
+      rootElement,
+      bodyElement,
+      ...paragraphElement,
+      ...titleElement,
+    ];
+    elements.forEach((element) => {
+      if (element) {
+        element.classList.add(theme);
+        element.classList.remove(theme === "light" ? "dark" : "light");
+      }
+    });
+  }, [theme]);
+
   return (
     <div className={`container ${theme}`}>
       <Navbar theme={theme} setTheme={setTheme} />
-      <Header />
-      <Skills />
-      <About />
-      <Portfolio />
-      <ProjectModal />
-      <Contact2 />
-      <Footer />
+      <Header theme={theme} />
+      <Skills theme={theme} />
+      <About theme={theme} />
+      <Portfolio theme={theme} setTheme={setTheme} />
+      <ProjectModal theme={theme} />
+      <Contact2 theme={theme} />
+      <Footer theme={theme} />
     </div>
   );
 }

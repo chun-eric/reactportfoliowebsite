@@ -113,10 +113,21 @@
   color: var(--text-color);
 } */
 
+#root.dark {
+  /* background: #161515; */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+  color: #fff;
+}
+
 body {
   font-family: Robbins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100%;
-  /* color-scheme: light dark; */
+  color-scheme: light dark;
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #242424; */
   line-height: 1.6;
@@ -125,6 +136,17 @@ body {
   color: var(--text-primary); */
   transition: background-color 0.3s, color 0.3s;
   overflow: hidden;
+}
+
+body.dark {
+  /* background: #161515; */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+  color: #fff;
 }
 
 html {
@@ -154,14 +176,40 @@ a:hover {
   transition: 0.5s;
   background: white;
 }
+
+.container.dark {
+  background: #161515;
+}
+
 .container.dark > * {
-  background: #121212;
+  background: #161515;
   color: #fff;
 }
 
-.container.light > * {
+.container.dark .form-section .label {
+  color: #fff;
+}
+
+.container.dark .form-section input,
+.container.dark .form-section textarea {
+  background: #2e2e2e;
+  border: 1px solid #818181;
+}
+
+.container.dark .form-section input[type="name"],
+.container.dark .form-section input[type="email"],
+.container.dark .form-section textarea[name="message"] {
+  color: #fff;
+}
+/* .container.light > * {
   background: #fff;
   color: #121212;
+} */
+
+.container.dark h3.title,
+.container.dark h2.title,
+.container.dark p {
+  color: #fff;
 }
 
 /* General Section styles */
@@ -170,6 +218,11 @@ section {
   padding: 8rem 0;
   /* background-color: var(--color-light); */
   transition: var(--transition);
+}
+
+section.dark {
+  background: #161515;
+  color: #fff;
 }
 
 section:nth-child(even) {

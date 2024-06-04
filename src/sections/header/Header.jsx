@@ -25,10 +25,10 @@ const data2 = [
 
 const Header = ({ theme }) => {
   return (
-    <section id='header-section'>
-      <header id='header'>
-        <div className='container header__container'>
-          <div className='hero'>
+    <section id={`header-section ${theme}`}>
+      <header id={`header ${theme}`}>
+        <div className={`container header__container ${theme}`}>
+          <div className={`hero ${theme}`}>
             <div
               className='content'
               data-aos='fade-in'
@@ -37,18 +37,29 @@ const Header = ({ theme }) => {
               data-aos-duration='1500'
               data-aos-easing='ease-in-out'
             >
-              <div className='hero__details'>
-                <h1 className='hello'>A Front-End React Developer</h1>
-                <h3 className='job'>
-                  Hi, I'm <span className='firstName'>Eric</span> a Front-End
-                  Developer and aspiring Cybersecurity consultant based in
-                  Osaka, Japan.
+              <div className={`hero__details ${theme}`}>
+                <h1 className={`hello ${theme} `}>
+                  A Front-End React Developer
+                </h1>
+                <h3 className={`job ${theme}`}>
+                  Hi, I'm{" "}
+                  <span
+                    className={`firstName ${
+                      theme === "dark" ? "changeColor" : null
+                    }`}
+                  >
+                    Eric
+                  </span>{" "}
+                  a Front-End Developer and aspiring Cybersecurity consultant
+                  based in Osaka, Japan.
                 </h3>
 
                 <div className='icons'>
                   {data2.map((item) => (
                     <a
-                      className='icon'
+                      className={`icon ${
+                        theme === "dark" ? "changeColor" : null
+                      }`}
                       key={item.id}
                       href={item.link}
                       title={item.title}

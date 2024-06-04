@@ -7,9 +7,9 @@ const About = () => {
       <div
         className='about-me'
         data-aos='fade-up'
-        data-aos-delay='150'
-        data-aos-offset='200'
-        data-aos-duration='1500'
+        data-aos-delay='100'
+        data-aos-offset='100'
+        data-aos-duration='800'
         data-aos-easing='ease-in-out'
       >
         <div className='section-title'>

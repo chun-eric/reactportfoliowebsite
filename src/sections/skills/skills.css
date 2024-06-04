@@ -28,6 +28,10 @@
   background: transparent;
 }
 
+.skills-wrapper.dark {
+  color: #fff;
+}
+
 .skils-wrapper .skills-title {
   display: flex;
   align-items: center;
@@ -121,6 +125,10 @@
   border: 1px solid var(--primary-brand-color-400);
   color: var(--primary-brand-color-400);
   transform: translateY(-0.08rem);
+}
+
+img.image.changeToWhite {
+  color: #ffffff;
 }
 
 button.btn.btn-sm.skill-btn {

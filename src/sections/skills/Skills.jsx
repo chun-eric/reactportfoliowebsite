@@ -3,10 +3,10 @@ import "./skills.css";
 // import { Badge } from "@/components/ui/badge";
 // import { Button } from "@/components/ui/button";
 
-const Skills = () => {
+const Skills = ({ theme }) => {
   return (
-    <section id='skills'>
-      <div className='skills-wrapper'>
+    <section id={`skills ${theme}`}>
+      <div className={`skills-wrapper ${theme}`}>
         <div
           className='skills-title'
           data-aos='fade-up'
@@ -28,7 +28,15 @@ const Skills = () => {
           <div className='skills-image-container'>
             {data.map((item) => (
               <div key={item.id} className='item'>
-                <img src={item.src} alt='' className='image' />
+                <img
+                  src={item.src}
+                  alt=''
+                  className={`image ${
+                    theme === "dark" && (item.title === "Wordpress" || "Git")
+                      ? "changeToWhite"
+                      : null
+                  }`}
+                />
               </div>
             ))}
           </div>
@@ -37,7 +45,7 @@ const Skills = () => {
               <button
                 className={`btn btn-sm skill-btn ${
                   item.title ? "buttonTitle" : ""
-                }`}
+                } `}
                 key={item.id}
               >
                 {item.title}

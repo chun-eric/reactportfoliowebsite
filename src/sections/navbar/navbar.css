@@ -14,9 +14,13 @@ nav {
   background-color: white;
 }
 
+nav.navbar.dark {
+  background-color: #111111;
+  color: #fff;
+}
 /* Dark Mode Navbar*/
 .container.dark .nav__container {
-  background: #121212;
+  background: #111111;
   color: #fff;
 }
 

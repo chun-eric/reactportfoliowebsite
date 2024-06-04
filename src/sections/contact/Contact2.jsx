@@ -3,7 +3,7 @@ import "./contact2.css";
 import { useState } from "react";
 import { ValidationError, useForm } from "@formspree/react";
 
-const Contact = ({ ref }) => {
+const Contact = ({ theme }) => {
   // formspree form state
   const [state, handleSubmit] = useForm(import.meta.env.VITE_APP_FORM_ID);
   const [loading, setLoading] = useState(false);
@@ -95,21 +95,23 @@ const Contact = ({ ref }) => {
   }
 
   return (
-    <section id='contact'>
-      <div className='main-container'>
+    <section id={`contact ${theme}`}>
+      <div className={`main-container ${theme}`}>
         <div
           className='contact-heading'
           data-aos='fade-up'
           data-aos-delay='80'
-          data-aos-offset='150'
+          data-aos-offset='100'
           data-aos-duration='1000'
           data-aos-easing='ease-in-out'
         >
           <h2>
-            <span className='heading-sec__main heading-sec__main--lt'>
+            <span
+              className={`heading-sec__main heading-sec__main--lt contact-me ${theme}`}
+            >
               Contact Me
             </span>
-            <span className=' heading-contactme'>
+            <span className={`heading-contactme ${theme}`}>
               Feel free to Contact me by submitting the form below and I'll get
               back to you as soon as I can.
             </span>
@@ -117,11 +119,11 @@ const Contact = ({ ref }) => {
         </div>
 
         <div
-          className='contact__form-container'
+          className={`contact__form-container ${theme}`}
           data-aos='fade-up'
           data-aos-delay='100'
           data-aos-offset='200'
-          data-aos-duration='1200'
+          data-aos-duration='1000'
           data-aos-easing='ease-in-out'
         >
           <form onSubmit={handleFormSubmit} className='contact__form'>
@@ -135,6 +137,7 @@ const Contact = ({ ref }) => {
                 name='name'
                 value={name}
                 onChange={handleNameChange}
+                color={theme === "dark" ? "white" : "black"}
               />
               <ValidationError
                 prefix='Name'

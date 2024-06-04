@@ -1,16 +1,49 @@
 #header-section {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background: #fffefe;
-  margin-bottom: 0px !important;
+  padding-bottom: 30px;
+  margin: 0 150px;
+}
+
+#header-section.dark {
+  /* background: #161516; */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+  color: #ffffff;
 }
 
 #header {
-  display: grid;
   place-items: center;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
   background: #fffefe;
   transition: var(--transition);
+}
+
+#header.dark {
+  /* background: #161516; */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+  color: #fff;
+}
+
+.container.dark {
+  /* background: #161515 !important; */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
 }
 
 .header__container {
@@ -21,23 +54,54 @@
   justify-content: center;
 }
 
+.container.header__container.dark {
+  /* background: #161516 !important; */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+  color: #fff;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   justify-content: center;
-  margin: 0 50px;
-  gap: 10rem;
+  gap: 7rem;
+  width: 100%;
+}
+
+.hero.dark {
+  /* background: #161515 !important; */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
 }
 
 .hero .content {
-  flex: 1.4;
   display: flex;
   flex-direction: column;
   align-items: start;
   text-align: left;
   justify-content: center;
-  margin-right: 25px;
+  margin-right: 15px;
+  padding-left: 10px;
+}
+
+.hero .content.dark {
+  /* background: #161515; */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+  color: #fff;
 }
 
 .hero__details {
@@ -47,12 +111,27 @@
   align-items: center;
 }
 
+.hero__details.dark {
+  /* background: #161515 !important; */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+  color: #ffffff;
+}
+
 .hello {
   text-align: left;
   font-size: 70px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   margin-bottom: 40px;
+}
+
+.hello.dark {
+  color: #ffffff;
 }
 
 .job {
@@ -64,11 +143,22 @@
   font-size: 1.6rem;
 }
 
+/* Dark mode */
+h3.job.dark {
+  color: #ffffff;
+}
+
 .firstName {
   color: var(--primary-text-color-800);
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 40px;
+}
+
+/* dark mode */
+.firstName.changeColor,
+.icons .icon.changeColor svg {
+  color: var(--primary-brand-color-400);
 }
 
 .icons {
@@ -78,6 +168,7 @@
   text-decoration: none;
   margin-bottom: 15px;
   font-size: 29px;
+  justify-content: flex-start;
 }
 
 .icons svg {
@@ -109,20 +200,24 @@ button.portfolio-btn {
 }
 
 .self-photo {
-  background-position: 50%;
+  background-position: 90%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 25rem;
+  align-items: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .self-photo img {
-  max-height: 100%;
-  max-height: 100%;
+  width: 350px;
+  height: auto;
   border: 10px solid var(--primary-opposite-text-color-800);
   border-radius: 10px;
   object-fit: contain;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 1200px) {
@@ -132,6 +227,13 @@ button.portfolio-btn {
     align-items: center;
     margin-top: -40px;
     gap: 5rem;
+    text-align: center;
+  }
+  .hero__details {
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero__details h1 {
@@ -142,6 +244,9 @@ button.portfolio-btn {
   .job,
   .icons {
     text-align: center;
+  }
+
+  .icons {
     justify-content: center;
   }
 
@@ -150,12 +255,21 @@ button.portfolio-btn {
     width: 70%;
     text-wrap: wrap;
     margin: 0 auto;
+    text-align: center;
+  }
+
+  .button-container {
+    text-align: center;
   }
 
   .button-container button {
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 2px;
+  }
+
+  img {
+    height: auto;
     margin: 0 auto;
-    justify-content: center;
   }
 }
