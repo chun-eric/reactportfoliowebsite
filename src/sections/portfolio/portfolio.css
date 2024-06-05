@@ -32,6 +32,10 @@
   border-radius: 10px;
 }
 
+.skills-title .project-title.dark {
+  color: white;
+}
+
 .portfolio__container.dark {
   background: transparent;
 }
@@ -101,14 +105,19 @@ button.btn.cat__btn.skill-btn {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   height: 470px;
-  border: 8px solid var(--primary-brand-color-400);
+  border: 1px solid var(--primary-opposite-color-1);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   background-color: transparent;
 }
 
 .card-container.dark {
-  border: 10px solid #ffffff;
+  border: 1px solid #fdfdfd;
+  box-shadow: rgba(255, 255, 255, 0.45) 0px 3px 3px 0px;
 }
 
 .card-container:hover {
