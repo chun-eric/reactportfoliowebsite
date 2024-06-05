@@ -69,18 +69,15 @@ const Header = ({ theme }) => {
                       {item.icon}
                     </a>
                   ))}
-                  {/* <a href='https://github.com/chun-eric'>
-                <i className='fa fa-github' aria-hidden='true'></i>
-              </a>
-
-              <a href='https://i.ibb.co/zmp9kV9/black-linkedin.png'>
-                <i className='fa fa-linkedin' aria-hidden='true'></i>
-              </a> */}
                 </div>
                 <div className='button-container'>
-                  <a href='#portfolio'>
-                    <button className='btn portfolio-btn '>Portfolio</button>
-                  </a>
+                  <button className='btn portfolio-btn '>
+                    <li>
+                      <a href='#contact' className='portfolio-name'>
+                        Portfolio
+                      </a>
+                    </li>
+                  </button>
                 </div>
               </div>
             </div>

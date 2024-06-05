@@ -112,7 +112,10 @@
   cursor: pointer;
   color: var(--text-color);
 } */
-
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 #root.dark {
   /* background: #161515; */
 
@@ -127,7 +130,9 @@
 
 body {
   font-family: Robbins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  width: 100vw;
   height: 100%;
+  margin: 0 auto;
   color-scheme: light dark;
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #242424; */
@@ -137,6 +142,7 @@ body {
   color: var(--text-primary); */
   transition: background-color 0.3s, color 0.3s;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 
 body.dark {
@@ -171,9 +177,9 @@ a:hover {
 
 /* General Container Class */
 .container {
-  width: var(--container-width-lg);
+  width: 100%;
   margin-inline: auto;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   transition: 0.5s;
   background: white;
 }
@@ -217,10 +223,6 @@ a:hover {
 .container.dark .form-section textarea[name="message"] {
   color: #fff;
 }
-/* .container.light > * {
-  background: #fff;
-  color: #121212;
-} */
 
 .container.dark h3.title,
 .container.dark h2.title,
@@ -230,7 +232,8 @@ a:hover {
 
 /* General Section styles */
 section {
-  margin: 40px 0;
+  width: 75%;
+  margin: 0px auto;
   padding: 8rem 0;
   /* background-color: var(--color-light); */
   transition: var(--transition);
@@ -243,7 +246,7 @@ section.dark {
 
 section:nth-child(even) {
   background-color: var(--color-white);
-  /* background-image: url("https://i.ibb.co/m6QkCm7/background-pattern-2.jpg"); */
+  /* background-image: url("https://i.ibb.co/m6QkCm7/background-pattern-2.jpg");
   /* background-size: cover;
   background-position: center;
   background-repeat: no-repeat; */
@@ -371,30 +374,6 @@ button.sm {
   padding: 0.5rem 1.2rem;
 }
 
-/* Theme change using React */
-main {
-  color: var(--color-dark);
-  --color-primary: hsl(var(--primary-hue), 89%, 41%);
-}
-
-main.color-1 {
-  --primary-hue: 270;
-}
-main.color-2 {
-  --primary-hue: 110;
-}
-main.color-3 {
-  --primary-hue: 240;
-}
-main.color-4 {
-  --primary-hue: 325;
-}
-main.color-5 {
-  --primary-hue: 0;
-}
-main.color-6 {
-  --primary-hue: 55;
-}
 
 /* Responsive Media Queries (tablets) */
 @media screen and (max-width: 1024px) {
@@ -407,7 +386,7 @@ main.color-6 {
   }
 
   section {
-    padding: 8rem 0;
+    padding: 6rem 0;
   }
 
   section > p {

@@ -6,9 +6,9 @@
     rgba(241, 240, 240, 0.8)
   );
   /* background-image: url("https://i.ibb.co/48tfNHB/background-pattern-4.jpg"); */
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .contact.dark {
@@ -20,7 +20,7 @@
 }
 
 .main-container.contact-form {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   width: 100%;
   background: #eeeeee;
@@ -269,6 +269,13 @@ textarea::placeholder {
     margin-left: 3px !important;
   }
 
+  .main-container.contact-form {
+    width: 100%;
+    /* padding: 40px 30px; */
+   
+    text-align: center;
+  }
+
   .heading-contactme {
     text-align: left;
     margin-left: 50px;
@@ -277,12 +284,14 @@ textarea::placeholder {
   .heading-sec__mb-med {
     text-align: left;
   }
+
   .contact__form-container {
-    width: 90%;
+    width: 85%;
     margin-top: 50px;
+    /* padding: 0 20px; */
   }
   .main-container {
-    width: 80%;
+    width: 100%;
   }
   .btn {
     width: 100%;
@@ -293,5 +302,10 @@ textarea::placeholder {
   }
   .form-submitted {
     width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  section#contact {
   }
 }

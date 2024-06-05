@@ -12,26 +12,28 @@ const ProjectsCategories = ({ categories, onFilterProjects, theme }) => {
     onFilterProjects(active);
   };
   return (
-    <div
-      className={`portfolio__categories ${theme}`}
-      data-aos='fade-up'
-      data-aos-delay='100'
-      data-aos-offset='100'
-      data-aos-duration='500'
-      data-aos-easing='ease-in-out'
-    >
-      {categories.map((category) => (
-        <CategoryButton
-          key={category}
-          category={category}
-          active={active}
-          className={`btn cat__btn skill-btn ${
-            active === category ? "primary" : "white"
-          }`}
-          changeCategory={() => changeCategoryHandler(category)}
-        />
-      ))}
-    </div>
+    <section className='section-categorybutton'>
+      <div
+        className={`portfolio__categories ${theme}`}
+        data-aos='fade-up'
+        data-aos-delay='100'
+        data-aos-offset='100'
+        data-aos-duration='800'
+        data-aos-easing='ease-in'
+      >
+        {categories.map((category) => (
+          <CategoryButton
+            key={category}
+            category={category}
+            active={active}
+            className={`btn cat__btn skill-btn ${
+              active === category ? "primary" : "white"
+            }`}
+            changeCategory={() => changeCategoryHandler(category)}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 

@@ -22,7 +22,7 @@ const data2 = [
 
 const Footer = ({ theme }) => {
   return (
-    <footer className={` ${theme}`}>
+    <footer className={`footer ${theme}`}>
       <div className={`footer-container ${theme}`}>
         <div
           className='main-footer-container'

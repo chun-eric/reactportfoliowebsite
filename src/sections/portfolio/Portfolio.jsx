@@ -33,10 +33,10 @@ const Portfolio = ({ theme }) => {
         data-aos='fade-up'
         data-aos-delay='100'
         data-aos-offset='200'
-        data-aos-duration='1200'
+        data-aos-duration='800'
         data-aos-easing='ease-in-out'
       >
-        <h3 className='title'>Projects</h3>
+        <h3 className='project-title'>Projects</h3>
       </div>
       <div className={`container portfolio__container ${theme}`}>
         <ProjectsCategories

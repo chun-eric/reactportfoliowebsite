@@ -2,28 +2,35 @@
 nav {
   width: 100vw;
   height: 6rem;
-  display: grid;
+  display: flex;
+  justify-content: space-around;
   place-items: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
-  box-shadow: 0 40px 60px rgba(51, 201, 255, 0.03);
-  transition: all 0.3s ease;
+  /* box-shadow: 0 40px 60px rgba(51, 201, 255, 0.03); */
+  transition: all 0.1s ease;
   z-index: 500;
   background-color: white;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
 }
 
-nav.navbar.dark {
-  /* background-color: #111111; */
-
+.navbar {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.navbar.dark {
   color: #fff;
+  background: transparent;
 }
 /* Dark Mode Navbar*/
 .container.dark .nav__container {
-  /* background: #111111; */
   background: transparent;
-  color: #fff;
 }
 
 .container.dark .nav__container .nav__item {

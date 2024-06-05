@@ -67,10 +67,12 @@
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   justify-content: center;
-  gap: 7rem;
-  width: 100%;
+  gap: 6rem;
+  width: 90%;
+  margin-top: 120px;
 }
 
 .hero.dark {
@@ -109,6 +111,7 @@
   justify-content: center;
   margin: 0 auto;
   align-items: center;
+  flex: 1;
 }
 
 .hero__details.dark {
@@ -200,6 +203,9 @@ button.portfolio-btn {
   transition: 300ms ease-in;
 }
 
+.btn.portfolio-btn a.portfolio-name {
+  font-size: 1.4rem;
+}
 .self-photo {
   background-position: 90%;
   background-repeat: no-repeat;
@@ -226,7 +232,7 @@ button.portfolio-btn {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
+    margin-top: 40px;
     gap: 5rem;
     text-align: center;
   }

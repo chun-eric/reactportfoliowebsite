@@ -1,8 +1,8 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* #root {
+  /* max-width: 1280px; */
+
+  /* padding: 2rem;  */
+  /* text-align: center;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -10,6 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Main Color Palette */
+  /*
   --primary-brand-color-300: #33c9ff;
   --primary-brand-color-400: #00baff;
   --primary-brand-color-600: #00a2ff;
@@ -39,12 +40,15 @@
   --primary-opposite-link-hover-color: var(--primary-brand-color-800);
 
   /* light mode on root */
+  /*
   --background: var(--primary-background-color);
   --text-primary: var(--primary-text-color-800);
   --button-bg: var(--primary-brand-color-400);
   --button-text: var(--primary-background-color);
+  */
 
   /* Backup colors */
+  /*
   --primary-hue: 197;
   --black-lightness: 15%;
   --dark-lightness: 44%;
@@ -57,28 +61,27 @@
   --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
 
   /* GENERAL CONTAINER VARIABLES */
+  /*
   --container-width-lg: 76%;
   --container-width-md: 90%;
 
   /* BORDER RADIUS VARIABLES */
+  /*
   --border-radius-1: 0.8rem;
   --border-radius-2: 0.4rem;
   --border-radius-3: 0.2rem;
 
   /* GENERAL TRANSITION VARIABLE */
+  /*
   --transition: all 500ms ease;
   --background: #fff;
   --primary-text: #202730;
 }
+*/
 
-:root {
+/* :root {
   --background-color: white;
   --primary-text: black;
   --button-bg: rgb(42, 139, 204);
   --button-text: white;
-}
-
-
-
-
-
+}  */
