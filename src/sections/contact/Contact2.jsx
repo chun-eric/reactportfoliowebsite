@@ -96,7 +96,7 @@ const Contact = ({ theme }) => {
 
   return (
     <section id={`contact ${theme}`}>
-      <div className={`main-container ${theme}`}>
+      <div className={`main-container contact-form ${theme}`}>
         <div
           className='contact-heading'
           data-aos='fade-up'

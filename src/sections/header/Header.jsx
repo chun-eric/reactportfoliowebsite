@@ -50,8 +50,8 @@ const Header = ({ theme }) => {
                   >
                     Eric
                   </span>{" "}
-                  a Front-End Developer and aspiring Cybersecurity consultant
-                  based in Osaka, Japan.
+                  a Front-End Developer with a focus on Cybersecurity based in
+                  Osaka, Japan.
                 </h3>
 
                 <div className='icons'>
