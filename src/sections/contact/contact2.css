@@ -272,21 +272,21 @@ textarea::placeholder {
   .main-container.contact-form {
     width: 100%;
     /* padding: 40px 30px; */
-   
+
     text-align: center;
   }
 
   .heading-contactme {
-    text-align: left;
-    margin-left: 50px;
+    text-align: center;
     max-width: 70%;
+    align-items: center;
   }
   .heading-sec__mb-med {
     text-align: left;
   }
 
   .contact__form-container {
-    width: 85%;
+    width: 75%;
     margin-top: 50px;
     /* padding: 0 20px; */
   }

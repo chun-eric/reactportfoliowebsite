@@ -423,4 +423,14 @@ button.btn.cat__btn.skill-btn {
   .btn.button-card {
     width: fit-content;
   }
+  .skills-title {
+    margin-bottom: 20px;
+  }
+  .section-categorybutton {
+    width: 100%;
+  }
+  .portfolio__projects {
+    max-width: 100%;
+  }
+  
 }

@@ -71,7 +71,7 @@ const Footer = ({ theme }) => {
         </div> */}
 
           <div className='main-footer__lower'>
-            <p>
+            <p className="copyright">
               &#169; {new Date().getFullYear()}. Website made by
               <span className='name'> Eric Chun</span>
             </p>

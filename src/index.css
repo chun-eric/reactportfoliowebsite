@@ -374,7 +374,6 @@ button.sm {
   padding: 0.5rem 1.2rem;
 }
 
-
 /* Responsive Media Queries (tablets) */
 @media screen and (max-width: 1024px) {
   body {
@@ -387,6 +386,7 @@ button.sm {
 
   section {
     padding: 6rem 0;
+    width: 95% !important;
   }
 
   section > p {
