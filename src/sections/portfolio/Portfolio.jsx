@@ -27,7 +27,7 @@ const Portfolio = ({ theme }) => {
   };
 
   return (
-    <section id={`portfolio ${theme}`}>
+    <section id='portfolio' className={theme}>
       <div
         className='skills-title'
         data-aos='fade-up'

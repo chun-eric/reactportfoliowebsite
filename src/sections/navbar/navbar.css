@@ -22,7 +22,9 @@ nav {
   width: 100%;
   display: flex;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 40px;
+  transition: all 0.3s ease-in;
+  vertical-align: middle;
 }
 .navbar.dark {
   color: #fff;
@@ -34,6 +36,7 @@ nav {
 }
 
 .container.dark .nav__container .nav__item {
+  align-items: center;
   color: #fff;
 }
 
@@ -79,6 +82,8 @@ nav {
 .nav__menu {
   display: flex;
   gap: 3.5rem;
+  margin-top: 10px;
+  margin-left: 8rem;
 }
 
 .nav__item {
@@ -263,7 +268,21 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-  .nav__menu {
+  .navbar {
+    padding: 0 0px;
+  }
+  .container.nav__container {
+    vertical-align: middle;
+    display: flex;
+
+    align-items: center;
+  }
+  .navbar__btns {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .navbar .nav__menu {
     display: none;
   }
   .nav {
@@ -274,6 +293,7 @@ nav {
   }
   .btn-hamburger {
     display: block;
+    margin-bottom: 10px;
   }
   .icon_dark_button {
     vertical-align: center;

@@ -95,7 +95,7 @@ const Contact = ({ theme }) => {
   }
 
   return (
-    <section id={`contact ${theme}`}>
+    <section id='contact' className={theme} >
       <div className={`main-container contact-form ${theme}`}>
         <div
           className='contact-heading'

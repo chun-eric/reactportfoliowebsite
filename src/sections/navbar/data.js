@@ -1,8 +1,26 @@
 const data = [
   { id: 1, title: "Home", link: "#", className: "navlink" },
-  { id: 2, title: "Skills", link: "#skills", className: "navlink" },
-  { id: 3, title: "About", link: "#about", className: "navlink" },
-  { id: 4, title: "Portfolio", link: "#portfolio", className: "navlink" },
+  {
+    id: 2,
+    title: "Skills",
+    link: "#skills",
+    className: "navlink",
+    ref: "skillsRef",
+  },
+  {
+    id: 3,
+    title: "About",
+    link: "#about",
+    className: "navlink",
+    ref: "aboutRef",
+  },
+  {
+    id: 4,
+    title: "Portfolio",
+    link: "#portfolio",
+    className: "navlink",
+    ref: "portfolioRef",
+  },
 ];
 
 export default data;

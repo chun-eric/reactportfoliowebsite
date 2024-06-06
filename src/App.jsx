@@ -1,4 +1,3 @@
-// import { Button } from "@/components/ui/button";
 import Navbar from "./sections/navbar/Navbar";
 import Header from "./sections/header/Header";
 import Skills from "./sections/skills/Skills";
@@ -6,7 +5,7 @@ import About from "./sections/about/About";
 import Contact2 from "./sections/contact/Contact2";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Footer from "./sections/footer/Footer";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,6 +23,21 @@ function App() {
   // creating theme usestate
   const [theme, setTheme] = useState("light");
 
+  // utilizing useRef to scroll to a section
+  const portfolioRef = useRef(null);
+  const headerRef = useRef(null);
+  const skillsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  // scroll to a section function
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetToTop,
+      behavior: "smooth",
+    });
+  };
+
+  // initializing AOS
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -43,6 +57,7 @@ function App() {
       ...paragraphElement,
       ...titleElement,
     ];
+
     elements.forEach((element) => {
       if (element) {
         element.classList.add(theme);
@@ -53,13 +68,18 @@ function App() {
 
   return (
     <div className={`container ${theme}`}>
-      <Navbar theme={theme} setTheme={setTheme} />
-      <Header theme={theme} />
-      <Skills theme={theme} />
+      <Navbar
+        theme={theme}
+        setTheme={setTheme}
+        scrollToSection={scrollToSection}
+        refs={{ headerRef, skillsRef, portfolioRef, contactRef }}
+      />
+      <Header theme={theme} ref={headerRef} />
+      <Skills theme={theme} ref={skillsRef} />
       <About theme={theme} />
-      <Portfolio theme={theme} setTheme={setTheme} />
+      <Portfolio theme={theme} setTheme={setTheme} ref={portfolioRef} />
       <ProjectModal theme={theme} />
-      <Contact2 theme={theme} />
+      <Contact2 theme={theme} ref={contactRef} />
       <Footer theme={theme} />
     </div>
   );

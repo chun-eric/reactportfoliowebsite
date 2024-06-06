@@ -7,20 +7,25 @@ import PropTypes from "prop-types";
 // import { ThemeContext } from "../../context/ThemeContext";
 // import ToggleTheme from "../../context/ToggleTheme";
 
-const Navbar = ({ theme, setTheme, className }) => {
+const Navbar = ({ theme, setTheme, className, scrollToSection, refs }) => {
   const [showModal, setShowModal] = useState(false);
   // const { theme, toggleTheme } = useContext(ThemeContext);
 
+  const { contactRef } = refs;
+  console.log(refs);
   // handler function to toggle the modal
   const handleModal = () => {
     setShowModal(!showModal);
   };
 
+  // function to handle scroll to section
+
   // function to toggle the light dark mode
   const toggle_mode = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
-  console.log(theme);
+
+  console.log(refs);
   return (
     <nav className={`navbar ${theme}`}>
       <div className='container nav__container'>
@@ -32,7 +37,7 @@ const Navbar = ({ theme, setTheme, className }) => {
         <ul className='nav__menu'>
           {data.map((item) => (
             <li key={item.id}>
-              <a href={item.link} className={`nav__item ${theme}`}>
+              <a href={`${item.link}`} className={`nav__item ${theme}`}>
                 {item.title}
               </a>
             </li>
@@ -57,7 +62,10 @@ const Navbar = ({ theme, setTheme, className }) => {
 
           {/* Had a lot of trouble here. Just separated my contact data. It was the most simplest answer. All I needed to do was add #contact to the a href path. */}
           <button className='btn-contact'>
-            <a href='#contact' style={{ fontSize: "22px" }}>
+            <a
+              href='#contact'
+              style={{ fontSize: "22px", scrollToSection: "smooth" }}
+            >
               Contact
             </a>
           </button>
@@ -97,6 +105,9 @@ const Navbar = ({ theme, setTheme, className }) => {
 Navbar.PropTypes = {
   theme: PropTypes.string.isRequired,
   setTheme: PropTypes.func.isRequired,
+  className: PropTypes.string.isRequired,
+  scrollToSection: PropTypes.func.isRequired,
+  refs: PropTypes.object.isRequired,
 };
 
 export default Navbar;
