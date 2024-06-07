@@ -7,6 +7,7 @@ import NameImage from "../../assets/images/hero-name.png";
 // import data2 from "./data";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
+// import CustomGradientBackground from "../../components/CustomGradientBackground";
 
 const data2 = [
   {
@@ -26,74 +27,71 @@ const data2 = [
 const Header = ({ theme }) => {
   return (
     <section id={`header-section ${theme}`}>
-      <header id={`header ${theme}`}>
-        <div className={`container header__container ${theme}`}>
-          <div className={`hero ${theme}`}>
-            <div
-              className='content'
-              data-aos='fade-in'
-              data-aos-delay='150'
-              data-aos-offset='200'
-              data-aos-duration='1500'
-              data-aos-easing='ease-in-out'
-            >
-              <div className={`hero__details ${theme}`}>
-                <h1 className={`hello ${theme} `}>
-                  A Front-End React Developer
-                </h1>
-                <h3 className={`job ${theme}`}>
-                  Hi, I'm{" "}
-                  <span
-                    className={`firstName ${
+      <div className='background-overlay '></div>
+      <div className={`container header__container ${theme}`}>
+        <div className={`hero ${theme}`}>
+          <div
+            className='content'
+            data-aos='fade-in'
+            data-aos-delay='150'
+            data-aos-offset='200'
+            data-aos-duration='1500'
+            data-aos-easing='ease-in-out'
+          >
+            <div className={`hero__details ${theme}`}>
+              <h1 className={`hello ${theme} `}>A Front-End React Developer</h1>
+              <h3 className={`job ${theme}`}>
+                Hi, I'm{" "}
+                <span
+                  className={`firstName ${
+                    theme === "dark" ? "changeColor" : null
+                  }`}
+                >
+                  Eric
+                </span>{" "}
+                a Front-End Developer with a focus on Cybersecurity based in
+                Osaka, Japan.
+              </h3>
+
+              <div className='icons'>
+                {data2.map((item) => (
+                  <a
+                    className={`icon ${
                       theme === "dark" ? "changeColor" : null
                     }`}
+                    key={item.id}
+                    href={item.link}
+                    title={item.title}
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
-                    Eric
-                  </span>{" "}
-                  a Front-End Developer with a focus on Cybersecurity based in
-                  Osaka, Japan.
-                </h3>
-
-                <div className='icons'>
-                  {data2.map((item) => (
-                    <a
-                      className={`icon ${
-                        theme === "dark" ? "changeColor" : null
-                      }`}
-                      key={item.id}
-                      href={item.link}
-                      title={item.title}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      {item.icon}
+                    {item.icon}
+                  </a>
+                ))}
+              </div>
+              <div className='button-container'>
+                <button className='btn portfolio-btn '>
+                  <li>
+                    <a href='#contact' className='portfolio-name'>
+                      Portfolio
                     </a>
-                  ))}
-                </div>
-                <div className='button-container'>
-                  <button className='btn portfolio-btn '>
-                    <li>
-                      <a href='#contact' className='portfolio-name'>
-                        Portfolio
-                      </a>
-                    </li>
-                  </button>
-                </div>
+                  </li>
+                </button>
               </div>
             </div>
-            <div
-              className='self-photo'
-              data-aos='fade-left'
-              data-aos-delay='450'
-              data-aos-offset='200'
-              data-aos-duration='1500'
-              data-aos-easing='ease-in-out'
-            >
-              <img src={HeaderImage} alt='self-logo' />
-            </div>
+          </div>
+          <div
+            className='self-photo'
+            data-aos='fade-left'
+            data-aos-delay='450'
+            data-aos-offset='200'
+            data-aos-duration='1500'
+            data-aos-easing='ease-in-out'
+          >
+            <img src={HeaderImage} alt='self-logo' />
           </div>
         </div>
-      </header>
+      </div>
     </section>
   );
 };

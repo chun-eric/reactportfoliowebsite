@@ -1,9 +1,10 @@
 import "./about.css";
 import "./data";
 
-const About = () => {
+const About = ({ theme }) => {
   return (
     <div id='about'>
+      <div className={`about-background-overlay ${theme}`}></div>
       <div
         className='about-me'
         data-aos='fade-up'

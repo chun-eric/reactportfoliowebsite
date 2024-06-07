@@ -68,7 +68,6 @@ function App() {
 
   return (
     <div className={`container  ${theme} `}>
-      <CustomGradientBackground />
       <Navbar
         theme={theme}
         setTheme={setTheme}

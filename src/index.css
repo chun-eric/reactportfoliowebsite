@@ -368,6 +368,17 @@ button.sm {
   padding: 0.5rem 1.2rem;
 }
 
+/* GENERAL BACKGROUND OVERLAY */
+.backgroud-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: red;
+}
+
 /* Responsive Media Queries (tablets) */
 @media screen and (max-width: 1024px) {
   body {
@@ -375,12 +386,12 @@ button.sm {
   }
 
   .container {
-    width: var(--container-width-md);
+    width: 100%;
   }
 
   section {
     padding: 6rem 0;
-    width: 95% !important;
+    width: 100% !important;
   }
 
   section > p {
