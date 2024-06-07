@@ -28,6 +28,7 @@ const Portfolio = ({ theme }) => {
 
   return (
     <section id='portfolio' className={theme}>
+      <div className={`portfolio-overlay ${theme}`}></div>
       <div
         className='skills-title'
         data-aos='fade-up'
@@ -36,7 +37,7 @@ const Portfolio = ({ theme }) => {
         data-aos-duration='800'
         data-aos-easing='ease-in-out'
       >
-        <h3 className='project-title'>Projects</h3>
+        <h3 className={`project-title ${theme}`}>Projects</h3>
       </div>
       <div className={`container portfolio__container ${theme}`}>
         <ProjectsCategories

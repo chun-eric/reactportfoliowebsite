@@ -27,7 +27,7 @@ const data2 = [
 const Header = ({ theme }) => {
   return (
     <section id={`header-section ${theme}`}>
-      <div className='background-overlay '></div>
+      <div className={`background-overlay ${theme}`}></div>
       <div className={`container header__container ${theme}`}>
         <div className={`hero ${theme}`}>
           <div
