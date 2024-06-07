@@ -1,8 +1,8 @@
 import "./footer.css";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
-import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
+// import { Separator } from "@/components/ui/separator";
+// import { Button } from "@/components/ui/button";
 import logoWhite from "@/assets/logos/svg/logo-white.svg";
 
 const data2 = [

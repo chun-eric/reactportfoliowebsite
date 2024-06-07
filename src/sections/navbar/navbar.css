@@ -12,7 +12,8 @@ nav {
   /* box-shadow: 0 40px 60px rgba(51, 201, 255, 0.03); */
   transition: all 0.1s ease;
   z-index: 500;
-  background-color: white;
+  background: white;
+  /* background: transparent !important; */
   margin: 0 auto;
   align-items: center;
   text-align: center;
@@ -28,16 +29,15 @@ nav {
 }
 .navbar.dark {
   color: #fff;
-  background: transparent;
 }
 /* Dark Mode Navbar*/
 .container.dark .nav__container {
-  background: transparent;
 }
 
 .container.dark .nav__container .nav__item {
   align-items: center;
   color: #fff;
+  background: transparent !important;
 }
 
 .container.dark .nav__container .nav__logo {
@@ -77,6 +77,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  background: transparent !important;
 }
 
 .nav__menu {

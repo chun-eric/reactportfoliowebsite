@@ -112,6 +112,7 @@
   width: 80%;
   justify-content: center;
   margin: 0 auto;
+  z-index: 5 !important;
 }
 
 .skill-btn {

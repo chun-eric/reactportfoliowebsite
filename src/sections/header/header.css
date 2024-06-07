@@ -1,7 +1,7 @@
 #header-section {
   width: 100vw;
   height: auto;
-  background: #fffefe;
+  background: transparent;
   padding-bottom: 30px;
   margin: 0 150px;
 }
@@ -21,7 +21,8 @@
   place-items: center;
   display: flex;
   justify-content: space-between;
-  background: #fffefe;
+  /* background: #fffefe; */
+  background: transparent;
   transition: var(--transition);
 }
 
@@ -52,6 +53,7 @@
   position: relative;
   width: 100vw;
   justify-content: center;
+  background: transparent !important;
 }
 
 .container.header__container.dark {

@@ -3,7 +3,7 @@ import "./contact2.css";
 import { useState } from "react";
 import { ValidationError, useForm } from "@formspree/react";
 
-const Contact = ({ theme }) => {
+const Contact = ({}) => {
   // formspree form state
   const [state, handleSubmit] = useForm(import.meta.env.VITE_APP_FORM_ID);
   const [loading, setLoading] = useState(false);
@@ -95,8 +95,8 @@ const Contact = ({ theme }) => {
   }
 
   return (
-    <section id='contact' className={theme} >
-      <div className={`main-container contact-form ${theme}`}>
+    <section id='contact'>
+      <div className={`main-container contact-form `}>
         <div
           className='contact-heading'
           data-aos='fade-up'
@@ -107,11 +107,11 @@ const Contact = ({ theme }) => {
         >
           <h2>
             <span
-              className={`heading-sec__main heading-sec__main--lt contact-me ${theme}`}
+              className={`heading-sec__main heading-sec__main--lt contact-me `}
             >
               Contact Me
             </span>
-            <span className={`heading-contactme ${theme}`}>
+            <span className={`heading-contactme `}>
               Feel free to Contact me by submitting the form below and I'll get
               back to you as soon as I can.
             </span>
@@ -119,7 +119,7 @@ const Contact = ({ theme }) => {
         </div>
 
         <div
-          className={`contact__form-container ${theme}`}
+          className={`contact__form-container `}
           // data-aos='fade-up'
           data-aos-delay='200'
           // data-aos-offset='200'
@@ -137,7 +137,7 @@ const Contact = ({ theme }) => {
                 name='name'
                 value={name}
                 onChange={handleNameChange}
-                color={theme === "dark" ? "white" : "black"}
+                // color={theme === "dark" ? "white" : "black"}
               />
               <ValidationError
                 prefix='Name'
@@ -184,7 +184,7 @@ const Contact = ({ theme }) => {
               disabled={state.submitting || loading}
               className='submit-button'
             >
-              {loading ? <span className='spinner'></span> : "Submit"}
+              {loading ? <span className='spinner'></span> : "SUBMIT"}
             </button>
           </form>
         </div>

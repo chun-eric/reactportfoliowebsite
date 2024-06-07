@@ -53,12 +53,12 @@ const data = [
     src: "https://i.ibb.co/NWDvj3m/black-github.png",
     className: "skillsIcon",
   },
-  {
-    id: 10,
-    title: "TypeScript",
-    src: "https://i.ibb.co/1TVg8HR/typescript-icon.png",
-    className: "skillsIcon",
-  },
+  // {
+  //   id: 10,
+  //   title: "TypeScript",
+  //   src: "https://i.ibb.co/1TVg8HR/typescript-icon.png",
+  //   className: "skillsIcon",
+  // },
   {
     id: 12,
     title: "Tailwind CSS",
@@ -77,12 +77,12 @@ const data = [
     src: "https://i.ibb.co/0jwjv3Y/react-icon.png",
     className: "skillsIcon",
   },
-  {
-    id: 15,
-    title: "Bash",
-    src: "https://i.ibb.co/WVZ1Qhz/bash.png",
-    className: "skillsIcon",
-  },
+  // {
+  //   id: 15,
+  //   title: "Bash",
+  //   src: "https://i.ibb.co/WVZ1Qhz/bash.png",
+  //   className: "skillsIcon",
+  // },
   {
     id: 16,
     title: "Wireshark",

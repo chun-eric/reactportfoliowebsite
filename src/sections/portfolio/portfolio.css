@@ -66,6 +66,7 @@
   width: 100%;
   display: inline-block;
   width: fit-content;
+  z-index: 145 !important;
 }
 
 button.btn.cat__btn.skill-btn {
@@ -417,8 +418,20 @@ button.btn.cat__btn.skill-btn {
 }
 
 @media screen and (max-width: 1024px) {
+  .card-container {
+    width: 85vw;
+    margin: 0 auto;
+  }
+
   .portfolio__projects {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 70px;
   }
   .btn.button-card {
     width: fit-content;
@@ -429,8 +442,4 @@ button.btn.cat__btn.skill-btn {
   .section-categorybutton {
     width: 100%;
   }
-  .portfolio__projects {
-    max-width: 100%;
-  }
-  
 }

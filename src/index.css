@@ -78,6 +78,15 @@
 
   /* GENERAL TRANSITION VARIABLE */
   --transition: all 500ms ease;
+
+  /* BACKGROUND GRADIENT OVERLAY COLOR */
+  --overlay-background-color: #f55555;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --overlay-background-color: #191919;
+  }
 }
 
 /* light dark mode */
@@ -130,8 +139,8 @@
 
 body {
   font-family: Robbins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
   margin: 0 auto;
   color-scheme: light dark;
   /* color: rgba(255, 255, 255, 0.87); */
@@ -143,6 +152,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
   overflow: hidden;
   flex-wrap: wrap;
+  z-index: 2;
 }
 
 body.dark {
@@ -205,22 +215,6 @@ a:hover {
   ); */
   /* background: #1f1e20; */
   background: #151515;
-  color: #fff;
-}
-
-.container.dark .form-section .label {
-  color: #fff;
-}
-
-.container.dark .form-section input,
-.container.dark .form-section textarea {
-  background: #2c3a47;
-  border: 1px solid #818181;
-}
-
-.container.dark .form-section input[type="name"],
-.container.dark .form-section input[type="email"],
-.container.dark .form-section textarea[name="message"] {
   color: #fff;
 }
 

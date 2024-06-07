@@ -18,6 +18,7 @@ import ProjectModal from "./sections/projectModal/ProjectModal";
 // import Card from "./components/Card";
 
 import "./App.css";
+import CustomGradientBackground from "./components/CustomGradientBackground";
 
 function App() {
   // creating theme usestate
@@ -27,7 +28,6 @@ function App() {
   const portfolioRef = useRef(null);
   const headerRef = useRef(null);
   const skillsRef = useRef(null);
-  const contactRef = useRef(null);
 
   // scroll to a section function
   const scrollToSection = (elementRef) => {
@@ -67,19 +67,20 @@ function App() {
   }, [theme]);
 
   return (
-    <div className={`container ${theme}`}>
+    <div className={`container  ${theme} `}>
+      <CustomGradientBackground />
       <Navbar
         theme={theme}
         setTheme={setTheme}
         scrollToSection={scrollToSection}
-        refs={{ headerRef, skillsRef, portfolioRef, contactRef }}
+        refs={{ headerRef, skillsRef, portfolioRef }}
       />
       <Header theme={theme} ref={headerRef} />
       <Skills theme={theme} ref={skillsRef} />
       <About theme={theme} />
       <Portfolio theme={theme} setTheme={setTheme} ref={portfolioRef} />
       <ProjectModal theme={theme} />
-      <Contact2 theme={theme} ref={contactRef} />
+      <Contact2 />
       <Footer theme={theme} />
     </div>
   );
