@@ -14,6 +14,8 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
     setShowProjectModal(!showProjectModal);
   };
 
+  const handleDarkMode = () => {};
+
   useEffect(() => {
     if (showProjectModal) {
       document.body.style.overflowY = "hidden";
@@ -27,8 +29,8 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
       {showProjectModal && (
         <div className={`projectmodal-container ${theme}`}>
           <div className='overlay-projectmodal'></div>
-          <div className='container-right'>
-            <div className='projectmodal'>
+          <div className={`container-right ${theme}`}>
+            <div className={`projectmodal ${theme}`}>
               <div className='projectmodal-top-row'>
                 <CircleChevronLeft
                   onClick={handleModal}

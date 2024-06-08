@@ -44,7 +44,7 @@ const Portfolio = ({ theme }) => {
           categories={uniqueCategories}
           onFilterProjects={filterProjectsHandler}
         />
-        <Projects projects={projects} />
+        <Projects projects={projects} theme={theme} />
       </div>
     </section>
   );

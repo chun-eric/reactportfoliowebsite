@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import PortfolioCard from "./PortfolioCard";
 
-const Project = ({ project }) => {
-  return <PortfolioCard project={project} />;
+const Project = ({ project, theme }) => {
+  return <PortfolioCard project={project} theme={theme} />;
 };
 
 Project.propTypes = {

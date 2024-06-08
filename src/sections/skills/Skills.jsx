@@ -7,7 +7,7 @@ const Skills = ({ theme }) => {
   return (
     <>
       <div id='skills' className={`${theme}`}>
-        <section className={`${theme}`}>
+        <section className={`skills-section ${theme}`}>
           <div className={`skills-wrapper ${theme}`}>
             <div
               className='skills-title'

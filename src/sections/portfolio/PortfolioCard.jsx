@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import ProjectModal from "../projectModal/ProjectModal";
 
-const PortfolioCard = ({ project }) => {
+const PortfolioCard = ({ project, theme }) => {
   // state to keep track of Project modal visibility
   const [showProjectModal, setShowProjectModal] = useState(false);
 
@@ -50,7 +50,11 @@ const PortfolioCard = ({ project }) => {
         </div>
       </div>
       {showProjectModal && (
-        <ProjectModal project={project} handleProjectModal={showProjectModal} />
+        <ProjectModal
+          project={project}
+          handleProjectModal={showProjectModal}
+          theme={theme}
+        />
       )}
     </div>
   );

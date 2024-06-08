@@ -21,16 +21,31 @@
   left: 0;
   right: 0;
   bottom: 0;
+  /* background: #fefefe; */
+  background-color: #fefefe;
+  opacity: 0.2;
   background-image: radial-gradient(
-    circle 248px at center,
-    #16d9e3 0%,
-    #30c7ec 47%,
-    #46aef7 100%
+    #00baff 0.9500000000000001px,
+    #fefefe 0.9500000000000001px
   );
+  background-size: 19px 19px;
 }
 
 .portfolio-overlay.dark {
-  background-image: linear-gradient(to right, #ffd000 0%, #face09 100%);
+  background-color: rgb(0, 0, 0);
+  opacity: 0.1;
+  background-image: radial-gradient(
+    #fefefe 0.9500000000000001px,
+    #151515 0.9500000000000001px
+  );
+  background-size: 19px 19px;
+  /* background: rgb(0, 0, 0); */
+  /* background: linear-gradient(
+    81deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(43, 43, 43, 1) 47%,
+    rgba(21, 21, 21, 1) 100%
+  ); */
 }
 
 .skills-title .project-title {
@@ -40,7 +55,7 @@
   position: relative;
   padding-bottom: 6px;
   font-weight: bold;
-  color: #ffffff;
+  color: #151515;
   text-align: center;
 }
 
@@ -52,7 +67,7 @@
   left: 38%;
   width: 62%;
   transform: translateX(-30%);
-  background-color: #f5f746;
+  background-color: var(--primary-brand-color-400);
   border-radius: 10px;
 }
 
