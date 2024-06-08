@@ -14,8 +14,6 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
     setShowProjectModal(!showProjectModal);
   };
 
-  const handleDarkMode = () => {};
-
   useEffect(() => {
     if (showProjectModal) {
       document.body.style.overflowY = "hidden";
@@ -34,28 +32,37 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
               <div className='projectmodal-top-row'>
                 <CircleChevronLeft
                   onClick={handleModal}
-                  className='back'
+                  className={`back ${theme}`}
                   size={34}
                 />
-                <p className='back-to-projects' onClick={handleModal}>
-                  <a>Back To Projects.</a>
+                <p
+                  className={`back-to-projects ${theme}`}
+                  onClick={handleModal}
+                >
+                  <a className={`${theme}`}>Back To Projects.</a>
                 </p>
               </div>
 
               <div className='separator'>
                 <hr className='solid' />
               </div>
-              <h2 className='project-main-title-modal'>{project.title}</h2>
+              <h2 className={`project-main-title-modal ${theme}`}>
+                {project.title}
+              </h2>
               <p className='project-modal-text'>{project.desc}</p>
-              <div className='projectmodal-image'>
+              <div className={`projectmodal-image ${theme}`}>
                 <img src={project.image} alt='' />
               </div>
               <div className='projectmodal-about'>
-                <h3 className='project-title-modal title-name'>About</h3>
-                <p className='project-modal-text '>{project.about}</p>
+                <h3 className={`project-title-modal title-name ${theme}`}>
+                  About
+                </h3>
+                <p className={`project-modal-text ${theme}`}>{project.about}</p>
               </div>
               <div className='projectmodal-tech'>
-                <h3 className='project-title-modal technologies title-name'>
+                <h3
+                  className={`project-title-modal technologies title-name ${theme}`}
+                >
                   Technologies
                 </h3>
                 {project.stack.map((tech, index) => (
@@ -65,17 +72,21 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
                 ))}
               </div>
               <div className='project-website-heading'>
-                <h3 className='project-title-modal title-name'>Website Link</h3>
+                <h3 className={`project-title-modal title-name ${theme}`}>
+                  Website Link
+                </h3>
                 <p className='projectmodal-websitelink'>{project.demo}</p>
               </div>
               <div className='project-website-heading'>
-                <h3 className='project-title-modal title-name'>Github</h3>
+                <h3 className={`project-title-modal title-name ${theme}`}>
+                  Github
+                </h3>
                 <p className='projectmodal-websitelink'>{project.github}</p>
               </div>
             </div>
-            <div className='projectmodal-footer'>
-              <a href='' className='projectmodal-footer-link'>
-                <p>Open Projects</p>
+            <div className={`projectmodal-footer ${theme}`}>
+              <a href='' className={`projectmodal-footer-link ${theme}`}>
+                <p className={`${theme} open-text`}>Open Projects</p>
               </a>
             </div>
           </div>
@@ -95,5 +106,7 @@ ProjectModal.propTypes = {
     github: PropTypes.string.isRequired,
     stack: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
+  theme: PropTypes.string.isRequired,
+  handleProjectModal: PropTypes.bool.isRequired,
 };
 export default ProjectModal;

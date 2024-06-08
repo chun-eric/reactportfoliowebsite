@@ -59,7 +59,13 @@
 }
 
 .projectmodal.dark {
-  background: red;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    220deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(43, 43, 43, 1) 49%,
+    rgba(48, 48, 48, 1) 100%
+  );
 }
 
 .projectmodal-top-row {
@@ -68,13 +74,16 @@
   justify-content: space-between;
   vertical-align: middle;
   align-items: center;
-  margin-bottom: 5px;
 }
 
 .back {
   color: #7e7e7e;
   font-size: 14px;
   cursor: pointer;
+}
+/* dark mode */
+.back.dark {
+  color: #eaeaea;
 }
 
 .back-to-projects a {
@@ -84,6 +93,10 @@
   letter-spacing: 0.3px;
   color: black;
 }
+/* dark mode */
+.back-to-projects a.dark {
+  color: #eaeaea;
+}
 
 .back-to-projects:hover {
   cursor: pointer;
@@ -91,18 +104,32 @@
 }
 
 .separator hr {
-  margin-top: 10px;
+  margin-top: 20px;
   border: 0.5px solid #eaeaea;
   height: 0.7px;
 }
 
-.project-main-title-modal {
-  margin: 24px 0 8px;
+/* dark mode */
+.separator hr.dark {
+  border: 0.5px solid #fff;
 }
-.project-title-modal {
+
+.project-main-title-modal {
+  margin: 28px 0 8px;
+}
+/* dark mode */
+.project-main-titl-modal.dark {
+  color: #fff;
+}
+
+h3.project-title-modal {
   color: #000;
-  margin: 24px 0 8px;
+  margin: 28px 0 8px;
   font-size: 24px;
+}
+/* dark mode */
+h3.project-title-modal.dark {
+  color: #fff;
 }
 
 .project-modal-text {
@@ -113,6 +140,10 @@
   display: inline-block;
   margin-right: 10px;
 }
+/* dark mode */
+.project-modal-text.dark {
+  color: #eaeaea;
+}
 
 .projectmodal-image,
 .projectmodal-image img {
@@ -122,12 +153,22 @@
   border: 1px solid black;
 }
 
+.projectmodal-image.dark,
+.projectmodal-image img.dark {
+  border: 1px solid #eaeaea;
+}
 .projectmodal-about {
-  margin: 24px 0 12px;
+  margin: 26px 0 12px;
 }
 
-.title-name {
+.project-title-modal.title-name {
   color: #363636;
+  font-size: 26px;
+  margin-top: 36px;
+}
+/* dark mode */
+.project-title-modal.title-name.dark {
+  color: #fff;
 }
 
 .projectmodal-tech .technologies {
@@ -169,6 +210,10 @@
   display: flex;
   padding: 20px 0;
 }
+/* dark mode */
+.projectmodal-footer.dark {
+  background-color: #efe9e4;
+}
 
 .projectmodal-footer-link p {
   color: #fff;
@@ -177,4 +222,13 @@
   justify-content: center;
   text-align: center;
   z-index: 1500;
+}
+/* dark mode */
+.projectmodal-footer-link.dark p.dark {
+  color: #151515;
+}
+
+p.open-text {
+  font-weight: bold;
+  font-size: 22px;
 }

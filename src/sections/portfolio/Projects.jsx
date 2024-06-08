@@ -15,7 +15,7 @@ const Projects = ({ projects, theme }) => {
       data-aos-easing='ease-in'
     >
       {projects.map((project) => (
-        <Project key={project.id} project={project} />
+        <Project key={project.id} project={project} theme={theme} />
       ))}
     </div>
   );

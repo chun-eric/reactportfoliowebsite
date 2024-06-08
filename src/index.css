@@ -137,6 +137,10 @@
   color: #fff;
 }
 
+h2.project-main-title-modal.dark {
+  color: #fff;
+}
+
 body {
   font-family: Robbins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   width: 100%;

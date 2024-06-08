@@ -348,13 +348,17 @@ button.btn.cat__btn.skill-btn {
 }
 
 .container-right.dark {
-  background-color: #000;
+  background: #000;
 }
 
 .projectmodal {
   padding: 30px;
   text-align: left;
   background: #fcfaf9;
+}
+
+.projectmodal.dark {
+  background: #000;
 }
 
 .projectmodal-top-row {
