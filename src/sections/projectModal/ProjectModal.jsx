@@ -1,5 +1,5 @@
 import { CircleChevronLeft } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import "./projectmodal.css";
 import PropTypes from "prop-types";
@@ -14,6 +14,7 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
     setShowProjectModal(!showProjectModal);
   };
 
+  // useEffect to handle modal visibility
   useEffect(() => {
     if (showProjectModal) {
       document.body.style.overflowY = "hidden";
@@ -22,12 +23,35 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
     }
   }, [showProjectModal]);
 
+  // useRef to set the projectModal as the reference
+  let projectModalRef = useRef();
+
+  // useEffect to handle modal visibility on click outside of the modal
+  useEffect(() => {
+    let handler = (event) => {
+      // ignore clicks on the component itself
+      // returns false if the event target is inside of the projectModalRef
+      if (!projectModalRef.current.contains(event.target)) {
+        setShowProjectModal(false);
+        console.log(projectModalRef.current);
+      }
+    };
+
+    // attach the event listener
+    document.addEventListener("mousedown", handler);
+
+    // cleanup function
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
+
   return (
     <>
       {showProjectModal && (
-        <div className={`projectmodal-container ${theme}`}>
+        <div className={`projectmodal-container ${theme} `}>
           <div className='overlay-projectmodal'></div>
-          <div className={`container-right ${theme}`}>
+          <div className={`container-right ${theme} `} ref={projectModalRef}>
             <div className={`projectmodal ${theme}`}>
               <div className='projectmodal-top-row'>
                 <CircleChevronLeft

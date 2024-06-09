@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import ProjectModal from "../projectModal/ProjectModal";
 
 const PortfolioCard = ({ project, theme }) => {
@@ -10,7 +10,29 @@ const PortfolioCard = ({ project, theme }) => {
     setShowProjectModal(value);
     setShowProjectModal(!showProjectModal);
   };
-  console.log(showProjectModal);
+
+  // useRef to set the projectModal as the reference
+  // let projectModalRef = useRef();
+
+  // useEffect to handle modal visibility on click outside of the modal
+  // useEffect(() => {
+  //   let handler = (event) => {
+  //     // ignore clicks on the component itself
+  //     // returns false if the event target is inside of the projectModalRef
+  //     if (!projectModalRef.current.contains(event.target)) {
+  //       setShowProjectModal(false);
+  //       console.log(projectModalRef.current);
+  //     }
+  //   };
+
+  //   // attach the event listener
+  //   document.addEventListener("mousedown", handler);
+
+  //   // cleanup function
+  //   return () => {
+  //     document.removeEventListener("mousedown", handler);
+  //   };
+  // });
 
   return (
     <div
@@ -54,6 +76,8 @@ const PortfolioCard = ({ project, theme }) => {
           project={project}
           handleProjectModal={showProjectModal}
           theme={theme}
+          // pass the ref to the projectModal
+          // ref={projectModalRef}
         />
       )}
     </div>
