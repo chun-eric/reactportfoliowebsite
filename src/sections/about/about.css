@@ -126,9 +126,10 @@
   font-family: "League Spartan", serif;
   overflow-x: hidden;
   max-width: 800px;
-  width: 40%;
+  width: 50%;
+  height: auto;
+  line-height: normal;
   font-size: 22px;
-  line-height: 30px;
   word-wrap: break-word;
   flex-wrap: wrap;
   font-weight: normal;
@@ -179,6 +180,9 @@ button.btn--theme a {
     margin: 0 auto;
   }
 
+  .bio-info {
+    width: 75%;
+  }
   .bio-container .bio-info {
     width: 75%;
   }

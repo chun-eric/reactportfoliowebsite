@@ -325,7 +325,6 @@ button {
   font-weight: 600;
   box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
   font-family: inherit;
-
   background-color: var(--primary-brand-color-400);
   transition: 0.3s;
   cursor: pointer;
@@ -365,7 +364,7 @@ button.primary {
 button.primary:hover {
   background: transparent;
   border-color: var(--color-primary);
-  color: var(--color-primary);
+  color: #ffffff;
 }
 
 button.sm {
@@ -380,7 +379,6 @@ button.sm {
   left: 0;
   right: 0;
   bottom: 0;
-  background: red;
 }
 
 /* Responsive Media Queries (tablets) */

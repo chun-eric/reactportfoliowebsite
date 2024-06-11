@@ -8,6 +8,13 @@ const Skills = ({ theme }) => {
     <>
       <div id='skills' className={`${theme}`}>
         <section className={`skills-section ${theme}`}>
+          <div className='ripple-background'>
+            <div className={`circle xxlarge shade1 ${theme}`}></div>
+            <div className='circle xlarge shade2'></div>
+            <div className='circle large shade3'></div>
+            <div className='circle mediun shade4'></div>
+            <div className='circle small shade5'></div>
+          </div>
           <div className={`skills-wrapper ${theme}`}>
             <div
               className='skills-title'

@@ -1,9 +1,12 @@
 #skills {
   position: relative;
-  background-color: #fffadd;
+  /* background-color: #fffadf; */
+  background: #dcedff;
   /* background-image: linear-gradient(315deg, #fff293 0%, #ffe884 74%); */
   /* background-color: #f9ff60;
   background-image: linear-gradient(315deg, #f9ff60 0%, #ffef77 74%); */
+  width: 100vw;
+  height: auto;
 }
 
 #skills.dark {
@@ -24,6 +27,93 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* Ripple Background Styles */
+.ripple-background {
+  z-index: 2;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #00baff;
+}
+
+.cirle.shade1.dark {
+  background: #222222;
+  box-shadow: 0px 0px 1px 0px #404041;
+}
+
+.small {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge {
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge {
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1 {
+  opacity: 0.2;
+}
+
+.shade2 {
+  opacity: 0.5;
+}
+
+.shade3 {
+  opacity: 0.7;
+}
+
+.shade4 {
+  opacity: 0.8;
+}
+
+.shade5 {
+  opacity: 0.9;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
 section.skills-section {
   background: transparent !important;
 }
@@ -114,6 +204,11 @@ h3.title {
   align-items: center;
   margin: 0 auto;
   gap: 10px;
+  transition: 0.6s ease-out;
+}
+
+.image:hover {
+  transform: translateY(-0.3rem);
 }
 
 .skills-badge-container {
@@ -137,8 +232,6 @@ h3.title {
 }
 
 .skill-btn:hover {
-  border: 1px solid var(--primary-brand-color-400);
-  color: var(--primary-brand-color-400);
   transform: translateY(-0.08rem);
 }
 
@@ -154,6 +247,18 @@ button.btn.btn-sm.skill-btn {
 .buttonTitle {
   display: inline-block;
   font-size: 18px;
+  background-color: #ffffff;
+}
+
+.skills-badge-container.button.btn.btn-sm.skill-btn.buttonTitle:hover {
+  background: red !important;
+}
+
+button.btn.btn-sm.skill-btn.buttonTitle:hover {
+  color: black !important;
+  background-color: #ffffff;
+  cursor: default;
+  transform: translateY(-0.08rem);
 }
 
 /* Media Queries*/
