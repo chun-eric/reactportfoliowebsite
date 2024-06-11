@@ -24,14 +24,10 @@ nav {
   display: flex;
   margin: 0 auto;
   padding: 0 40px;
-  transition: all 0.3s ease-in;
   vertical-align: middle;
 }
 .navbar.dark {
   color: #fff;
-}
-/* Dark Mode Navbar*/
-.container.dark .nav__container {
 }
 
 .container.dark .nav__container .nav__item {
@@ -54,6 +50,10 @@ nav {
   left: 2px;
   bottom: -4px;
   transition: all 0.3s ease-in;
+}
+
+.container.dark .nav__container .nav__item.dark:hover::after {
+  background-color: var(--primary-brand-color-400);
 }
 
 .container.dark .nav__container .navbar__btns svg {
@@ -146,10 +146,6 @@ nav {
   color: var(--primary-text-color-800);
 }
 
-/* .icon_dark_button:hover {
-  color: var(--primary-opposite-background-color-300);
-} */
-
 .contact {
   background-color: transparent;
   transition: none !important;
@@ -195,6 +191,27 @@ nav {
 
 /* Navbar Modal */
 
+.navbarmodal-overlay {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); /* for Safari */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: all 0.8s ease-in-out;
+}
+
+.navbarmodal-overlay.dark {
+  background: rgba(49, 49, 49, 0.3);
+}
+
 .navbarmodal-container {
   width: 250px;
   height: 100%;
@@ -206,17 +223,31 @@ nav {
   position: fixed;
   box-shadow: var(--primary-brand-color-400);
   top: 0px;
-  right: -250px;
-  border-left: 3px solid black;
-  /* transform: translateX(300px); */
-  transition: transform 0.8s ease-in-out;
-  transition-timing-function: linear;
+  right: -100%;
+  transition: 0.8s ease-in-out !important;
+  border-left: 1px solid black;
   display: flex;
 }
 
-.transform-modal {
-  /* transform: translateX(0px); */
+.navbarmodal-container.show {
   right: 0;
+}
+
+/* .transform-modal {
+  /* transform: translateX(0px); 
+  right: 0;
+ */
+
+/* dark mode */
+.navbarmodal-container.dark {
+  background: #1b1b1b;
+  color: #ffffff;
+}
+
+/* dark mode */
+.navbarmodal-container.dark {
+  /* border-left: 0.5px solid #fefefe; */
+  box-shadow: -5px 0 5px -5px rgba(228, 228, 228, 0.5);
 }
 
 .close-icon {
@@ -238,6 +269,7 @@ nav {
 .navbar-modal-contact:hover {
   color: var(--primary-brand-color-600);
 }
+
 .navbar-modal {
   display: flex;
 }
@@ -256,6 +288,10 @@ nav {
   font-size: 24px;
 }
 
+.nav__item.dark {
+  color: #fefefe;
+}
+
 .navbar-modal-contact {
   padding: 1px;
   margin-top: -5px;
@@ -265,12 +301,16 @@ nav {
 }
 
 .navbar-modal-contact:hover {
-  transform: scale(1.05);
+  transform: translateX(4px);
 }
 
 @media screen and (max-width: 1024px) {
+  .navbarmodal-container {
+    transition: 0.8s ease-in-out;
+  }
+
   .navbar {
-    padding: 0 0px;
+    padding: 0 20px;
   }
   .container.nav__container {
     vertical-align: middle;
@@ -303,5 +343,31 @@ nav {
   }
   .navbarmodal-container {
     display: block;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .navbarmodal-container {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .nav__item {
+    font-size: 3.2rem;
+  }
+  .navbar-modal-contact li a {
+    font-size: 3.2rem;
+  }
+  .navbarmodal-contact-item a {
+    font-size: 3.2rem !important;
+  }
+  svg.back-icon {
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+  }
+  svg.close-icon {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
   }
 }

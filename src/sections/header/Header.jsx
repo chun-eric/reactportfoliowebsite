@@ -39,18 +39,19 @@ const Header = ({ theme }) => {
             data-aos-easing='ease-in-out'
           >
             <div className={`hero__details ${theme}`}>
-              <h1 className={`hello ${theme} `}>A Front-End React Developer</h1>
-              <h3 className={`job ${theme}`}>
-                Hi, I'm{" "}
+              <h1 className={`hello ${theme} `}>
+                Hi, I'm
                 <span
-                  className={`firstName ${
+                  className={`firstName highlight ${
                     theme === "dark" ? "changeColor" : null
                   }`}
                 >
-                  Eric
+                  Eric.
                 </span>{" "}
-                a Front-End Developer with a focus on Cybersecurity based in
-                Osaka, Japan.
+              </h1>
+              <h3 className={`job ${theme}`}>
+                A Front-End React Developer who loves building web applications
+                and websites that's user-friendly and user-focused.
               </h3>
 
               <div className='icons'>

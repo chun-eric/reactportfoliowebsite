@@ -2,30 +2,48 @@ import data from "./data";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Sun, Moon, CircleX, MoveLeft } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
+
 // import { ThemeContext } from "../../context/ThemeContext";
 // import ToggleTheme from "../../context/ToggleTheme";
 
-const Navbar = ({ theme, setTheme, className, scrollToSection, refs }) => {
+const Navbar = ({ theme, setTheme }) => {
   const [showModal, setShowModal] = useState(false);
-  // const { theme, toggleTheme } = useContext(ThemeContext);
 
-  const { contactRef } = refs;
-  console.log(refs);
   // handler function to toggle the modal
   const handleModal = () => {
     setShowModal(!showModal);
   };
-
-  // function to handle scroll to section
 
   // function to toggle the light dark mode
   const toggle_mode = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
-  console.log(refs);
+  // useRef to set the navbarModal as the reference
+  let navbarModalRef = useRef();
+
+  // useEffect to handle modal visibility when clicked outside of the modal
+  useEffect(() => {
+    let handler = (event) => {
+      // ignore clicks on the component itself
+      // returns false if the event target is inside of the navbartModalRef
+      if (!navbarModalRef.current.contains(event.target)) {
+        // hides the modal
+        setShowModal(false);
+      }
+    };
+
+    // attach the event listener
+    document.addEventListener("mousedown", handler);
+
+    // cleanup function
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, []);
+
   return (
     <nav className={`navbar ${theme}`}>
       <div className='container nav__container'>
@@ -75,28 +93,36 @@ const Navbar = ({ theme, setTheme, className, scrollToSection, refs }) => {
       </div>
       {/* Navbar Modal */}
       {showModal && (
-        <div className='navbarmodal-container transform-modal'>
-          <div className='navbar-modal'>
-            <MoveLeft className='back-icon' onClick={handleModal} />
-            <CircleX className='close-icon' onClick={handleModal} />
-          </div>
-          <div className='menu-listModal'>
-            {data.map((item) => (
-              <li key={item.id}>
-                <a href={item.link} className='nav__item'>
-                  {item.title}
-                </a>
-              </li>
-            ))}
-            <div className='navbar-modal-contact' style={{}}>
-              <li style={{}}>
-                <a href='#contact' style={{ fontSize: "24px" }}>
-                  Contact
-                </a>
-              </li>
+        <>
+          <div className={`navbarmodal-overlay ${theme}`}></div>
+          <div
+            className={`navbarmodal-container  ${
+              showModal ? "show" : ""
+            } ${theme}`}
+            ref={navbarModalRef}
+          >
+            <div className='navbar-modal'>
+              <MoveLeft className='back-icon' onClick={handleModal} />
+              <CircleX className='close-icon' onClick={handleModal} />
+            </div>
+            <div className='menu-listModal'>
+              {data.map((item) => (
+                <li key={item.id}>
+                  <a href={item.link} className={`nav__item ${theme}`}>
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+              <div className='navbar-modal-contact'>
+                <li className='navbarmodal-contact-item'>
+                  <a href='#contact' style={{ fontSize: "24px" }}>
+                    Contact
+                  </a>
+                </li>
+              </div>
             </div>
           </div>
-        </div>
+        </>
       )}
     </nav>
   );
@@ -111,12 +137,3 @@ Navbar.PropTypes = {
 };
 
 export default Navbar;
-
-// handler function to scroll to the section
-// const handleScroll = ({ ref }) => {
-//   window.scrollTo({
-//     top: ref.current.offsetTop,
-//     behavior: "smooth",
-//   });
-//   setShowModal(false);
-// };

@@ -1,8 +1,9 @@
 #skills {
   position: relative;
-  background-color: #ffffff;
-
- 
+  background-color: #fffadd;
+  /* background-image: linear-gradient(315deg, #fff293 0%, #ffe884 74%); */
+  /* background-color: #f9ff60;
+  background-image: linear-gradient(315deg, #f9ff60 0%, #ffef77 74%); */
 }
 
 #skills.dark {
