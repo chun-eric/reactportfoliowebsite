@@ -9,6 +9,7 @@ import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { gsap } from "gsap";
 import ProjectModal from "./sections/projectModal/ProjectModal";
 // import ToggleTheme from "./context/ToggleTheme";
 // import { ThemeProvider } from "./context/ThemeContext";

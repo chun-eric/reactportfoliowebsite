@@ -23,7 +23,7 @@
   bottom: 0;
   /* background: #fefefe; */
   background-color: #fefefe;
-  opacity: 0.2;
+  opacity: 0.6;
   background-image: radial-gradient(
     #00baff 0.9500000000000001px,
     #fefefe 0.9500000000000001px
@@ -75,11 +75,6 @@ h3.project-title.dark {
   color: #333333;
 }
 
-.skills-title .project-title.dark::after {
-  background-color: #222222;
-  border-radius: 10px;
-}
-
 .skills-title .project-title.dark {
   color: white;
 }
@@ -125,6 +120,8 @@ button.btn.cat__btn.skill-btn {
 .btn.cat__btn:hover {
   transform: translateY(0);
   border: 1px solid var(--primary-brand-color-400);
+  background-color: #fff;
+  color: var(--primary-brand-color-400);
 }
 
 .primary {

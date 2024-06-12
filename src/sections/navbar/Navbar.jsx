@@ -70,7 +70,7 @@ const Navbar = ({ theme, setTheme }) => {
             // style={{ transition: "all 0.3s ease" }}
             className='icon_dark_button no-animation theme-toggle'
           >
-            {theme === "light" ? (
+            {theme === "dark" ? (
               <Sun size={30} className='theme-icon' />
             ) : (
               <Moon size={30} className='theme-icon' />
