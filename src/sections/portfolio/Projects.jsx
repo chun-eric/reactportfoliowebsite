@@ -8,14 +8,19 @@ const Projects = ({ projects, theme }) => {
   return (
     <div
       className='portfolio__projects'
-      data-aos='fade-up'
-      data-aos-delay='50'
-      data-aos-offset='50'
-      data-aos-duration='1000'
-      data-aos-easing='ease-in'
+      // data-aos='fade-up'
+      // data-aos-delay='50'
+      // data-aos-offset='50'
+      // data-aos-duration='1000'
     >
-      {projects.map((project) => (
-        <Project key={project.id} project={project} theme={theme} />
+      {projects.map((project, index) => (
+        <Project
+          key={project.id}
+          project={project}
+          theme={theme}
+          aosDeloy={index * 100}
+          
+        />
       ))}
     </div>
   );

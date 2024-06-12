@@ -23,7 +23,7 @@
   bottom: 0;
   /* background: #fefefe; */
   background-color: #fefefe;
-  opacity: 0.6;
+  opacity: 0.8;
   background-image: radial-gradient(
     #00baff 0.9500000000000001px,
     #fefefe 0.9500000000000001px
@@ -131,10 +131,20 @@ button.btn.cat__btn.skill-btn {
 /* -------------------------  */
 /* Portfolio card section */
 
+.container.portfolio__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
 .portfolio__projects {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 30px;
   margin: 0 auto;
   margin-top: 60px;
@@ -483,8 +493,9 @@ button.btn.cat__btn.skill-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    width: 80%;
+    flex-wrap: wrap;
+
+    width: 90%;
     margin: 0 auto;
     padding: 0 20px;
     margin-top: 70px;
