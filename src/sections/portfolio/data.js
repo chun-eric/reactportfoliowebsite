@@ -76,7 +76,7 @@ const data = [
     title: "Streamify",
     desc: "A transactional email for an music streaming store.",
     about:
-      "A transactional email I designed and coded for a fictional music streaming store called Streamify. The goal of this email is to confirm the customer's monthly subscription to the streaming service.The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
+      "A transactional email I coded for a fictional music streaming store called Streamify. The goal of this email is to confirm the customer's monthly subscription to the streaming service.The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
     demo: "https://www.google.com",
     github: "https://github.com/chun-eric/transactional_2",
     stack: ["HTML", "CSS", "Email on Acid", "Photoshop"],
