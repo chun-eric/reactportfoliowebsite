@@ -1,6 +1,5 @@
 /* Navbar */
 nav {
-  width: 100vw;
   height: 6rem;
   display: flex;
   justify-content: space-around;
@@ -19,11 +18,13 @@ nav {
   text-align: center;
 }
 
-.navbar {
-  width: 100%;
+.container.nav__container {
+  width: 100vw;
+  max-width: 1440px;
   display: flex;
   margin: 0 auto;
   padding: 0 40px;
+  align-items: center;
   vertical-align: middle;
 }
 .navbar.dark {
@@ -304,6 +305,12 @@ nav {
   transform: translateX(4px);
 }
 
+@media screen and (min-width: 1440px) {
+  .navbar {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 1024px) {
   .navbarmodal-container {
     transition: 0.8s ease-in-out;
@@ -322,6 +329,7 @@ nav {
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+    margin-right: 20px;
   }
   .navbar .nav__menu {
     display: none;

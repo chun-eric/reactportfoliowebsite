@@ -192,8 +192,7 @@ a:hover {
 /* General Container Class */
 .container {
   width: 100%;
-  margin-inline: auto;
-  /* max-width: 1920px; */
+  max-width: 1920px;
   transition: 0.5s;
   background: white;
 }

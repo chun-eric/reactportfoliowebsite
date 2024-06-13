@@ -88,9 +88,9 @@ const data = [
     title: "Portfolio Website",
     desc: "A React Frontend website showcasing my portfolio and projects.",
     about:
-      "A React portfolio website I created to showcase my diverse projects. Drawing design inspiration from other leading frontend developers, I mish mashed the site together with my style and personality. Ultimately, I prioritized simplicity and seamless user interaction, which I believe are the most essential features of a portfolio website.",
+      "A React portfolio website to showcase my diverse projects. Drawing design inspiration from other leading frontend developers, I mish mashed the site together with my style and personality. Ultimately, I prioritized simplicity and seamless user interaction, which I believe are the most essential features of a portfolio website.",
     demo: "https://www.google.com",
-    github: "https://www.google.com",
+    github: "https://github.com/chun-eric/reactportfoliowebsite",
     stack: ["HTML", "CSS", "React", "JSX", "Vite", "Vercel"],
   },
   // {
