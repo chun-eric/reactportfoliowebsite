@@ -19,18 +19,17 @@ const About = ({ theme }) => {
           </div>
           <div className='bio-container'>
             <p className='bio-info'>
-              Currently based in Japan, but raised in Australia, yet somehow
-              born in Dubai, U.A.E., my development, design, and philosophy have
-              been greatly influenced by both Western and Eastern cultures. I am
-              especially inspired by both modern and traditional Japanese
-              fashion, culture, art, and design. When developing digital
-              products, whether they be emails, landing pages, websites, or web
-              apps, I strive to make them simple, easy to understand, and
-              practical. UX/UI is very important to me, so I'm constantly
-              improving my skills and knowledge to achieve the best results in
-              every project. My attention to detail and ability to meet tight
-              deadlines ensure that I deliver projects on time, within budget,
-              and to exact specifications.
+              An Australian currently based in Osaka, Japan, yet somehow born in
+              Dubai, my development, design, and philosophy have been greatly
+              influenced by Western and Eastern cultures. I am fascinated by the
+              striking contrast between modern and traditional Japanese culture,
+              fashion, art, and design. When developing digital products,
+              whether they be emails, landing pages, websites, or web apps, I
+              strive to make them simple, easy to understand, and practical.
+              UX/UI is also very important to me, so I'm constantly improving my
+              skills and knowledge to achieve the best results in every project.
+              I also have a keen interest in cybersecurity, blockchain and relaxing on the
+              beach. Feel free to get in touch with me.
             </p>
 
             <div className='button-container'>

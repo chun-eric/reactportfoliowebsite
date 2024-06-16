@@ -61,7 +61,7 @@ const Footer = ({ theme }) => {
               </div>
               <p className='short_description'>
                 A Front-End Developer focused on delivering beautifully designed
-                & user focused web application.
+                & user focused web applications.
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Footer = ({ theme }) => {
         </div> */}
 
           <div className='main-footer__lower'>
-            <p className="copyright">
+            <p className='copyright'>
               &#169; {new Date().getFullYear()}. Website made by
               <span className='name'> Eric Chun</span>
             </p>
