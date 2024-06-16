@@ -11,7 +11,7 @@ import Image9 from "../../assets/images/project9.jpg";
 const data = [
   {
     id: 1,
-    category: "email",
+    category: "HTML email",
     image: Image1,
     title: "Japan Bliss",
     desc: "A newsletter email for a Japanese travel sigtseeing newsletter.",
@@ -23,7 +23,7 @@ const data = [
   },
   {
     id: 2,
-    category: "email",
+    category: "HTML email",
     image: Image2,
     title: "8-Bits",
     desc: "A newsletter email for a NFT Crypto specialising in 8-Bit Art.",
@@ -35,7 +35,7 @@ const data = [
   },
   {
     id: 3,
-    category: "email",
+    category: "HTML email",
     image: Image3,
     title: "Sleek Furniture",
     desc: "A promotional email for an upmarket modern furniture store.",
@@ -47,7 +47,7 @@ const data = [
   },
   {
     id: 4,
-    category: "email",
+    category: "HTML email",
     image: Image4,
     title: "Chic Estate",
     desc: "A promotional email for an E-commerce fashion store.",
@@ -59,7 +59,7 @@ const data = [
   },
   {
     id: 5,
-    category: "email",
+    category: "HTML email",
     image: Image5,
     title: "Shoe Maven",
     desc: "A transactional email for an E-commerce shore store.",
@@ -71,7 +71,7 @@ const data = [
   },
   {
     id: 6,
-    category: "email",
+    category: "HTML email",
     image: Image6,
     title: "Streamify",
     desc: "A transactional email for an music streaming store.",
@@ -93,18 +93,18 @@ const data = [
     github: "https://github.com/chun-eric/reactportfoliowebsite",
     stack: ["HTML", "CSS", "React", "JSX", "Vite", "Vercel"],
   },
-  // {
-  //   id: 8,
-  //   category: "frontend",
-  //   image: Image8,
-  //   title: "Meetly",
-  //   desc: "Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
-  //   about:
-  //     "Meetly is a video conferencing app that allows you to connect with your team members and friends.",
-  //   demo: "https://www.google.com",
-  //   github: "https://www.google.com",
-  //   stack: ["HTML", "CSS", "JavaScript"],
-  // },
+  {
+    id: 8,
+    category: "Wordpress",
+    image: Image8,
+    title: "English PhraseCamp",
+    desc: "A client Wordpress website for an English language ESL learning platform.",
+    about:
+      "This is a client website I built for an English language learning platform. The website is built on Wordpress and uses Elementor for the page builder. The website is designed to be simple and easy to navigate for users. I am also the website administrator and I manage the website's content and updates.",
+    demo: "https://www.phrasecamp.com",
+    github: "n/a",
+    stack: ["Wordpress", "Elementor", "CSS"],
+  },
   // {
   //   id: 9,
   //   category: "emails",

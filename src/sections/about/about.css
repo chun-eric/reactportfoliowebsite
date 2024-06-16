@@ -1,13 +1,26 @@
 /* About me */
 
 #about {
+  width: 100vw;
+  height: auto;
+  margin: 0;
   position: relative;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.about-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .about-background-overlay {
   position: absolute;
   width: 100%;
-  height: 100%;
+  inset: 0;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -34,43 +47,18 @@
 }
 
 .about-background-overlay.dark {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(
-      circle at 100% 50%,
-      transparent 20%,
-      #00d4f0 21%,
-      #00d4f0 34%,
-      transparent 35%,
-      transparent
-    ),
-    radial-gradient(
-        circle at 0% 50%,
-        transparent 20%,
-        #00d4f0 21%,
-        #00d4f0 34%,
-        transparent 35%,
-        transparent
-      )
-      0 -50px;
   background-color: #333333;
-  background-size: 75px 100px;
   opacity: 0.03;
 }
+
 .about-me {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: auto;
+
+  margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 160px;
-  gap: 6px;
   box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
-  position: relative;
 }
 
 .section-title {
@@ -133,9 +121,9 @@
   word-wrap: break-word;
   flex-wrap: wrap;
   font-weight: normal;
-  align-items: center;
+
   justify-content: center;
-  text-align: center;
+  text-align: left;
   color: var(--primary-opposite-background-color-300);
   line-height: 1.7;
   margin: 0 auto;
@@ -198,5 +186,12 @@ button.btn--theme a {
     text-align: center;
     align-items: center;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .bio-info {
+    width: 90%;
+    text-align: left;
   }
 }

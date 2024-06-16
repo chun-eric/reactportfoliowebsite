@@ -8,7 +8,7 @@ const Skills = ({ theme }) => {
     <section id='skills-section'>
       <div className={`skills ${theme}`}>
         <div className='ripple-background'>
-          <div className={`circle xxlarge shade1 ${theme}`}></div>
+          <div className={`circle xxlarge shade1 `}></div>
           <div className='circle xlarge shade2'></div>
           <div className='circle large shade3'></div>
           <div className='circle mediun shade4'></div>

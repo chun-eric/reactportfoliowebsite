@@ -49,7 +49,7 @@ const PortfolioCard = ({ project, theme }) => {
           src={project.image}
           alt='Portfolio Project Image'
         />
-        <div className='overlay'></div>
+        <div className={`overlay ${theme}`}></div>
         <div className='project-description'>
           <p className='project-title'>{project.title}</p>
           <p className='card-description'>{project.desc}</p>
