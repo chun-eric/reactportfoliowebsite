@@ -249,7 +249,7 @@ button.portfolio-btn {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  width: 500px;
+  width: 400px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -261,13 +261,13 @@ button.portfolio-btn {
 }
 
 .self-photo img {
-  width: fit-content;
+  width: 100%;
   height: auto;
-  border: 10px solid var(--primary-opposite-text-color-800);
+  /* border: 10px solid var(--primary-opposite-text-color-800); */
   border-radius: 8px;
   object-fit: contain;
   z-index: 3;
-  background: #000000;
+  background: transparent;
 }
 
 .conic {
