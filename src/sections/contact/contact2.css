@@ -276,6 +276,13 @@ textarea::placeholder {
   }
 }
 
+@media (min-width: 1025px) {
+  .contact__form-container {
+    width: 80%;
+    max-width: 800px;
+  }
+}
+
 @media (max-width: 1024px) {
   #contact {
     width: 100vw;
