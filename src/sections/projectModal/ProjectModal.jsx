@@ -99,18 +99,31 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
                 <h3 className={`project-title-modal title-name ${theme}`}>
                   Website Link
                 </h3>
-                <p className='projectmodal-websitelink'>{project.demo}</p>
+                <p className={`projectmodal-websitelink ${theme}`}>
+                  <a target='_blank' href={project.demo}>
+                    {project.demo}
+                  </a>
+                </p>
               </div>
               <div className='project-website-heading'>
                 <h3 className={`project-title-modal title-name ${theme}`}>
                   Github
                 </h3>
-                <p className='projectmodal-websitelink'>{project.github}</p>
+                <p className={`projectmodal-websitelink ${theme}`}>
+                  <a target='_blank' href={project.github}>
+                    {project.github}
+                  </a>
+                </p>
               </div>
             </div>
             <div className={`projectmodal-footer ${theme}`}>
               <a href='' className={`projectmodal-footer-link ${theme}`}>
-                <p className={`${theme} open-text`}>Open Projects</p>
+                <p className={`${theme} open-text`}>
+                  {" "}
+                  <a target='_blank' href={project.demo}>
+                    Open Projects
+                  </a>
+                </p>
               </a>
             </div>
           </div>
