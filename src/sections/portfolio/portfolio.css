@@ -207,7 +207,11 @@ button.btn.cat__btn.skill-btn {
   position: absolute;
   inset: 0;
   object-fit: contain;
-  background: white;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(254, 255, 165) 0%,
+    rgb(255, 232, 182) 90%
+  );
   transition: all 0.3s ease-in-out;
 }
 
@@ -430,6 +434,11 @@ button.btn.cat__btn.skill-btn {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(254, 255, 165) 0%,
+    rgb(255, 232, 182) 90%
+  );
 }
 
 .projectmodal-image img {
