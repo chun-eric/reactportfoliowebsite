@@ -3,7 +3,7 @@ const data = [
   {
     id: 2,
     title: "Skills",
-    link: "#skills",
+    link: "#skills-section",
     className: "navlink",
     ref: "skillsRef",
   },

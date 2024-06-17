@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { gsap } from "gsap";
 import ProjectModal from "./sections/projectModal/ProjectModal";
+import { useTheme } from "./sections/customHooks/localStorage";
 // import ToggleTheme from "./context/ToggleTheme";
 // import { ThemeProvider } from "./context/ThemeContext";
 // import { themeChange } from "theme-change";
@@ -19,11 +20,11 @@ import ProjectModal from "./sections/projectModal/ProjectModal";
 // import Card from "./components/Card";
 
 import "./App.css";
-import CustomGradientBackground from "./components/CustomGradientBackground";
 
 function App() {
   // creating theme usestate
-  const [theme, setTheme] = useState("light");
+  // const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useTheme();
 
   // utilizing useRef to scroll to a section
   const portfolioRef = useRef(null);
@@ -44,28 +45,41 @@ function App() {
     AOS.refresh();
   }, []);
 
+  // Initialize theme from local storage and apply it
+  // useEffect(() => {
+  //   const localTheme = localStorage.getItem("theme");
+  //   if (localTheme) {
+  //     setTheme(localTheme);
+  //   }
+  // }, []);
+
   // function to set the dark and light theme on the root id
-  useEffect(() => {
-    const rootElement = document.getElementById("root");
-    const bodyElement = document.body;
-    const paragraphElement = document.querySelectorAll("p");
-    // matches all element with class attribute that contains substring 'title'
-    const titleElement = document.querySelectorAll("[class*='title']");
+  // useEffect(() => {
+  //   // getting the elements to set the theme on
+  //   const rootElement = document.getElementById("root");
+  //   const bodyElement = document.body;
+  //   const paragraphElement = document.querySelectorAll("p");
+  //   // matches all element with class attribute that contains substring 'title'
+  //   const titleElement = document.querySelectorAll("[class*='title']");
 
-    const elements = [
-      rootElement,
-      bodyElement,
-      ...paragraphElement,
-      ...titleElement,
-    ];
+  //   // array of elements to set the theme on
+  //   const elements = [
+  //     rootElement,
+  //     bodyElement,
+  //     ...paragraphElement,
+  //     ...titleElement,
+  //   ];
 
-    elements.forEach((element) => {
-      if (element) {
-        element.classList.add(theme);
-        element.classList.remove(theme === "light" ? "dark" : "light");
-      }
-    });
-  }, [theme]);
+  //   // setting the theme on the elements
+  //   elements.forEach((element) => {
+  //     if (element) {
+  //       element.classList.add(theme);
+  //       element.classList.remove(theme === "light" ? "dark" : "light");
+  //     }
+  //   });
+  //   // setting the theme in local storage
+  //   localStorage.setItem("theme", theme);
+  // }, [theme]);
 
   return (
     <div className={`container  ${theme} `}>
