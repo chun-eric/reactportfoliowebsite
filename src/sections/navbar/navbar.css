@@ -1,5 +1,5 @@
 /* Navbar */
-nav {
+.navbar {
   height: 6rem;
   display: flex;
   justify-content: space-around;
