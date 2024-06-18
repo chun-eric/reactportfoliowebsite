@@ -81,6 +81,7 @@
   font-weight: 500;
   flex-wrap: wrap;
   width: 60%;
+  max-width: 500px;
   margin: 0 auto;
   line-height: 1.6;
   margin-bottom: 60px;
