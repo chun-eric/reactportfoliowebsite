@@ -192,6 +192,6 @@ button.btn--theme a {
 @media (max-width: 800px) {
   .bio-info {
     width: 90%;
-    text-align: left;
+    text-align: center;
   }
 }

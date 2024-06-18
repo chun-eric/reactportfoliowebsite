@@ -524,9 +524,9 @@ button.btn.cat__btn.skill-btn {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
     margin-top: 70px;
   }
   .btn.button-card {
@@ -574,5 +574,19 @@ button.btn.cat__btn.skill-btn {
     font-size: 20px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio__categories {
+    padding-top: 80px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .portfolio__projects {
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 100px;
   }
 }

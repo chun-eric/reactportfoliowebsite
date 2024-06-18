@@ -356,6 +356,11 @@ nav {
 }
 
 @media screen and (max-width: 799px) {
+  .container.navbar__container {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+  }
   .navbarmodal-container {
     width: 100%;
     padding-left: 10px;

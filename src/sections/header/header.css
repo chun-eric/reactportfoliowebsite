@@ -249,7 +249,7 @@ button.portfolio-btn {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  width: 400px;
+  width: 350px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -375,7 +375,10 @@ button.portfolio-btn {
     justify-content: center;
   }
   h1.hello {
-    font-size: 64px;
+    font-size: 54px;
+  }
+  .firstName {
+    font-size: 60px;
   }
   h3.job {
     padding-top: 30px;
@@ -397,7 +400,8 @@ button.portfolio-btn {
   .self-photo {
     width: 400px;
   }
-  img {
+  .self-photo img {
+    max-width: 60%;
     height: auto;
     margin: 0 auto;
     width: fit-content;

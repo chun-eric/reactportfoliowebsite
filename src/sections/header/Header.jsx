@@ -2,7 +2,7 @@
 import "./header.css";
 import A0S from "aos";
 import "aos/dist/aos.css";
-import HeaderImage from "../../assets/images/hero-image-transparent2.png";
+import HeaderImage from "../../assets/images/hero-image-transparent4.png";
 import NameImage from "../../assets/images/hero-name.png";
 // import data2 from "./data";
 import { AiFillLinkedin } from "react-icons/ai";
