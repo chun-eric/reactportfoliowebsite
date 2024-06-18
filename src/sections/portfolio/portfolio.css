@@ -136,15 +136,14 @@ button.btn.cat__btn.skill-btn {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  flex-wrap: wrap;
   margin: 0 auto;
 }
 
 .portfolio__projects {
-  max-width: 1200px;
+  max-width: 1300px;
+  height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
   margin: 0 auto;
   margin-top: 60px;
@@ -512,23 +511,19 @@ button.btn.cat__btn.skill-btn {
   text-align: center;
   z-index: 1500;
 }
+@media screen and (max-width: 1200px) {
+  .portfolio__projects {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .card-container {
-    width: 85vw;
+    width: 100%;
     margin: 0 auto;
   }
 
-  .portfolio__projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 40px;
-    margin-top: 70px;
-  }
   .btn.button-card {
     width: fit-content;
   }
@@ -567,9 +562,6 @@ button.btn.cat__btn.skill-btn {
     opacity: 1;
   }
 
-  .project-title {
-    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.9);
-  }
   .card-description {
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -577,16 +569,15 @@ button.btn.cat__btn.skill-btn {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .portfolio__categories {
     padding-top: 80px;
     width: 70%;
     margin: 0 auto;
   }
   .portfolio__projects {
-    width: 95%;
-    margin: 0 auto;
-    align-items: center;
-    margin-top: 100px;
+    display: grid;
+    width: 85%;
+    grid-template-columns: 1fr;
   }
 }
