@@ -4,14 +4,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  position: fixed !important;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99;
   /* box-shadow: 0 40px 60px rgba(51, 201, 255, 0.03); */
   transition: all 0.1s ease;
-  z-index: 500;
+  z-index: 13500;
   background: white;
   text-align: center;
 }
@@ -410,10 +410,14 @@
   .nav__logo.dark img {
     padding-bottom: 7px;
   }
+  .navbar {
+    position: fixed !important;
+  }
 }
 @media screen and (max-width: 450px) {
   .navbar {
     width: 100%;
+    position: fixed !important;
   }
   .nav__logo img {
     margin-top: 5px;
