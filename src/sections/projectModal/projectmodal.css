@@ -271,13 +271,21 @@ p.open-text a {
   }
 
   .projectmodal {
-    width: fit-content;
-    max-width: 70%;
+    width: 100%;
+    max-width: 100%;
     height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+    align-items: left;
   }
   .projectmodal-footer {
     position: relative;
     width: 100%;
+    height: auto;
     bottom: 0;
     left: 0;
     right: 0;
