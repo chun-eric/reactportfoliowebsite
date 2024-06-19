@@ -27,9 +27,8 @@ const About = ({ theme }) => {
               whether they be emails, landing pages, websites, or web apps, I
               strive to make them simple, easy to understand, and practical.
               UX/UI is also very important to me, so I'm constantly improving my
-              skills and knowledge to achieve the best results in every project.
-              I also have a keen interest in cybersecurity, blockchain and
-              relaxing on the beach. Feel free to get in touch with me.
+              skills and knowledge to achieve the best results for my clients.
+              Feel free to get in touch with me.
             </p>
 
             <div className='button-container'>

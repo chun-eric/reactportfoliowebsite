@@ -60,8 +60,8 @@ const Footer = ({ theme }) => {
                 />
               </div>
               <p className='short_description'>
-                A Front-End Developer focused on delivering beautifully designed
-                & user focused web applications.
+                A Front-End & Email Developer focused on delivering beautifully
+                designed & user focused web applications.
               </p>
             </div>
           </div>

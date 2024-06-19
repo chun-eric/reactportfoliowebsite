@@ -60,7 +60,7 @@
   position: absolute;
   bottom: -7px;
   left: 49%; /* sets to 35% left of the parent container */
-  height: 4px;
+  height: 6px;
   width: 13%; /* sets underline width to 50% of parent element */
   transform: translateX(
     -49%

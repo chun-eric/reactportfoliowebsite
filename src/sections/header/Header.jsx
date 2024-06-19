@@ -51,8 +51,8 @@ const Header = ({ theme }) => {
                 </span>{" "}
               </h1>
               <h3 className={`job ${theme}`}>
-                A Front-End React Developer who loves building web applications
-                and websites that's user-friendly and user-focused.
+                A Front-End React and Email Developer who loves building web
+                applications and websites that's user-friendly and user-focused.
               </h3>
 
               <div className='icons'>
