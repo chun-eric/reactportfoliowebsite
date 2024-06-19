@@ -5,7 +5,7 @@
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  z-index: 1230;
+  z-index: 18000;
   top: 0;
   right: 0;
   margin-right: 0;
@@ -36,8 +36,9 @@
 .container-right {
   width: 100%;
   max-width: 100%;
-  height: fit-content;
-  z-index: 1250;
+  height: 100vh;
+  max-height: 100%;
+  z-index: 12500;
   align-items: right;
   display: flex;
   flex-direction: column;
@@ -56,6 +57,7 @@
   padding: 30px;
   text-align: left;
   background: #fcfaf9;
+  z-index: 18500;
 }
 
 .projectmodal.dark {
@@ -148,14 +150,15 @@ h3.project-title-modal.dark {
 
 .projectmodal-image {
   width: 100%;
-  height: 700px !important;
+  height: 500px !important;
   border-radius: 10px;
   border: 1px solid black;
 }
 
 .projectmodal-image img {
-  transform: scale(1.1);
-  padding-top: 25px;
+  transform: scale(1.6);
+  padding-top: 80px;
+  object-fit: contain;
 }
 
 .projectmodal-image.dark,
@@ -239,4 +242,29 @@ h3.project-title-modal.dark {
 p.open-text a {
   font-weight: bold;
   font-size: 22px;
+}
+
+/* @media screen and (max-width: 1024px) {
+} */
+
+@media screen and (max-width: 450px) {
+  .overlay-projectmodal {
+    display: none;
+  }
+  .projectmodal-container {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    /* center modal horizontally*/
+    /* align-items: center; */
+    /* margin-right: 50px; */
+    overflow-y: auto;
+  }
+
+  .container-right {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
 }

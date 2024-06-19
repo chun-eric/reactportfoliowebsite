@@ -8,7 +8,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 999999;
+  z-index: 2999;
   /* box-shadow: 0 40px 60px rgba(51, 201, 255, 0.03); */
   transition: all 0.1s ease;
   z-index: 13500;
@@ -414,6 +414,7 @@
     position: fixed !important;
   }
 }
+
 @media screen and (max-width: 450px) {
   .navbar {
     width: 100%;
