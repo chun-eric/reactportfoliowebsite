@@ -37,7 +37,6 @@
 
 .container.dark .nav__container .nav__logo {
   background: #fff;
-
   width: 2.5rem;
   height: 2.5rem;
   overflow: hidden;
@@ -46,6 +45,12 @@
 
 .nav__logo img {
   margin-top: 2px;
+  padding: 4px;
+}
+
+.nav__logo.dark img {
+  vertical-align: auto;
+  padding-bottom: 10px;
 }
 
 .container.dark .nav__container .nav__item:hover::after {
@@ -201,10 +206,6 @@
 .navbarmodal-overlay {
   position: absolute;
   inset: 0;
-  /* top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
   width: 100%;
   height: 100vh;
   background: rgba(255, 255, 255, 0.3);
@@ -350,7 +351,11 @@
   }
   .nav__logo img {
     margin-top: 3px;
+    width: 2rem;
+    height: 2rem;
+    padding: 4px;
   }
+
   .btn-contact {
     display: none;
   }
@@ -401,6 +406,11 @@
   }
 }
 
+@media screen and (min-width: 450px) {
+  .nav__logo.dark img {
+    padding-bottom: 7px;
+  }
+}
 @media screen and (max-width: 450px) {
   .navbar {
     width: 100%;
