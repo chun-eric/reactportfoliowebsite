@@ -156,6 +156,7 @@ body {
   overflow: hidden;
   flex-wrap: wrap;
   z-index: 2;
+  overflow-x: hidden;
 }
 
 body.dark {
