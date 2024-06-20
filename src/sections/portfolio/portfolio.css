@@ -292,16 +292,22 @@ button.btn.cat__btn.skill-btn {
   border: none;
   text-align: center;
   padding: 10px 30px;
-  transition: background-color 1s ease;
+  /* transition: background-color 1s ease; */
 }
 
 .button-card-container > .button-card > p a {
   color: white;
 }
 
-.btn:hover {
-  background-color: var(--primary-brand-color-600);
-}
+/* .btn:hover {
+  /* background-color: var(--primary-brand-color-600); */
+/* pointer-events: none; *
+} */
+
+/* .btn.button-card:hover {
+  transform: none;
+  pointer-events: none;
+} */
 
 .btn a {
   color: inherit;

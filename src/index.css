@@ -325,7 +325,7 @@ button {
   box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
   font-family: inherit;
   background-color: var(--primary-brand-color-400);
-  transition: 0.3s;
+  /* transition: 0.3s; */
   cursor: pointer;
   width: fit-content;
   display: inline-block;
@@ -338,8 +338,13 @@ button {
 
 button:hover {
   opacity: 0.9;
-  transform: translateY(-0.5rem);
+  /* pointer-events: none; */
+  /* transform: translateY(-0.5rem); */
 }
+
+/* .noHover {
+  pointer-events: none;
+} */
 
 /* button:focus,
 button:focus-visible {

@@ -38,9 +38,9 @@ const PortfolioCard = ({ project, theme }) => {
     <div
       className='project-cards-container'
       data-aos='fade-up'
-      data-aos-delay='50'
-      data-aos-offset='200'
-      data-aos-duration='1000'
+      data-aos-delay='250'
+      data-aos-offset='100'
+      data-aos-duration='250'
       data-aos-easing='ease-in-out'
     >
       <div className='card-container gradient-border'>
@@ -54,7 +54,7 @@ const PortfolioCard = ({ project, theme }) => {
           <p className='project-title'>{project.title}</p>
           <p className='card-description'>{project.desc}</p>
           <div className='button-card-container'>
-            <button className='btn button-card demo'>
+            <button className='btn button-card demo '>
               <p>
                 <a
                   href={project.demo}
