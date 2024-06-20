@@ -11,7 +11,7 @@ import Image9 from "../../assets/images/project9.jpg";
 const data = [
   {
     id: 1,
-    category: "HTML email",
+    category: "HTML Email",
     image: Image1,
     title: "Japan Bliss",
     desc: "A newsletter email for a Japanese travel sigtseeing newsletter.",
@@ -23,7 +23,7 @@ const data = [
   },
   {
     id: 2,
-    category: "HTML email",
+    category: "HTML Email",
     image: Image2,
     title: "8-Bits",
     desc: "A newsletter email for a NFT Crypto specialising in 8-Bit Art.",
@@ -35,7 +35,7 @@ const data = [
   },
   {
     id: 3,
-    category: "HTML email",
+    category: "HTML Email",
     image: Image3,
     title: "Sleek Furniture",
     desc: "A promotional email for an upmarket modern furniture store.",
@@ -47,37 +47,37 @@ const data = [
   },
   {
     id: 4,
-    category: "HTML email",
+    category: "HTML Email",
     image: Image4,
     title: "Chic Estate",
     desc: "A promotional email for an E-commerce fashion store.",
     about:
       "A promotional email I designed and coded for a fictional E-commerce store called Chic Estate that sells Men's and Women's clothes. The goal of this promotional email is to help boost sales for the company for an exclusive offer summer sale. The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
-    demo: "https://www.google.com",
+    demo: "https://chicestate.vercel.app/",
     github: "https://github.com/chun-eric/promotional_2",
     stack: ["HTML", "CSS", "Email on Acid", "Photoshop", "Figma"],
   },
   {
     id: 5,
-    category: "HTML email",
+    category: "HTML Email",
     image: Image5,
     title: "Shoe Maven",
     desc: "A transactional email for an E-commerce shore store.",
     about:
       "A transactional email I designed and coded for a fictional e-commerce shoe store called Shoe Maven. The goal of this email is to confirm the customer's order, including a detailed list of all items purchased and the final price.The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
-    demo: "",
+    demo: "https://shoemaven.vercel.app/",
     github: "https://github.com/chun-eric/transactional_1",
     stack: ["HTML", "CSS", "Email on Acid", "Photoshop", "Figma"],
   },
   {
     id: 6,
-    category: "HTML email",
+    category: "HTML Email",
     image: Image6,
     title: "Streamify",
     desc: "A transactional email for an music streaming store.",
     about:
       "A transactional email I coded for a fictional music streaming store called Streamify. The goal of this email is to confirm the customer's monthly subscription to the streaming service.The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
-    demo: "https://www.google.com",
+    demo: "https://streamify-beryl.vercel.app/",
     github: "https://github.com/chun-eric/transactional_2",
     stack: ["HTML", "CSS", "Email on Acid", "Photoshop", "Figma"],
   },
