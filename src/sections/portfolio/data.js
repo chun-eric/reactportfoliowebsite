@@ -17,9 +17,9 @@ const data = [
     desc: "A newsletter email for a Japanese travel sigtseeing newsletter.",
     about:
       "A newsletter email I designed and coded for a fictional Japan travel newsletter that showcases different places to visit in Japan. The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test the email on different email clients.",
-    demo: "https://www.google.com",
+    demo: "https://japanbliss.vercel.app/",
     github: "https://github.com/chun-eric/newsletter_1",
-    stack: ["HTML", "CSS", "Email on Acid", "Photoshop"],
+    stack: ["HTML", "CSS", "Email on Acid", "Photoshop", "Figma"],
   },
   {
     id: 2,
@@ -29,9 +29,9 @@ const data = [
     desc: "A newsletter email for a NFT Crypto specialising in 8-Bit Art.",
     about:
       "A newsletter email I designed and coded for a fictional NFT Crypto newsletter. I have an affinity for 8 bit art and 80's pop culture and so I wanted to mix the old with the new. The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
-    demo: "https://www.google.com",
-    github: "https://github.com/chun-eric/newsletter_2",
-    stack: ["HTML", "CSS", "Email on Acid", "Photoshop"],
+    demo: "https://eightbitnfts.vercel.app/",
+    github: "https://github.com/chun-eric/newsletter2",
+    stack: ["HTML", "CSS", "Email on Acid", "Photoshop", "Figma"],
   },
   {
     id: 3,
@@ -41,9 +41,9 @@ const data = [
     desc: "A promotional email for an upmarket modern furniture store.",
     about:
       "A promotional email I designed and coded for a fictional upmarket furniture company called Sleek Furniture. The goal of this promotional email is to help boost sales for the company for its Black Friday sale. The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
-    demo: "https://www.google.com",
+    demo: "https://sleekfurniture.vercel.app/",
     github: "https://github.com/chun-eric/promotional_1",
-    stack: ["HTML", "CSS", "Email on Acid", "Photoshop"],
+    stack: ["HTML", "CSS", "Email on Acid", "Photoshop", "Figma"],
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const data = [
       "A promotional email I designed and coded for a fictional E-commerce store called Chic Estate that sells Men's and Women's clothes. The goal of this promotional email is to help boost sales for the company for an exclusive offer summer sale. The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
     demo: "https://www.google.com",
     github: "https://github.com/chun-eric/promotional_2",
-    stack: ["HTML", "CSS", "Email on Acid", "Photoshop"],
+    stack: ["HTML", "CSS", "Email on Acid", "Photoshop", "Figma"],
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ const data = [
       "A transactional email I designed and coded for a fictional e-commerce shoe store called Shoe Maven. The goal of this email is to confirm the customer's order, including a detailed list of all items purchased and the final price.The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
     demo: "",
     github: "https://github.com/chun-eric/transactional_1",
-    stack: ["HTML", "CSS", "Email on Acid", "Photoshop"],
+    stack: ["HTML", "CSS", "Email on Acid", "Photoshop", "Figma"],
   },
   {
     id: 6,
@@ -79,7 +79,7 @@ const data = [
       "A transactional email I coded for a fictional music streaming store called Streamify. The goal of this email is to confirm the customer's monthly subscription to the streaming service.The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test it on different email clients.",
     demo: "https://www.google.com",
     github: "https://github.com/chun-eric/transactional_2",
-    stack: ["HTML", "CSS", "Email on Acid", "Photoshop"],
+    stack: ["HTML", "CSS", "Email on Acid", "Photoshop", "Figma"],
   },
   {
     id: 7,

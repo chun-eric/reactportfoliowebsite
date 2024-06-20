@@ -100,7 +100,7 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
                   Website Link
                 </h3>
                 <p className={`projectmodal-websitelink ${theme}`}>
-                  <a target='_blank' href={project.demo}>
+                  <a href={project.demo} target='_blank'>
                     {project.demo}
                   </a>
                 </p>
@@ -121,7 +121,7 @@ const ProjectModal = ({ project, handleProjectModal, theme }) => {
                 <p className={`${theme} open-text`}>
                   {" "}
                   <a target='_blank' href={project.demo}>
-                    Open Projects
+                    Open Project
                   </a>
                 </p>
               </a>

@@ -56,7 +56,12 @@ const PortfolioCard = ({ project, theme }) => {
           <div className='button-card-container'>
             <button className='btn button-card demo'>
               <p>
-                <a href={project.demo} className='' rel='noopener noreferrer'>
+                <a
+                  href={project.demo}
+                  target='_blank'
+                  className=''
+                  rel='noopener noreferrer'
+                >
                   Demo
                 </a>
               </p>
