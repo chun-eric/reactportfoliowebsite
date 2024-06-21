@@ -5,6 +5,7 @@ import ProjectModal from "../projectModal/ProjectModal";
 const PortfolioCard = ({ project, theme }) => {
   // state to keep track of Project modal visibility
   const [showProjectModal, setShowProjectModal] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
   const handleProjectModal = (value) => {
     setShowProjectModal(value);
@@ -37,11 +38,11 @@ const PortfolioCard = ({ project, theme }) => {
   return (
     <div
       className='project-cards-container'
-      data-aos='fade-up'
-      data-aos-delay='250'
-      data-aos-offset='100'
-      data-aos-duration='250'
-      data-aos-easing='ease-in-out'
+      // data-aos='fade-up'
+      // data-aos-delay='250'
+      // data-aos-offset='100'
+      // data-aos-duration='250'
+      // data-aos-easing='ease-in-out'
     >
       <div className='card-container gradient-border'>
         <img
@@ -49,8 +50,14 @@ const PortfolioCard = ({ project, theme }) => {
           src={project.image}
           alt='Portfolio Project Image'
         />
-        <div className={`overlay ${theme}`}></div>
-        <div className='project-description'>
+        <div
+          className={`overlay ${theme} ${hovered ? "overlay-hover" : ""}`}
+        ></div>
+        <div
+          className='project-description fade-in'
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
           <p className='project-title'>{project.title}</p>
           <p className='card-description'>{project.desc}</p>
           <div className='button-card-container'>

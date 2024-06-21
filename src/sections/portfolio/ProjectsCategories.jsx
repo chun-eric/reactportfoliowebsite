@@ -15,11 +15,11 @@ const ProjectsCategories = ({ categories, onFilterProjects, theme }) => {
     <section className='section-categorybutton'>
       <div
         className={`portfolio__categories ${theme}`}
-        data-aos='fade-up'
-        data-aos-delay='100'
-        data-aos-offset='100'
-        data-aos-duration='800'
-        data-aos-easing='ease-in'
+        // data-aos='fade-up'
+        // data-aos-delay='100'
+        // data-aos-offset='100'
+        // data-aos-duration='800'
+        // data-aos-easing='ease-in'
       >
         {categories.map((category) => (
           <CategoryButton

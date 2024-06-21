@@ -57,6 +57,7 @@
   font-weight: bold;
   color: #151515;
   text-align: center;
+  transition: none;
 }
 
 .skills-title .project-title::after {
@@ -170,7 +171,6 @@ button.btn.cat__btn.skill-btn {
   /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  background-color: transparent;
 }
 
 .card-container.dark {
@@ -178,71 +178,28 @@ button.btn.cat__btn.skill-btn {
   box-shadow: rgba(255, 255, 255, 0.45) 0px 3px 3px 0px;
 }
 
-/* .card-container:hover {
-  border: 10px solid
-    linear-gradient(
-      60deg,
-      hsl(224, 85%, 66%),
-      hsl(269, 85%, 66%),
-      hsl(314, 85%, 66%),
-      hsl(359, 85%, 66%),
-      hsl(44, 85%, 66%),
-      hsl(89, 85%, 66%),
-      hsl(134, 85%, 66%),
-      hsl(179, 85%, 66%)
-    );
-  animation: moveGradient 4s alternate infinite;
-}
-
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
-} */
-
 .cover-image {
   width: 100% !important;
   height: 100% !important;
   position: absolute;
   inset: 0;
   object-fit: contain;
-  /* background: radial-gradient(
-    circle at 10% 20%,
-    rgb(254, 255, 165) 0%,
-    rgb(255, 232, 182) 90%
-  ); */
-  background: #eab259;
-  background: linear-gradient(135deg, #eab259, #f4a661);
+  background: #f49a09;
+  background: linear-gradient(135deg, #f49a09, #f2af3d);
   transition: all 0.3s ease-in-out;
 }
 
-.project-cards-container:hover .cover-image {
-  transform: scale(1.2);
-}
-
-.overlay::before {
-  content: " ";
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(0, 0, 0, 0.1); */
-}
-.overlay.dark::before {
-  background: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
 }
 
-.overlay::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent); */
-  border-radius: inherit;
-  opacity: 0.2;
+.overlay-hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .project-description {
@@ -251,27 +208,36 @@ button.btn.cat__btn.skill-btn {
   left: 1px;
   text-align: left;
   margin: 0 5px;
+  margin-bottom: 15px;
   width: 90%;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   box-sizing: border-box;
   background-color: transparent;
-  transform: translateY(100%);
-  transition: transform 0.55s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in;
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.project-description:hover.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* took me a long time to figure out here. I needed to hover on the entire container of the project-cards-container */
 .project-cards-container:hover {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-}
-
-.project-cards-container:hover .project-description {
-  transform: translateY(0);
-  opacity: 1;
-  z-index: 160;
-  background: radial-gradient(to top, rgba(0, 0, 0, 0.8));
 }
 
 .project-title {
@@ -292,30 +258,25 @@ button.btn.cat__btn.skill-btn {
   gap: 10px;
   margin-top: 20px;
 }
-
+.btn.button-card {
+  transition: all 0.3s ease-in-out;
+}
+.btn.button-card:hover {
+  transform: translateY(-2px);
+}
 .btn .button-card {
-  text-transform: capitalize;
+  /* text-transform: capitalize;
   background-color: var(--primary-brand-color-400);
   cursor: pointer;
   border: none;
   text-align: center;
   padding: 10px 30px;
-  /* transition: background-color 1s ease; */
+  transition: 1s ease; */
 }
 
 .button-card-container > .button-card > p a {
   color: white;
 }
-
-/* .btn:hover {
-  /* background-color: var(--primary-brand-color-600); */
-/* pointer-events: none; *
-} */
-
-/* .btn.button-card:hover {
-  transform: none;
-  pointer-events: none;
-} */
 
 .btn a {
   color: inherit;
@@ -588,6 +549,7 @@ button.btn.cat__btn.skill-btn {
     padding-top: 80px;
     width: 70%;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
   .portfolio__projects {
     display: grid;

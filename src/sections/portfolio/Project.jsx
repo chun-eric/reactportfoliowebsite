@@ -8,8 +8,8 @@ const Project = ({ project, theme, aosDelay }) => {
     <PortfolioCard
       project={project}
       theme={theme}
-      data-aos-easing='ease-in'
-      data-aos-delay={aosDelay}
+      // data-aos-easing='ease-in'
+      // data-aos-delay={aosDelay}
     />
   );
 };

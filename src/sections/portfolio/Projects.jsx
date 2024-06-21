@@ -19,7 +19,6 @@ const Projects = ({ projects, theme }) => {
           project={project}
           theme={theme}
           aosDeloy={index * 100}
-          
         />
       ))}
     </div>
