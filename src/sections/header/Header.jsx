@@ -74,7 +74,7 @@ const Header = ({ theme }) => {
               <div className='button-container'>
                 <button className='btn portfolio-btn '>
                   <li>
-                    <a href='#contact' className='portfolio-name'>
+                    <a href='#portfolio' className='portfolio-name'>
                       Portfolio
                     </a>
                   </li>

@@ -4,13 +4,13 @@ import { AiFillGithub } from "react-icons/ai";
 const data = [
   {
     id: 1,
-    link: "https://instagram.com",
+    link: "https://linkedin.com/in/eric-chun-b536711a",
     title: "LinkedIn",
     icon: <AiFillLinkedin />,
   },
   {
     id: 2,
-    link: "https://github.com",
+    link: "https://github.com/chun-eric",
     title: "GitHub",
     icon: <AiFillGithub />,
   },

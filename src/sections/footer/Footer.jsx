@@ -8,7 +8,7 @@ import logoWhite from "@/assets/logos/svg/logo-white.svg";
 const data2 = [
   {
     id: 1,
-    link: "https://instagram.com",
+    link: "https://linkedin.com/in/eric-chun-b536711a",
     title: "LinkedIn",
     icon: <AiFillLinkedin />,
   },
