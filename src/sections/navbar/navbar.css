@@ -424,4 +424,18 @@
     margin-top: 5px;
     font-size: 2.6rem;
   }
+  .navbarmodal-container {
+    width: 100%;
+  }
+
+  .navbar-modal {
+    width: fit-content;
+  }
+
+  .close-icon {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 399px) {
 }
