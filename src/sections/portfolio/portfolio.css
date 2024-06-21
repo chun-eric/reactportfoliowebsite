@@ -512,8 +512,8 @@ button.btn.cat__btn.skill-btn {
     object-fit: contain !important;
     transform: scale(1.5);
     padding-top: 50px;
-    background: #56129b;
-    background: linear-gradient(135deg, #4e0f8e, #af71f2);
+    /* background: #56129b;
+    background: linear-gradient(135deg, #4e0f8e, #af71f2); */
   }
   .overlay::before {
     content: " ";

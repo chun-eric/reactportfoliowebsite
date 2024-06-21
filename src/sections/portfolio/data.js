@@ -14,7 +14,7 @@ const data = [
     category: "HTML Email",
     image: Image1,
     title: "Japan Bliss",
-    desc: "A newsletter email for a Japanese travel sigtseeing newsletter.",
+    desc: "A newsletter email for a Japanese travel sightseeing newsletter.",
     about:
       "A newsletter email I designed and coded for a fictional Japan travel newsletter that showcases different places to visit in Japan. The email is responsive and works on all email clients. I used HTML, CSS, and Photoshop to create the email and Email on Acid to test the email on different email clients.",
     demo: "https://japanbliss.vercel.app/",
