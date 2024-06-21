@@ -264,10 +264,10 @@ p.open-text a {
     right: 0;
     left: 0;
     bottom: 0;
-
     overflow-y: scroll;
   }
 
+  /* */
   .container-right {
     width: 100vw;
     max-width: 100%;
@@ -281,16 +281,6 @@ p.open-text a {
   }
 
   /* this is was very trick they key here was setting the width to 100vw to matches the width of the screen size*/
-  .projectmodal {
-    /* width: 100vw;
-    max-width: 100%; */
-    /* the height setting to auto is very important as it automatically adjusts the height for the entire projectmodal container*/
-    /* height: auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 20px; */
-  }
 
   .projectmodal {
     width: 100vw;
@@ -304,11 +294,11 @@ p.open-text a {
 
   .projectmodal-footer {
     /* position: relative; */
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
     width: 100vw;
     height: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
     text-align: center;
   }
 }
