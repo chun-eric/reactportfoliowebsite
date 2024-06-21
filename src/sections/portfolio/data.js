@@ -5,8 +5,9 @@ import Image4 from "../../assets/images/promotional_2.png";
 import Image5 from "../../assets/images/transactional_1.png";
 import Image6 from "../../assets/images/transactional_2.png";
 import Image7 from "../../assets/images/project7.jpg";
-import Image8 from "../../assets/images/project8.jpg";
-import Image9 from "../../assets/images/project9.jpg";
+import Image8 from "../../assets/images/EnglishPhraseCamp-Homepage.png";
+import Image9 from "../../assets/images/Porfolio-Website-image-resized.png";
+import Image10 from "../../assets/images/Portfolio-Homepage.png";
 
 const data = [
   {
@@ -84,12 +85,12 @@ const data = [
   {
     id: 7,
     category: "Frontend",
-    image: Image7,
+    image: Image10,
     title: "Portfolio Website",
     desc: "A React Frontend website showcasing my portfolio and projects.",
     about:
       "A React portfolio website to showcase my diverse projects. Drawing design inspiration from other leading frontend developers, I mish mashed the site together with my style and personality. Ultimately, I prioritized simplicity and seamless user interaction, which I believe are the most essential features of a portfolio website.",
-    demo: "https://www.google.com",
+    demo: "https://www.ecdevportfolio.com/",
     github: "https://github.com/chun-eric/reactportfoliowebsite",
     stack: ["HTML", "CSS", "React", "JSX", "Vite", "Vercel"],
   },

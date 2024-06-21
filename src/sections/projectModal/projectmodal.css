@@ -158,9 +158,10 @@ h3.project-title-modal.dark {
 }
 
 .projectmodal-image img {
-  width: fit-content !important;
-  transform: scale(3);
-  padding-top: 110px;
+  width: 100%;
+  /* transform: scale(3); */
+  /* padding-top: 110px; */
+  object-fit: contain;
   margin: 0 auto;
 }
 
