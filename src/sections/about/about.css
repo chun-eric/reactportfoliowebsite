@@ -121,14 +121,13 @@
   word-wrap: break-word;
   flex-wrap: wrap;
   font-weight: normal;
-
   justify-content: center;
-  text-align: left;
+  text-align: justify;
   color: var(--primary-opposite-background-color-300);
   line-height: 1.7;
   margin: 0 auto;
   margin-bottom: 40px;
-  text-align: center;
+  text-indent: 1rem;
 }
 
 button.btn--theme--about {
@@ -192,6 +191,7 @@ button.btn--theme a {
 @media (max-width: 800px) {
   .bio-info {
     width: 90%;
-    text-align: center;
+    text-align: left;
+    font-size: 20px;
   }
 }
