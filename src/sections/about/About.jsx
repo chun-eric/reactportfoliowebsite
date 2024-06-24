@@ -34,9 +34,9 @@ const About = ({ theme }) => {
             </p>
             <p className='bio-info'>
               I also have interests in cybersecurity especially in the area of
-              governance and risk management, developing weird micro SaaS
-              applications in my spare time and going to the beach as much as
-              possible. Feel free to get in touch with me.
+              governance and risk management, developing micro SaaS applications
+              in my spare time and going to the beach as much as possible. Feel
+              free to get in touch with me.
             </p>
             <p className='bio-info'></p>
 
