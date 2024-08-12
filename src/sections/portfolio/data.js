@@ -106,17 +106,17 @@ const data = [
     github: "n/a",
     stack: ["Wordpress", "Elementor", "CSS"],
   },
-  // {
-  //   id: 9,
-  //   category: "emails",
-  //   image: Image9,
-  //   title: "Meetly",
-  //   desc: "Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
-  //   about:
-  //     "Meetly is a video conferencing app that allows you to connect with your team members and friends.",
-  //   demo: "https://www.google.com",
-  //   github: "https://www.google.com",
-  //   stack: ["HTML", "CSS", "JavaScript"],
-  // },
+  {
+    id: 9,
+    category: "Frontend",
+    image: Image9,
+    title: "La Trattoria",
+    desc: "A highend Italian restaurant website in the heart of Osaka, Japan.",
+    about:
+      "Meetly is a video conferencing app that allows you to connect with your team members and friends.",
+    demo: "https://latrattoria.vercel.app",
+    github: "https://www.google.com",
+    stack: ["HTML", "CSS", "JavaScript", "Claude AI"],
+  },
 ];
 export default data;

@@ -143,6 +143,7 @@ h2.project-main-title-modal.dark {
 body {
   font-family: Robbins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   width: 100%;
+  max-width: 100%;
   height: 100vh;
   margin: 0 auto;
   color-scheme: light dark;
@@ -172,6 +173,9 @@ body.dark {
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* a {
@@ -230,8 +234,11 @@ a:hover {
 /* General Section styles */
 section {
   width: 100vw;
+  height: 100%;
+  /* min-height: 100vh; */
   margin: 0;
-  padding: 8rem 0;
+  padding: 0;
+  /* padding: 6rem 0; */
   /* background-color: var(--color-light); */
   transition: var(--transition);
 }
