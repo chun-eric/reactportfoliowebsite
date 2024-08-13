@@ -97,7 +97,7 @@ h3.project-title {
   position: relative;
   padding-bottom: 6px;
   font-weight: bold;
-  color: #fff !important;
+  color: #fff;
   opacity: 1;
 }
 
@@ -118,8 +118,8 @@ h3.project-title {
   color: #333333;
 }
 
-.skills-title .project-title.dark {
-  color: white;
+.skills-title h3.project-title.dark {
+  color: #000 !important;
 }
 
 .project-title.dark,
@@ -254,10 +254,14 @@ h3.project-title {
 }
 
 .project-title {
-  color: white !important;
+  color: #000 !important;
   font-weight: bold;
-  font-size: 34px;
   margin: 0;
+}
+
+.portfolio-card.project-title {
+  font-size: 35px;
+  color: #ffffff !important;
 }
 
 .card-description {

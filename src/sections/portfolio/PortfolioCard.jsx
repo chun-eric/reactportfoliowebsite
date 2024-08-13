@@ -26,7 +26,7 @@ const PortfolioCard = ({ project, theme }) => {
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
-          <p className='project-title'>{project.title}</p>
+          <p className='portfolio-card project-title'>{project.title}</p>
           <p className='card-description'>{project.desc}</p>
           <div className='button-card-container'>
             <button className='btn button-card demo'>
