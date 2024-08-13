@@ -1,46 +1,45 @@
+import { useState } from "react";
 import data from "./data";
-
 import "./portfolio.css";
 import Projects from "./Projects";
 import ProjectsCategories from "./ProjectsCategories";
-import { useState } from "react";
+import PropTypes from "prop-types";
 
 const Portfolio = ({ theme }) => {
   const [projects, setProjects] = useState(data);
 
-  // get all the categories
-  const categories = data.map((item) => item.category);
+  const categories = ["All", ...new Set(data.map((item) => item.category))];
 
-  // Get unique categories only remove duplicates
-  const uniqueCategories = ["All", ...new Set(categories)];
-
-  // function to filter projects based on categories
   const filterProjectsHandler = (category) => {
-    // if All is selected, return all projects
-    if (category === "All") return setProjects(data);
-
-    // filter data based on category
-    const filterProjects = data.filter(
-      (project) => project.category === category
-    );
-    setProjects(filterProjects);
+    if (category === "All") {
+      setProjects(data);
+    } else {
+      setProjects(data.filter((project) => project.category === category));
+    }
   };
 
   return (
     <section id='portfolio' className={theme}>
       <div className={`portfolio-overlay ${theme}`}></div>
-      <div className='skills-title'>
-        <h3 className={`project-title ${theme}`}>Projects</h3>
-      </div>
-      <div className={`container portfolio__container ${theme}`}>
+      <div className='portfolio-content'>
+        <div className='skills-title'>
+          <h3 className={`project-title ${theme}`}>Projects</h3>
+        </div>
         <ProjectsCategories
-          categories={uniqueCategories}
+          categories={categories}
           onFilterProjects={filterProjectsHandler}
+          theme={theme}
         />
-        <Projects projects={projects} theme={theme} />
+        <div className={`container portfolio__container ${theme}`}>
+          <Projects projects={projects} theme={theme} />
+        </div>
       </div>
     </section>
   );
 };
 
 export default Portfolio;
+
+Portfolio.propTypes = {
+theme: PropTypes.string.isRequired,
+};

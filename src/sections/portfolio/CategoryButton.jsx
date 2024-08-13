@@ -12,6 +12,7 @@ CategoryButton.propTypes = {
   category: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
   changeCategory: PropTypes.func.isRequired,
+  active: PropTypes.string.isRequired,
 };
 
 export default CategoryButton;

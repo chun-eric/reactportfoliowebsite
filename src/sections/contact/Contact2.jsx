@@ -97,25 +97,16 @@ const Contact = ({}) => {
   return (
     <section id='contact'>
       <div className={`main-container contact-form `}>
-        <div
-          className='contact-heading'
-          data-aos='fade-up'
-          data-aos-delay='80'
-          data-aos-offset='0'
-          data-aos-duration='400'
-          data-aos-easing='ease-in-out'
-        >
+        <div className='contact-heading'>
           <h2>
-            <span
-              className={`heading-sec__main heading-sec__main--lt contact-me `}
-            >
+            <span className='heading-sec__main heading-sec__main--lt contact-me'>
               Contact Me
             </span>
-            <span className={`heading-contactme `}>
-              Feel free to Contact me by submitting the form below and I'll get
-              back to you as soon as I can.
-            </span>
           </h2>
+          <p className='heading-contactme'>
+            Feel free to Contact me by submitting the form below and I'll get
+            back to you as soon as I can.
+          </p>
         </div>
 
         <div

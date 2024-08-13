@@ -10,7 +10,7 @@ const About = ({ theme }) => {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.35 } // Trigger when 35% of the section is visible
+      { threshold: 0.45 } // Trigger when 35% of the section is visible
     );
 
     if (aboutRef.current) {
@@ -34,15 +34,15 @@ const About = ({ theme }) => {
           </div>
           <div className='bio-container'>
             <p className='bio-info'>
-              Hi, I'm Eric Chun, an Australian born in Dubai, now currently
-              calling Osaka, Japan my home. My journey through diverse cultures
-              has ignited a deep passion for blending Western innovation with
-              Eastern tradition in my development and design work. I'm
-              fascinated by Japanese culture — from the enjoyment of anime and
-              video games to the elegance of streetwear fashion and automotive
-              design to the warmth of its 'omotenashi' hospitality. These
-              influences fuel my creativity and inspire me to craft unique and
-              richer experiences.
+              Hi, I'm Eric Chun, an Australian with roots in Dubai, now
+              currently calling Osaka, Japan my home. My journey through diverse
+              cultures has ignited a deep passion for blending Western and
+              Eastern cultures in my development and design work. I'm fascinated
+              by Japanese culture — from anime and video games to streetwear
+              fashion and automotive design. I'm equally drawn to the warmth of
+              'omotenashi' hospitality that permeates everyday life here. These
+              diverse influences fuel my creativity, inspiring me to craft
+              experiences that are both unique and engaging.
             </p>
             <p className='bio-info'>
               When developing digital products, whether it be emails, landing

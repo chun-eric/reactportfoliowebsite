@@ -136,6 +136,17 @@
   color: #fff;
 }
 
+/* Dark theme styles */
+#root.dark,
+body.dark,
+.container.dark,
+section.dark {
+  background: #151515;
+  color: #fff;
+}
+
+
+
 h2.project-main-title-modal.dark {
   color: #fff;
 }
@@ -156,7 +167,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
   overflow: hidden;
   flex-wrap: wrap;
-  z-index: 2;
+  /* z-index: 2; */
   overflow-x: hidden;
 }
 
@@ -240,7 +251,7 @@ section {
   padding: 0;
   /* padding: 6rem 0; */
   /* background-color: var(--color-light); */
-  transition: var(--transition);
+  /* transition: var(--transition); */
 }
 
 section.dark {
@@ -349,38 +360,7 @@ button:hover {
   /* transform: translateY(-0.5rem); */
 }
 
-/* .noHover {
-  pointer-events: none;
-} */
 
-/* button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
-
-button.white {
-  background: var(--color-white);
-}
-
-button.white:hover {
-  background: transparent;
-  border-color: var(--color-white);
-}
-
-button.primary {
-  background: var(--primary-brand-color-400);
-  color: white;
-}
-
-button.primary:hover {
-  background: transparent;
-  border-color: var(--color-primary);
-  color: #ffffff;
-}
-
-button.sm {
-  padding: 0.5rem 1.2rem;
-}
 
 /* GENERAL BACKGROUND OVERLAY */
 .backgroud-overlay {
@@ -462,3 +442,4 @@ button.sm {
     text-align: center;
   }
 }
+

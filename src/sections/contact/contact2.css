@@ -12,7 +12,7 @@
   object-fit: contain;
   margin-bottom: 100px;
   width: 100vw;
-  padding-bottom: 160px;
+  padding: 160px 0;
 }
 
 .contact.dark {
@@ -85,6 +85,11 @@
   margin: 0 auto;
   line-height: 1.6;
   margin-bottom: 60px;
+  color: #151515;
+}
+
+.heading-contactme.dark {
+  color: #151515 !important;
 }
 
 .contact__form-container {
@@ -284,7 +289,7 @@ textarea::placeholder {
 
 @media (max-width: 1024px) {
   #contact {
-    width: 100vw;
+    padding-bottom: 160px !important;
   }
   .section-padding {
     padding: 0;
@@ -297,7 +302,6 @@ textarea::placeholder {
 
   .main-container.contact-form {
     width: 90%;
-    /* padding: 40px 30px; */
 
     text-align: center;
   }

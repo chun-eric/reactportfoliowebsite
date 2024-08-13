@@ -5,18 +5,23 @@
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  z-index: 18000;
+  z-index: 20000 !important;
   top: 0;
-  right: 0;
+  right: -100%;
   margin-right: 0;
   flex: 1;
   overflow-y: scroll;
   scrollbar-color: #06d8fd #ffffff;
+  transition: right 0.3s ease-in-out;
+}
+
+.projectmodal-container.visible {
+  right: 0; /* Slide in when visible */
 }
 
 .overlay-projectmodal {
   background-color: black;
-  z-index: 200;
+  z-index: 19999;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -26,7 +31,14 @@
   overflow-y: auto;
   background-size: cover;
   background-position: center center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay-projectmodal.visible {
   opacity: 0.65;
+  pointer-events: auto;
 }
 
 .overlay-projectmodal::after {
@@ -50,7 +62,7 @@
 }
 
 .container-right .visible {
-  right: 0px;
+  transform: translateX(-545px);
 }
 
 .projectmodal {
@@ -262,10 +274,14 @@ p.open-text a {
     max-height: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     left: 0;
     bottom: 0;
     overflow-y: scroll;
+  }
+
+  .projectmodal-container.visible {
+    right: 0;
   }
 
   /* */
@@ -279,6 +295,11 @@ p.open-text a {
     left: 0;
     right: 0;
     overflow-y: scroll;
+    transform: none;
+  }
+
+  .container-right.visible {
+    transform: none;
   }
 
   /* this is was very trick they key here was setting the width to 100vw to matches the width of the screen size*/

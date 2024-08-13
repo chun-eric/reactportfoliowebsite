@@ -91,7 +91,7 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  width: 100%;
+  width: 80%;
   max-width: 1200px; /* Or whatever max-width you prefer */
   margin: 0 auto;
   padding: 220px 20px 130px; /* Adjust top padding to account for any header */
@@ -100,13 +100,13 @@
 }
 
 .hero.dark {
-  /* background: #161515 !important; */
+  background: transparent !important;
   /* background: linear-gradient(
     109.6deg,
     rgb(36, 45, 57) 11.2%,
     rgb(16, 37, 60) 51.2%,
     rgb(0, 0, 0) 98.6%
-  ); */
+  );*/
 }
 
 .hero .content {
@@ -277,7 +277,7 @@ button.portfolio-btn {
   left: 50%; /* Move right by 50% of container's width */
   transform: translate(-50%, -50%); /* Center the image precisely */
   z-index: 3;
-  background-color: rgb(255, 237, 136);
+  background-color: #ffdf4f;
   /* background-color: #fff; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

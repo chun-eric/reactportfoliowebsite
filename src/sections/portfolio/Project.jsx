@@ -3,7 +3,7 @@ import PortfolioCard from "./PortfolioCard";
 ("react");
 import AOS from "aos";
 
-const Project = ({ project, theme, aosDelay }) => {
+const Project = ({ project, theme }) => {
   return (
     <PortfolioCard
       project={project}
@@ -15,13 +15,8 @@ const Project = ({ project, theme, aosDelay }) => {
 };
 
 Project.propTypes = {
-  project: PropTypes.shape({
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
-    demo: PropTypes.string.isRequired,
-    github: PropTypes.string.isRequired,
-  }).isRequired,
+  project: PropTypes.object.isRequired,
+  theme: PropTypes.string.isRequired,
 };
 
 export default Project;

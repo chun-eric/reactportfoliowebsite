@@ -163,6 +163,10 @@ section.skills-section {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
+.skill-btn:hover {
+  background-color: #cccccc;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -292,7 +296,7 @@ button.btn.btn-sm.skill-btn {
   background: red !important;
 }
 
-button.btn.btn-sm.skill-btn.buttonTitle:hover {
+button.skill-btn.buttonTitle:hover {
   color: black !important;
   background-color: #ffffff;
   cursor: default;

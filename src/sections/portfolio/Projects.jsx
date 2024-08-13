@@ -27,6 +27,7 @@ const Projects = ({ projects, theme }) => {
 
 Projects.propTypes = {
   projects: PropTypes.array.isRequired,
+  theme: PropTypes.string.isRequired,
 };
 
 export default Projects;
