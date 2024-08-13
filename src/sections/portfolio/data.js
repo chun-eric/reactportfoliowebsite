@@ -113,7 +113,7 @@ const data = [
     title: "La Trattoria",
     desc: "A highend Italian restaurant website in the heart of Osaka, Japan.",
     about:
-      "Meetly is a video conferencing app that allows you to connect with your team members and friends.",
+      "La Trattoris is a website I made based on one of my favorite Italian restaurants in Osaka, Japan. The food and customer service is top notch. Everything was built from scratch with HTML, CSS, JavaScript and no frameworks and based on many different designs I used as inspiration online. I used Claude AI for my AI assistant for a whole lot of debugging issues when I got really stuck. Making this website, was a lot of work and really pushed my CSS and Javascri skills.",
     demo: "https://latrattoria.vercel.app",
     github: "https://www.google.com",
     stack: ["HTML", "CSS", "JavaScript", "Claude AI"],
