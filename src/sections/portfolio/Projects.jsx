@@ -6,13 +6,7 @@ import PropTypes from "prop-types";
 const Projects = ({ projects, theme }) => {
   console.log(projects);
   return (
-    <div
-      className='portfolio__projects'
-      // data-aos='fade-up'
-      // data-aos-delay='50'
-      // data-aos-offset='50'
-      // data-aos-duration='1000'
-    >
+    <div className='portfolio__projects'>
       {projects.map((project, index) => (
         <Project
           key={project.id}

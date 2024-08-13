@@ -1,15 +1,14 @@
 import PropTypes from "prop-types";
 import PortfolioCard from "./PortfolioCard";
 ("react");
-import AOS from "aos";
+
 
 const Project = ({ project, theme }) => {
   return (
     <PortfolioCard
       project={project}
       theme={theme}
-      // data-aos-easing='ease-in'
-      // data-aos-delay={aosDelay}
+     
     />
   );
 };

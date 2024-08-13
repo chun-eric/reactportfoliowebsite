@@ -277,7 +277,7 @@ button.portfolio-btn {
   left: 50%; /* Move right by 50% of container's width */
   transform: translate(-50%, -50%); /* Center the image precisely */
   z-index: 3;
-  background-color: #ffdf4f;
+  background-color: #c9f0ff;
   /* background-color: #fff; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

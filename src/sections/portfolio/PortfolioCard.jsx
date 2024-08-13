@@ -51,12 +51,14 @@ const PortfolioCard = ({ project, theme }) => {
           </div>
         </div>
       </div>
-      <ProjectModal
-        project={project}
-        handleProjectModal={showProjectModal}
-        theme={theme}
-        onClose={() => handleProjectModal(false)}
-      />
+      {showProjectModal && (
+        <ProjectModal
+          project={project}
+          handleProjectModal={handleProjectModal}
+          theme={theme}
+          onClose={() => handleProjectModal(false)}
+        />
+      )}
     </div>
   );
 };

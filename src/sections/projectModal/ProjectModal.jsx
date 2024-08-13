@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import "./projectmodal.css";
 import PropTypes from "prop-types";
 
-const ProjectModal = ({ project, handleProjectModal, theme, onClose }) => {
+const ProjectModal = ({ project, handleProjectModal, theme }) => {
   // destructuring values object
 
   // state to keep track of modal visibility
@@ -12,13 +12,6 @@ const ProjectModal = ({ project, handleProjectModal, theme, onClose }) => {
 
   const handleModal = () => {
     setShowProjectModal(!showProjectModal);
-  };
-
-  const handleClose = () => {
-    setIsVisible(false);
-    setTimeout(() => {
-      onClose();
-    }, 300); // Wait for the animation to complete
   };
 
   // useEffect to handle modal visibility
