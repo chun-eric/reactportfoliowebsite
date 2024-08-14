@@ -29,8 +29,6 @@ const ProjectModalbeta = ({ project, handleProjectModal, show, theme }) => {
     };
   }, [handleProjectModal]);
 
-
-
   return (
     <>
       <div className={`overlay-projectmodal ${show ? "visible" : ""}`}></div>
@@ -43,11 +41,14 @@ const ProjectModalbeta = ({ project, handleProjectModal, show, theme }) => {
           <div className={`projectmodal ${theme}`}>
             <div className='projectmodal-top-row'>
               <CircleChevronLeft
-                onClick={handleModal}
+                onClick={handleProjectModal(false)}
                 className={`back ${theme}`}
                 size={34}
               />
-              <p className={`back-to-projects ${theme}`} onClick={handleModal}>
+              <p
+                className={`back-to-projects ${theme}`}
+                onClick={() => handleProjectModal(false)}
+              >
                 <a className={`${theme}`}>Back To Projects.</a>
               </p>
             </div>
