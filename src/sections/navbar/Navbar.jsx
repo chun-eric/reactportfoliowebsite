@@ -5,9 +5,6 @@ import { Sun, Moon, CircleX, MoveLeft } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
-// import { ThemeContext } from "../../context/ThemeContext";
-// import ToggleTheme from "../../context/ToggleTheme";
-
 const Navbar = ({ theme, setTheme }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -16,21 +13,22 @@ const Navbar = ({ theme, setTheme }) => {
     setShowModal(!showModal);
   };
 
-  // function to toggle the light dark mode
+  // function to toggle the light/dark mode
   const toggle_mode = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   // useRef to set the navbarModal as the reference
-  let navbarModalRef = useRef();
+  const navbarModalRef = useRef(null);
 
   // useEffect to handle modal visibility when clicked outside of the modal
   useEffect(() => {
-    let handler = (event) => {
+    const handler = (event) => {
       // ignore clicks on the component itself
-      // returns false if the event target is inside of the navbartModalRef
-      if (!navbarModalRef.current.contains(event.target)) {
-        // hides the modal
+      if (
+        navbarModalRef.current &&
+        !navbarModalRef.current.contains(event.target)
+      ) {
         setShowModal(false);
       }
     };
@@ -51,6 +49,7 @@ const Navbar = ({ theme, setTheme }) => {
         <a href='#' id='logo' className={`nav__logo ${theme}`}>
           <img src='https://i.ibb.co/SfjJhVz/logo.png' alt='logo' />
         </a>
+
         {/* Nav Headings */}
         <ul className='nav__menu'>
           {data.map((item) => (
@@ -64,10 +63,7 @@ const Navbar = ({ theme, setTheme }) => {
 
         <div className={`navbar__btns `}>
           <button
-            onClick={() => {
-              toggle_mode();
-            }}
-            // style={{ transition: "all 0.3s ease" }}
+            onClick={toggle_mode}
             className='icon_dark_button no-animation theme-toggle'
           >
             {theme === "dark" ? (
@@ -76,9 +72,8 @@ const Navbar = ({ theme, setTheme }) => {
               <Moon size={30} className='theme-icon' />
             )}
           </button>
-          {/* <ToggleTheme /> */}
 
-          {/* Had a lot of trouble here. Just separated my contact data. It was the most simplest answer. All I needed to do was add #contact to the a href path. */}
+          {/* Contact Button */}
           <button className='btn-contact'>
             <a
               href='#contact'
@@ -91,12 +86,13 @@ const Navbar = ({ theme, setTheme }) => {
           <GiHamburgerMenu className='btn-hamburger' onClick={handleModal} />
         </div>
       </div>
+
       {/* Navbar Modal */}
       {showModal && (
         <>
           <div className={`navbarmodal-overlay ${theme}`}></div>
           <div
-            className={`navbarmodal-container  ${
+            className={`navbarmodal-container ${
               showModal ? "show" : ""
             } ${theme}`}
             ref={navbarModalRef}
@@ -128,12 +124,9 @@ const Navbar = ({ theme, setTheme }) => {
   );
 };
 
-Navbar.PropTypes = {
+Navbar.propTypes = {
   theme: PropTypes.string.isRequired,
   setTheme: PropTypes.func.isRequired,
-  className: PropTypes.string.isRequired,
-  scrollToSection: PropTypes.func.isRequired,
-  refs: PropTypes.object.isRequired,
 };
 
 export default Navbar;

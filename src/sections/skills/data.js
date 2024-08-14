@@ -90,6 +90,9 @@ const data = [
     className: "skillsIcon",
   },
 ];
+
+export default data;
+
 /*
 
 next js
@@ -146,5 +149,3 @@ https://i.ibb.co/1rK09Qy/tailwind.png
 <a href="https://ibb.co/c8HwGXC"><img src="https://i.ibb.co/Jp4qfFy/nextjs-icon.png" alt="nextjs-icon" border="0"></a>
 <a href="https://ibb.co/Rp5pdWQ"><img src="https://i.ibb.co/0jwjv3Y/react-icon.png" alt="react-icon" border="0"></a>
 */
-
-export default data;

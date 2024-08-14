@@ -1,22 +1,308 @@
+#portfolio {
+  position: relative;
+  width: 100%;
+  padding: 200px 0;
+  overflow: hidden;
+}
+
+#portfolio.dark {
+  background: transparent;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  opacity: 0.3;
+  background-image: radial-gradient(
+    #00baff 0.9500000000000001px,
+    #fefefe 0.9500000000000001px
+  );
+  background-size: 19px 19px;
+  z-index: 0;
+}
+
+.portfolio-overlay.dark {
+  background-color: rgb(78, 78, 78);
+  opacity: 0.1;
+  background-image: radial-gradient(
+    #fefefe 0.9500000000000001px,
+    #3d3d3d 0.9500000000000001px
+  );
+  background-size: 19px 19px;
+}
+
+.portfolio-content {
+  position: relative;
+  z-index: 2;
+}
+
+.section-categorybutton {
+  margin-bottom: 30px;
+  background: transparent !important;
+  padding-top: 30px;
+}
+
+.portfolio__categories {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  background: transparent !important;
+}
+
+.btn.cat__btn.category-btn {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 25px;
+  border: 1px solid #000;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn.cat__btn.category-btn.active {
+  background-color: var(--primary-brand-color-400);
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.btn.cat__btn.category-btn:hover {
+  background-color: var(--primary-brand-color-400);
+  color: #fff;
+}
+
+.portfolio__categories.dark .btn.cat__btn.category-btn:hover {
+  background-color: var(--primary-brand-color-400);
+  color: #fff;
+  border-color: var(--primary-brand-color-400);
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 1;
+  z-index: 3;
+}
+
+h3.project-title {
+  display: inline-block;
+  font-size: 42px;
+  position: relative;
+  padding-bottom: 6px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 1;
+}
+
+.skills-title .project-title::after {
+  content: " ";
+  position: absolute;
+  bottom: -1px;
+  height: 6px;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+  background-color: var(--primary-brand-color-400);
+  border-radius: 10px;
+  z-index: 3;
+}
+
+h3.project-title {
+  color: #333333;
+}
+
+.skills-title h3.project-title.dark {
+  color: #000 !important;
+}
+
+.project-title.dark,
+.project-title.dark,
+.skills-title .project-title.dark {
+  color: #fff;
+}
+
+.project-title.light,
+.project-title.light,
+.skills-title .project-title.light {
+  color: black;
+}
+
+.container.portfolio__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.container.portfolio__container.dark {
+  background: transparent !important;
+}
+
+.portfolio__projects {
+  max-width: 1300px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin: 0 auto;
+  margin-top: 60px;
+  background: transparent !important;
+}
+
+.portfolio__categories,
+.portfolio__categories.light,
+.portfolio__categories.dark {
+  background-color: transparent !important;
+  z-index: 1200 !important;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.card-container {
+  position: relative;
+  border-radius: var(--border-radius-1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 470px;
+  border: 1px solid var(--primary-opposite-color-1);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  overflow: hidden;
+}
+
+.card-container.dark {
+  border: 1px solid #fdfdfd;
+  box-shadow: rgba(255, 255, 255, 0.45) 0px 3px 3px 0px;
+}
+
+.cover-image {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  inset: 0;
+  object-fit: contain;
+  background: #f49a09;
+  background: linear-gradient(135deg, #f49a09, #f2af3d);
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.overlay-hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.project-description {
+  position: absolute;
+  bottom: 3%;
+  left: 1px;
+  text-align: left;
+  margin: 0 5px;
+  margin-bottom: 15px;
+  width: 90%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  box-sizing: border-box;
+  background-color: transparent;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.project-description:hover.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.project-cards-container:hover {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.project-title {
+  color: #000 !important;
+  font-weight: bold;
+  margin: 0;
+}
+
+.portfolio-card.project-title {
+  font-size: 35px;
+  color: #ffffff !important;
+}
+
+.card-description {
+  font-size: 17px;
+  margin: 0;
+  color: rgb(248, 248, 248);
+}
+
+.button-card-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn.button-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.button-card-container > .button-card > p a {
+  color: white;
+}
+
+.btn a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Project Modal Section */
 .projectmodal-container {
   width: 545px;
   height: 100vh;
-  max-height: 100%;
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  z-index: 20000 !important;
+  z-index: 1230;
   top: 0;
   right: -100%;
-  margin-right: 0;
-  flex: 1;
-  overflow-y: scroll;
-  scrollbar-color: #06d8fd #ffffff;
-  transition: right 0.3s ease-in-out;
+  transition: transform 0.3s ease-out;
+  transform: translateX(100%);
 }
 
 .projectmodal-container.visible {
-  right: 0; /* Slide in when visible */
+  transform: translateX(0);
 }
 
 .overlay-projectmodal {
@@ -41,10 +327,6 @@
   pointer-events: auto;
 }
 
-.overlay-projectmodal::after {
-  background: linear-gradient(to bottom, transparent 0%, rgb(70, 70, 70) 50%);
-}
-
 .container-right {
   width: 100%;
   max-width: 100%;
@@ -57,31 +339,20 @@
   background-color: transparent;
   overflow-y: auto;
   overflow-x: overlay;
-  right: 545px;
-  transition: right 0.6s ease-in-out;
 }
 
-.container-right .visible {
-  transform: translateX(-545px);
+.container-right.dark {
+  background: #000;
 }
 
 .projectmodal {
-  width: 100%;
-  height: auto;
   padding: 30px;
   text-align: left;
   background: #fcfaf9;
-  z-index: 18500;
 }
 
 .projectmodal.dark {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    220deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(43, 43, 43, 1) 49%,
-    rgba(48, 48, 48, 1) 100%
-  );
+  background: #000;
 }
 
 .projectmodal-top-row {
@@ -90,16 +361,13 @@
   justify-content: space-between;
   vertical-align: middle;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .back {
   color: #7e7e7e;
   font-size: 14px;
   cursor: pointer;
-}
-/* dark mode */
-.back.dark {
-  color: #eaeaea;
 }
 
 .back-to-projects a {
@@ -109,10 +377,6 @@
   letter-spacing: 0.3px;
   color: black;
 }
-/* dark mode */
-.back-to-projects a.dark {
-  color: #eaeaea;
-}
 
 .back-to-projects:hover {
   cursor: pointer;
@@ -120,32 +384,19 @@
 }
 
 .separator hr {
-  margin-top: 20px;
+  margin-top: 10px;
   border: 0.5px solid #eaeaea;
   height: 0.7px;
 }
 
-/* dark mode */
-.separator hr.dark {
-  border: 0.5px solid #fff;
-}
-
 .project-main-title-modal {
-  margin: 28px 0 8px;
-}
-/* dark mode */
-.project-main-titl-modal.dark {
-  color: #fff;
+  margin: 24px 0 8px;
 }
 
-h3.project-title-modal {
+.project-title-modal {
   color: #000;
-  margin: 28px 0 8px;
+  margin: 24px 0 8px;
   font-size: 24px;
-}
-/* dark mode */
-h3.project-title-modal.dark {
-  color: #fff;
 }
 
 .project-modal-text {
@@ -153,46 +404,44 @@ h3.project-title-modal.dark {
   letter-spacing: 0.5;
   word-spacing: 0.5;
   margin-bottom: 24px;
-  display: inline-block;
-  margin-right: 10px;
-  font-weight: normal;
-}
-/* dark mode */
-.project-modal-text.dark {
-  color: #eaeaea;
 }
 
 .projectmodal-image {
-  width: 95%;
-  height: 350px !important;
+  z-index: 500;
+}
+
+.projectmodal-image {
+  width: 100vw;
+  height: 800px !important;
   border-radius: 10px;
   border: 1px solid black;
+  z-index: 1500;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  background: #eab259;
+  background: linear-gradient(135deg, #eab259, #f4a661);
 }
 
 .projectmodal-image img {
-  width: 100%;
-  /* transform: scale(3); */
-  /* padding-top: 110px; */
-  object-fit: contain;
-  margin: 0 auto;
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  border: none !important;
 }
 
-.projectmodal-image.dark,
-.projectmodal-image img.dark {
-  border: 1px solid #eaeaea;
-}
 .projectmodal-about {
-  margin: 26px 0 12px;
+  margin: 24px 0 12px;
 }
 
-.project-title-modal.title-name {
+.title-name {
   color: #363636;
-  font-size: 26px;
-  margin-top: 36px;
-}
-/* dark mode */
-.project-title-modal.title-name.dark {
-  color: #fff;
 }
 
 .projectmodal-tech .technologies {
@@ -213,14 +462,11 @@ h3.project-title-modal.dark {
   margin-bottom: 12px;
 }
 
-.projectmodal-websitelink a {
+.projectmodal-websitelink {
   font-size: 17px;
   color: #363636;
+  font-weight: bold;
   cursor: pointer;
-}
-/* dark mode */
-.projectmodal-websitelink.dark a {
-  color: #d4d4d4;
 }
 
 .projectmodal-websitelink:hover {
@@ -237,10 +483,6 @@ h3.project-title-modal.dark {
   display: flex;
   padding: 20px 0;
 }
-/* dark mode */
-.projectmodal-footer.dark {
-  background-color: #efe9e4;
-}
 
 .projectmodal-footer-link p {
   color: #fff;
@@ -250,19 +492,84 @@ h3.project-title-modal.dark {
   text-align: center;
   z-index: 1500;
 }
-/* dark mode */
-.projectmodal-footer-link.dark p.dark {
-  color: #151515;
+
+/* Mobile and Tablet Adjustments */
+@media screen and (max-width: 1200px) {
+  .portfolio__projects {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+  }
 }
 
-p.open-text a {
-  font-weight: bold;
-  font-size: 22px;
+@media screen and (max-width: 1024px) {
+  #portfolio .container.portfolio__container {
+    padding: 20px 0 160px !important;
+  }
+  .card-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn.button-card {
+    width: fit-content;
+  }
+  .skills-title {
+    margin-bottom: 20px;
+  }
+  .section-categorybutton {
+    width: 100%;
+  }
+  .cover-image {
+    object-fit: contain !important;
+    transform: scale(1.5);
+    padding-top: 50px;
+  }
+  .overlay::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 1;
+  }
+
+  .card-description {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.9);
+  }
 }
 
-/* @media screen and (max-width: 1024px) {
-} */
+@media screen and (max-width: 800px) {
+  #portfolio .container.portfolio__container {
+    padding: 120px 0 !important;
+  }
 
+  .portfolio__categories {
+    padding-top: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .portfolio__projects {
+    display: grid;
+    width: 85%;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Project Modal for Mobile */
 @media screen and (max-width: 699px) {
   .overlay-projectmodal {
     display: none;
@@ -284,7 +591,6 @@ p.open-text a {
     right: 0;
   }
 
-  /* */
   .container-right {
     width: 100vw;
     max-width: 100%;
@@ -302,8 +608,6 @@ p.open-text a {
     transform: none;
   }
 
-  /* this is was very trick they key here was setting the width to 100vw to matches the width of the screen size*/
-
   .projectmodal {
     width: 100vw;
     height: auto;
@@ -315,10 +619,6 @@ p.open-text a {
   }
 
   .projectmodal-footer {
-    /* position: relative; */
-    /* bottom: 0;
-    left: 0;
-    right: 0; */
     width: 100vw;
     height: auto;
     text-align: center;

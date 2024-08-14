@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import data from "./data";
 import "./portfolio.css";
 import Projects from "./Projects";
 import ProjectsCategories from "./ProjectsCategories";
 import PropTypes from "prop-types";
 
-const Portfolio = ({ theme }) => {
+const Portfolio = forwardRef((props, ref) => {
   const [projects, setProjects] = useState(data);
 
   const categories = ["All", ...new Set(data.map((item) => item.category))];
@@ -18,8 +18,9 @@ const Portfolio = ({ theme }) => {
     }
   };
 
+  const { theme } = props;
   return (
-    <section id='portfolio' className={theme}>
+    <section id='portfolio' className={theme} ref={ref}>
       <div className={`portfolio-overlay ${theme}`}></div>
       <div className='portfolio-content'>
         <div className='skills-title'>
@@ -36,10 +37,12 @@ const Portfolio = ({ theme }) => {
       </div>
     </section>
   );
-};
+});
+
+Portfolio.displayName = "Portfolio";
 
 export default Portfolio;
 
 Portfolio.propTypes = {
-theme: PropTypes.string.isRequired,
+  theme: PropTypes.string.isRequired,
 };

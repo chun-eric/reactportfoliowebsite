@@ -255,6 +255,8 @@ button.portfolio-btn {
   background-size: cover;
   height: 350px;
   width: 350px;
+  max-width: 90%;
+  max-height: 90%;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -263,6 +265,21 @@ button.portfolio-btn {
   position: relative;
   overflow: hidden;
   padding-top: 20px;
+  background: linear-gradient(to top right, #19c1ff, #c9f0ff),
+    linear-gradient(to bottom left, #ff9a9e, #fad0c4 50%, #fad0c4 75%, #ff9a9e),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  animation: gradientAnimation 8s ease infinite,
+    secondaryGradientAnimation 12s ease infinite,
+    gradientAnimation 6s ease infinite;
+  border-radius: 10px;
 }
 
 .self-photo img {
@@ -277,9 +294,54 @@ button.portfolio-btn {
   left: 50%; /* Move right by 50% of container's width */
   transform: translate(-50%, -50%); /* Center the image precisely */
   z-index: 3;
-  background-color: #c9f0ff;
+
   /* background-color: #fff; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: fadeInImage 3s ease-in-out forwards;
+}
+
+@keyframes fadeInContainer {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes secondaryGradientAnimation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 .conic {
@@ -464,6 +526,18 @@ button.portfolio-btn {
 
   h3.job {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .self-photo {
+    background-size: 150% 150%; /* Adjust the background size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .self-photo {
+    background-size: 120% 120%; /* Further reduce background size */
   }
 }
 
