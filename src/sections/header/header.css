@@ -250,21 +250,22 @@ button.portfolio-btn {
 }
 
 .self-photo {
-  background-position: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
   width: 350px;
+  height: 350px;
   max-width: 90%;
   max-height: 90%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: relative;
   overflow: hidden;
-  padding-top: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.self-photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(to top right, #19c1ff, #c9f0ff),
     linear-gradient(to bottom left, #ff9a9e, #fad0c4 50%, #fad0c4 75%, #ff9a9e),
     repeating-linear-gradient(
@@ -274,28 +275,20 @@ button.portfolio-btn {
       transparent 10px,
       transparent 20px
     );
-  background-size: 100% 100%;
-  background-attachment: fixed;
   animation: gradientAnimation 8s ease infinite,
     secondaryGradientAnimation 12s ease infinite,
     gradientAnimation 6s ease infinite;
-  border-radius: 10px;
 }
 
 .self-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Changed from contain to cover */
-  object-position: 50%; /* Ensure the image is centered */
+  object-fit: cover;
+  object-position: center;
   border: 8px solid var(--primary-opposite-text-color-800);
   border-radius: 10px;
-  position: absolute; /* Position absolutely within .self-photo */
-  top: 50%; /* Move down by 50% of container's height */
-  left: 50%; /* Move right by 50% of container's width */
-  transform: translate(-50%, -50%); /* Center the image precisely */
-  z-index: 3;
-
-  /* background-color: #fff; */
+  position: relative;
+  z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   animation: fadeInImage 3s ease-in-out forwards;
 }
@@ -344,28 +337,6 @@ button.portfolio-btn {
   }
 }
 
-.conic {
-  position: absolute;
-  height: auto;
-  width: fit-content;
-  top: -4px;
-  left: -4px;
-  bottom: -4px;
-  right: -4px;
-  border-radius: 8px;
-  background: conic-gradient(
-    from 0deg,
-    #03b1ff,
-    #ff8a00,
-    #00ff00,
-    #ff00ff,
-    #03b1ff
-  );
-  transform: translateX(18px);
-  transform: translateY(-64px);
-  animation: gradientAnimation 10s linear infinite;
-}
-
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -393,28 +364,6 @@ button.portfolio-btn {
   }
 }
 
-@media screen and (max-width: 1440px) {
-  .conic {
-  }
-}
-@media screen and (min-width: 1240px) {
-  .conic {
-    /* height: 86%;
-    transform: translateY(-18px); */
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .self-photo {
-    margin-top: -30px;
-    /* Adjust this value to move the element higher */
-  }
-  .conic {
-    top: 58px;
-    bottom: 58px;
-  }
-}
-
 @media screen and (max-width: 1100px) {
   .hero {
     flex-direction: column-reverse;
@@ -423,7 +372,7 @@ button.portfolio-btn {
     margin-top: 0px;
     gap: 5rem;
     text-align: center;
-    padding: 60px 20px 130px;
+    padding: 160px 20px 130px;
   }
   .hero__details {
     text-align: center;
@@ -473,29 +422,17 @@ button.portfolio-btn {
     margin: 0 auto;
   }
   .self-photo {
-    width: 400px;
-  }
-  .self-photo img {
-    width: 400px;
-    height: auto;
-    margin: 0 auto;
-    width: fit-content;
-  }
-  .conic {
-    margin: 0 auto;
-  }
-
-  .self-photo img {
-    max-width: 80%;
-    height: auto;
-    margin: 0 auto;
-    width: fit-content;
+    width: 300px;
+    height: 300px;
   }
 }
 
 @media screen and (max-width: 1025px) {
   section {
     padding-bottom: 0px !important;
+  }
+  .hero {
+    padding-top: 80px;
   }
 }
 
@@ -505,18 +442,14 @@ button.portfolio-btn {
   }
 
   .hero {
-    gap: 0.5rem;
+    width: 93%;
+    gap: 4rem;
   }
   .self-photo {
-    width: 240px;
-    height: 320px; /* Even taller aspect ratio for mobile */
+    width: 250px;
+    height: 250px; /* Even taller aspect ratio for mobile */
   }
-  .self-photo img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    width: fit-content;
-  }
+  
   h1.hello {
     font-size: 45px;
   }
@@ -526,6 +459,8 @@ button.portfolio-btn {
 
   h3.job {
     font-size: 22px;
+    margin: 0 auto;
+    padding-top: 0;
   }
 }
 

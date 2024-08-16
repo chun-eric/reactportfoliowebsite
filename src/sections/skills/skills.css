@@ -132,6 +132,7 @@
   z-index: 1;
   position: relative;
   width: 70%;
+  gap: 20px;
 }
 
 .skills-title {
@@ -143,7 +144,7 @@ h3.title {
   font-weight: bold;
   position: relative;
   display: inline-block;
-  padding-bottom: 0.375rem;
+  padding-bottom: 0.675rem;
 }
 
 .title::after {
@@ -242,18 +243,18 @@ h3.title {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  .skills-container {
+  /* .skills-container {
     width: 90%;
-  }
+  } */
 
-  h3.title {
+  /* h3.title {
     font-size: 2rem;
   }
 
   .skill-btn {
     font-size: 1rem;
     padding: 0.75rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
@@ -266,17 +267,12 @@ h3.title {
     gap: 0.9375rem;
   }
 
-  .image {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  h3.title {
-    font-size: 1.75rem;
-  }
-
+  
   .skill-btn {
-    font-size: 0.875rem;
+    font-size: 1rem;
     padding: 0.625rem;
-  }
+  } 
+
+  
+
 }

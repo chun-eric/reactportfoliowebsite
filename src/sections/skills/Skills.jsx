@@ -16,7 +16,7 @@ const Skills = forwardRef((prop, ref) => {
           setVisibleItems([]);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.08 }
     );
 
     if (sectionRef.current) {

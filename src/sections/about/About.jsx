@@ -10,7 +10,7 @@ const About = ({ theme }) => {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.45 } // Trigger when 35% of the section is visible
+      { threshold: 0.15 } // Trigger when 35% of the section is visible
     );
 
     if (aboutRef.current) {
@@ -42,7 +42,7 @@ const About = ({ theme }) => {
               fashion and automotive design. I'm equally drawn to the warmth of
               'omotenashi' hospitality that permeates everyday life here. These
               diverse influences fuel my creativity, inspiring me to craft
-              experiences that are both unique and engaging.
+              experiences that are both unique and engaging for users.
             </p>
             <p className='bio-info'>
               When developing digital products, whether it be emails, landing
