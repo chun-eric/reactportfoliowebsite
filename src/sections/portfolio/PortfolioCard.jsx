@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProjectModalbeta from "./ProjectModalbeta";
-
+import A0S from "aos";
+import "aos/dist/aos.css";
 
 const PortfolioCard = ({ project, theme }) => {
   const [showModal, setShowModal] = useState(false);
@@ -10,9 +11,23 @@ const PortfolioCard = ({ project, theme }) => {
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
 
+  useEffect(() => {
+    A0S.init({
+      duration: 1000,
+      offset: 200,
+    });
+  }, []);
+
   return (
     <div className='project-cards-container'>
-      <div className='card-container gradient-border'>
+      <div
+        className='card-container gradient-border'
+        data-aos='fade-in'
+        data-aos-delay='250'
+        data-aos-offset='200'
+        data-aos-duration='1500'
+        data-aos-easing='ease-in-out'
+      >
         <img
           className='cover-image'
           src={project.image}
