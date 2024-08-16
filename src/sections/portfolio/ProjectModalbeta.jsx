@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "./projectModal.css";
 import PropTypes from "prop-types";
 
+
 const ProjectModalbeta = ({ project, onClose, show, theme }) => {
   const [modalRoot, setModalRoot] = useState(null);
   const [isClosing, setIsClosing] = useState(false);

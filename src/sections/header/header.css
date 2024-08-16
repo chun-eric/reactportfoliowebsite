@@ -252,12 +252,13 @@ button.portfolio-btn {
 .self-photo {
   width: 350px;
   height: 350px;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 95%;
+  max-height: 95%;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin: 0 auto;
+  overflow: hidden;
 }
 .self-photo::before {
   content: "";
@@ -266,6 +267,7 @@ button.portfolio-btn {
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 14px;
   background: linear-gradient(to top right, #19c1ff, #c9f0ff),
     linear-gradient(to bottom left, #ff9a9e, #fad0c4 50%, #fad0c4 75%, #ff9a9e),
     repeating-linear-gradient(
@@ -286,11 +288,12 @@ button.portfolio-btn {
   object-fit: cover;
   object-position: center;
   border: 8px solid var(--primary-opposite-text-color-800);
-  border-radius: 10px;
+
   position: relative;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   animation: fadeInImage 3s ease-in-out forwards;
+  border-radius: 10px;
 }
 
 @keyframes fadeInContainer {
@@ -449,7 +452,7 @@ button.portfolio-btn {
     width: 250px;
     height: 250px; /* Even taller aspect ratio for mobile */
   }
-  
+
   h1.hello {
     font-size: 45px;
   }

@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import ProjectModalbeta from "./ProjectModalbeta";
 
+
 const PortfolioCard = ({ project, theme }) => {
   const [showModal, setShowModal] = useState(false);
   const [hovered, setHovered] = useState(false);
