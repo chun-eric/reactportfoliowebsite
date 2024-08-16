@@ -1,54 +1,66 @@
 import { CircleChevronLeft } from "lucide-react";
-import { useEffect, useRef } from "react";
+import ReactDOM from "react-dom";
+import { useEffect, useState } from "react";
 import "./projectModal.css";
 import PropTypes from "prop-types";
 
-const ProjectModalbeta = ({ project, handleProjectModal, show, theme }) => {
-  const projectModalRef = useRef();
+const ProjectModalbeta = ({ project, onClose, show, theme }) => {
+  const [modalRoot, setModalRoot] = useState(null);
+  const [isClosing, setIsClosing] = useState(false);
+
+  useEffect(() => {
+    setModalRoot(document.getElementById("modal-root"));
+  }, []);
 
   useEffect(() => {
     if (show) {
-      document.body.style.overflowY = "hidden";
+      document.body.style.overflow = "hidden";
+      setIsClosing(false);
     } else {
-      document.body.style.overflowY = "auto";
+      document.body.style.overflow = "unset";
     }
   }, [show]);
 
-  useEffect(() => {
-    const handler = (event) => {
-      if (
-        projectModalRef.current &&
-        !projectModalRef.current.contains(event.target)
-      ) {
-        handleProjectModal(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  }, [handleProjectModal]);
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      onClose();
+      setIsClosing(false);
+    }, 200);
+  };
 
-  return (
+  const handleOverlayClick = (e) => {
+    // Prevent click from immediately propagating
+    e.stopPropagation();
+    handleClose();
+  };
+
+  if (!show && !isClosing) return null;
+
+  if (!show || !modalRoot) return null;
+
+  const modalContent = (
     <>
-      <div className={`overlay-projectmodal ${show ? "visible" : ""}`}></div>
       <div
-        className={`projectmodal-container ${
-          show ? "visible slide-in" : ""
+        className={`overlay-projectmodal ${
+          show && !isClosing ? "visible" : "fade-out"
+        } ${theme}`}
+        onClick={handleOverlayClick}
+      ></div>
+      <div
+        className={`projectmodal-container visible ${
+          isClosing ? "slide-out" : "slide-in"
         } ${theme}`}
       >
-        <div className={`container-right ${theme} `} ref={projectModalRef}>
+        <div className={`container-right ${theme} `}>
           <div className={`projectmodal ${theme}`}>
             <div className='projectmodal-top-row'>
               <CircleChevronLeft
-                onClick={handleProjectModal(false)}
+                onClick={handleClose}
                 className={`back ${theme}`}
                 size={34}
               />
-              <p
-                className={`back-to-projects ${theme}`}
-                onClick={() => handleProjectModal(false)}
-              >
+              <p className={`back-to-projects ${theme}`} onClick={handleClose}>
                 <a className={`${theme}`}>Back To Projects.</a>
               </p>
             </div>
@@ -61,7 +73,7 @@ const ProjectModalbeta = ({ project, handleProjectModal, show, theme }) => {
             </h2>
             <p className='project-modal-text'>{project.desc}</p>
             <div className={`projectmodal-image ${theme}`}>
-              <img src={project.image} alt='' />
+              <img src={project.image} alt={project.title} />
             </div>
             <div className='projectmodal-about'>
               <h3 className={`project-title-modal title-name ${theme}`}>
@@ -96,7 +108,11 @@ const ProjectModalbeta = ({ project, handleProjectModal, show, theme }) => {
                 Github
               </h3>
               <p className={`projectmodal-websitelink ${theme}`}>
-                <a target='_blank' href={project.github}>
+                <a
+                  target='_blank'
+                  href={project.github}
+                  rel='noopener noreferrer'
+                >
                   {project.github}
                 </a>
               </p>
@@ -116,6 +132,8 @@ const ProjectModalbeta = ({ project, handleProjectModal, show, theme }) => {
       </div>
     </>
   );
+
+  return ReactDOM.createPortal(modalContent, modalRoot);
 };
 
 ProjectModalbeta.propTypes = {
@@ -128,8 +146,8 @@ ProjectModalbeta.propTypes = {
     github: PropTypes.string.isRequired,
     stack: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
-  theme: PropTypes.string.isRequired,
-  handleProjectModal: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
   show: PropTypes.bool.isRequired,
+  theme: PropTypes.string.isRequired,
 };
 export default ProjectModalbeta;

@@ -90,7 +90,9 @@ const Navbar = ({ theme, setTheme }) => {
       {/* Navbar Modal */}
       {showModal && (
         <>
-          <div className={`navbarmodal-overlay ${theme}`}></div>
+          <div
+            className={`navbarmodal-overlay ${showModal ? "show" : ""}${theme}`}
+          ></div>
           <div
             className={`navbarmodal-container ${
               showModal ? "show" : ""

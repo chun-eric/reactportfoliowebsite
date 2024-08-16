@@ -114,18 +114,10 @@ h3.project-title {
   z-index: 3;
 }
 
-h3.project-title {
-  color: #333333;
-}
-
-.skills-title h3.project-title.dark {
-  color: #000 !important;
-}
-
 .project-title.dark,
 .project-title.dark,
 .skills-title .project-title.dark {
-  color: #fff;
+  color: #fff !important;
 }
 
 .project-title.light,

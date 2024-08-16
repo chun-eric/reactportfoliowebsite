@@ -3,12 +3,11 @@ import { useState } from "react";
 import ProjectModalbeta from "./ProjectModalbeta";
 
 const PortfolioCard = ({ project, theme }) => {
-  const [showProjectModal, setShowProjectModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [hovered, setHovered] = useState(false);
 
-  const handleProjectModal = (value) => {
-    setShowProjectModal(value);
-  };
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
 
   return (
     <div className='project-cards-container'>
@@ -40,23 +39,19 @@ const PortfolioCard = ({ project, theme }) => {
                 </a>
               </p>
             </button>
-            <button
-              className='btn button-card'
-              onClick={() => handleProjectModal(true)}
-            >
+            <button className='btn button-card' onClick={openModal}>
               <p style={{ color: "white", fontSize: "18px" }}>Details</p>
             </button>
           </div>
         </div>
       </div>
-    
-        <ProjectModalbeta
-          project={project}
-          handleProjectModal={handleProjectModal}
-          show={showProjectModal} 
-          theme={theme}
-        />
-    
+
+      <ProjectModalbeta
+        project={project}
+        onClose={closeModal}
+        theme={theme}
+        show={showModal}
+      />
     </div>
   );
 };

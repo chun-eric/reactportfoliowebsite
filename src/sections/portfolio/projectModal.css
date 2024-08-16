@@ -1,4 +1,13 @@
 /* Project Modal Section */
+
+:root {
+  --modal-width: 545px;
+  --primary-bg-color: #fcfaf9;
+  --dark-bg-color: #000;
+  --overlay-color: rgba(0, 0, 0, 0.65);
+  --transition-duration: 0.3s;
+}
+
 .projectmodal-container {
   width: 545px;
   height: 100vh;
@@ -6,14 +15,18 @@
   z-index: 20000;
   top: 0;
   right: -545px; /* Start off-screen */
-  overflow-y: auto;
   transition: right 0.3s ease-out;
   scrollbar-color: #06d8fd #ffffff;
   transform: translateX(100%);
+  overflow: hidden;
 }
 
 .projectmodal-container.visible {
   right: 0; /* Slide in when visible */
+}
+
+.projectmodal-container.slide-in {
+  transform: translateX(0);
 }
 
 .overlay-projectmodal {
@@ -26,16 +39,20 @@
   left: 0;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.overlay-projectmodal::after {
+  background: linear-gradient(to bottom, transparent 0%, rgb(70, 70, 70) 50%);
 }
 
 .overlay-projectmodal.visible {
   opacity: 0.65;
   pointer-events: auto;
 }
-
-.overlay-projectmodal::after {
-  background: linear-gradient(to bottom, transparent 0%, rgb(70, 70, 70) 50%);
+.overlay-projectmodal.slide-out {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .container-right {
@@ -56,7 +73,40 @@
 }
 
 .projectmodal.dark {
-  background: #000;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    220deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(43, 43, 43, 1) 49%,
+    rgba(48, 48, 48, 1) 100%
+  );
+}
+
+/* Slide Effect animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100);
+  }
+}
+
+.slide-out {
+  animation: slideOut 0.3s forwards;
 }
 
 .projectmodal-top-row {
@@ -274,97 +324,53 @@
   }
 }
 
+@media screen and (max-width: 699px) {
+  .overlay-projectmodal {
+    display: none;
+  }
+
+  .projectmodal-container {
+    width: 100%;
+    right: -100%;
+  }
+
+  .projectmodal-container.visible {
+    right: 0;
+  }
+
+  /* */
+
+  .container-right {
+    width: 100vw;
+  }
+
+  .container-right.visible {
+    transform: none;
+  }
+
+  /* this is was very trick they key here was setting the width to 100vw to matches the width of the screen size*/
+
+  .projectmodal {
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .projectmodal .projectmodal-image {
+    width: 100%;
+  }
+
+  .projectmodal-footer {
+    /* position: relative; */
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
+    width: 100vw;
+    height: auto;
+    text-align: center;
+  }
+}
 /* Project Modal */
-.projectmodal-container {
-  width: 545px;
-  height: 100vh;
-  max-height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  z-index: 20000 !important;
-  top: 0;
-  right: -100%;
-  margin-right: 0;
-  flex: 1;
-  overflow-y: scroll;
-  scrollbar-color: #06d8fd #ffffff;
-  transform: translateX(100%);
-  transition: transform 0.3s ease-out;
-}
-
-.projectmodal-container.visible {
-  right: 0; /* Slide in when visible */
-}
-
-.projectmodal-container.slide-in {
-  transform: translateX(0);
-}
-
-.overlay-projectmodal {
-  background-color: black;
-  z-index: 19999;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  overflow-y: auto;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.overlay-projectmodal.visible {
-  opacity: 0.65;
-  pointer-events: auto;
-}
-
-.overlay-projectmodal::after {
-  background: linear-gradient(to bottom, transparent 0%, rgb(70, 70, 70) 50%);
-}
-
-.container-right {
-  width: 100%;
-  max-width: 100%;
-  height: 100vh;
-  max-height: 100%;
-  z-index: 12500;
-  align-items: right;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  overflow-y: auto;
-  overflow-x: overlay;
-  right: 545px;
-  transition: right 0.6s ease-in-out;
-}
-
-.container-right .visible {
-  transform: translateX(-545px);
-}
-
-.projectmodal {
-  width: 100%;
-  height: auto;
-  padding: 30px;
-  text-align: left;
-  background: #fcfaf9;
-  z-index: 18500;
-}
-
-.projectmodal.dark {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    220deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(43, 43, 43, 1) 49%,
-    rgba(48, 48, 48, 1) 100%
-  );
-}
 
 .projectmodal-top-row {
   text-align: center;
@@ -542,52 +548,4 @@ p.open-text a {
   font-size: 22px;
 }
 
-/* @media screen and (max-width: 1024px) {
-} */
 
-@media screen and (max-width: 699px) {
-  .overlay-projectmodal {
-    display: none;
-  }
-
-  .projectmodal-container {
-    width: 100%;
-    right: -100%;
-  }
-
-  .projectmodal-container.visible {
-    right: 0;
-  }
-
-  /* */
-
-  .container-right {
-    width: 100vw;
-  }
-
-  .container-right.visible {
-    transform: none;
-  }
-
-  /* this is was very trick they key here was setting the width to 100vw to matches the width of the screen size*/
-
-  .projectmodal {
-    width: 100vw;
-    height: auto;
-    box-sizing: border-box;
-  }
-
-  .projectmodal .projectmodal-image {
-    width: 100%;
-  }
-
-  .projectmodal-footer {
-    /* position: relative; */
-    /* bottom: 0;
-    left: 0;
-    right: 0; */
-    width: 100vw;
-    height: auto;
-    text-align: center;
-  }
-}

@@ -10,7 +10,7 @@ const About = ({ theme }) => {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.15 } // Trigger when 35% of the section is visible
+      { threshold: 0.18 } // Trigger when 35% of the section is visible
     );
 
     if (aboutRef.current) {
