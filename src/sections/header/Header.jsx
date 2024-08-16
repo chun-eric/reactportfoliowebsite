@@ -5,6 +5,7 @@ import HeaderImage from "../../assets/images/hero-image-transparent-ec6.png";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { forwardRef, useEffect } from "react";
 
+
 // Data for the social icons
 const data2 = [
   {
