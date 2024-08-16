@@ -35,7 +35,7 @@ const Portfolio = forwardRef((props, ref) => {
           className='skills-title'
           data-aos='fade-in'
           data-aos-delay='100'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos-easing='ease-in'
         >
           <h3 className={`project-title ${theme}`}>Projects</h3>
@@ -48,10 +48,10 @@ const Portfolio = forwardRef((props, ref) => {
         <div
           className={`container portfolio__container ${theme}`}
           data-aos='fade-in'
-          data-aos-delay='200'
+          data-aos-delay='100'
           data-aos-offset='100'
           data-aos-duration='1000'
-          data-aos-easing='ease-in-out'
+          data-aos-easing='ease-in'
         >
           <Projects projects={projects} theme={theme} />
         </div>

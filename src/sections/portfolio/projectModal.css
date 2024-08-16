@@ -361,17 +361,12 @@
   }
 
   .projectmodal-footer {
-    /* position: relative; */
-    /* bottom: 0;
-    left: 0;
-    right: 0; */
     width: 100vw;
     height: auto;
     text-align: center;
   }
 }
 /* Project Modal */
-
 .projectmodal-top-row {
   text-align: center;
   display: flex;
@@ -547,5 +542,3 @@ p.open-text a {
   font-weight: bold;
   font-size: 22px;
 }
-
-

@@ -15,7 +15,7 @@ const ProjectsCategories = ({ categories, onFilterProjects, theme }) => {
 
   useEffect(() => {
     A0S.init({
-      duration: 1000,
+      duration: 500,
       offset: 200,
     });
   }, []);
@@ -25,9 +25,9 @@ const ProjectsCategories = ({ categories, onFilterProjects, theme }) => {
       <div
         className={`portfolio__categories ${theme}`}
         data-aos='fade-in'
-        data-aos-delay='350'
+        data-aos-delay='250'
         data-aos-offset='200'
-        data-aos-duration='1500'
+        data-aos-duration='1000'
         data-aos-easing='ease-in-out'
       >
         {categories.map((category) => (
