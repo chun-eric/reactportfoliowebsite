@@ -23,10 +23,10 @@ const PortfolioCard = ({ project, theme }) => {
       <div
         className='card-container gradient-border'
         data-aos='fade-in'
-        data-aos-delay='250'
+        data-aos-delay='200'
         data-aos-offset='200'
         data-aos-duration='1500'
-        data-aos-easing='ease-in-out'
+        data-aos-easing='ease-in'
       >
         <img
           className='cover-image'

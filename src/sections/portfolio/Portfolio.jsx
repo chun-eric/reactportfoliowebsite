@@ -22,7 +22,7 @@ const Portfolio = forwardRef((props, ref) => {
   useEffect(() => {
     A0S.init({
       duration: 1000,
-      offset: 200,
+      offset: 100,
     });
   }, []);
 
@@ -34,7 +34,7 @@ const Portfolio = forwardRef((props, ref) => {
         <div
           className='skills-title'
           data-aos='fade-in'
-          data-aos-delay='150'
+          data-aos-delay='100'
           data-aos-duration='1500'
           data-aos-easing='ease-in'
         >
@@ -44,14 +44,13 @@ const Portfolio = forwardRef((props, ref) => {
           categories={categories}
           onFilterProjects={filterProjectsHandler}
           theme={theme}
-         
         />
         <div
           className={`container portfolio__container ${theme}`}
           data-aos='fade-in'
-          data-aos-delay='350'
-          data-aos-offset='200'
-          data-aos-duration='1500'
+          data-aos-delay='200'
+          data-aos-offset='100'
+          data-aos-duration='1000'
           data-aos-easing='ease-in-out'
         >
           <Projects projects={projects} theme={theme} />
