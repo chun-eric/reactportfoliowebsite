@@ -4,7 +4,6 @@ import Image3 from "../../assets/images/promotional_1.png";
 import Image4 from "../../assets/images/promotional_2.png";
 import Image5 from "../../assets/images/transactional_1.png";
 import Image6 from "../../assets/images/transactional_2.png";
-import Image7 from "../../assets/images/project7.jpg";
 import Image8 from "../../assets/images/EnglishPhraseCamp-Homepage.png";
 import Image9 from "../../assets/portfolio/latrattoria.png";
 import Image10 from "../../assets/images/Portfolio-Homepage.png";
