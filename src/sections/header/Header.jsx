@@ -5,7 +5,6 @@ import HeaderImage from "../../assets/images/hero-image-transparent-ec6.png";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { forwardRef, useEffect } from "react";
 
-
 // Data for the social icons
 const data2 = [
   {
@@ -46,8 +45,8 @@ const Header = forwardRef((props, ref) => {
                 data-aos='fade-in'
                 data-aos-delay='150'
                 data-aos-offset='200'
-                data-aos-duration='1500'
-                data-aos-easing='ease-in-out'
+                data-aos-duration='1000'
+                data-aos-easing='ease-in'
               >
                 <div className={`hero__details ${theme}`}>
                   <h1 className={`hello ${theme}`}>

@@ -6,8 +6,6 @@ import Contact2 from "./sections/contact/Contact2";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Footer from "./sections/footer/Footer";
 import { useRef } from "react";
-// import "./App.css";
-// import ProjectModal from "./sections/projectModal/ProjectModal";
 import { useTheme } from "./sections/customHooks/localStorage";
 import "./App.css";
 

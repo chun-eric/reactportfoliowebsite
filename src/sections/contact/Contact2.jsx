@@ -1,5 +1,4 @@
 import "./contact2.css";
-
 import { useState } from "react";
 import { ValidationError, useForm } from "@formspree/react";
 
@@ -109,14 +108,7 @@ const Contact = ({}) => {
           </p>
         </div>
 
-        <div
-          className={`contact__form-container `}
-          // data-aos='fade-up'
-          data-aos-delay='200'
-          // data-aos-offset='200'
-          // data-aos-duration='1000'
-          data-aos-easing='ease-in-out'
-        >
+        <div className={`contact__form-container `}>
           <form onSubmit={handleFormSubmit} className='contact__form'>
             <div className='form-section'>
               <label htmlFor='name' className='label'>

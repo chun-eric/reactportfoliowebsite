@@ -218,3 +218,11 @@ button.btn--theme a {
     padding-top: 0px;
   }
 }
+
+@media (max-width: 499px) {
+  .bio-info {
+    width: 95%;
+    text-align: left;
+    font-size: 18px;
+  }
+}

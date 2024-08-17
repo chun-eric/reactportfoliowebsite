@@ -101,7 +101,7 @@ const data = [
     title: "English PhraseCamp",
     desc: "A client Wordpress website for an English language ESL learning platform.",
     about:
-      "This is a client website I built for an English language learning platform. The website is built on Wordpress and uses Elementor for the page builder. The website is designed to be simple and easy to navigate for users. I am also the website administrator and I manage the website's content and updates.",
+      "This is a client website I built for an English language learning platform. The website is built on Wordpress and uses Elementor for the page builder. The website is designed to be simple and easy to navigate for users. I am also the website administrator/webmaster and website's content editor and producer.",
     demo: "https://www.phrasecamp.com",
     github: "n/a",
     stack: ["Wordpress", "Elementor", "CSS"],
@@ -113,7 +113,7 @@ const data = [
     title: "La Trattoria",
     desc: "A highend Italian restaurant website in the heart of Osaka, Japan.",
     about:
-      "La Trattoris is a website I made based on one of my favorite Italian restaurants in Osaka, Japan. The food and customer service is top notch. Everything was built from scratch with HTML, CSS, JavaScript and no frameworks and based on many different designs I used as inspiration online. I used Claude AI for my AI assistant for a whole lot of debugging issues when I got really stuck. Making this website, was a lot of work and really pushed my CSS and Javascri skills.",
+      "La Trattoris is a website I made based on one of my favorite Italian restaurants in Osaka, Japan. The food and customer service is top notch. Everything was built from scratch with HTML, CSS, JavaScript and no frameworks and based on many different designs I used as inspiration online. I used Claude AI for my AI assistant for a whole lot of debugging issues when I got really stuck. Making this website, was a lot of work and really pushed my CSS and JavaScript skills.",
     demo: "https://latrattoria.vercel.app",
     github: "https://www.google.com",
     stack: ["HTML", "CSS", "JavaScript", "Claude AI"],
