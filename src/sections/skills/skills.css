@@ -1,7 +1,7 @@
 :root {
-  --primary-bg-color: #fefefe;
+  --primary-bg-color: #ffffff !important;
   --primary-text-color: #151515;
-  --secondary-bg-color: #f9fdff;
+  --secondary-bg-color: #ffffff;
   --accent-color: #31c6fd;
   --border-color: #e9e7e7;
   --shadow-color: rgba(0, 0, 0, 0.2);
@@ -241,7 +241,6 @@ h3.title {
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .skills {
     padding: 0rem 0.9375rem;
@@ -252,12 +251,8 @@ h3.title {
     gap: 0.9375rem;
   }
 
-  
   .skill-btn {
     font-size: 1rem;
     padding: 0.625rem;
-  } 
-
-  
-
+  }
 }
