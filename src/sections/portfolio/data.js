@@ -100,7 +100,7 @@ const data = [
     title: "English PhraseCamp",
     desc: "A client Wordpress website for an English language ESL learning platform.",
     about:
-      "This is a client website I built for an English language learning platform. The website is built on Wordpress and uses Elementor for the page builder. The website is designed to be simple and easy to navigate for users. I am also the website administrator/webmaster and website's content editor and producer.",
+      "This is a website I built for an English language learning platform while I was still teaching English at a college in Japan. PhraseCamp was built to be a high quality and free resource for all ESL students around the world. I found that there was a lack of free high quality resources for ESL students especially regarding English conversations and speaking practice. The website is built on Wordpress CMS and uses Elementor for the page builder. The website is designed to be simple and easy to navigate for users. I am still the website administrator/webmaster/web content creator/editor and producer for the past 4 to 5 years. I have also created PhraseCamp's YouTube channel including creating all thevideos and have increased it total subscribers to over 72,000 and hoping to reach 100,000 subscriber by mid 2025. ",
     demo: "https://www.phrasecamp.com",
     github: "n/a",
     stack: ["Wordpress", "Elementor", "CSS"],

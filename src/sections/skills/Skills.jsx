@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, forwardRef } from "react";
+import { useState, useEffect, useRef, forwardRef } from "react";
 import data from "./data";
 import "./skills.css";
 
@@ -75,6 +75,7 @@ const Skills = forwardRef((prop, ref) => {
                   }`}
                 >
                   <img
+                    loading='lazy'
                     src={item.src}
                     alt={item.title}
                     className={`image ${
@@ -91,6 +92,7 @@ const Skills = forwardRef((prop, ref) => {
             <div className='skills-badge-container'>
               {data.map((item, index) => (
                 <button
+                  alt={item.title}
                   key={item.id}
                   className={`skill-btn fade-in ${
                     visibleItems.includes(data.length + index) ? "visible" : ""

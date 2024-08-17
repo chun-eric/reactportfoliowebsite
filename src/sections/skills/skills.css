@@ -241,21 +241,6 @@ h3.title {
   }
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  /* .skills-container {
-    width: 90%;
-  } */
-
-  /* h3.title {
-    font-size: 2rem;
-  }
-
-  .skill-btn {
-    font-size: 1rem;
-    padding: 0.75rem;
-  } */
-}
 
 @media screen and (max-width: 480px) {
   .skills {

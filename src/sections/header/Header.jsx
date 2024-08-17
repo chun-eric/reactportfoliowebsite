@@ -30,6 +30,7 @@ const Header = forwardRef((props, ref) => {
     A0S.init({
       duration: 1000,
       offset: 200,
+      once: true,
     });
   }, []);
 
