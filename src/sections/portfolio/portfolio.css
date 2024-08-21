@@ -285,4 +285,12 @@ h3.project-title {
   .container.portfolio__container {
     padding-top: 20px !important;
   }
+  .portfolio-content {
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .portfolio-content {
+    margin-top: -15px;
+  }
 }
