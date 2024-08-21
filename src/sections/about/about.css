@@ -220,9 +220,15 @@ button.btn--theme a {
 }
 
 @media (max-width: 499px) {
+  .about-me {
+    padding: 80px 0px;
+  }
   .bio-info {
     width: 95%;
     text-align: left;
     font-size: 18px;
+  }
+  .bio-container {
+    padding-left: 10px;
   }
 }

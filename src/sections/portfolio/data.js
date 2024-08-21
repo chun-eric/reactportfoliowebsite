@@ -4,9 +4,9 @@ import Image3 from "../../assets/images/promotional_1.png";
 import Image4 from "../../assets/images/promotional_2.png";
 import Image5 from "../../assets/images/transactional_1.png";
 import Image6 from "../../assets/images/transactional_2.png";
-import Image8 from "../../assets/images/EnglishPhraseCamp-Homepage.png";
-import Image9 from "../../assets/portfolio/latrattoria.png";
-import Image10 from "../../assets/images/Portfolio-Homepage.png";
+import Image7 from "../../assets/images/Portfolio-Homepage.png";
+import Image8 from "../../assets/portfolio/latrattoria.png";
+import Image9 from "../../assets/images/PhraseCamp-Homepage.webp";
 
 const data = [
   {
@@ -84,7 +84,7 @@ const data = [
   {
     id: 7,
     category: "Frontend",
-    image: Image10,
+    image: Image7,
     title: "Portfolio Website",
     desc: "A React Frontend website showcasing my portfolio and projects.",
     about:
@@ -95,8 +95,20 @@ const data = [
   },
   {
     id: 8,
-    category: "Wordpress",
+    category: "Frontend",
     image: Image8,
+    title: "La Trattoria",
+    desc: "A highend Italian restaurant website in the heart of Osaka, Japan.",
+    about:
+      "La Trattoris is a website I made based on one of my favorite Italian restaurants in Osaka, Japan. The food and customer service is top notch. Everything was built from scratch with HTML, CSS, JavaScript and no frameworks and based on many different designs I used as inspiration online. I used Claude AI for my AI assistant for a whole lot of debugging issues when I got really stuck. Making this website, was a lot of work and really pushed my CSS and JavaScript skills.",
+    demo: "https://latrattoria.vercel.app",
+    github: "https://www.google.com",
+    stack: ["HTML", "CSS", "JavaScript", "Claude AI"],
+  },
+  {
+    id: 9,
+    category: "Wordpress",
+    image: Image9,
     title: "English PhraseCamp",
     desc: "An English language ESL Website learning resource platform.",
     about:
@@ -106,18 +118,6 @@ const data = [
     demo: "https://www.phrasecamp.com",
     github: "n/a",
     stack: ["Wordpress", "Elementor", "CSS"],
-  },
-  {
-    id: 9,
-    category: "Frontend",
-    image: Image9,
-    title: "La Trattoria",
-    desc: "A highend Italian restaurant website in the heart of Osaka, Japan.",
-    about:
-      "La Trattoris is a website I made based on one of my favorite Italian restaurants in Osaka, Japan. The food and customer service is top notch. Everything was built from scratch with HTML, CSS, JavaScript and no frameworks and based on many different designs I used as inspiration online. I used Claude AI for my AI assistant for a whole lot of debugging issues when I got really stuck. Making this website, was a lot of work and really pushed my CSS and JavaScript skills.",
-    demo: "https://latrattoria.vercel.app",
-    github: "https://www.google.com",
-    stack: ["HTML", "CSS", "JavaScript", "Claude AI"],
   },
 ];
 export default data;

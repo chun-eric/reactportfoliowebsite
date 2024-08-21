@@ -241,10 +241,24 @@ h3.title {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .skills {
-    padding: 0rem 0.9375rem;
+@media screen and (max-width: 599px) {
+  .skills-wrapper {
+    padding: 1.4rem 0.9375rem;
     height: 100%;
+  }
+  .skills-badge-container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #skills-section {
+    padding: 80px 0px;
+  }
+  .skills {
+    padding: 1.4rem 0.9375rem;
+    height: 100%;
+    width: 100%;
   }
 
   .skills-image-container {
