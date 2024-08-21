@@ -5,14 +5,12 @@ import About from "./sections/about/About";
 import Contact2 from "./sections/contact/Contact2";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Footer from "./sections/footer/Footer";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useTheme } from "./sections/customHooks/localStorage";
-import "./App.css";
-
+import GoogleAnalytics from "./GoogleAnalytics";
 
 function App() {
   // creating theme usestate
-  // const [theme, setTheme] = useState("light");
   const [theme, setTheme] = useTheme();
 
   // utilizing useRef to scroll to a section
@@ -30,6 +28,7 @@ function App() {
 
   return (
     <div className={`container  ${theme} `}>
+      <GoogleAnalytics />
       <Navbar
         theme={theme}
         setTheme={setTheme}

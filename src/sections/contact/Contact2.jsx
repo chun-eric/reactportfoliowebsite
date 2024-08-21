@@ -65,7 +65,7 @@ const Contact = ({}) => {
     // reset form submission state to show form again
     setSubmitted(false);
 
-    // redirect me bak to the form
+    // redirect me back to the form
   };
 
   // handle function for page refresh
