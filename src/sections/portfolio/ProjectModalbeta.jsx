@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import "./projectModal.css";
 import PropTypes from "prop-types";
 
-
 const ProjectModalbeta = ({ project, onClose, show, theme }) => {
   const [modalRoot, setModalRoot] = useState(null);
   const [isClosing, setIsClosing] = useState(false);
@@ -61,9 +60,12 @@ const ProjectModalbeta = ({ project, onClose, show, theme }) => {
                 className={`back ${theme}`}
                 size={34}
               />
-              <p className={`back-to-projects ${theme}`} onClick={handleClose}>
-                <a className={`${theme}`}>Back To Projects.</a>
-              </p>
+              <button
+                className={`back-to-projects ${theme} back-to-projects`}
+                onClick={handleClose}
+              >
+                Back To Projects.
+              </button>
             </div>
 
             <div className='separator'>
@@ -120,13 +122,11 @@ const ProjectModalbeta = ({ project, onClose, show, theme }) => {
             </div>
           </div>
           <div className={`projectmodal-footer ${theme}`}>
-            <a href='' className={`projectmodal-footer-link ${theme}`}>
-              <p className={`${theme} open-text`}>
-                {" "}
-                <a target='_blank' href={project.demo}>
-                  Open Project
-                </a>
-              </p>
+            <a
+              href={project.demo}
+              className={`projectmodal-footer-link ${theme}`}
+            >
+              <p className={`${theme} open-text`}>Open Project</p>
             </a>
           </div>
         </div>

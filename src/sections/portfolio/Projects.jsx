@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 // shows all the projects
 // we need to render a single project component
 const Projects = ({ projects, theme }) => {
-  console.log(projects);
   return (
     <div className='portfolio__projects'>
       {projects.map((project, index) => (

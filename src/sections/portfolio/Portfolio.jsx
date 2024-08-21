@@ -1,11 +1,11 @@
-import { useEffect, useState, forwardRef } from "react";
+import {  useState, forwardRef } from "react";
 import data from "./data";
 import "./portfolio.css";
 import Projects from "./Projects";
 import ProjectsCategories from "./ProjectsCategories";
 import PropTypes from "prop-types";
-import A0S from "aos";
-import "aos/dist/aos.css";
+
+
 
 const Portfolio = forwardRef((props, ref) => {
   const [projects, setProjects] = useState(data);
@@ -19,25 +19,14 @@ const Portfolio = forwardRef((props, ref) => {
     }
   };
 
-  useEffect(() => {
-    A0S.init({
-      duration: 1000,
-      offset: 100,
-    });
-  }, []);
+
 
   const { theme } = props;
   return (
     <section id='portfolio' className={theme} ref={ref}>
       <div className={`portfolio-overlay ${theme}`}></div>
       <div className='portfolio-content'>
-        <div
-          className='skills-title'
-          data-aos='fade-in'
-          data-aos-delay='100'
-          data-aos-duration='1000'
-          data-aos-easing='ease-in'
-        >
+        <div className='skills-title' >
           <h3 className={`project-title ${theme}`}>Projects</h3>
         </div>
         <ProjectsCategories
@@ -47,11 +36,7 @@ const Portfolio = forwardRef((props, ref) => {
         />
         <div
           className={`container portfolio__container ${theme}`}
-          data-aos='fade-in'
-          data-aos-delay='100'
-          data-aos-offset='200'
-          data-aos-duration='1000'
-          data-aos-easing='ease-in'
+        
         >
           <Projects projects={projects} theme={theme} />
         </div>

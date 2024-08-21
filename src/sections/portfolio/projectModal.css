@@ -124,12 +124,18 @@
   cursor: pointer;
 }
 
-.back-to-projects a {
+.back-to-projects {
   font-weight: 800;
   font-size: 18px;
   word-spacing: 1px;
   letter-spacing: 0.3px;
   color: black;
+  background: transparent;
+  margin-top: 10px ;
+}
+
+.back-to-projects.dark {
+  color: #eaeaea;
 }
 
 .back-to-projects:hover {

@@ -10,12 +10,15 @@ const PortfolioCard = ({ project, theme }) => {
   const closeModal = () => setShowModal(false);
 
   return (
-    <div className='project-cards-container'>
-      <div className='card-container gradient-border'>
+    <div
+      className='project-cards-container'
+     
+    >
+      <div className={`card-container gradient-border ${theme}`}>
         <img
           className='cover-image'
           src={project.image}
-          alt={`${project.title} Project`}
+          alt={`${project.title} Project ${theme}`}
         />
         <div
           className={`overlay ${theme} ${hovered ? "overlay-hover" : ""}`}
