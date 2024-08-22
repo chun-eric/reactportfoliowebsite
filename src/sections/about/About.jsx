@@ -46,9 +46,9 @@ const About = ({ theme }) => {
             </p>
             <p className='bio-info'>
               When developing digital products, whether it be emails, landing
-              pages, websites, or web apps, I strive to make them simple, easy
-              to understand, and practical for users. UX/UI is also very
-              important to me, so I'm constantly improving my skills and
+              pages, websites, web content or web apps, I strive to make them
+              simple, easy to understand, and practical for users. UX/UI is also
+              very important to me, so I'm constantly improving my skills and
               knowledge to achieve the best results for my clients. Feel free to
               get in touch with me.
             </p>
