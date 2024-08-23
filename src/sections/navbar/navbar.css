@@ -9,7 +9,6 @@
   top: 0;
   left: 0;
   z-index: 2999;
-  /* box-shadow: 0 40px 60px rgba(51, 201, 255, 0.03); */
   transition: all 0.1s ease;
   z-index: 13500;
   background: white;

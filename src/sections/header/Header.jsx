@@ -44,14 +44,14 @@ const Header = forwardRef((props, ref) => {
               <div
                 className='content'
                 data-aos='fade-in'
-                data-aos-delay='150'
-                data-aos-offset='200'
+                data-aos-delay='100'
+                data-aos-offset='100'
                 data-aos-duration='1000'
                 data-aos-easing='ease-in'
               >
                 <div className={`hero__details ${theme}`}>
                   <h1 className={`hello ${theme}`}>
-                    Hi, I'm
+                    Hi, I&apos;m
                     <span
                       className={`firstName highlight ${
                         theme === "dark" ? "changeColor highlight-dark" : ""
@@ -96,8 +96,8 @@ const Header = forwardRef((props, ref) => {
               <div
                 className='self-photo'
                 data-aos='fade-in'
-                data-aos-delay='250'
-                data-aos-offset='200'
+                data-aos-delay='120'
+                data-aos-offset='100'
                 data-aos-duration='1500'
                 data-aos-easing='ease-in-out'
               >
