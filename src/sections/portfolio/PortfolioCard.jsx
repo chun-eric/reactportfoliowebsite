@@ -12,7 +12,8 @@ const PortfolioCard = ({ project, theme }) => {
   return (
     <div
       className='project-cards-container'
-     
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <div className={`card-container gradient-border ${theme}`}>
         <img
@@ -23,30 +24,28 @@ const PortfolioCard = ({ project, theme }) => {
         <div
           className={`overlay ${theme} ${hovered ? "overlay-hover" : ""}`}
         ></div>
-        <div
-          className='project-description fade-in'
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-        >
-          <p className='portfolio-card project-title'>{project.title}</p>
-          <p className='card-description'>{project.desc}</p>
-          <div className='button-card-container'>
-            <button className='btn button-card demo'>
-              <p>
-                <a
-                  href={project.demo}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Demo
-                </a>
-              </p>
-            </button>
-            <button className='btn button-card' onClick={openModal}>
-              <p style={{ color: "white", fontSize: "18px" }}>Details</p>
-            </button>
+        {hovered && (
+          <div className='project-description fade-in'>
+            <p className='portfolio-card project-title'>{project.title}</p>
+            <p className='card-description'>{project.desc}</p>
+            <div className='button-card-container'>
+              <button className='btn button-card demo'>
+                <p>
+                  <a
+                    href={project.demo}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Demo
+                  </a>
+                </p>
+              </button>
+              <button className='btn button-card' onClick={openModal}>
+                <p style={{ color: "white", fontSize: "18px" }}>Details</p>
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       <ProjectModalbeta
