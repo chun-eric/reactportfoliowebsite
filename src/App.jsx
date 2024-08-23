@@ -5,7 +5,7 @@ import About from "./sections/about/About";
 import Contact2 from "./sections/contact/Contact2";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Footer from "./sections/footer/Footer";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useTheme } from "./sections/customHooks/localStorage";
 import GoogleAnalytics from "./GoogleAnalytics";
 
@@ -39,7 +39,6 @@ function App() {
       <Skills theme={theme} ref={skillsRef} />
       <About theme={theme} />
       <Portfolio theme={theme} setTheme={setTheme} ref={portfolioRef} />
-      {/* <ProjectModalbeta theme={theme} /> */}
       <Contact2 />
       <Footer theme={theme} />
     </div>
