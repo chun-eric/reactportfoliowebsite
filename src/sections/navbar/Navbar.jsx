@@ -47,7 +47,11 @@ const Navbar = ({ theme, setTheme }) => {
       <div className='container nav__container'>
         {/* Logo */}
         <a href='#' id='logo' className={`nav__logo ${theme}`}>
-          <img src='https://i.ibb.co/SfjJhVz/logo.png' alt='logo' />
+          <img
+            src='https://i.ibb.co/SfjJhVz/logo.png'
+            alt='logo'
+            loading='eager'
+          />
         </a>
 
         {/* Nav Headings */}

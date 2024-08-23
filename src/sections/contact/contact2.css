@@ -5,7 +5,7 @@
     rgba(255, 255, 255, 0.8),
     rgba(241, 240, 240, 0.8)
   );
-  background-image: url("https://i.ibb.co/48tfNHB/background-pattern-4.jpg");
+  background-image: url("../../assets//images/background-pattern-4.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,9 +15,7 @@
   padding: 160px 0;
 }
 
-.contact.dark {
-  /* background: transparent; */
-}
+
 
 .section-padding {
   padding: 130px 0;
@@ -33,14 +31,8 @@
   border-radius: 20px;
 }
 
-.main-container.contact-form.dark {
-  /* background: #181e25; */
-  /* background: linear-gradient(0deg, #181e25 10%, #151515 100%); */
-}
 
-.contact-heading.dark {
-  /* color: #1d1d1d; */
-}
+
 .heading-sec__mb-med {
   display: block;
   margin-bottom: 33px;

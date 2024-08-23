@@ -80,7 +80,7 @@ const Contact = ({}) => {
         <p>
           <span className='thank-you-span'>Thank you</span> for your message!{" "}
           <br />
-          I'll get back to you soon as I can.
+          I&apos;ll get back to you soon as I can.
         </p>
         <button
           style={{ backgroundColor: "#202730", color: "white" }}
@@ -103,8 +103,8 @@ const Contact = ({}) => {
             </span>
           </h2>
           <p className='heading-contactme'>
-            Feel free to Contact me by submitting the form below and I'll get
-            back to you as soon as I can.
+            Feel free to Contact me by submitting the form below and I&apos;ll
+            get back to you as soon as I can.
           </p>
         </div>
 
@@ -120,7 +120,7 @@ const Contact = ({}) => {
                 name='name'
                 value={name}
                 onChange={handleNameChange}
-                // color={theme === "dark" ? "white" : "black"}
+         
               />
               <ValidationError
                 prefix='Name'
