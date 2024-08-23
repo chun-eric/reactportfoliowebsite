@@ -1,5 +1,5 @@
 import "./header.css";
-import HeaderImage from "../../assets/images/hero-image-transparent-ec6.png";
+import HeaderImage from "../../assets/images/hero-image-transparent.webp";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { forwardRef } from "react";
 
@@ -76,16 +76,13 @@ const Header = forwardRef((props, ref) => {
                   </div>
                 </div>
               </div>
-              <div className='self-photo'>
-                <div className={`conic conic-demo ${theme}`}></div>
+              <div className='self-photo fadeInImage'>
+                <div className={`conic conic-demo ${theme} `}></div>
                 <img
-                  loading='eager'
+                  className='fadeInImage'
+                  loading='lazy'
                   src={HeaderImage}
                   alt='self-logo'
-                  style={{
-                    opacity: 0,
-                    animation: "fadeInImage 1s ease-in-out forwards",
-                  }}
                 />
               </div>
             </div>
