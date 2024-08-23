@@ -103,7 +103,7 @@ const Header = forwardRef((props, ref) => {
               >
                 <div className={`conic conic-demo ${theme}`}></div>
                 <img
-                  loading='eager'
+                  loading='lazy'
                   src={HeaderImage}
                   alt='self-logo'
                   style={{
