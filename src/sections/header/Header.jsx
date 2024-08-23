@@ -80,7 +80,7 @@ const Header = forwardRef((props, ref) => {
                 <div className={`conic conic-demo ${theme} `}></div>
                 <img
                   className='fadeInImage'
-                  loading='lazy'
+                  loading='eager'
                   src={HeaderImage}
                   alt='self-logo'
                 />
