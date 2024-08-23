@@ -1,9 +1,9 @@
 import "./header.css";
-import A0S from "aos";
-import "aos/dist/aos.css";
+// import A0S from "aos";
+// import "aos/dist/aos.css";
 import HeaderImage from "../../assets/images/hero-image-transparent-ec6.png";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { forwardRef, useEffect } from "react";
+import { forwardRef } from "react";
 
 // Data for the social icons
 const data2 = [
@@ -26,13 +26,13 @@ const Header = forwardRef((props, ref) => {
   // Destructure theme from props
   const { theme } = props;
 
-  useEffect(() => {
-    A0S.init({
-      duration: 1000,
-      offset: 200,
-      once: true,
-    });
-  }, []);
+  // useEffect(() => {
+  //   A0S.init({
+  //     duration: 1000,
+  //     offset: 200,
+  //     once: true,
+  //   });
+  // }, []);
 
   return (
     <header ref={ref} className={`header ${theme}`}>
@@ -40,14 +40,7 @@ const Header = forwardRef((props, ref) => {
         <div className='hero-wrapper'>
           <div className={`background-overlay ${theme}`}></div>
           <div className={`container header__container ${theme}`}>
-            <div
-              className={`hero ${theme}`}
-              data-aos='fade-in'
-              data-aos-delay='100'
-              data-aos-offset='100'
-              data-aos-duration='1000'
-              data-aos-easing='ease-in'
-            >
+            <div className={`hero ${theme} fade-in`}>
               <div className='content'>
                 <div className={`hero__details ${theme}`}>
                   <h1 className={`hello ${theme}`}>
