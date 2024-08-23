@@ -1,6 +1,4 @@
 import "./header.css";
-// import A0S from "aos";
-// import "aos/dist/aos.css";
 import HeaderImage from "../../assets/images/hero-image-transparent-ec6.png";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { forwardRef } from "react";
@@ -25,14 +23,6 @@ const data2 = [
 const Header = forwardRef((props, ref) => {
   // Destructure theme from props
   const { theme } = props;
-
-  // useEffect(() => {
-  //   A0S.init({
-  //     duration: 1000,
-  //     offset: 200,
-  //     once: true,
-  //   });
-  // }, []);
 
   return (
     <header ref={ref} className={`header ${theme}`}>
