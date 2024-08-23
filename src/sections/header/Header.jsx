@@ -40,15 +40,15 @@ const Header = forwardRef((props, ref) => {
         <div className='hero-wrapper'>
           <div className={`background-overlay ${theme}`}></div>
           <div className={`container header__container ${theme}`}>
-            <div className={`hero ${theme}`}>
-              <div
-                className='content'
-                data-aos='fade-in'
-                data-aos-delay='100'
-                data-aos-offset='100'
-                data-aos-duration='1000'
-                data-aos-easing='ease-in'
-              >
+            <div
+              className={`hero ${theme}`}
+              data-aos='fade-in'
+              data-aos-delay='100'
+              data-aos-offset='100'
+              data-aos-duration='1000'
+              data-aos-easing='ease-in'
+            >
+              <div className='content'>
                 <div className={`hero__details ${theme}`}>
                   <h1 className={`hello ${theme}`}>
                     Hi, I&apos;m
@@ -93,17 +93,10 @@ const Header = forwardRef((props, ref) => {
                   </div>
                 </div>
               </div>
-              <div
-                className='self-photo'
-                data-aos='fade-in'
-                data-aos-delay='120'
-                data-aos-offset='100'
-                data-aos-duration='1500'
-                data-aos-easing='ease-in-out'
-              >
+              <div className='self-photo'>
                 <div className={`conic conic-demo ${theme}`}></div>
                 <img
-                  loading='lazy'
+                  loading='eager'
                   src={HeaderImage}
                   alt='self-logo'
                   style={{
