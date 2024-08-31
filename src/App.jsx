@@ -8,6 +8,7 @@ import Footer from "./sections/footer/Footer";
 import { useRef } from "react";
 import { useTheme } from "./sections/customHooks/localStorage";
 import GoogleAnalytics from "./GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   // creating theme usestate
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <div className={`container  ${theme} `}>
+      <Analytics />
       <GoogleAnalytics />
       <Navbar
         theme={theme}
