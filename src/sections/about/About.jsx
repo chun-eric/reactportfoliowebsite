@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import PropTypes from "prop-types";
 import "./about.css";
 
 const About = ({ theme }) => {
@@ -36,16 +37,15 @@ const About = ({ theme }) => {
           </div>
           <div className='bio-container'>
             <p className='bio-info'>
-              Hi, I&apos;m Eric Chun, an Australian with roots in Dubai, now
-              currently calling Osaka, Japan my home. My journey through diverse
-              cultures has ignited a deep passion for blending Western and
-              Eastern cultures in my development and design work. I&apos;m
-              fascinated by Japanese culture — from anime and video games to
-              streetwear fashion and automotive design. I&apos;m equally drawn
-              to the warmth of `omotenashi` hospitality that permeates everyday
-              life here. These diverse influences fuel my creativity, inspiring
-              me to craft experiences that are both unique and engaging for
-              users.
+              Hi, I&apos;m Eric Chun, an Australian, now currently calling
+              Osaka, Japan my home. My journey through diverse cultures has
+              ignited a deep passion for blending Western and Eastern cultures
+              in my development and design work. I&apos;m fascinated by Japanese
+              culture — from anime and video games to streetwear fashion and
+              automotive design. I&apos;m equally drawn to the warmth of
+              `omotenashi` hospitality that permeates everyday life here. These
+              diverse influences fuel my creativity, inspiring me to craft
+              experiences that are both unique and engaging for users.
             </p>
             <p className='bio-info'>
               When developing digital products, whether it be emails, landing
@@ -68,3 +68,7 @@ const About = ({ theme }) => {
 };
 
 export default About;
+
+About.propTypes = {
+  theme: PropTypes.string.isRequired,
+};

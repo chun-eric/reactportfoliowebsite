@@ -6,7 +6,8 @@ import Image5 from "../../assets/images/transactional_1.webp";
 import Image6 from "../../assets/images/transactional_2.webp";
 import Image7 from "../../assets/images/Portfolio-Homepage.webp";
 import Image8 from "../../assets/images/latrattoria.webp";
-import Image9 from "../../assets/images/PhraseCamp-Homepage.webp";
+import Image9 from "../../assets/images/english-phrasecamp.webp";
+import Image10 from "../../assets/images/web-homepage.webp";
 
 const data = [
   {
@@ -113,11 +114,25 @@ const data = [
     desc: "An English language ESL Website learning resource platform.",
     about:
       "PhraseCamp is a free, high-quality English language learning platform I created while teaching English at a college in Japan. Noticing a gap in high quality resources for ESL students, especially for conversation and speaking practice, I built this website to address that need.\n\n" +
-      "The site is powered by WordPress CMS and uses Elementor for its user-friendly design, ensuring easy navigation for learners. For the past 4-5 years, I've worn multiple hats as the website administrator, webmaster, web content creator, producer and editor.\n\n" +
+      "The site is powered by WordPress CMS and uses Elementor for its user-friendly design, ensuring easy navigation for learners. For the past 4-5 years, I've worn multiple hats as the website administrator, webmaster, web content creator, developer, producer and editor.\n\n" +
       "In addition to the website, I launched and manage PhraseCamp's Official YouTube channel, producing all its videos. The channel has grown to over 72,000 subscribers, with a goal of reaching 100,000 by mid-2025. PhraseCamp represents my commitment to providing free and affordable, top-tier resources for English language learners globally.",
     demo: "https://www.phrasecamp.com",
     github: "n/a",
     stack: ["Wordpress", "Elementor", "CSS"],
+  },
+  {
+    id: 9,
+    category: "Landing Pages",
+    image: Image10,
+    title: "Osaka Hometown",
+    desc: "A custom desgined landing page for my hometown of Osaka.",
+    about:
+      "This landing page was part of an project with Scrimba's Professional Frontend Developer course with Mozilla Developer Network. The goal of this landing page was to showcase the uniqueness of my current hometown of Osaka. I used HTML, CSS, and JavaScript to create this landing page.\n\n" +
+      "The design of the landing page was created by me and also with the help of generative AI for specific images.\n\n" +
+      "I went a little overboard with this project, adding a sign-in and signup form, mobile side menu, featured cards and a responsive design.",
+    demo: "https://hometown-osaka.vercel.app/",
+    github: "https://github.com/chun-eric/hometown-osaka",
+    stack: ["HTML", "CSS", "JavaScript"],
   },
 ];
 export default data;
