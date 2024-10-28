@@ -5,7 +5,7 @@ import Image4 from "../../assets/images/promotional_2.webp";
 import Image5 from "../../assets/images/transactional_1.webp";
 import Image6 from "../../assets/images/transactional_2.webp";
 import Image7 from "../../assets/images/Portfolio-Homepage.webp";
-import Image8 from "../../assets/images/latrattoria.webp";
+import Image8 from "../../assets/images/latrattoria2.webp";
 import Image9 from "../../assets/images/english-phrasecamp.webp";
 import Image10 from "../../assets/images/web-homepage.webp";
 
