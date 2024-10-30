@@ -4,8 +4,8 @@ import Image3 from "../../assets/images/promotional_1.webp";
 import Image4 from "../../assets/images/promotional_2.webp";
 import Image5 from "../../assets/images/transactional_1.webp";
 import Image6 from "../../assets/images/transactional_2.webp";
-import Image7 from "../../assets/images/Portfolio-Homepage.webp";
-import Image8 from "../../assets/images/latrattoria2.webp";
+import Image7 from "../../assets/images/portfolio_home2.webp";
+import Image8 from "../../assets/images/latrattoria_home2.webp";
 import Image9 from "../../assets/images/english-phrasecamp.webp";
 import Image10 from "../../assets/images/web-homepage.webp";
 
@@ -121,7 +121,7 @@ const data = [
     stack: ["Wordpress", "Elementor", "CSS"],
   },
   {
-    id: 9,
+    id: 10,
     category: "Landing Pages",
     image: Image10,
     title: "Osaka Hometown",
