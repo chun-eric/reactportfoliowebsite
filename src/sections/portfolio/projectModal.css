@@ -177,21 +177,31 @@
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  background: #eab259;
   background: linear-gradient(135deg, #eab259, #f4a661);
 }
 
 .projectmodal-image img {
-  position: absolute;
-  inset: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  object-fit: cover;
   width: 100% !important;
-  height: 100% !important;
-  display: block;
+  height: auto !important; /* Maintain aspect ratio */
+  object-fit: contain; /* image will fit in container */
+  display: block; /* removes inline spacing */
   border: none !important;
+  margin: 0 auto;
+}
+
+/* Adjust projectmodal image container for HTML Email images */
+.projectmodal-image.wide-image {
+  height: auto !important; /* remove fixed height constraint  */
+  max-height: none !important; /* remove max height constraint */
+  padding: 20px;
+}
+
+/* Adjust projectmodal for HTML Email images */
+.projectmodal-image.wide-image img {
+  width: 100% !important;
+  max-width: 100%; /* prevents width overflow */
+  height: auto !important;
+  object-fit: contain; /* maintain aspect ratio */
 }
 
 .projectmodal-about {

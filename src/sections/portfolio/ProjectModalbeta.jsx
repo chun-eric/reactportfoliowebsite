@@ -75,7 +75,11 @@ const ProjectModalbeta = ({ project, onClose, show, theme }) => {
               {project.title}
             </h2>
             <p className='project-modal-text'>{project.desc}</p>
-            <div className={`projectmodal-image ${theme}`}>
+            <div
+              className={`projectmodal-image ${theme} ${
+                project.category === "HTML Email" ? "wide-image" : ""
+              }`}
+            >
               <img src={project.image} alt={project.title} />
             </div>
             <div className='projectmodal-about'>
@@ -140,6 +144,7 @@ const ProjectModalbeta = ({ project, onClose, show, theme }) => {
 ProjectModalbeta.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
     about: PropTypes.string.isRequired,
