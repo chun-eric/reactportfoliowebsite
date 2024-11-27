@@ -12,8 +12,9 @@ Live and actively maintained
 
 ## Project Screen Shots
 
-![Portfolio Homepage]
-<img src="./src/assets/images/portfolio-page.png" alt="Homepage" width="400">
+<div style="text-align: left;">
+<img src="./src/assets/images/portfolio-page.png" alt="Homepage" width="600">
+</div>
 
 ## Installation and Setup Instructions
 
