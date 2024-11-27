@@ -8,6 +8,7 @@ import Image7 from "../../assets/images/portfolio_home2.webp";
 import Image8 from "../../assets/images/latrattoria_home2.webp";
 import Image9 from "../../assets/images/english-phrasecamp.webp";
 import Image10 from "../../assets/images/web-homepage.webp";
+import Image11 from "../../assets/images/OkinawaMee2.webp";
 
 const data = [
   {
@@ -103,7 +104,7 @@ const data = [
     about:
       "La Trattoris is a website I made based on one of my favorite Italian restaurants in Osaka, Japan. The food and customer service is top notch. Everything was built from scratch with HTML, CSS, JavaScript and no frameworks and based on many different designs I used as inspiration online. I used Claude AI for my AI assistant for a whole lot of debugging issues when I got really stuck. Making this website, was a lot of work and really pushed my CSS and JavaScript skills.",
     demo: "https://latrattoria.vercel.app",
-    github: "https://www.google.com",
+    github: "https://github.com/chun-eric/latrattoria",
     stack: ["HTML", "CSS", "JavaScript", "Claude AI"],
   },
   {
@@ -125,7 +126,7 @@ const data = [
     category: "Landing Pages",
     image: Image10,
     title: "Osaka Hometown",
-    desc: "A custom desgined landing page for my hometown of Osaka.",
+    desc: "A custom designed landing page for my hometown of Osaka.",
     about:
       "This landing page was part of an project with Scrimba's Professional Frontend Developer course with Mozilla Developer Network. The goal of this landing page was to showcase the uniqueness of my current hometown of Osaka. I used HTML, CSS, and JavaScript to create this landing page.\n\n" +
       "The design of the landing page was created by me and also with the help of generative AI for specific images.\n\n" +
@@ -133,6 +134,20 @@ const data = [
     demo: "https://hometown-osaka.vercel.app/",
     github: "https://github.com/chun-eric/hometown-osaka",
     stack: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 11,
+    category: "In Development...",
+    image: Image11,
+    title: "OkinawaMee",
+    desc: "A custom designed E-Commerce store selling Okinawa Kariyushi Hawaiian Shirts.",
+    about:
+      "OkinawaMee is an e-commerce React store currently in development. The goal of building this e-commerce store was to showcase the beautiful and popular Okinawa Kariyushi shirts that are  inspired by Hawaiian Aloha shirts. I tried to build something that showecased my love of Okinawa culture and it's unique style. \n\n" +
+      "The design of OkinawaMee is also heavily inspired by one of my all time favorite e-commerce store Allbirds. I really love their simple, clean design so I took lots of inspiration from them but still trying to incorporate a distinct style for OkinawaMee. \n\n" +
+      "OkinawaMee is still a work in progress.",
+    demo: "https://okinawamee.vercel.app/",
+    github: "https://github.com/chun-eric/okinawamee",
+    stack: ["React", "Tailwind CSS", "Vercel", "Vite"],
   },
 ];
 export default data;

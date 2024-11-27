@@ -37,10 +37,10 @@ const About = ({ theme }) => {
           </div>
           <div className='bio-container'>
             <p className='bio-info'>
-              Hi, I&apos;m Eric Chun, an Australian, now currently calling
-              Osaka, Japan my home. My journey through diverse cultures has
-              ignited a deep passion for blending Western and Eastern cultures
-              in my development and design work. I&apos;m fascinated by Japanese
+              Hi, I&apos;m Eric Chun, a Korean-Australian, currently based in
+              Osaka, Japan. My journey through diverse cultures has ignited a
+              deep passion for blending Western and Eastern cultures in my
+              development and design work. I&apos;m fascinated by Japanese
               culture — from anime and video games to streetwear fashion and
               automotive design. I&apos;m equally drawn to the warmth of
               `omotenashi` hospitality that permeates everyday life here. These

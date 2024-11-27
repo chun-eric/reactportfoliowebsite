@@ -1,6 +1,6 @@
 ### Eric Chun Frontend Portfolio Website
 
-This is my personal portfolio website, showcasing my work and skills as a Front-End React and Email Developer based in Osaka, Japan. My design combines both Western and Eastern aesthetics to reflect my unique cultural background and design philosophy.
+This is my personal portfolio website built with React, showcasing my work and skills as a Front-End React and Email Developer. I am currently based in Osaka, Japan so my design combines both Western and Eastern aesthetics to reflect my unique cultural background and design philosophy.
 
 You can view it live at:
 
@@ -12,9 +12,10 @@ Live and actively maintained
 
 ## Project Screen Shots
 
-[ PRETEND SCREEN SHOT IS HERE ]
+<div>
+  <img src="/vite-project/src/assets/images/portfolio-page.png" alt="Homepage" width="400"/>
 
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
+</div>
 
 ## Installation and Setup Instructions
 
@@ -30,9 +31,21 @@ I built this portfolio as a personal project to showcase my skills and work as a
 My goal was to create a visually appealing, responsive, and user-friendly site that highlights my work and skills while reflecting my personal style. I wanted to emphasize the blend of Western and Eastern design elements that are part of my identity.
 
 <li>Challenges:</li>
-One of the biggest challenges was achieving a seamless fusion of different design aesthetics. I also spent a significant amount of time making sure the website is responsive and performs well across devices and browsers.
+There were many challenges with this project that I couldn't have forseen. 
+- How do you make a custom slider?
+- How do you make add analytics to a website?
+- How do you optimize the website for performance?
+- How do you create customized animations with only css?
+- How do I create a dark mode feature and save it in local storage?
+- How do I validate a custom form and
 
-Tools and Technologies:
+I also spent a significant amount of time making sure the website is responsive and performs well across devices and browsers.
+
+## Tools and Technologies:
 
 - React
--
+- HTML5
+- CSS3
+- Vercel (For Deployment)
+
+## Reflection
