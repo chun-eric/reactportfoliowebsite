@@ -40,7 +40,7 @@ I also spent a significant amount of time making sure the website is responsive 
 
 ## Tools and Technologies:
 
-[![My Skills](https://skillicons.dev/icons?i=react,css,html,vercel,figma&theme=light)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,css,html,vercel)](https://skillicons.dev)
 
 - React
 - HTML5
