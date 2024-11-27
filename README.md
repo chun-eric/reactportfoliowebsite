@@ -16,6 +16,13 @@ Live and actively maintained
 <img src="./src/assets/images/portfolio-page.png" alt="Homepage" width="600">
 </div>
 
+<div style="text-align: left;">
+</div>
+
+<div style="text-align: left;">
+<img src="./src/assets/images/portfolio-page-smallscreen.png" alt="Homepage" width="600">
+</div>
+
 ## Installation and Setup Instructions
 
 This portfolio is hosted online, so you can view it directly by navigating to:
@@ -30,8 +37,8 @@ I built this portfolio as a personal project to showcase my skills and work as a
 My goal was to create a visually appealing, responsive, and user-friendly site that highlights my work and skills while reflecting my personal style. I wanted to emphasize the blend of Western and Eastern design elements that are part of my identity.
 
 <h4>Challenges:</h4>
-There were many challenges with this project that I couldn't have forseen but managed to overcome with a lot of Googling and AI help.
-
+There were many challenges with this project that I couldn't have forseen but managed to overcome with a lot of trial and error, thinking, Googling and AI help.
+<br>
 How do you insert a custom responsive slider that brings in dynamic information?
 <br>
 How do you add analytics to a website?
