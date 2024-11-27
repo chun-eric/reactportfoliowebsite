@@ -17,15 +17,20 @@ Live and actively maintained
 ### Project Screen Shots
 
 <div style="text-align: left;">
-  <img src="./src/assets/images/portfolio-page.png" alt="Homepage" width="540">
+  <img src="./src/assets/images/portfolio-page.png" alt="Homepage" width="780">
 </div>
 
 <div style="text-align: left;">
 </div>
 
+<br/>
+<h5>Dark Mode</h5>
+
 <div style="text-align: left;">
-  <img src="./src/assets/images/portfolio-page-smallscreen.webp" alt="Homepage-small" width="540">
+  <img src="./src/assets/images/portfolio-page-smallscreen.webp" alt="Homepage-small" width="780">
 </div>
+
+<br/>
 
 ### Installation and Setup Instructions
 
@@ -58,6 +63,8 @@ How do I build a custom form so any can contact me, then validate the data then 
 <br>
 <br>
 I also spent a significant amount of time making sure the website was responsive and performs well across devices and browsers.
+
+<br/>
 
 ### Tools and Technologies:
 
