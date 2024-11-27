@@ -116,7 +116,7 @@ const data = [
     about:
       "PhraseCamp is a free, high-quality English language learning platform I created while teaching English at a college in Japan. Noticing a gap in high quality resources for ESL students, especially for conversation and speaking practice, I built this website to address that need.\n\n" +
       "The site is powered by WordPress CMS and uses Elementor for its user-friendly design, ensuring easy navigation for learners. For the past 4-5 years, I've worn multiple hats as the website administrator, webmaster, web content creator, developer, producer and editor.\n\n" +
-      "In addition to the website, I launched and manage PhraseCamp's Official YouTube channel, producing all its videos. The channel has grown to over 72,000 subscribers, with a goal of reaching 100,000 by mid-2025. PhraseCamp represents my commitment to providing free and affordable, top-tier resources for English language learners globally.",
+      "In addition to the website, I launched and manage PhraseCamp's Official YouTube channel, producing all its videos. The channel has grown to over 75,000 subscribers, with a goal of reaching 100,000 by mid-2025. PhraseCamp represents my commitment to providing free and affordable, top-tier resources for English language learners globally.",
     demo: "https://www.phrasecamp.com",
     github: "n/a",
     stack: ["Wordpress", "Elementor", "CSS"],
