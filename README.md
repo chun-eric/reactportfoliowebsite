@@ -13,14 +13,14 @@ Live and actively maintained
 ## Project Screen Shots
 
 <div style="text-align: left;">
-<img src="./src/assets/images/portfolio-page.png" alt="Homepage" width="600">
+  <img src="./src/assets/images/portfolio-page.png" alt="Homepage" width="540">
 </div>
 
 <div style="text-align: left;">
 </div>
 
 <div style="text-align: left;">
-<img src="./src/assets/images/portfolio-page-smallscreen.png" alt="Homepage" width="600">
+  <img src="./src/assets/images/portfolio-page-smallscreen.webp" alt="Homepage-small" width="540">
 </div>
 
 ## Installation and Setup Instructions
