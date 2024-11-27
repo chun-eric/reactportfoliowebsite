@@ -12,7 +12,8 @@ Live and actively maintained
 
 ## Project Screen Shots
 
-![Portfolio Homepage](./src/assets/images/portfolio-page.png)
+![Portfolio Homepage]
+<img src="./src/assets/images/portfolio-page.png" alt="Homepage" width="400">
 
 ## Installation and Setup Instructions
 
