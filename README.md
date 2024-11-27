@@ -12,10 +12,7 @@ Live and actively maintained
 
 ## Project Screen Shots
 
-<div>
-  <img src="/vite-project/src/assets/images/portfolio-page.png" alt="Homepage" width="400"/>
-
-</div>
+![Portfolio Homepage](./assets/images/portfolio-page.png)
 
 ## Installation and Setup Instructions
 
@@ -24,7 +21,7 @@ www.ecdevportfolio.com.
 
 ## Reflection
 
-<li>Context:</li>
+<h4>Context:</h4>
 I built this portfolio as a personal project to showcase my skills and work as a Front-End React and Email Developer. It’s a platform I use to demonstrate my expertise to potential clients and employers.
 
 <li>Objective:</li>
