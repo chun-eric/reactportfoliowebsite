@@ -40,12 +40,19 @@
 .portfolio-content {
   position: relative;
   z-index: 2;
+  margin: 0 auto !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section.section-categorybutton {
   margin-bottom: 30px;
   background: transparent !important;
   padding-top: 30px;
+  max-width: 1000px;
+  margin: 20px auto;
 }
 
 .portfolio__categories {
@@ -54,6 +61,8 @@ section.section-categorybutton {
   gap: 0.3rem;
   flex-wrap: wrap;
   background: transparent !important;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .btn.cat__btn.category-btn {
@@ -130,26 +139,56 @@ h3.project-title {
 .container.portfolio__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center !important;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto !important;
   background: transparent;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .container.portfolio__container.dark {
   background: transparent !important;
+  margin: 0 auto;
 }
 
 .portfolio__projects {
-  max-width: 1300px;
+  width: 100%;
+  max-width: 1440px;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 30px;
-  margin: 0 auto;
-  margin-top: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-gap: 25px;
+  text-align: center;
+  align-items: center;
+  margin: 60px auto; /* Changed from margin: 0 20px */
   background: transparent !important;
 }
+
+@media screen and (max-width: 1200px) {
+  .container.portfolio__container {
+    margin: 0 auto !important;
+    padding: 0 20px;
+    max-width: 100%;
+  }
+  .portfolio__projects {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* Dynamically adjust columns */
+    justify-content: center; /* Center grid items horizontally */
+    align-content: center; /* Center grid items vertically (if grid height changes) */
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto; /* Center the grid itself */
+  }
+
+  .card-container {
+    text-align: center;
+  }
+}
+
 .portfolio__categories,
 .portfolio__categories.light,
 .portfolio__categories.dark {
@@ -183,6 +222,7 @@ h3.project-title {
   box-shadow: rgba(255, 255, 255, 0.45) 0px 3px 3px 0px;
 }
 
+/* fixing card images at 1024px and below */
 .cover-image {
   width: 100% !important;
   height: 100% !important;
@@ -192,6 +232,15 @@ h3.project-title {
   background: #f49a09;
   background: linear-gradient(135deg, #f49a09, #f2af3d);
   transition: all 0.3s ease-in-out;
+  max-height: 470px;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover-image {
+    max-height: 470px;
+    object-fit: contain !important;
+    width: 100%;
+  }
 }
 
 .overlay {

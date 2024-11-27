@@ -14,6 +14,9 @@
   color: var(---);
 }
 
+html {
+  overflow-x: hidden;
+}
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -144,7 +147,7 @@ html {
 
 /* General Container Class */
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   transition: 0.5s;
   background: white;
@@ -286,7 +289,7 @@ button:hover {
 /* Responsive Media Queries (tablets) */
 @media screen and (min-width: 1440px) {
   section {
-    width: 100vw !important;
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -296,6 +299,7 @@ button:hover {
 
   .container {
     width: 100%;
+    margin: 0 auto;
   }
 
   section {
