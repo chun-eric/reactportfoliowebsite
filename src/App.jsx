@@ -9,6 +9,7 @@ import { useRef } from "react";
 import { useTheme } from "./sections/customHooks/localStorage";
 import GoogleAnalytics from "./GoogleAnalytics";
 import { Analytics } from "@vercel/analytics/react";
+import Contact3 from "./sections/contact/Contact3";
 
 function App() {
   // creating theme usestate
@@ -41,7 +42,8 @@ function App() {
       <Skills theme={theme} ref={skillsRef} />
       <About theme={theme} />
       <Portfolio theme={theme} setTheme={setTheme} ref={portfolioRef} />
-      <Contact2 />
+      {/* <Contact2 /> */}
+      <Contact3 />
       <Footer theme={theme} />
     </div>
   );
