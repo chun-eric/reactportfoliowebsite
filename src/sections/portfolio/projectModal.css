@@ -178,6 +178,8 @@
   overflow: hidden;
   position: relative;
   background: linear-gradient(135deg, #eab259, #f4a661);
+  display: flex;
+  justify-content: center;
 }
 
 .projectmodal-image img {

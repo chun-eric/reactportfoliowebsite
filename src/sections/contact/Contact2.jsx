@@ -2,7 +2,7 @@ import "./contact2.css";
 import { useState } from "react";
 import { ValidationError, useForm } from "@formspree/react";
 
-const Contact = ({}) => {
+const Contact = () => {
   // formspree form state
   const [state, handleSubmit] = useForm(import.meta.env.VITE_APP_FORM_ID);
   const [loading, setLoading] = useState(false);
@@ -48,7 +48,7 @@ const Contact = ({}) => {
     setLoading(false);
     console.log("Form submitted successfully");
 
-    handleFormReset;
+    handleFormReset();
   };
 
   // reseting the form function handler
@@ -120,7 +120,6 @@ const Contact = ({}) => {
                 name='name'
                 value={name}
                 onChange={handleNameChange}
-         
               />
               <ValidationError
                 prefix='Name'

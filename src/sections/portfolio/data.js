@@ -140,7 +140,7 @@ const data = [
     category: "In Development...",
     image: Image11,
     title: "OkinawaMee",
-    desc: "A custom designed E-Commerce store selling Okinawa Kariyushi Hawaiian Shirts.",
+    desc: "A custom designed E-Commerce store selling Okinawa Kariyushi Hawaiian Shirts. (In Development)",
     about:
       "OkinawaMee is an e-commerce React store currently in development. The goal of building this e-commerce store was to showcase the beautiful and popular Okinawa Kariyushi shirts that are  inspired by Hawaiian Aloha shirts. I tried to build something that showecased my love of Okinawa culture and it's unique style. \n\n" +
       "The design of OkinawaMee is also heavily inspired by one of my all time favorite e-commerce store Allbirds. I really love their simple, clean design so I took lots of inspiration from them but still trying to incorporate a distinct style for OkinawaMee. \n\n" +
