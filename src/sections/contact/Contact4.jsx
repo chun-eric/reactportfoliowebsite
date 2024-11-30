@@ -81,7 +81,7 @@ const Contact4 = () => {
     try {
       const response = await axios({
         method: "POST",
-        url: `https://formspree.io/${FORM_ENDPOINT}`,
+        url: `https://formspree.io/f/${FORM_ENDPOINT}`,
         data: inputs,
       });
 
