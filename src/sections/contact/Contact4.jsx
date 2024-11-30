@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./contact2.css";
-import { ValidationError, useForm } from "@formspree/react";
 import axios from "axios";
 
 const Contact4 = () => {
@@ -11,6 +10,7 @@ const Contact4 = () => {
   const FORM_ENDPOINT = import.meta.env.VITE_APP_FORM_ID;
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errors, setErrors] = useState({});
 
   const [inputs, setInputs] = useState({
     name: "",
@@ -18,30 +18,65 @@ const Contact4 = () => {
     message: "",
   });
 
-  const handleNameChange = (e) => {
-    setInputs((prev) => ({
-      ...prev,
-      name: e.target.value,
-    }));
+  const validateForm = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    // Name validation
+    if (!inputs.name.trim()) {
+      tempErrors.name = "Name is required";
+      isValid = false;
+    } else if (inputs.name.length < 2) {
+      tempErrors.name = "Name must be at least 2 characters long";
+      isValid = false;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!inputs.email) {
+      tempErrors.email = "Email is required";
+      isValid = false;
+    } else if (!emailRegex.test(inputs.email)) {
+      tempErrors.email = "Please enter a valid email address";
+      isValid = false;
+    }
+
+    // Message validation
+    if (!inputs.message.trim()) {
+      tempErrors.message = "Message is required";
+      isValid = false;
+    } else if (inputs.message.length < 10) {
+      tempErrors.message = "Message must be at least 10 characters long";
+      isValid = false;
+    }
+
+    setErrors(tempErrors);
+    return isValid;
   };
 
-  const handleEmailChange = (e) => {
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
     setInputs((prev) => ({
       ...prev,
-      email: e.target.value,
+      [name]: value,
     }));
-  };
-
-  const handleMessageChange = (e) => {
-    setInputs((prev) => ({
-      ...prev,
-      message: e.target.value,
-    }));
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
+    }
   };
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+
+    if (!validateForm()) {
+      setLoading(false);
+      return;
+    }
 
     try {
       const response = await axios({
@@ -53,9 +88,14 @@ const Contact4 = () => {
       if (response.status === 200) {
         setSubmitted(true);
         setInputs({ name: "", email: "", message: "" });
+        setErrors({});
       }
     } catch (error) {
       console.error("Form submission error:", error);
+      setErrors((prev) => ({
+        ...prev,
+        submit: "Failed to submit form. Please try again.",
+      }));
     } finally {
       setLoading(false);
     }
@@ -104,16 +144,15 @@ const Contact4 = () => {
                 </label>
                 <input
                   id='name'
-                  type='name'
+                  type='text'
                   name='name'
                   value={inputs.name}
-                  onChange={handleNameChange}
+                  onChange={handleInputChange}
+                  className={errors.name ? "error-input" : ""}
                 />
-                <ValidationError
-                  prefix='Name'
-                  field='name'
-                  errors={state.errors}
-                />
+                {errors.name && (
+                  <span className='error-message'>{errors.name}</span>
+                )}
               </div>
               <div className='form-section'>
                 <label htmlFor='email' className='label'>
@@ -124,14 +163,12 @@ const Contact4 = () => {
                   type='email'
                   name='email'
                   value={inputs.email}
-                  onChange={handleEmailChange}
-                  required
+                  onChange={handleInputChange}
+                  className={errors.email ? "error-input" : ""}
                 />
-                <ValidationError
-                  prefix='Email'
-                  field='email'
-                  errors={state.errors}
-                />
+                {errors.email && (
+                  <span className='error-message'>{errors.email}</span>
+                )}
               </div>
               <div className='form-section'>
                 <label htmlFor='message' className='label'>
@@ -140,17 +177,19 @@ const Contact4 = () => {
                 <textarea
                   id='message'
                   name='message'
-                  className='textarea'
+                  className={`textarea ${errors.message ? "error-input" : ""}`}
                   value={inputs.message}
-                  onChange={handleMessageChange}
-                  required
+                  onChange={handleInputChange}
                 />
-                <ValidationError
-                  prefix='Message'
-                  field='message'
-                  errors={state.errors}
-                />
+                {errors.message && (
+                  <span className='error-message'>{errors.message}</span>
+                )}
               </div>
+              {errors.submit && (
+                <div className='error-message submit-error'>
+                  {errors.submit}
+                </div>
+              )}
               <button
                 type='submit'
                 disabled={loading}

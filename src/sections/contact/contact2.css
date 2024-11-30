@@ -330,3 +330,18 @@ textarea::placeholder {
     width: 90%;
   }
 }
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.error-input {
+  border-color: #dc2626 !important;
+}
+
+.submit-error {
+  margin-bottom: 1rem;
+  text-align: center;
+}
