@@ -9,7 +9,6 @@ const Contact4 = () => {
   }
 
   const FORM_ENDPOINT = import.meta.env.VITE_APP_FORM_ID;
-  const [state, handleSubmit] = useForm(FORM_ENDPOINT);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
@@ -47,7 +46,7 @@ const Contact4 = () => {
     try {
       const response = await axios({
         method: "POST",
-        url: `https://formspree.io/f/${FORM_ENDPOINT}`,
+        url: `https://formspree.io/${FORM_ENDPOINT}`,
         data: inputs,
       });
 
