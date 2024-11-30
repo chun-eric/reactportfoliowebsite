@@ -83,6 +83,10 @@ const Contact4 = () => {
         method: "POST",
         url: `https://formspree.io/f/${FORM_ENDPOINT}`,
         data: inputs,
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
       });
 
       if (response.status === 200) {
