@@ -1,6 +1,7 @@
 import "./contact2.css";
 import { useState } from "react";
 import { ValidationError, useForm } from "@formspree/react";
+// import axios from "axios";
 
 const Contact = () => {
   // formspree form state
