@@ -55,11 +55,14 @@ const Contact4 = () => {
   };
 
   const handleInputChange = (e) => {
+    // destructure the name and value
     const { name, value } = e.target;
+    // update the input state
     setInputs((prev) => ({
       ...prev,
       [name]: value,
     }));
+
     // Clear error when user starts typing
     if (errors[name]) {
       setErrors((prev) => ({

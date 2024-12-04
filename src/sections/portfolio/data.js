@@ -9,6 +9,7 @@ import Image8 from "../../assets/images/latrattoria_home2.webp";
 import Image9 from "../../assets/images/english-phrasecamp.webp";
 import Image10 from "../../assets/images/web-homepage.webp";
 import Image11 from "../../assets/images/OkinawaMee2.webp";
+import Image12 from "../../assets/images/whatthehack.webp";
 
 const data = [
   {
@@ -157,6 +158,20 @@ const data = [
       "OkinawaMee is still a work in progress.",
     demo: "https://okinawamee.vercel.app/",
     github: "https://github.com/chun-eric/okinawamee",
+    stack: ["React", "Tailwind CSS", "Vercel", "Vite"],
+  },
+  {
+    id: 12,
+    category: "In Development...",
+    image: Image12,
+    title: "What The Hack News",
+    desc: "A custom designed News Website that grabs the latest news from a REST API. (In Development)",
+    about:
+      "What The Hack is a News Website made with React and Tailwind CSS currently in development. The goal of building this news website is to showcase the latest news from around the world via a REST API. I tried to build something that showcases how a website can grab information from a REST API and then display it in a user-friendly way.  \n\n" +
+      " \n\n" +
+      "What The Hack News is still a work in progress.",
+    demo: "https://what-the-hack-news.vercel.app//",
+    github: "https://github.com/chun-eric/what-the-hack-news.git",
     stack: ["React", "Tailwind CSS", "Vercel", "Vite"],
   },
 ];
