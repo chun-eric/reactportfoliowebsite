@@ -10,6 +10,7 @@ import Image9 from "../../assets/images/english-phrasecamp.webp";
 import Image10 from "../../assets/images/web-homepage.webp";
 import Image11 from "../../assets/images/OkinawaMee2.webp";
 import Image12 from "../../assets/images/whatthehack.webp";
+import Image13 from "../../assets/images/bazaar-minified.webp";
 
 const data = [
   {
@@ -164,7 +165,7 @@ const data = [
     id: 12,
     category: "In Development...",
     image: Image12,
-    title: "What The Hack News",
+    title: "What The Hack",
     desc: "A custom designed News Website that grabs the latest news from a REST API. (In Development)",
     about:
       "What The Hack is a News Website made with React and Tailwind CSS currently in development. The goal of building this news website is to showcase the latest news from around the world via a REST API. I tried to build something that showcases how a website can grab information from a REST API and then display it in a user-friendly way.  \n\n" +
@@ -172,6 +173,20 @@ const data = [
       "What The Hack News is still a work in progress.",
     demo: "https://what-the-hack-news.vercel.app//",
     github: "https://github.com/chun-eric/what-the-hack-news.git",
+    stack: ["React", "Tailwind CSS", "Vercel", "Vite"],
+  },
+  {
+    id: 13,
+    category: "In Development...",
+    image: Image13,
+    title: "Bazaar",
+    desc: "A modern fashion e-commerce platform delivering seamless shopping experiences with stunning aesthetics and fast performance. (In development)",
+    about:
+      "Bazaar is a E-commerce Website made with React and Tailwind CSS currently in development. The goal of building this E-commerce website is to showcase a real world e-commerce website that is fast and user-friendly. My goal is to make this front-end project into a full stack E-commerce website.  \n\n" +
+      " \n\n" +
+      "(In development)",
+    demo: "https://bazaar-ecommerce-lovat.vercel.app/",
+    github: "https://github.com/chun-eric/bazaar_ecommerce",
     stack: ["React", "Tailwind CSS", "Vercel", "Vite"],
   },
 ];
