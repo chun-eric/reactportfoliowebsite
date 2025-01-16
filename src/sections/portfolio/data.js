@@ -180,7 +180,7 @@ const data = [
     category: "Frontend",
     image: Image13,
     title: "Bazaar",
-    desc: "A modern fashion e-commerce platform delivering seamless shopping experiences with stunning aesthetics and fast performance. (In development)",
+    desc: "A modern fashion e-commerce platform delivering seamless shopping experiences with stunning aesthetics and fast performance.",
     about:
       "Bazaar is a E-commerce Website made with React and Tailwind CSS. The goal of building this E-commerce website is to showcase a real world e-commerce website that is fast and user-friendly. Bazaar includes features such as: shopping cart, product details page, product filters, reviews section, sorting functionality, checkout and payment page.    \n\n" +
       " \n\n" +
