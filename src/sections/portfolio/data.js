@@ -10,7 +10,7 @@ import Image9 from "../../assets/images/english-phrasecamp.webp";
 import Image10 from "../../assets/images/web-homepage.webp";
 import Image11 from "../../assets/images/OkinawaMee2.webp";
 import Image12 from "../../assets/images/whatthehack.webp";
-import Image13 from "../../assets/images/bazaar-minified.webp";
+import Image13 from "../../assets/images/bazaar2.webp";
 
 const data = [
   {
@@ -177,14 +177,14 @@ const data = [
   },
   {
     id: 13,
-    category: "In Development...",
+    category: "Frontend",
     image: Image13,
     title: "Bazaar",
     desc: "A modern fashion e-commerce platform delivering seamless shopping experiences with stunning aesthetics and fast performance. (In development)",
     about:
-      "Bazaar is a E-commerce Website made with React and Tailwind CSS currently in development. The goal of building this E-commerce website is to showcase a real world e-commerce website that is fast and user-friendly. My goal is to make this front-end project into a full stack E-commerce website.  \n\n" +
+      "Bazaar is a E-commerce Website made with React and Tailwind CSS. The goal of building this E-commerce website is to showcase a real world e-commerce website that is fast and user-friendly. Bazaar includes features such as: shopping cart, product details page, product filters, reviews section, sorting functionality, checkout and payment page.    \n\n" +
       " \n\n" +
-      "(In development)",
+      "State was managed using Context API.",
     demo: "https://bazaar-ecommerce-lovat.vercel.app/",
     github: "https://github.com/chun-eric/bazaar_ecommerce",
     stack: ["React", "Tailwind CSS", "Vercel", "Vite"],
