@@ -11,6 +11,7 @@ import Image10 from "../../assets/images/web-homepage.webp";
 import Image11 from "../../assets/images/OkinawaMee2.webp";
 import Image12 from "../../assets/images/whatthehack.webp";
 import Image13 from "../../assets/images/bazaar2.webp";
+import Image14 from "../../assets/images/van-life.webp";
 
 const data = [
   {
@@ -152,7 +153,7 @@ const data = [
     category: "In Development...",
     image: Image11,
     title: "OkinawaMee",
-    desc: "A custom designed E-Commerce store selling Okinawa Kariyushi Hawaiian Shirts. (In Development)",
+    desc: "A custom designed E-Commerce store selling Okinawa Kariyushi Hawaiian Shirts. (Still In Development)",
     about:
       "OkinawaMee is an e-commerce React store currently in development. The goal of building this e-commerce store was to showcase the beautiful and popular Okinawa Kariyushi shirts that are  inspired by Hawaiian Aloha shirts. I tried to build something that showecased my love of Okinawa culture and it's unique style. \n\n" +
       "The design of OkinawaMee is also heavily inspired by one of my all time favorite e-commerce store Allbirds. I really love their simple, clean design so I took lots of inspiration from them but still trying to incorporate a distinct style for OkinawaMee. \n\n" +
@@ -166,7 +167,7 @@ const data = [
     category: "In Development...",
     image: Image12,
     title: "What The Hack",
-    desc: "A custom designed News Website that grabs the latest news from a REST API. (In Development)",
+    desc: "A custom designed News Website that grabs the latest news from a REST API. (Still In Development)",
     about:
       "What The Hack is a News Website made with React and Tailwind CSS currently in development. The goal of building this news website is to showcase the latest news from around the world via a REST API. I tried to build something that showcases how a website can grab information from a REST API and then display it in a user-friendly way.  \n\n" +
       " \n\n" +
@@ -187,6 +188,23 @@ const data = [
       "State was managed using Context API.",
     demo: "https://bazaar-ecommerce-lovat.vercel.app/",
     github: "https://github.com/chun-eric/bazaar_ecommerce",
+    stack: ["React", "Tailwind CSS", "Vercel", "Vite"],
+  },
+  {
+    id: 14,
+    category: "in development...",
+    image: Image14,
+    title: "Van Life",
+    desc: "A modern Van rental website that allows users to search and book vans for their next adventure trip. (Still in development)",
+    about:
+      "Van Life is a E-commerce Website made with React and Tailwind CSS. The goal of building this E-commerce website was inspired by the final capstone project for Scrimba's Professional Frontend Developer path with Mozilla Developer Network. The site serves as a marketplace for van rentals, featuring protected routes that distinguish between host and user experiences. I extensively expanded the project by rebuilding the design from scratch and implementing new features including search and sort functionality and a new booking system. (still to be completed)  \n\n" +
+      " \n\n" +
+      "State was managed using Context API.\n\n" +
+      "You can login to see what the host will see with the below credentials:\n\n" +
+      "username: bob@gmail.com\n" +
+      "password: 123",
+    demo: "https://journeyvan.vercel.app/",
+    github: "https://github.com/chun-eric/van-life",
     stack: ["React", "Tailwind CSS", "Vercel", "Vite"],
   },
 ];
