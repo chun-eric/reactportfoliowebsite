@@ -192,7 +192,7 @@ const data = [
   },
   {
     id: 14,
-    category: "in development...",
+    category: "In Development...",
     image: Image14,
     title: "Van Life",
     desc: "A modern Van rental website that allows users to search and book vans for their next adventure trip. (Still in development)",
