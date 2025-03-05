@@ -46,7 +46,7 @@
       transparent 20%,
       #00d4f0 21%,
       #00d4f0 34%,
-      transparent 35%,
+      transparent 30%,
       transparent
     ),
     radial-gradient(
@@ -54,13 +54,13 @@
         transparent 20%,
         #00d4f0 21%,
         #00d4f0 34%,
-        transparent 35%,
+        transparent 30%,
         transparent
       )
       0 -50px;
   background-color: #eeeeee;
   background-size: 75px 100px;
-  opacity: 0.05;
+  opacity: 0.03;
 }
 
 .about-background-overlay.dark {
@@ -131,10 +131,9 @@
   font-family: "League Spartan", serif;
   overflow-x: hidden;
   max-width: 800px;
-  width: 45%;
+  width: 40%;
   height: auto;
-  line-height: normal;
-  font-size: 22px;
+  font-size: 23px;
   word-wrap: break-word;
   flex-wrap: wrap;
   font-weight: normal;

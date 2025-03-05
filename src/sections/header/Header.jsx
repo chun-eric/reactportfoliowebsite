@@ -1,28 +1,28 @@
-import "./header.css";
-import HeaderImage from "../../assets/images/hero-image-transparent.webp";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { forwardRef } from "react";
+import './header.css'
+import HeaderImage from '../../assets/images/hero-image-transparent.webp'
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { forwardRef } from 'react'
 
 // Data for the social icons
 const data2 = [
   {
     id: 1,
-    link: "https://instagram.com",
-    title: "LinkedIn",
-    icon: <AiFillLinkedin />,
+    link: 'https://instagram.com',
+    title: 'LinkedIn',
+    icon: <AiFillLinkedin />
   },
   {
     id: 2,
-    link: "https://github.com/chun-eric",
-    title: "GitHub",
-    icon: <AiFillGithub />,
-  },
-];
+    link: 'https://github.com/chun-eric',
+    title: 'GitHub',
+    icon: <AiFillGithub />
+  }
+]
 
 // Header component using forwardRef
 const Header = forwardRef((props, ref) => {
   // Destructure theme from props
-  const { theme } = props;
+  const { theme } = props
 
   return (
     <header ref={ref} className={`header ${theme}`}>
@@ -37,23 +37,22 @@ const Header = forwardRef((props, ref) => {
                     Hi, I&apos;m
                     <span
                       className={`firstName highlight ${
-                        theme === "dark" ? "changeColor highlight-dark" : ""
+                        theme === 'dark' ? 'changeColor highlight-dark' : ''
                       }`}
                     >
                       Eric.
                     </span>
                   </h1>
                   <h3 className={`job ${theme}`}>
-                    A Front-End React and Email Developer who loves building web
-                    applications and websites that are user-friendly and
-                    user-focused.
+                    A front-end React developer, Content creator, and language
+                    teacher who loves building and teaching to empower others.
                   </h3>
 
                   <div className='icons'>
-                    {data2.map((item) => (
+                    {data2.map(item => (
                       <a
                         className={`icon ${
-                          theme === "dark" ? "changeColor" : ""
+                          theme === 'dark' ? 'changeColor' : ''
                         }`}
                         key={item.id}
                         href={item.link}
@@ -90,9 +89,9 @@ const Header = forwardRef((props, ref) => {
         </div>
       </section>
     </header>
-  );
-});
+  )
+})
 
-Header.displayName = "Header";
+Header.displayName = 'Header'
 
-export default Header;
+export default Header
