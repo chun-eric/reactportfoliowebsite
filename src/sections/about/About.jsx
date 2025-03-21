@@ -38,9 +38,9 @@ const About = ({ theme }) => {
           <div className='bio-container'>
             <p className='bio-info'>
               Hi, I&apos;m Eric, a frontend developer, content creator and
-              tinkerer. With a strong background in education and business
-              industry, I focus on building intuitive digital user experiences
-              that are both engaging and accessible. As an Australian currently
+              tinkerer. With a strong background in education and business, I
+              focus on building intuitive digital user experiences that are both
+              engaging, practical and accessible. As an Australian currently
               based in Osaka, I bring a unique global persective to my work. I'm
               also deeply interested in blockchain payments and the
               cybersecurity sector.
