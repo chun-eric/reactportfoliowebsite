@@ -197,7 +197,7 @@ const data = [
     title: 'Van Life',
     desc: 'A modern Van rental website that allows users to search and book vans for their next adventure trip. (Still in development)',
     about:
-      "Van Life is a E-commerce Website made with React and Tailwind CSS. The goal of building this E-commerce website was inspired by the final capstone project for Scrimba's Professional Frontend Developer path with Mozilla Developer Network. The site serves as a marketplace for van rentals, featuring protected routes that distinguish between host and user experiences. I extensively expanded the project by rebuilding the design from scratch and implementing new features including search and sort functionality, a dashboard, new booking system, Firebase authentication, Firebase database. (still to be completed)  \n\n" +
+      "Van Life is a Full Stack E-commerce Website made with React and Tailwind CSS for the frontend and Google Firebase for the backend. The goal of building this E-commerce website was inspired by the final capstone project for Scrimba's Professional Frontend Developer path with Mozilla Developer Network. The site serves as a marketplace for van rentals, featuring protected routes that distinguish between host and user experiences. I extensively expanded the project by rebuilding the design from scratch and implementing new features including search and sort functionality, a host dashboard, a van booking system, Firebase authentication, Firebase database, and Asychronous API calls to the backend. (still to be completed)  \n\n" +
       ' \n\n' +
       'State was managed using Context API.\n\n' +
       'You can login to see what the host will see with the below credentials:\n\n' +
