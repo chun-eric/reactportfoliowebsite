@@ -213,7 +213,7 @@ const data = [
     category: 'Wordpress',
     image: Image15,
     title: 'Attira Fashion',
-    desc: 'A female fashion ecommerce store focusing on simplicity and elegant every day wear',
+    desc: 'A fashion ecommerce store for professional working women focusing on simplicity and elegance.',
     about:
       'ATTIRA is a premium fashion e-commerce website built with WordPress,WooCommerce and Elementor, targeting professional women who value elegance and quality. The site features a fully responsive design with custom CSS breakpoints. I implemented advanced WooCommerce customizations including dynamic product displays, custom shortcodes for different category items, and complete user authentication with customer dashboard. Everything was made entirely from the free tier plan. \n\n\n' +
       'ATTIRA required extensive CSS customization, a custom PHP plugin to allow for these theme customization. The site successfully balances sophisticated design aesthetics with robust e-commerce functionality, creating a seamless shopping experience from product discovery to checkout.\n\n\n' +
