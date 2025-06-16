@@ -11,7 +11,8 @@ import Image10 from '../../assets/images/web-homepage.webp'
 import Image11 from '../../assets/images/OkinawaMee2.webp'
 import Image12 from '../../assets/images/whatthehack.webp'
 import Image13 from '../../assets/images/bazaar2.webp'
-import Image14 from '../../assets/images/Journeyvan_image.webp'
+import Image14 from '../../assets/images/vanlife-cover.webp'
+import Image15 from '../../assets/images/attira_hero.webp'
 
 const data = [
   {
@@ -192,12 +193,12 @@ const data = [
   },
   {
     id: 14,
-    category: 'In Development...',
+    category: 'Fullstack',
     image: Image14,
     title: 'Van Life',
     desc: 'A modern Van rental website that allows users to search and book vans for their next adventure trip. (Still in development)',
     about:
-      "Van Life is a Full Stack E-commerce Website made with React and Tailwind CSS for the frontend and Google Firebase for the backend. The goal of building this E-commerce website was inspired by the final capstone project for Scrimba's Professional Frontend Developer path with Mozilla Developer Network. The site serves as a marketplace for van rentals, featuring protected routes that distinguish between host and user experiences. I extensively expanded the project by rebuilding the design from scratch and implementing new features including search and sort functionality, a host dashboard, a van booking system, Firebase authentication, Firebase database, and Asychronous API calls to the backend. (still to be completed)  \n\n" +
+      "Van Life is a Full Stack E-commerce Website made with React and Tailwind CSS for the frontend and Google Firebase for the backend. The goal of building this E-commerce website was inspired by the final capstone project for Scrimba's Professional Frontend Developer path with Mozilla Developer Network. The site serves as a marketplace for van rentals, featuring protected routes that distinguish between host and user experiences. I extensively expanded the project by rebuilding the design from scratch and implementing new features including search and sort functionality, a host dashboard, a van booking system, Firebase authentication, Firebase database, and Asychronous API calls to the backend.   \n\n" +
       ' \n\n' +
       'State was managed using Context API.\n\n' +
       'You can login to see what the host will see with the below credentials:\n\n' +
@@ -206,6 +207,29 @@ const data = [
     demo: 'https://journeyvan.vercel.app/',
     github: 'https://github.com/chun-eric/van-life',
     stack: ['React', 'Tailwind CSS', 'Vercel', 'Vite', 'Firebase']
+  },
+  {
+    id: 15,
+    category: 'Wordpress',
+    image: Image15,
+    title: 'Attira Fashion',
+    desc: 'A female fashion ecommerce store focusing on simplicity and elegant every day wear',
+    about:
+      'ATTIRA is a premium fashion e-commerce website built with WordPress,WooCommerce and Elementor, targeting professional women who value elegance and quality. The site features a fully responsive design with custom CSS breakpoints. I implemented advanced WooCommerce customizations including dynamic product displays, custom shortcodes for different category items, and complete user authentication with customer dashboard. Everything was made entirely from the free tier plan. \n\n\n' +
+      'ATTIRA required extensive CSS customization, a custom PHP plugin to allow for these theme customization. The site successfully balances sophisticated design aesthetics with robust e-commerce functionality, creating a seamless shopping experience from product discovery to checkout.\n\n\n' +
+      '\n\n\n' +
+      'Login with your own credentials or use the below credentials:\n\n\n' +
+      'stripe test credit card: 4242 4242 4242 4242\n' +
+      '\n\n\n' +
+      'expiry date: 12/34\n' +
+      '\n\n\n' +
+      'csv number: 123 (4 digits for AMEX)\n' +
+      'username: Fashionattira\n' +
+      '\n\n\n' +
+      'password: attira##321!',
+    demo: 'https://lightcyan-wolverine-648587.hostingersite.com/',
+    github: 'None',
+    stack: ['Wordpress', 'Custom CSS', 'Elementor', 'Woocommerce']
   }
 ]
 export default data
