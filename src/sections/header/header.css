@@ -122,7 +122,7 @@
   text-align: left;
   font-size: 70px;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
+  
   margin-bottom: 40px;
 }
 
@@ -131,13 +131,21 @@
 }
 
 .job {
-  color: var(--primary-text-color-600);
+  color: rgb(37, 37, 37);
   margin-bottom: 10px;
-  font-family: "League Spartan", sans-serif;
+   font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
   letter-spacing: 0.1px;
   font-weight: normal;
   font-size: 1.6rem;
   line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.sub-hero-heading {
+  color: #4d4d4d;
+  width: 85%;
+   font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+   line-height: 1.8rem;
 }
 
 /* Dark mode */
@@ -199,12 +207,13 @@ button {
 }
 
 button.portfolio-btn {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   background-color: var(--primary-brand-color-400);
   color: var(--primary-brand-color-alternate-600);
   width: fit-content;
+   font-family: 'Outfit', 'Segoe UI', Arial, sans-serif;
 }
 
 .portfolio-btn:hover {
@@ -428,6 +437,16 @@ button.portfolio-btn {
     text-wrap: wrap;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .sub-hero-heading {
+    padding-top: 30px;
+    width: 70%;
+    text-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6rem;
+
   }
 
   .button-container {

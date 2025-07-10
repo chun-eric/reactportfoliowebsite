@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +14,7 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
-  font-family: Robbins, "League Spartan", sans-serif;
+
   color: var(---);
 }
 
@@ -113,7 +117,7 @@ h2.project-main-title-modal.dark {
 }
 
 body {
-  font-family: Robbins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -208,6 +212,12 @@ a {
 }
 
 /* General Heading Styles */
+
+nav, 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', 'Segoe UI', Arial, sans-serif !important;
+}
+
 h1,
 h2,
 h3,

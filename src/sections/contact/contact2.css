@@ -65,7 +65,7 @@
 .heading-contactme {
   display: block;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.2rem;
   font-weight: 500;
   flex-wrap: wrap;
   width: 60%;
@@ -82,7 +82,7 @@
 
 .contact__form-container {
   padding: 40px;
-  max-width: 600px;
+  max-width: 500px;
   text-align: center;
   width: 80%;
   border-radius: 5px;
@@ -144,7 +144,7 @@
 
 .label {
   color: #3d3d3d;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1px;
   font-weight: 700;
   margin-bottom: 8px;
@@ -160,7 +160,7 @@ input {
   width: 100%;
   font-weight: normal;
   border: 1px solid var(--primary-brand-opposite-color-300);
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0;
   border-radius: 7px;
   font-weight: 600;
@@ -194,6 +194,7 @@ textarea::placeholder {
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   color: white;
   margin: 0 auto;
+  font-size: 16px;
 }
 
 .container.dark .form-section .label {
@@ -299,6 +300,7 @@ textarea::placeholder {
     max-width: 85% !important;
     align-items: center;
     display: inline-block;
+    
   }
   .heading-sec__mb-med {
     text-align: left;
@@ -308,6 +310,9 @@ textarea::placeholder {
     margin-top: 50px;
     width: 95%;
     margin: 0 auto;
+  }
+  .submit-button {
+    font-size: 16px;
   }
 }
 
@@ -324,7 +329,7 @@ textarea::placeholder {
   }
   .submit-button {
     margin-left: 0px;
-    font-size: 22px;
+    font-size: 16px;
   }
   .form-submitted {
     width: 90%;

@@ -128,22 +128,33 @@
 }
 
 .bio-info {
-  font-family: "League Spartan", serif;
+    font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
   overflow-x: hidden;
   max-width: 800px;
-  width: 40%;
+  width: 37%;
   height: auto;
-  font-size: 23px;
+  font-size: 19px;
   word-wrap: break-word;
   flex-wrap: wrap;
   font-weight: normal;
   justify-content: center;
   text-align: justify;
   color: var(--primary-opposite-background-color-300);
-  line-height: 1.7;
+  line-height: 1.55;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-indent: 1rem;
+}
+
+
+
+.bio-info:nth-child(6) {
+  margin-bottom: 40px;
+}
+
+.subscriber-count {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 button.btn--theme--about {
@@ -153,12 +164,12 @@ button.btn--theme--about {
   text-align: center;
   transform: none;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   width: fit-content;
 }
 
 button.btn--theme a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .about {

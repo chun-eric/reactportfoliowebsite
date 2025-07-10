@@ -1,6 +1,6 @@
 ## Eric Chun Frontend Portfolio Website
 
-This is my personal portfolio website built with React, showcasing my work and skills as a Front-End React and Email Developer. I am currently based in Osaka, Japan so my design combines both Western and Eastern aesthetics to reflect my unique cultural background and design philosophy.
+This is my personal portfolio website built with React, showcasing my work and skills as a Digital Content and Marketing Lead, Growth Marketer, and Front-End React Web Developer. 
 
 You can view it live at:
 
@@ -40,7 +40,7 @@ www.ecdevportfolio.com.
 ### Reflection
 
 <h4>Context:</h4>
-I built this portfolio as a personal project to showcase my skills and work as a Front-End React and Email Developer. It’s a platform I use to demonstrate my expertise to potential clients and hiring managers.
+I built this portfolio as a personal project to showcase my skills and work as a Digital Content and Marketing Lead, Growth Marketer. It’s a platform I use to demonstrate my expertise to potential clients and hiring managers.
 
 <h4>Objective:</h4>
 My goal was to create a visually appealing, responsive, and user-friendly site that highlights my work and skills while reflecting my personal style. I wanted to emphasize the blend of Western and Eastern design elements that are part of my identity.
@@ -71,6 +71,7 @@ I also spent a significant amount of time making sure the website was responsive
 [![My Skills](https://skillicons.dev/icons?i=react,css,html,vercel)](https://skillicons.dev)
 
 - React
+- JavaScript
 - HTML5
 - CSS3
 - Vercel (For Deployment)

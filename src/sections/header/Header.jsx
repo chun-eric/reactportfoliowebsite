@@ -44,9 +44,13 @@ const Header = forwardRef((props, ref) => {
                     </span>
                   </h1>
                   <h3 className={`job ${theme}`}>
-                    A front-end React developer, Content creator and Producer
-                    who loves building to empower others.
+                    I grew a YouTube channel to 80,000 subscribers. Then I built
+                    the entire website and content myself.
                   </h3>
+                  <h4 className='sub-hero-heading'>
+                    Now I blend both digital marketing and web development in
+                    everything I build.
+                  </h4>
 
                   <div className='icons'>
                     {data2.map(item => (

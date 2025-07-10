@@ -13,6 +13,8 @@
   z-index: 13500;
   background: white;
   text-align: center;
+   
+
 }
 
 .container.nav__container {
@@ -100,7 +102,7 @@
 }
 
 .nav__item {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--primary-text-color-800);
   position: relative;
 }
@@ -166,7 +168,7 @@
 }
 
 .btn-contact {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   background: var(--primary-brand-color-400);

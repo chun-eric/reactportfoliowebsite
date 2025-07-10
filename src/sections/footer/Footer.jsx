@@ -1,24 +1,24 @@
-import "./footer.css";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
+import './footer.css'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
 // import { Separator } from "@/components/ui/separator";
 // import { Button } from "@/components/ui/button";
-import logoWhite from "@/assets/logos/svg/logo-white.svg";
+import logoWhite from '@/assets/logos/svg/logo-white.svg'
 
 const data2 = [
   {
     id: 1,
-    link: "https://linkedin.com/in/eric-chun-b536711a",
-    title: "LinkedIn",
-    icon: <AiFillLinkedin />,
+    link: 'https://linkedin.com/in/eric-chun-b536711a',
+    title: 'LinkedIn',
+    icon: <AiFillLinkedin />
   },
   {
     id: 2,
-    link: "https://github.com/chun-eric",
-    title: "GitHub",
-    icon: <AiFillGithub />,
-  },
-];
+    link: 'https://github.com/chun-eric',
+    title: 'GitHub',
+    icon: <AiFillGithub />
+  }
+]
 
 const Footer = ({ theme }) => {
   return (
@@ -36,7 +36,7 @@ const Footer = ({ theme }) => {
             <div className='main-footer__row main-footer__row-1'>
               <h2 className={`social-heading ${theme}`}>Socials</h2>
               <div className='social-icons'>
-                {data2.map((item) => (
+                {data2.map(item => (
                   <a
                     className={`icon footer__logo ${theme}`}
                     key={item.id}
@@ -60,8 +60,7 @@ const Footer = ({ theme }) => {
                 />
               </div>
               <p className='short_description'>
-                A Front-End & Email Developer focused on delivering beautifully
-                designed & user focused web applications.
+                Digital Marketing • Content Strategy • Web Development
               </p>
             </div>
           </div>
@@ -79,7 +78,7 @@ const Footer = ({ theme }) => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
