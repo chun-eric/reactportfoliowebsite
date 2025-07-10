@@ -276,7 +276,7 @@ button {
   width: fit-content;
   display: inline-block;
   display: flex;
-  padding: 18px 32px;
+  padding: 16px 28px;
   align-items: center;
   border: none;
   gap: 1rem;

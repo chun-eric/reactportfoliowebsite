@@ -1,46 +1,46 @@
-import data from "./data";
-import "./navbar.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { Sun, Moon, CircleX, MoveLeft } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
-import PropTypes from "prop-types";
+import data from './data'
+import './navbar.css'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { Sun, Moon, CircleX, MoveLeft } from 'lucide-react'
+import { useState, useEffect, useRef } from 'react'
+import PropTypes from 'prop-types'
 
 const Navbar = ({ theme, setTheme }) => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false)
 
   // handler function to toggle the modal
   const handleModal = () => {
-    setShowModal(!showModal);
-  };
+    setShowModal(!showModal)
+  }
 
   // function to toggle the light/dark mode
   const toggle_mode = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+    setTheme(theme === 'light' ? 'dark' : 'light')
+  }
 
   // useRef to set the navbarModal as the reference
-  const navbarModalRef = useRef(null);
+  const navbarModalRef = useRef(null)
 
   // useEffect to handle modal visibility when clicked outside of the modal
   useEffect(() => {
-    const handler = (event) => {
+    const handler = event => {
       // ignore clicks on the component itself
       if (
         navbarModalRef.current &&
         !navbarModalRef.current.contains(event.target)
       ) {
-        setShowModal(false);
+        setShowModal(false)
       }
-    };
+    }
 
     // attach the event listener
-    document.addEventListener("mousedown", handler);
+    document.addEventListener('mousedown', handler)
 
     // cleanup function
     return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  }, []);
+      document.removeEventListener('mousedown', handler)
+    }
+  }, [])
 
   return (
     <nav className={`navbar ${theme}`}>
@@ -56,7 +56,7 @@ const Navbar = ({ theme, setTheme }) => {
 
         {/* Nav Headings */}
         <ul className='nav__menu'>
-          {data.map((item) => (
+          {data.map(item => (
             <li key={item.id}>
               <a href={`${item.link}`} className={`nav__item ${theme}`}>
                 {item.title}
@@ -70,7 +70,7 @@ const Navbar = ({ theme, setTheme }) => {
             onClick={toggle_mode}
             className='icon_dark_button no-animation theme-toggle'
           >
-            {theme === "dark" ? (
+            {theme === 'dark' ? (
               <Sun size={30} className='theme-icon' />
             ) : (
               <Moon size={30} className='theme-icon' />
@@ -81,7 +81,11 @@ const Navbar = ({ theme, setTheme }) => {
           <button className='btn-contact'>
             <a
               href='#contact'
-              style={{ fontSize: "22px", scrollToSection: "smooth" }}
+              style={{
+                fontSize: '20px',
+                padding: '1px 2px',
+                scrollToSection: 'smooth'
+              }}
             >
               Contact
             </a>
@@ -95,11 +99,11 @@ const Navbar = ({ theme, setTheme }) => {
       {showModal && (
         <>
           <div
-            className={`navbarmodal-overlay ${showModal ? "show" : ""}${theme}`}
+            className={`navbarmodal-overlay ${showModal ? 'show' : ''}${theme}`}
           ></div>
           <div
             className={`navbarmodal-container ${
-              showModal ? "show" : ""
+              showModal ? 'show' : ''
             } ${theme}`}
             ref={navbarModalRef}
           >
@@ -108,7 +112,7 @@ const Navbar = ({ theme, setTheme }) => {
               <CircleX className='close-icon' onClick={handleModal} />
             </div>
             <div className='menu-listModal'>
-              {data.map((item) => (
+              {data.map(item => (
                 <li key={item.id}>
                   <a href={item.link} className={`nav__item ${theme}`}>
                     {item.title}
@@ -117,7 +121,7 @@ const Navbar = ({ theme, setTheme }) => {
               ))}
               <div className='navbar-modal-contact'>
                 <li className='navbarmodal-contact-item'>
-                  <a href='#contact' style={{ fontSize: "24px" }}>
+                  <a href='#contact' style={{ fontSize: '20px' }}>
                     Contact
                   </a>
                 </li>
@@ -127,12 +131,12 @@ const Navbar = ({ theme, setTheme }) => {
         </>
       )}
     </nav>
-  );
-};
+  )
+}
 
 Navbar.propTypes = {
   theme: PropTypes.string.isRequired,
-  setTheme: PropTypes.func.isRequired,
-};
+  setTheme: PropTypes.func.isRequired
+}
 
-export default Navbar;
+export default Navbar
