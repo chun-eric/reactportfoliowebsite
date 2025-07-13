@@ -8,8 +8,8 @@ import Image7 from '../../assets/images/portfolio_home2.webp'
 import Image8 from '../../assets/images/latrattoria_home2.webp'
 import Image9 from '../../assets/images/english-phrasecamp.webp'
 import Image10 from '../../assets/images/web-homepage.webp'
-import Image11 from '../../assets/images/cover_1.webp'
-import Image12 from '../../assets/images/whatthehack.webp'
+import Image11 from '../../assets/images/hero_okinawa.webp'
+import Image12 from '../../assets/images/wth_cover1.webp'
 import Image13 from '../../assets/images/bazaar2.webp'
 import Image14 from '../../assets/images/vanlife-cover.webp'
 import Image15 from '../../assets/images/attira_hero.webp'
@@ -170,7 +170,7 @@ const data = [
     title: 'What The Hack',
     desc: 'A custom designed News Website that grabs the latest news from a REST API. (Still In Development)',
     about:
-      'What The Hack is a News Website made with React and Tailwind CSS currently in development. The goal of building this news website is to showcase the latest news from around the world via a REST API. I tried to build something that showcases how a website can grab information from a REST API and then display it in a user-friendly way.  \n\n' +
+      'What The Hack is a News Website made with React and Tailwind CSS currently in development. The goal of building this news website is to showcase the latest news from around the world via a REST API. I tried to build something that showcases how a website would grab information from a lot of different REST APIs endpoints and then display it in a user-friendly way.  \n\n' +
       ' \n\n' +
       'What The Hack News is still a work in progress.',
     demo: 'https://what-the-hack-news.vercel.app//',
