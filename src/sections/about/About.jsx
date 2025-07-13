@@ -67,9 +67,10 @@ const About = ({ theme }) => {
             <p className='bio-info'>
               Currently, I'm looking for opportunities where this end-to-end
               thinking creates real value. Whether that's as a Digital Marketing
-              Manager who can implement technical solutions or a Frontend
-              Developer who understands user acquisition. I can bring both
-              perspectives to every challenge.
+              Manager/Content Strategist who can implement technical solutions
+              or as a Frontend Developer who understands user acquisition and
+              can build websites. I can bring both perspectives to every
+              challenge.
             </p>
 
             <p className='bio-info'>
