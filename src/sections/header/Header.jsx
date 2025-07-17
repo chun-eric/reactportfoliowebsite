@@ -49,7 +49,7 @@ const Header = forwardRef((props, ref) => {
                  
                    Product Manager | Growth Marketer | Developer
                   </h4>
-                  <h4 className={`sub-hero-heading ${theme}`}>80K users grown • 95% satisfaction • 10+ years experience</h4>
+                  <h4 className={`sub-hero-heading ${theme}`}>80K users grown • End-to-end execution <br/>• 10+ years experience</h4>
 
                   <div className='icons'>
                     {data2.map(item => (
