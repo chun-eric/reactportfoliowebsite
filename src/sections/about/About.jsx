@@ -37,52 +37,19 @@ const About = ({ theme }) => {
           </div>
           <div className='bio-container'>
             <p className='bio-info'>
-              My journey started when I moved from Australia to Japan to teach
-              English, where I discovered my passion for creating educational
-              and entertaining content. What began as simple video lessons
-              evolved into English PhraseCamp - a thriving ESL community I built
-              from scratch.
+              I am a product-focused leader driven by a simple belief: the best products are born from a deep understanding of real-world user problems. My journey has taken me from the classroom, where I gained firsthand empathy for learners, to founding and scaling from the ground up.
             </p>
             <p className='bio-info'>
-              Over the last 4 years, I've:
-              <br /> 👉 Produced 190+ educational videos that genuinely help
-              people
-              <br /> 👉 Helped write 120+ SEO-optimized articles
-              <br />
-              👉Grown our YouTube channel to nearly 80,000 loyal subscribers
-              <br />
-              👉 Achieved 300% organic traffic growth with zero ad spend
-              <br />
-              👉 Built every website, feature, and system myself
+              Whether it was building an ESL learning channel to nearly 80,000 users or an automated rental business with 95% customer satisfaction, my approach has always been the same: listen to the customer, understand the commercial realities, and build a solution that delivers genuine value. I thrive on owning the entire process, from initial vision to final execution.
             </p>
 
-            <p className='bio-info'>
-              But here's what excites me most. I don't just create content or
-              write code in isolation. I see the full picture - how a video
-              series can drive traffic, how site performance impacts engagement,
-              how user feedback shapes product features. How everything works as
-              a whole.
-            </p>
+            
 
             <p className='bio-info'>
-              Currently, I'm looking for opportunities where this end-to-end
-              thinking creates real value. Whether that's as a Digital Marketing
-              Manager/Content Strategist who can implement technical solutions
-              or as a Frontend Developer who understands user acquisition and
-              can build websites. I can bring both perspectives to every
-              challenge.
+              I am looking for a product leadership opportunity that allows me to integrate my background in development and my insights from organic marketing to build products that are not only technically sound but also commercially successful.
             </p>
 
-            <p className='bio-info'>
-              A native Australian based in Osaka, Japan and currently open to
-              remote opportunities worldwide.
-            </p>
-            <p className='bio-info'>
-              If you need someone who gets equally excited about video content
-              creation and crafting clean user experiences - we should talk.
-              Let's turn your content strategy into a digital experience users
-              love.
-            </p>
+           
             <div className='button-container'>
               <a href='#contact'>
                 <button className='btn btn--theme--about'>Get In Touch</button>
