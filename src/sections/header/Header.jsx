@@ -44,11 +44,12 @@ const Header = forwardRef((props, ref) => {
                     </span>
                   </h1>
                   <h3 className={`job ${theme}`}>
-                    Product Manager • Growth Marketer • Developer
-                  </h3>
+  I love building products, growing audiences, and implementing the tech that makes it happen                  </h3>
                   <h4 className={`sub-hero-heading ${theme}`}>
-                   I build products, grow audiences, and implement the tech that makes it happen
+                 
+                   Product Manager | Growth Marketer | Developer
                   </h4>
+                  <h4 className={`sub-hero-heading ${theme}`}>80K users grown • 95% satisfaction • 10+ years experience</h4>
 
                   <div className='icons'>
                     {data2.map(item => (
