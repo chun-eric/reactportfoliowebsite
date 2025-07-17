@@ -147,6 +147,9 @@
    font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
    line-height: 1.8rem;
 }
+.sub-hero-heading.dark {
+   color: #ffffff;
+}
 
 /* Dark mode */
 h3.job.dark {

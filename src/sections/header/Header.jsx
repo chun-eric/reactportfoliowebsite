@@ -44,12 +44,10 @@ const Header = forwardRef((props, ref) => {
                     </span>
                   </h1>
                   <h3 className={`job ${theme}`}>
-                    I grew a YouTube channel to 80,000 subscribers. Then I built
-                    the entire website and content myself.
+                    Product Manager • Growth Marketer • Developer
                   </h3>
-                  <h4 className='sub-hero-heading'>
-                    Now I blend both digital marketing and web development in
-                    everything I build.
+                  <h4 className={`sub-hero-heading ${theme}`}>
+                   I build products, grow audiences, and implement the tech that makes it happen
                   </h4>
 
                   <div className='icons'>

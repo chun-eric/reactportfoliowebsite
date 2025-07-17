@@ -39,6 +39,7 @@ const About = ({ theme }) => {
             <p className='bio-info'>
               I am a product-focused leader driven by a simple belief: the best products are born from a deep understanding of real-world user problems. My journey has taken me from the classroom, where I gained firsthand empathy for learners, to founding and scaling from the ground up.
             </p>
+            
             <p className='bio-info'>
               Whether it was building an ESL learning channel to nearly 80,000 users or an automated rental business with 95% customer satisfaction, my approach has always been the same: listen to the customer, understand the commercial realities, and build a solution that delivers genuine value. I thrive on owning the entire process, from initial vision to final execution.
             </p>
