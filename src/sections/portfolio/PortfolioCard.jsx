@@ -2,12 +2,45 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import ProjectModalbeta from "./ProjectModalbeta";
 
-const PortfolioCard = ({ project, theme }) => {
+const PortfolioCard = ({ project, theme, onCardClick }) => {
   const [showModal, setShowModal] = useState(false);
   const [hovered, setHovered] = useState(false);
 
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
+
+  // Check if its a case study
+  const isCaseStudy = project.category && project.category.includes("Case Study")
+
+  // Check if demo exists and is valid
+  const hasValidDemo = project.demo && 
+                      project.demo !== null && 
+                      project.demo !== 'n/a' && 
+                      project.demo !== '#' && 
+                      project.demo.trim() !== '';
+
+
+
+  // Handle details button click
+  const handleDetailsClick = () => {
+    console.log('=== DEBUG: Details button clicked ===');
+  console.log('Project title:', project.title);
+  console.log('Project category:', project.category);
+  console.log('Is case study:', isCaseStudy);
+  console.log('onCardClick function exists:', !!onCardClick);
+  console.log('onCardClick type:', typeof onCardClick);
+  
+  if (isCaseStudy && onCardClick) {
+    console.log('✅ About to call onCardClick for case study');
+    onCardClick(project);
+    console.log('✅ onCardClick called successfully');
+  } else {
+    console.log('❌ Opening modal instead because:');
+    console.log('   - isCaseStudy:', isCaseStudy);
+    console.log('   - onCardClick exists:', !!onCardClick);
+    openModal();
+  }
+  }
 
   return (
     <div
@@ -29,31 +62,41 @@ const PortfolioCard = ({ project, theme }) => {
             <p className='portfolio-card project-title'>{project.title}</p>
             <p className='card-description'>{project.desc}</p>
             <div className='button-card-container'>
-              <button className='btn button-card demo'>
-                <p>
-                  <a
-                    href={project.demo}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    Demo
-                  </a>
+              {/* Only show demo button if there's a valid demo */}
+              {hasValidDemo && (
+                <button className='btn button-card demo'>
+                  <p>
+                    <a
+                      href={project.demo}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Demo
+                    </a>
+                  </p>
+                </button>
+              )}
+              
+              {/* Details button - changes behavior for case studies */}
+              <button className='btn button-card' onClick={handleDetailsClick}>
+                <p style={{ color: "white", fontSize: "18px" }}>
+                  {isCaseStudy ? "View Case" : "Details"}
                 </p>
-              </button>
-              <button className='btn button-card' onClick={openModal}>
-                <p style={{ color: "white", fontSize: "18px" }}>Details</p>
               </button>
             </div>
           </div>
         )}
       </div>
 
-      <ProjectModalbeta
-        project={project}
-        onClose={closeModal}
-        theme={theme}
-        show={showModal}
-      />
+       {/* Only show modal for non-case-study projects */}
+      {!isCaseStudy && (
+        <ProjectModalbeta
+          project={project}
+          onClose={closeModal}
+          theme={theme}
+          show={showModal}
+        />
+      )}
     </div>
   );
 };
@@ -64,7 +107,7 @@ PortfolioCard.propTypes = {
     image: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
     about: PropTypes.string.isRequired,
-    demo: PropTypes.string.isRequired,
+    demo: PropTypes.string,
     github: PropTypes.string.isRequired,
     stack: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,

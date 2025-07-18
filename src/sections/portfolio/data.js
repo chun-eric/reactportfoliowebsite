@@ -13,8 +13,10 @@ import Image12 from '../../assets/images/wth_cover1.webp'
 import Image13 from '../../assets/images/bazaar2.webp'
 import Image14 from '../../assets/images/vanlife-cover.webp'
 import Image15 from '../../assets/images/attira_hero.webp'
+import Image16 from '../../assets/images/h1_2.webp' // ADD this import
 
 const data = [
+  // Keep ALL your existing data exactly as is - no changes needed
   {
     id: 1,
     category: 'HTML Email',
@@ -121,20 +123,20 @@ const data = [
     github: 'https://github.com/chun-eric/latrattoria',
     stack: ['HTML', 'CSS', 'JavaScript', 'Claude AI']
   },
-  {
-    id: 9,
-    category: 'Wordpress',
-    image: Image9,
-    title: 'English PhraseCamp',
-    desc: 'An English language ESL Website learning resource platform.',
-    about:
-      'PhraseCamp is a free, high-quality English language learning platform I created while teaching English at a college in Japan. Noticing a gap in high quality resources for ESL students, especially for conversation and speaking practice, I built this website to address that need.\n\n' +
-      "The site is powered by WordPress CMS and uses Elementor for its user-friendly design, ensuring easy navigation for learners. For the past 4-5 years, I've worn multiple hats as the website administrator, webmaster, web content creator, developer, producer and editor.\n\n" +
-      "In addition to the website, I launched and manage PhraseCamp's Official YouTube channel, producing all its videos. The channel has grown to nearly 80,000 subscribers, with a goal of reaching 100,000 by end of 2025. PhraseCamp represents my commitment to providing free and affordable, top-tier resources for English language learners globally.",
-    demo: 'https://www.phrasecamp.com',
-    github: 'n/a',
-    stack: ['Wordpress', 'Elementor', 'CSS']
-  },
+  // {
+  //   id: 9,
+  //   category: 'Wordpress',
+  //   image: Image9,
+  //   title: 'English PhraseCamp',
+  //   desc: 'An English language ESL Website learning resource platform.',
+  //   about:
+  //     'PhraseCamp is a free, high-quality English language learning platform I created while teaching English at a college in Japan. Noticing a gap in high quality resources for ESL students, especially for conversation and speaking practice, I built this website to address that need.\n\n' +
+  //     "The site is powered by WordPress CMS and uses Elementor for its user-friendly design, ensuring easy navigation for learners. For the past 4-5 years, I've worn multiple hats as the website administrator, webmaster, web content creator, developer, producer and editor.\n\n" +
+  //     "In addition to the website, I launched and manage PhraseCamp's Official YouTube channel, producing all its videos. The channel has grown to nearly 80,000 subscribers, with a goal of reaching 100,000 by end of 2025. PhraseCamp represents my commitment to providing free and affordable, top-tier resources for English language learners globally.",
+  //   demo: 'https://www.phrasecamp.com',
+  //   github: 'n/a',
+  //   stack: ['Wordpress', 'Elementor', 'CSS']
+  // },
   {
     id: 10,
     category: 'Landing Pages',
@@ -230,6 +232,128 @@ const data = [
     demo: 'https://lightcyan-wolverine-648587.hostingersite.com/',
     github: 'None',
     stack: ['Wordpress', 'Custom CSS', 'Elementor', 'Woocommerce']
+  },
+  
+  // NEW CASE STUDIES - Using your existing schema but with new categories
+  // Updated data.js entry for Cozy Stayz - PM Recruiter Version
+
+{
+  id: 16,
+  category: 'Case Study - PM',
+  image: Image16,
+  title: 'Cozy Stayz',
+  desc: 'A new hospitality product developed for an underserved niche in Osaka.',
+  propertyImages: [
+    // Traditional Tatami Home
+    {
+      category: 'Traditional Tatami Home',
+      images: [
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Traditional Japanese room with tatami mats' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Authentic sliding doors and wooden details' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Cultural decor and traditional elements' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Peaceful sleeping area with traditional bedding' }
+      ]
+    },
+    // Big Cozy Home  
+    {
+      category: 'Big Cozy Home',
+      images: [
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Spacious living and dining area' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Open concept layout for groups' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Modern living space with city views' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Comfortable seating for extended stays' }
+      ]
+    },
+    // Perfect Family Home
+    {
+      category: 'Perfect Family Home',
+      images: [
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Family-friendly kitchen with modern appliances' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Safe and comfortable family bedroom' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Child-friendly living space' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Modern kitchen perfect for family meals' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Laundry facilities for longer family stays' },
+        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Dining area designed for families' }
+      ]
+    }
+  ],
+ about: 'Led end-to-end product strategy for Cozy Stayz, transforming a generic vacation rental platform into a market-leading, persona-driven experience with three distinct product lines.\n\n' +
+    
+    'ROLE: Head of Product Development and Operations\n' +
+    'DURATION: 6 years (2014-2020)\n' +
+    'TEAM: 2 Co-founders, Administrative Assistant, Team of 6 Cleaners\n' +
+    'SCOPE: End-to-end product strategy and operations\n\n' +
+    'THE PROBLEM:\n' +
+    '• Most short-term rentals in Osaka targeted individual travelers or couples\n' +
+    '• Families and groups struggled to find suitable accommodations with proper amenities\n' +
+    '• Existing properties lacked cultural authenticity that international visitors sought\n' +
+    '• Generic listings failed to communicate unique value propositions effectively\n\n' +
+    
+    'MY APPROACH:\n' +
+    '1. MARKET RESEARCH & USER SEGMENTATION\n' +
+    '• Analyzed competitor listings and guest reviews on major platforms\n' +
+    '• Identified gaps in family-friendly and culturally authentic accommodations\n' +
+    '• Defined three distinct traveler personas based on needs and preferences\n' +
+    '• Validated assumptions through guest feedback and booking patterns\n\n' +
+    
+    '2. PRODUCT STRATEGY DEVELOPMENT\n' +
+    '• Developed three key product lines but within the accommodation umbrella of Japanese Homes for families. Families also tend to stay longer, take better care of the property and have more disposable income.\n' +
+    '• 1- Traditional Tatami Home: Cultural experience seekers wanting authentic Japanese stay\n' +
+    '• 2- Big Cozy Home: Groups and extended-stay travelers needing space and amenities\n' +
+    '• 3- Perfect Family Home: Families requiring child-friendly features and safety\n\n' +
+    
+    '3. FEATURE PRIORITIZATION & IMPLEMENTATION\n' +
+    '• Equipped all properties with full modern kitchens and dining areas (rare in Osaka market)\n' +
+    '• Implemented consistent high quality standards across all three properties\n' +
+    '• Created property-specific messaging and positioning for each target segment\n' +
+    '• Developed smooth operational processes for cleaning, maintenance, and guest communication\n\n' +
+    
+    'KEY PRODUCT DECISIONS:\n' +
+    '• Focused on underserved family and group segments rather than competing for individual travelers\n' +
+    '• Positioned Traditional Tatami Home as cultural experience, not just accommodation\n' +
+    '• Standardized amenities (full kitchen, dining space, WiFi) across all properties\n' +
+    '• Implemented dynamic pricing strategy based on seasonality and local events\n' +
+    '• Created detailed property guides and local recommendations for each target persona\n\n' +
+    
+    'EXPECTED OUTCOMES:\n' +
+    '• Higher occupancy rates through targeted positioning\n' +
+    '• Premium pricing justified by unique value propositions\n' +
+    '• Reduced competition by serving underserved market segments\n' +
+    '• Improved guest satisfaction through persona-matched experiences\n' +
+    '• Scalable operational processes for potential expansion\n\n' +
+    
+    'LEARNING OUTCOMES:\n' +
+    '• Market segmentation is more effective than generic positioning\n' +
+    '• Understanding user needs drives better product decisions than feature copying\n' +
+    '• Operational excellence is as important as product strategy in service based hospitality\n' +
+    '• Cultural authenticity can be a strong differentiator in international markets\n' +
+    '• Clear positioning helps guests self-select appropriate accommodations\n' +
+    '• Consistent market research including pricing strategies, seasonal patterns, and competitors analysis must been taken to remain competitive\n' 
+  ,
+  demo: null, // Changed from 'none' to null
+  github: 'n/a',
+  stack: ['Product Strategy', 'Market Research', 'User Segmentation',  'A/B Testing', 'Stakeholder Management'] // Added missing stack
+},
+  {
+    id: 17,
+    category: 'Case Study - PM', // Move English PhraseCamp here as a case study
+    image: Image9,
+    title: 'English PhraseCamp',
+    desc: 'Building & scaling an Education channel from 0 to 80K subscribers.',
+    about: 'A comprehensive product and content strategy case study showing how I built and scaled English PhraseCamp from a simple idea to a leading ESL platform with 80K YouTube subscribers and 4M+ total video views.\n\n' +
+      'Role: Product Owner & Content Strategist\n' + 
+      'Duration: 4+ years\n' +
+      'Team: Solo project with occasional freelance support\n\n' +
+      'Key Results:\n' +
+      '• Grew YouTube channel from 0 to 80K subscribers\n' +
+      '• Generated 2M+ video views across platform\n' +
+      '• Built comprehensive learning resource library\n' +
+      '• Established brand as trusted ESL authority\n\n' +
+      'This case study demonstrates my ability to identify market gaps, develop content strategy, build audience, and create sustainable growth through strategic product decisions and community building.',
+    demo: 'https://www.phrasecamp.com',
+    github: 'n/a',
+    stack: ['Content Strategy', 'WordPress', 'YouTube', 'SEO', 'Community Building', 'Analytics']
   }
 ]
+
 export default data

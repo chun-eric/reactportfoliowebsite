@@ -68,19 +68,21 @@ const Skills = forwardRef((prop, ref) => {
  // Group skills by category and sort by defined order
  const groupedSkills = data.reduce((acc, skill) => {
   const category = skill.category || "Other"
+  console.log("Category", category)
   if (!acc[category]) {
     acc[category] = []
   }
   acc[category].push(skill);
   return acc;
  }, {})
-
+console.log("groupedskills", groupedSkills)
  
   // sort categories
   const sortedCategories = Object.entries(groupedSkills).sort(([a],[b]) => {
     const orderA = categoryConfig[a]?.order || 999;
     const orderB = categoryConfig[b]?.order || 999;
-    
+        return orderA - orderB;
+
   })
 
   return (
