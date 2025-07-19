@@ -309,8 +309,8 @@ const data = [
     '• Existing properties lacked cultural authenticity that international visitors sought\n' +
     '• Generic listings failed to communicate unique value propositions effectively\n\n' +
     
-    'MY APPROACH:\n' +
-    '1. MARKET RESEARCH & USER SEGMENTATION\n' +
+     'MY APPROACH:\n' + 
+    
     '• Analyzed competitor listings and guest reviews on major platforms\n' +
     '• Identified gaps in family-friendly and culturally authentic accommodations\n' +
     '• Defined three distinct traveler personas based on needs and preferences\n' +
@@ -330,13 +330,13 @@ const data = [
     '• Developed smooth operational processes for cleaning, maintenance, and guest communication\n\n' +
     
     '4. MARKETING STRATEGY:\n' +
-    '• With a limited marketing budget made a \n' +
-    '• Positioned Traditional Tatami Home as cultural experience, not just accommodation\n' +
-    '• Standardized amenities (full kitchen, dining space, WiFi) across all properties\n' +
-    '• Implemented dynamic pricing strategy based on seasonality and local events\n' +
-    '• Created detailed property guides and local recommendations for each target persona\n\n' +
+    '• With a limited marketing budget undertook a more bootstrapped email marketing relationship approach \n' +
+    '• Any warm inquiries would be funneled into a specific sales pipeline\n' +
+    '• Booked customers would go in our email list database for more personalized service and for customer retention purposes \n' +
+    '• Personalized emails helped retain customers by 30-40%\n\n' +
+   
 
-     'KEY MARKETING DECISIONS:\n' +
+     '5. KEY DECISIONS:\n' +
     '• Focused on underserved family and group segments rather than competing for individual travelers\n' +
     '• Positioned Traditional Tatami Home as cultural experience, not just accommodation\n' +
     '• Standardized amenities (full kitchen, dining space, WiFi) across all properties\n' +

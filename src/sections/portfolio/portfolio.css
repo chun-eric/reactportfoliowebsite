@@ -357,9 +357,15 @@ h3.project-title {
 .case-study-container {
   max-width: 1200px;
   padding: 0 2rem;
-  text-align: left;
+  text-align: center;
+  margin: 0 auto;
 
-  
+
+}
+
+pre {
+  margin: 0 auto;
+
 }
 
 /* Navigation */
@@ -368,6 +374,14 @@ h3.project-title {
   border-bottom: 1px solid var(--color-primary-variant);
 }
 
+.case-study-nav.dark {
+  background-color: #222222;
+  color: white !important;
+}
+
+a.back-link.dark {
+  color: white !important;
+}
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -380,12 +394,12 @@ h3.project-title {
 
 .back-link:hover {
   transform: translateX(-5px);
-  color: var(--color-white);
+  
 }
 
 /* Hero Section */
 .case-study-hero {
-  padding: 4rem 0;
+  padding: 4rem;
   background: var(--color-bg-variant);
 }
 
@@ -405,6 +419,10 @@ h3.project-title {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  text-align: left;
+  margin-left: 0px;
+
+  
 }
 
 .case-study-main-title {
@@ -422,6 +440,7 @@ h3.project-title {
   line-height: 1.6;
   margin-bottom: 2rem;
   color: black;
+  text-align: left;
 }
 
 .project-overview-grid {
@@ -457,6 +476,10 @@ h3.project-title {
   margin: 0;
 }
 
+.hero-text {
+  text-align: left;
+}
+
 .hero-image-container {
   text-align: center;
     height: 100%;
@@ -478,8 +501,12 @@ background-color: #f2fbff;
 
 /* Content Sections */
 .content-section {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   border-bottom: 1px solid var(--color-primary-variant);
+
+  margin: 0 auto;
+   display: flex;
+  justify-content: center;
 }
 
 .case-title {
@@ -492,20 +519,24 @@ background-color: #f2fbff;
 
 h2.case-title.light {
   color: var(--color-primary);
-  text-align: left !important;
+  text-align: center !important;
 }
 
 .content-text {
   font-size: 1.1rem;
   line-height: 1.8;
+  text-align: left;
   color: var(--color-light);
+   margin: 0 auto; 
+   width: 100%;
+   max-width: 650px;
 }
 
 .content-text pre {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  margin: 0;
+  margin: 0 auto;
   white-space: pre-wrap;
   color: black;
   margin-bottom: 20px;
@@ -562,9 +593,9 @@ h2.case-title.light {
 p.gallery-intro {
   font-size: 1.2rem;
   color: var(--color-primary);
-  text-align: left !important;
+  text-align: center !important;
   margin-bottom: 4rem;
-  margin-left: 0px;
+ 
   display: flex;
   flex-direction: start !important;
 }
@@ -1013,4 +1044,14 @@ img.property-image  {
     font-size: 1rem;
     margin-bottom: 2rem;
   }
+}
+
+/* Tools */
+
+.tools-methods-section {
+  background-color: #f7f7f7; 
+}
+
+.tech-badge {
+  background-color: white;
 }

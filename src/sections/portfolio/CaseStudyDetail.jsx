@@ -115,6 +115,7 @@ const parseAboutText = (about) => {
         <section className={`content-section ${theme}`}>
           <div className="case-study-container">
             <h2 className={`case-title ${theme}`}>The Problem</h2>
+            
             <div className={`content-text ${theme}`}>
               <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
                 {parsedData.problem}
@@ -129,7 +130,7 @@ const parseAboutText = (about) => {
         <section className={`content-section ${theme}`}>
           <div className="case-study-container">
             <h2 className={`case-title ${theme}`}>My Approach</h2>
-            
+             <p className="" style={ {color: "black", fontWeight: "bold", fontSize: "22px"}}>1. MARKETING STRATEGY </p>
             <div className={`content-text ${theme}`}>
               <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
                 {parsedData.approach}
@@ -250,7 +251,7 @@ const parseAboutText = (about) => {
 </div>
       {/* Tech Stack */}
       {caseStudy.stack && caseStudy.stack.length > 0 && (
-        <section className={`content-section ${theme}`}>
+        <section className={`content-section tools-methods-section ${theme}`}>
           <div className="case-study-container">
             <h2 className={`case-title ${theme}`}>Tools & Methods</h2>
             <div className="tech-stack-grid">
