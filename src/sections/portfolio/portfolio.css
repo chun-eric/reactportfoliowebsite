@@ -370,8 +370,9 @@ pre {
 
 /* Navigation */
 .case-study-nav {
-  padding: 2rem ;
+  padding: 4rem ;
   border-bottom: 1px solid var(--color-primary-variant);
+margin-left: 5rem;
 }
 
 .case-study-nav.dark {
@@ -498,6 +499,12 @@ a.back-link.dark {
 background-color: #f2fbff;
 }
 
+.big-section-container.dark, .content-section.dark {
+background-color: #f2fbff !important;
+color: #000;
+}
+
+
 
 /* Content Sections */
 .content-section {
@@ -521,6 +528,8 @@ h2.case-title.light {
   color: var(--color-primary);
   text-align: center !important;
 }
+
+
 
 .content-text {
   font-size: 1.1rem;
@@ -707,7 +716,7 @@ img.property-image  {
   display: flex;
   align-items: left;
   margin-bottom: 6rem;
-    margin-top: 6rem;
+  
 }
 
 .cta-content {
@@ -725,7 +734,7 @@ img.property-image  {
 
 .cta-text {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.6rem;
   line-height: 1.6;
    color: var(--color-primary);
   opacity: 0.9;
@@ -787,7 +796,7 @@ img.property-image  {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .case-study-container {
-    padding: 0 1.5rem;
+    padding: 0 3rem;
   }
   
   .case-study-main-title {
@@ -803,8 +812,9 @@ img.property-image  {
     padding-top: 80px;
   }
   
-  .case-study-container {
-    padding: 0 1rem;
+   .case-study-container {
+    padding: 0 3rem;
+    padding-bottom: 3rem !important
   }
   
   .hero-content {
@@ -866,6 +876,9 @@ img.property-image  {
 }
 
 @media (max-width: 480px) {
+   .case-study-container {
+    padding: 0 3rem;
+  }
   .case-study-main-title {
     font-size: 1.8rem;
   }
@@ -1048,10 +1061,359 @@ img.property-image  {
 
 /* Tools */
 
-.tools-methods-section {
-  background-color: #f7f7f7; 
+/* For a light theme */
+.tools-methods-section.light {
+  background-color: #f0f8ff; /* A light color for the light theme */
 }
 
-.tech-badge {
+/* For a dark theme */
+.tools-methods-section.dark {
+  background-color: #000000 !important; /* A dark color for the dark theme */
+  color: #ffffff; 
+}
+
+/* You may also need to adjust the text color inside */
+.tools-methods-section.dark .case-title {
+  color: #ffffff; 
+}
+
+.tech-badge.dark {
   background-color: white;
+}
+
+.tech-badge.dark:hover {
+  color: black;
+}
+
+
+.content-secton.key-decisions.dark {
+  color: black !important;
+}
+
+/* Fixes title colors in dark mode for all sections */
+.dark .case-title {
+  color: #000000; /* A light color for dark backgrounds */
+}
+
+/* Fixes the text color inside the overview cards in dark mode */
+.dark .overview-card p {
+  color: #000000 !important; /* A readable light gray */
+}
+
+.dark .overview-card h4 {
+  color: #000000;
+}
+
+/* Fixes the text color inside the key outcome cards in dark mode */
+.dark .result-card .result-content {
+  color: #1e293b; /* A dark color for the light card background */
+}
+
+/* Fixes the text color in regular content sections in dark mode */
+.dark .content-text p {
+  color: #cbd5e1;
+}
+
+/* Fixes the "Back to Portfolio" link color in dark mode */
+.dark .back-link {
+    color: #f1f5f9;
+}
+
+.dark .product-line-title {
+  color: white;
+}
+
+.property-gallery-section.dark .gallery-intro  {
+  color: rgb(245, 245, 245) !important;
+}
+
+ .container.dark p {
+ color: black !important;
+ font-size: 18px;
+}
+
+.keyoutcome-title.dark {
+color: white;
+}
+
+.short_description.dark {
+  color: white !important;
+}
+
+.cta-content .cta-buttons {
+  margin-top: 2rem;
+}
+
+p.copyright .dark {
+  color: white !important;
+}
+
+.subsection-bullet.light {
+ color: black;
+}
+
+.footer-name-background .short_description.dark {
+  color: #ffffff !important;
+}
+
+
+.project-cards-container:hover .project-description .portfolio-card.project-title,
+.project-cards-container:hover .project-description .card-description {
+  color: #ffffff !important; /* Force text to be white on hover */
+}
+
+.bio-info.dark {
+  color: #fff !important;
+}
+
+.dark .card-container:hover .project-description .button-card a,
+.dark .card-container:hover .project-description .button-card a:hover {
+    color: #ffffff !important;
+}
+
+h2.cta-title.dark  {
+ color: black !important;
+}
+
+p.short_description.dark {
+  color: white !important;
+}
+
+p.copyright.dark {
+    color: white !important;
+}
+
+
+/* Ultra-targeted approach using nth-child for specific sections */
+
+/* Target the exact sections that have light blue backgrounds in dark mode */
+
+/* Section 1: The Problem (inside first big-section-container) */
+.big-section-container:nth-child(3) .content-section.dark .case-title,
+.big-section-container:nth-child(3) .content-section.dark p,
+.big-section-container:nth-child(3) .content-section.dark .content-text {
+  color: #000000 !important;
+}
+
+/* Section 2: My Approach with "1. MARKETING STRATEGY" */
+.content-section.dark:nth-child(4) p[style*="font-weight: bold"],
+.content-section.dark:nth-child(4) .case-title {
+  color: #000000 !important;
+}
+
+/* Section 3: "2. PRODUCT STRATEGY DEVELOPMENT" */
+.content-section.dark:nth-child(5) p[style*="font-weight: bold"] {
+  color: #000000 !important;
+}
+
+/* Section 4: "3. FEATURE PRIORITIZATION & IMPLEMENTATION" */
+.content-section.dark:nth-child(6) p[style*="font-weight: bold"] {
+  color: #000000 !important;
+}
+
+/* Section 8: Marketing Strategy with "4. MARKETING STRATEGY" (inside second big-section-container) */
+.big-section-container:nth-child(8) .content-section.dark p[style*="font-weight: bold"],
+.big-section-container:nth-child(8) .content-section.dark .case-title {
+  color: #000000 !important;
+}
+
+/* Catch-all for any other sections inside big-section-container */
+.big-section-container .content-section.dark * {
+  color: #000000 !important;
+}
+
+/* Case Study Responsive Spacing Fixes */
+
+/* Base spacing adjustments for all screen sizes */
+.content-section {
+  padding: 3rem 2rem; /* Reduce from 4rem to 3rem */
+  margin-bottom: 1rem; /* Add consistent bottom margin between sections */
+}
+
+.big-section-container .content-section {
+  padding: 2.5rem 1.5rem; /* Slightly less padding for light blue sections */
+  margin-bottom: 1.5rem; /* Add spacing between sections */
+}
+
+/* Reduce excessive gaps within sections */
+.case-title {
+  margin-bottom: 1rem; /* Reduce from 1.5rem to 1rem */
+}
+
+.content-text {
+  margin-top: 1rem; /* Reduce gap between title and content */
+}
+
+.content-text pre {
+  margin-bottom: 1rem; /* Reduce space after content blocks */
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 1024px) {
+  .case-study-nav {
+ 
+
+margin-left: 0rem;
+}
+  .content-section {
+    padding: 2.5rem 1.5rem; /* Reduce padding */
+    margin-bottom: 1rem; /* Maintain spacing between sections */
+  }
+  
+  .big-section-container .content-section {
+    padding: 2rem 1rem; /* Less padding for light blue sections */
+   
+  }
+  
+  .case-title {
+    font-size: 1.8rem; /* Slightly smaller titles */
+    margin-bottom: 0.8rem; /* Less space below titles */
+  }
+  
+  .content-text {
+    margin-top: 0.8rem; /* Less gap between elements */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .case-study-nav {
+ 
+
+margin-left: 0rem;
+}
+  .content-section {
+    padding: 2rem 1rem; /* Much less padding */
+     /* Tighter spacing between sections */
+  }
+  
+  .big-section-container .content-section {
+    padding: 1.5rem 1rem; /* Even less padding for light blue sections */
+    padding-bottom: 3.8rem;
+  }
+  
+  .case-title {
+    font-size: 1.6rem; /* Smaller titles for mobile */
+    margin-bottom: 0.6rem; /* Tighter spacing */
+  }
+  
+  .content-text {
+    margin-top: 0.6rem; /* Tighter gap between title and content */
+    font-size: 1rem; /* Reduce from 1.1rem */
+    line-height: 1.6; /* Reduce from 1.8 */
+  }
+  
+  .content-text pre {
+    margin-bottom: 3.8rem; /* Less space after content */
+  }
+  
+  /* Reduce gaps in numbered section headers */
+  p[style*="font-weight: bold"] {
+    margin-bottom: 0.5rem !important;
+    margin-top: 0.5rem !important;
+  }
+}
+
+/* Very small mobile screens */
+@media (max-width: 480px) {
+  .content-section {
+    padding: 1.5rem 0.8rem; /* Minimal padding */
+    padding-bottom: 2.6rem; /* Tight spacing between sections */
+  }
+  
+  .big-section-container .content-section {
+    padding: 1.2rem 0.8rem; /* Minimal padding for light blue sections */
+    padding-bottom: 3rem;
+  }
+  
+  .case-title {
+    font-size: 1.4rem; /* Smaller titles */
+    margin-bottom: 0.5rem; /* Very tight spacing */
+  }
+  
+  .content-text {
+    margin-top: 0.5rem; /* Very tight gap */
+    font-size: 0.95rem; /* Smaller text */
+    line-height: 1.5; /* Tighter line height */
+  }
+  
+  .content-text pre {
+    padding-bottom: 0.6rem; /* Minimal space after content */
+  }
+}
+
+/* Fix for hero section spacing on mobile */
+@media (max-width: 768px) {
+  .case-study-hero {
+    padding: 2rem 1rem; /* Reduce from 4rem */
+  }
+  
+  .project-overview-grid {
+    gap: 1rem; /* Reduce gap in overview cards */
+    margin-top: 1rem; /* Less space above overview */
+  }
+  
+  .overview-card {
+    padding: 1rem; /* Reduce from 1.5rem */
+  }
+}
+
+/* Fix for property gallery spacing */
+@media (max-width: 768px) {
+  .property-gallery-section {
+    padding: 2rem 0; /* Reduce from 3rem/5rem */
+  }
+  
+  .property-category {
+    padding-bottom: 2.5rem; /* Reduce from 5rem */
+  }
+  
+  .property-images-grid {
+    margin-top: 1rem; /* Reduce from 2rem */
+  }
+}
+
+/* Fix for key results section */
+@media (max-width: 768px) {
+  .key-results-section {
+    padding: 2.5rem 0; /* Reduce from 4rem */
+  }
+  
+  .results-grid {
+    margin-top: 1rem; /* Reduce from 2rem */
+    gap: 1rem; /* Reduce gap between result cards */
+  }
+  
+  .result-card {
+    padding: 1.2rem; /* Reduce from 1.6rem */
+  }
+}
+
+/* Fix for CTA section */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 2.5rem 0; /* Reduce from 4rem */
+    padding-bottom: 3rem; /* Reduce from 6rem */
+  }
+}
+
+/* Add consistent spacing between all major sections */
+.case-study-hero,
+.content-section,
+.property-gallery-section,
+.key-results-section,
+.tools-methods-section,
+.cta-section {
+  border-bottom: none; /* Remove existing borders that might add visual weight */
+}
+
+/* Ensure big-section-container has proper spacing */
+.big-section-container {
+  margin: 1rem 0; /* Add margin around the container */
+}
+
+@media (max-width: 768px) {
+  .big-section-container {
+    margin: 0.8rem 0; /* Tighter margins on mobile */
+  }
 }

@@ -47,7 +47,7 @@ const parseAboutText = (about) => {
   parsed.productStrategy = sections.find(section => section.includes('2. PRODUCT STRATEGY DEVELOPMENT'))?.replace('2. PRODUCT STRATEGY DEVELOPMENT', '').trim() || '';
   parsed.implementation = sections.find(section => section.includes('3. FEATURE PRIORITIZATION & IMPLEMENTATION'))?.replace('3. FEATURE PRIORITIZATION & IMPLEMENTATION', '').trim() || '';
   parsed.marketingStrategy = sections.find(section => section.includes('4. MARKETING STRATEGY:'))?.replace('4. MARKETING STRATEGY:', '').trim() || '';
-  parsed.keyDecisions = sections.find(section => section.includes('KEY MARKETING DECISIONS:'))?.replace('KEY MARKETING DECISIONS:', '').trim() || '';
+  parsed.keyDecisions = sections.find(section => section.includes('KEY DECISIONS:'))?.replace('5. KEY DECISIONS:', '').trim() || '';
   parsed.learnings = sections.find(section => section.includes('LEARNING OUTCOMES:'))?.replace('LEARNING OUTCOMES:', '').trim() || '';
 
   return parsed;
@@ -125,6 +125,7 @@ const parseAboutText = (about) => {
         </section>
       )}
 </div>
+      
       {/* Approach Section */}
       {parsedData.approach && (
         <section className={`content-section ${theme}`}>
@@ -176,7 +177,7 @@ const parseAboutText = (about) => {
 {caseStudy.propertyImages && (
   <section className={`property-gallery-section ${theme}`}>
     <div className="case-study-container">
-      <h2 className={`case-title ${theme}`}>Product Lines</h2>
+      <h2 className={`case-title product-line-title ${theme}`}>Product Lines</h2>
       <p className={`gallery-intro ${theme}`}>
         Each property was designed to serve a specific traveler persona with tailored amenities and experiences.
       </p>
@@ -204,6 +205,7 @@ const parseAboutText = (about) => {
 )}
 
 <div className="big-section-container">
+ 
  {/* Marketing Strategy Section */}
 {parsedData.marketingStrategy && (
   <section className={`content-section ${theme}`}>
@@ -219,11 +221,31 @@ const parseAboutText = (about) => {
   </section>
 )}
 
+
+{/* Key Decisions Section */}
+{parsedData.keyDecisions && (
+  <section className={`content-section key-decisions ${theme}`}>
+    <div className="case-study-container">
+      <h2 className={`case-title ${theme}`}>Key Decisions</h2>
+      <div className={`content-text ${theme}`}>
+        {parsedData.keyDecisions.split('\n').map((line, index) => (
+          <p key={index} className={
+            line.trim().startsWith('•') ? 'subsection-bullet' : ''
+          }>
+            {line}
+          </p>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+     
       {/* Key Results */}
       {parsedData.keyResults.length > 0 && (
         <section className={`key-results-section ${theme}`}>
           <div className="case-study-container">
-            <h2 className={`case-title ${theme}`}>Key Outcomes</h2>
+            <h2 className={`case-title keyoutcome-title ${theme}`}>Key Outcomes</h2>
             <div className="results-grid">
               {parsedData.keyResults.map((result, index) => (
                 <div key={index} className={`result-card ${theme}`}>

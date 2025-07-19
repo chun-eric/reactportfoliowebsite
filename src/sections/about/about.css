@@ -146,7 +146,9 @@
   text-indent: 1rem;
 }
 
-
+.bio-info.dark {
+  color: #fff !important;
+}
 
 .bio-info:nth-child(6) {
   margin-bottom: 40px;

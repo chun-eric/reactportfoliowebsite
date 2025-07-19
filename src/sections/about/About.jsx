@@ -33,20 +33,20 @@ const About = ({ theme }) => {
         <div className={`about-background-overlay ${theme}`}></div>
         <div className={`about-me ${isVisible ? 'fade-in' : ''}`}>
           <div className='section-title'>
-            <h2 className='title'>About Me</h2>
+            <h2 className={`title ${theme}`}>About Me</h2>
           </div>
           <div className='bio-container'>
-            <p className='bio-info'>
+            <p className={`bio-info ${theme}`}>
               I am a product-focused leader driven by a simple belief: the best products are born from a deep understanding of real-world user problems. My journey has taken me from the classroom, where I gained firsthand empathy for learners, to founding and scaling from the ground up.
             </p>
             
-            <p className='bio-info'>
+            <p className={`bio-info ${theme}`}>
               Whether it was building an ESL learning channel to nearly 80,000 users or an automated rental business with 95% customer satisfaction, my approach has always been the same: listen to the customer, understand the commercial realities, and build a solution that delivers genuine value. I thrive on owning the entire process, from initial vision to final execution.
             </p>
 
             
 
-            <p className='bio-info'>
+            <p className={`bio-info ${theme}`}>
               I am looking for a product leadership opportunity that allows me to integrate my background in development and my insights from organic marketing to build products that are not only technically sound but also commercially successful.
             </p>
 

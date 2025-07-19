@@ -237,3 +237,31 @@ img.dark {
   .visit-counter {
   }
 }
+
+
+/* 1. Fix for the short description text */
+.main-footer.dark .short_description {
+  color: #e2e8f0 !important; /* A pleasant off-white for readability */
+}
+
+/* 2. Fix for the visitor counter text */
+.main-footer.dark .visitor-counter p,
+.main-footer.dark .visitor-count {
+  color: #ffffff !important;
+}
+
+/* 3. Fix for the copyright text in the lower footer */
+.main-footer.dark .main-footer__lower {
+  color: #e2e8f0 !important; /* Sets a base color for all text inside */
+  border-top-color: #334155; /* Makes the border line lighter in dark mode */
+}
+
+/* This makes sure the bold name is also the correct color */
+.main-footer.dark .name {
+  color: #ffffff !important;
+}
+
+
+.footer-name-background .short_description.dark {
+  color: #ffffff !important;
+}

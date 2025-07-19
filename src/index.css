@@ -172,6 +172,15 @@ html {
   color: #fff;
 }
 
+.container.dark h1,
+.container.dark h2,
+.container.dark h3,
+.container.dark h4,
+.container.dark h5,
+.container.dark h6 {
+  color: #ffffff;
+}
+
 /* General Section styles */
 section {
   width: 100vw;
@@ -183,7 +192,7 @@ section {
 
 section.dark {
   background: #161515;
-  color: #fff;
+  color: #fff !important;
 }
 
 section:nth-child(even) {
@@ -365,4 +374,13 @@ button:hover {
     margin: 0 auto;
     text-align: center;
   }
+}
+
+
+.bio-container.dark {
+  color: #fff ;
+}
+
+p.bio-info.dark  {
+  color: #fff !important;
 }

@@ -314,7 +314,7 @@ const data = [
     '• Analyzed competitor listings and guest reviews on major platforms\n' +
     '• Identified gaps in family-friendly and culturally authentic accommodations\n' +
     '• Defined three distinct traveler personas based on needs and preferences\n' +
-    '• Validated assumptions through guest feedback and booking patterns\n\n' +
+    '• Validated assumptions through research of other customer reviews, feedback and accommodation data paid and freely available\n\n' +
     
     '2. PRODUCT STRATEGY DEVELOPMENT\n' +
     '• Developed three distinct product lines but within the accommodation umbrella of Japanese Homes for families. \n' +
@@ -352,10 +352,11 @@ const data = [
     '• Scalable operational processes for potential expansion\n\n' +
     
     'LEARNING OUTCOMES:\n' +
-    '• Market segmentation is more effective than generic positioning\n' +
+    '• Niche Market segmentation is more effective than generic positioning\n' +
     '• Understanding user needs drives better product decisions than feature copying\n' +
     '• Operational excellence is as important as product strategy in service based hospitality\n' +
-    '• Cultural authenticity can be a strong differentiator in international markets\n' +
+    '• A/B Testing of Photos, Titles and Descriptions makes a subtantial difference in bookings and listing CTR by up to 30-50%\n' +
+     '• Cultural authenticity can be a strong differentiator in international markets\n' +
     '• Clear positioning helps guests self-select appropriate accommodations\n' +
     '• Market research including pricing strategies, seasonal pattern analysis, and competitor analysis must been undertaken every 60-90 days to remain competitive & relevant\n' 
   ,
