@@ -38,23 +38,24 @@ function App() {
     <div className={`container  ${theme} `}>
       <Analytics />
       <GoogleAnalytics />
-      <Routes>
-          <Route 
-            path="/" 
-            element={
-              <>
-                <Navbar
+          <Navbar
                   theme={theme}
                   setTheme={setTheme}
                   scrollToSection={scrollToSection}
                   refs={{ headerRef, skillsRef, portfolioRef }}
                 />
+      <Routes>
+          <Route 
+            path="/" 
+            element={
+              <>
+            
                 <Header theme={theme} ref={headerRef} />
                 <Skills theme={theme} ref={skillsRef} />
                 <About theme={theme} />
                 <Portfolio theme={theme} setTheme={setTheme} ref={portfolioRef} />
                 <Contact4 />
-                <Footer theme={theme} />
+           
               </>
             } 
           />
@@ -63,6 +64,7 @@ function App() {
             element={<CaseStudyDetail theme={theme} />} 
           />
         </Routes>
+             <Footer theme={theme} />
     </div>
     </Router>
   );

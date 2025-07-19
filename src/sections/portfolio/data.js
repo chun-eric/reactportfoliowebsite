@@ -14,6 +14,23 @@ import Image13 from '../../assets/images/bazaar2.webp'
 import Image14 from '../../assets/images/vanlife-cover.webp'
 import Image15 from '../../assets/images/attira_hero.webp'
 import Image16 from '../../assets/images/h1_2.webp' // ADD this import
+import h2_1 from "../../assets/images/h2_1.webp"
+import h2_2 from "../../assets/images/h2_2.webp"
+import h2_3 from "../../assets/images/h2_3.webp"
+import h2_4 from "../../assets/images/h2_4.webp"
+import h2_5 from "../../assets/images/h2_5.webp"
+import h1_1 from "../../assets/images/h1_1.webp"
+import h1_2 from "../../assets/images/h1_2.webp"
+import h1_3 from "../../assets/images/h1_3.webp"
+
+import h1_5 from "../../assets/images/h1_5.webp"
+
+import h1_7 from "../../assets/images/h1_7.webp"
+import h1_8 from "../../assets/images/h1_8.webp"
+import s_1 from "../../assets/images/s_1.webp"
+import s_2 from "../../assets/images/s_2.webp"
+import s_3 from "../../assets/images/s_3.webp"
+
 
 const data = [
   // Keep ALL your existing data exactly as is - no changes needed
@@ -246,34 +263,37 @@ const data = [
   propertyImages: [
     // Traditional Tatami Home
     {
-      category: 'Traditional Tatami Home',
+      category: 'The Traditional Tatami Home',
       images: [
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Traditional Japanese room with tatami mats' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Authentic sliding doors and wooden details' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Cultural decor and traditional elements' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Peaceful sleeping area with traditional bedding' }
+        { src: h2_1, caption: 'Traditional Japanese room with tatami mats' },
+        { src: h2_2, caption: 'Authentic sliding doors and wooden details' },
+        { src: h2_3, caption: 'Modern Kitchen equipped' },
+        { src: h2_4, caption: 'Peaceful and cozy dining room' },
+        { src: h2_5, caption: 'Adorned traditional decor' }
       ]
     },
     // Big Cozy Home  
     {
-      category: 'Big Cozy Home',
+      category: 'The Big Cozy Home',
       images: [
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Spacious living and dining area' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Open concept layout for groups' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Modern living space with city views' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Comfortable seating for extended stays' }
+        { src: s_1, caption: 'Spacious living and dining area' },
+        { src: s_2, caption: 'Japanese Inspired tatami bedroom' },
+        { src: s_3, caption: 'Kitchen equipped home' },
+       
       ]
     },
     // Perfect Family Home
     {
-      category: 'Perfect Family Home',
+      category: 'The Perfect Family Home',
       images: [
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Family-friendly kitchen with modern appliances' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Safe and comfortable family bedroom' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Child-friendly living space' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Modern kitchen perfect for family meals' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Laundry facilities for longer family stays' },
-        { src: 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Traditional+Room', caption: 'Dining area designed for families' }
+        { src: h1_1 ,caption: 'Big comfortable living and dining room'},
+        { src: h1_2, caption: 'Big comfortable living and dining room' },
+        { src: h1_3, caption: 'Sofa Bed' },
+      
+        { src: h1_5, caption: 'Big double bedroom for children' },
+
+         { src: h1_7, caption: 'Kitchen equipped' },
+          { src: h1_8, caption: 'Washer Dryer and toilet' }
       ]
     }
   ],
@@ -297,10 +317,11 @@ const data = [
     '• Validated assumptions through guest feedback and booking patterns\n\n' +
     
     '2. PRODUCT STRATEGY DEVELOPMENT\n' +
-    '• Developed three key product lines but within the accommodation umbrella of Japanese Homes for families. Families also tend to stay longer, take better care of the property and have more disposable income.\n' +
-    '• 1- Traditional Tatami Home: Cultural experience seekers wanting authentic Japanese stay\n' +
-    '• 2- Big Cozy Home: Groups and extended-stay travelers needing space and amenities\n' +
-    '• 3- Perfect Family Home: Families requiring child-friendly features and safety\n\n' +
+    '• Developed three distinct product lines but within the accommodation umbrella of Japanese Homes for families. \n' +
+      '• Families also tend to stay longer, take better care of the property and have more disposable income.\n' +
+    '•  The Traditional Tatami Home: Cultural experience seekers wanting authentic Japanese stay\n' +
+    '•  The Big Cozy Home: Groups and extended-stay travelers needing space and amenities\n' +
+    '•  The Perfect Family Home: Families requiring child-friendly features and safety\n\n' +
     
     '3. FEATURE PRIORITIZATION & IMPLEMENTATION\n' +
     '• Equipped all properties with full modern kitchens and dining areas (rare in Osaka market)\n' +
@@ -308,7 +329,14 @@ const data = [
     '• Created property-specific messaging and positioning for each target segment\n' +
     '• Developed smooth operational processes for cleaning, maintenance, and guest communication\n\n' +
     
-    'KEY PRODUCT DECISIONS:\n' +
+    '4. MARKETING STRATEGY:\n' +
+    '• With a limited marketing budget made a \n' +
+    '• Positioned Traditional Tatami Home as cultural experience, not just accommodation\n' +
+    '• Standardized amenities (full kitchen, dining space, WiFi) across all properties\n' +
+    '• Implemented dynamic pricing strategy based on seasonality and local events\n' +
+    '• Created detailed property guides and local recommendations for each target persona\n\n' +
+
+     'KEY MARKETING DECISIONS:\n' +
     '• Focused on underserved family and group segments rather than competing for individual travelers\n' +
     '• Positioned Traditional Tatami Home as cultural experience, not just accommodation\n' +
     '• Standardized amenities (full kitchen, dining space, WiFi) across all properties\n' +
@@ -317,9 +345,10 @@ const data = [
     
     'EXPECTED OUTCOMES:\n' +
     '• Higher occupancy rates through targeted positioning\n' +
+    '• 20-30% CAGR between 2014-2019 until Covid\n' +
     '• Premium pricing justified by unique value propositions\n' +
     '• Reduced competition by serving underserved market segments\n' +
-    '• Improved guest satisfaction through persona-matched experiences\n' +
+    '• Improved guest satisfaction to 95% through persona-matched experiences\n' +
     '• Scalable operational processes for potential expansion\n\n' +
     
     'LEARNING OUTCOMES:\n' +
@@ -328,7 +357,7 @@ const data = [
     '• Operational excellence is as important as product strategy in service based hospitality\n' +
     '• Cultural authenticity can be a strong differentiator in international markets\n' +
     '• Clear positioning helps guests self-select appropriate accommodations\n' +
-    '• Consistent market research including pricing strategies, seasonal patterns, and competitors analysis must been taken to remain competitive\n' 
+    '• Market research including pricing strategies, seasonal pattern analysis, and competitor analysis must been undertaken every 60-90 days to remain competitive & relevant\n' 
   ,
   demo: null, // Changed from 'none' to null
   github: 'n/a',
@@ -352,7 +381,7 @@ const data = [
       'This case study demonstrates my ability to identify market gaps, develop content strategy, build audience, and create sustainable growth through strategic product decisions and community building.',
     demo: 'https://www.phrasecamp.com',
     github: 'n/a',
-    stack: ['Content Strategy', 'WordPress', 'YouTube', 'SEO', 'Community Building', 'Analytics']
+    stack: ['Content Strategy', "Content Producer", 'WordPress', 'YouTube', 'SEO', 'Community Building', 'Google Analytics', "YouTube Analytics"]
   }
 ]
 
