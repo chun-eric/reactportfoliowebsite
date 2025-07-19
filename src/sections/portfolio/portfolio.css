@@ -1255,6 +1255,11 @@ p.copyright.dark {
 
 margin-left: 0rem;
 }
+
+.case-study-hero {
+    padding: 4rem 2rem; /* Reduce from 4rem */
+  }
+  
   .content-section {
     padding: 2.5rem 1.5rem; /* Reduce padding */
     margin-bottom: 1rem; /* Maintain spacing between sections */
@@ -1345,7 +1350,7 @@ margin-left: 0rem;
 /* Fix for hero section spacing on mobile */
 @media (max-width: 768px) {
   .case-study-hero {
-    padding: 2rem 1rem; /* Reduce from 4rem */
+    padding: 4rem 2rem; /* Reduce from 4rem */
   }
   
   .project-overview-grid {
