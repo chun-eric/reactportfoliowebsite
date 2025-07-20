@@ -218,7 +218,7 @@ const parseAboutText = (about) => {
   <section className={`content-section key-decisions ${theme}`}>
     <div className="case-study-container">
       <h2 className={`case-title ${theme}`}>Key Decisions</h2>
-      <div className={`content-text ${theme}`}>
+      <div className={`content-text approach-card ${theme}`}>
         {parsedData.keyDecisions.split('\n').map((line, index) => (
           <p key={index} className={
             line.trim().startsWith('•') ? 'subsection-bullet' : ''
@@ -237,7 +237,7 @@ const parseAboutText = (about) => {
         <section className={`key-results-section ${theme}`}>
           <div className="case-study-container">
             <h2 className={`case-title keyoutcome-title ${theme}`}>Key Outcomes</h2>
-            <div className="results-grid">
+            <div className="results-grid key-outcomes-grid">
               {parsedData.keyResults.map((result, index) => (
                 <div key={index} className={`result-card ${theme}`}>
                   <div className="result-content">{result}</div>
@@ -253,11 +253,15 @@ const parseAboutText = (about) => {
         <section className={`content-section learning-outcomes ${theme}`}>
           <div className="case-study-container">
             <h2 className={`case-title ${theme}`}>Learning Outcomes</h2>
-            <div className={`content-text ${theme}`}>
-              <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
-                {parsedData.learnings}
-              </pre>
-            </div>
+             <div className={`content-text approach-card ${theme}`}>
+        {parsedData.learnings.split('\n').map((line, index) => (
+          <p key={index} className={
+            line.trim().startsWith('•') ? 'subsection-bullet' : ''
+          }>
+            {line}
+          </p>
+        ))}
+      </div>
           </div>
         </section>
       )}
@@ -279,7 +283,7 @@ const parseAboutText = (about) => {
       )}
 
       {/* Call to Action */}
-      <section className={`cta-section ${theme}`}>
+      <section className={`cta-section interested-section ${theme}`}>
         <div className="case-study-container">
           <div className="cta-content">
             <h2 className={`cta-title ${theme}`}>Interested in working together?</h2>

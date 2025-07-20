@@ -179,14 +179,25 @@
 .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .hero-text { text-align: left; }
 .case-study-category-badge { display: inline-block; padding: 0.75rem 1.5rem; background: #0ea5e9; color: #ffffff; border-radius: 25px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1.5rem; }
-.case-study-main-title { font-size: 3rem; font-weight: bold; margin-bottom: 1.5rem; color: #1e293b; }
+.case-study-main-title { font-size: 3rem; font-weight: bold; margin-bottom: 1.5rem; color: #1e293b; text-align: left; }
 .case-study-description { font-size: 1.25rem; line-height: 1.6; margin-bottom: 2rem; color: #475569; }
 .project-overview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; }
 .overview-card { background: #ffffff; padding: 1.5rem; border-radius: 10px; border: 1px solid #e2e8f0; }
 .overview-card h4 { font-weight: 600; text-transform: uppercase; font-size: 0.9rem; color: #0ea5e9; margin-bottom: 0.5rem; }
 .overview-card p { color: #475569; }
-.case-study-hero-image { width: 100%; height: 100%; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.case-study-hero-image { width: 100%; height: 100%; object-fit: cover; border-radius: 1px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.hero-image-container {
+  height: 85%;
+  border-radius: 2px;
+  display: flex;
+  justify-content: baseline;
 
+
+}
+  .hero-content {
+ 
+  align-items: end;
+}
 /* --- General Content Section --- */
 .content-section { background-color: #ffffff; }
 .case-title { font-size: 2rem; font-weight: bold; margin-bottom: 2rem; color: #1e293b; text-align: center; }
@@ -201,19 +212,19 @@
 .approach-card .content-text p { font-size: 1rem; line-height: 1.7; }
 
 /* --- Other Sections --- */
-.key-results-section { background-color: #f8fafc; }
-.results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.key-results-section { background-color: #f8fafc; padding-top: 2rem; padding-bottom: 2rem; }
+.results-grid { display: grid; grid-template-columns:  repeat(3, 1fr); gap: 1rem !important; margin-top: 2rem; max-width: 800px; margin: 0 auto; }
 .result-card { background-color: white; padding: 1.6rem; border-radius: 15px; border: 1px solid #e2e8f0; }
 .result-content { font-weight: bold; color: #1e293b; }
 .property-gallery-section { background: #ffffff; }
 .gallery-intro { color: #64748b; text-align: center; max-width: 600px; margin: 0 auto 4rem auto; }
-.property-category-title { font-size: 1.6rem; font-weight: bold; color: #1e293b; margin-bottom: 2rem; text-align: left; }
-.property-images-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
-.property-image-card { height: 300px; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; }
+.property-category-title { font-size: 1.6rem; font-weight: bold; color: #1e293b; margin-bottom: 0.8rem; text-align: left;  margin-top: 1rem;}
+.property-images-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.property-image-card { height: 300px; border-radius: 4px; overflow: hidden; border: 1px solid #383838; }
 .property-image { width: 100%; height: 100%; object-fit: cover; }
 .tools-methods-section { background-color: #f8fafc; }
 .tech-stack-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 1rem; }
-.tech-badge { padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; background: #ffffff; color: #0ea5e9; border: 2px solid #0ea5e9; transition: all 0.3s ease; }
+.tech-badge { padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; background: #ffffff; color: #2b2b2b; border: 1px solid #252525; transition: all 0.3s ease; }
 .tech-badge:hover { background: #0ea5e9; color: #ffffff; }
 .cta-section { background: #f8fafc; }
 .cta-content { text-align: center; max-width: 600px; margin: 0 auto; }
@@ -233,13 +244,13 @@
 .case-study-detail.dark { background-color: #0f172a; color: #cbd5e1; }
 .case-study-detail.dark .case-study-nav { background-color: #1e293b; border-color: #334155; }
 .case-study-detail.dark .back-link { color: #38bdf8; }
-.case-study-detail.dark .case-study-hero { background-color: #1e293b; }
+.case-study-detail.dark .case-study-hero { background-color: #242424; }
 .case-study-detail.dark .case-title, .case-study-detail.dark .case-study-main-title { color: #f1f5f9; }
-.case-study-detail.dark .case-study-description { color: #94a3b8; }
+.case-study-detail.dark .case-study-description { color: #ffffff; }
 .case-study-detail.dark .overview-card { background-color: #334155; border-color: #475569; }
 .case-study-detail.dark .overview-card h4 { color: #7dd3fc; }
-.case-study-detail.dark .overview-card p { color: #cbd5e1; }
-.case-study-detail.dark .content-section { background-color: #0f172a; border-color: #334155; }
+.case-study-detail.dark .overview-card p { color: #ffffff; }
+.case-study-detail.dark .content-section { background-color: #242424; border-color: #334155; }
 .case-study-detail.dark .content-text p { color: #cbd5e1; }
 .case-study-detail.dark .approach-card { background-color: #1e293b; border-color: #475569; }
 .case-study-detail.dark .approach-card-title { color: #f1f5f9; }
@@ -250,7 +261,12 @@
 .case-study-detail.dark .gallery-intro { color: #94a3b8; }
 .case-study-detail.dark .property-category-title { color: #f1f5f9; }
 .case-study-detail.dark .property-image-card { background-color: #1e293b; border-color: #334155; }
-.case-study-detail.dark .tech-badge { background-color: #334155; border-color: #475569; color: #94a3b8; }
+
+h3.property-category-title:nth-child(2) {
+  padding-top: 8rem !important;
+}
+
+.case-study-detail.dark .tech-badge { background-color: #334155; border-color: #475569; color: #ffffff; }
 .case-study-detail.dark .tech-badge:hover { background-color: #0ea5e9; color: #ffffff; }
 .case-study-detail.dark .cta-section { background-color: #1e293b; }
 .case-study-detail.dark .cta-title { color: #f1f5f9; }
@@ -270,6 +286,11 @@
   border: 0;
 }
 
+.approach-section  .approach-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* --- Tablet (1024px and below) --- */
 @media (max-width: 1024px) {
   .case-study-container { padding: 0 1.5rem; }
@@ -278,6 +299,25 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
+  .key-results-section {
+ padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .key-decisions {
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .property-gallery-section {
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .approach-section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  
 }
 
 /* --- Mobile (820px and below for Approach Grid) --- */
@@ -293,7 +333,7 @@
   .hero-content { grid-template-columns: 1fr; gap: 2rem; }
   .case-study-main-title { font-size: 2rem; }
   .case-study-description { font-size: 1.1rem; }
-  .results-grid { grid-template-columns: 1fr; }
+  .results-grid { grid-template-columns: 1fr; gap: 0.5rem !important }
   .property-images-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .cta-buttons { flex-direction: column; align-items: center; }
   .cta-title { font-size: 2rem; }
@@ -301,5 +341,37 @@
   .case-study-hero, .content-section, .property-gallery-section, .key-results-section, .tools-methods-section, .cta-section {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+}
+
+
+
+.learning-outcomes, .tools-methods-section, .interested-section {
+  padding-bottom: 4rem !important;
+}
+
+ 
+.case-study-detail.dark .content-text p {
+  color: white !important;
+}
+
+/* 1. Reduce the space BELOW all property titles for a tighter look */
+h3.property-category-title {
+  margin-bottom: 1.5rem; /* Reduced from 2rem */
+}
+
+/* 
+  2. Add space ABOVE the 2nd and 3rd property categories.
+  The `+` selector targets a .property-category that immediately
+  follows another .property-category. This will NOT affect the first one.
+*/
+.property-category + .property-category {
+  margin-top: 4rem; /* Adjust this value to get the desired spacing */
+}
+
+/* --- Responsive adjustment for smaller screens --- */
+@media (max-width: 768px) {
+  .property-category + .property-category {
+    margin-top: 3rem; /* Use a slightly tighter margin on mobile */
   }
 }
