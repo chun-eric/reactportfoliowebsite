@@ -88,7 +88,7 @@
 
 .cover-image {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
@@ -155,7 +155,8 @@
 }
 
 .case-study-nav {
-  padding: 2rem 0;
+   padding-top: 2rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid #e2e8f0;
 }
 
@@ -163,6 +164,13 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.case-study-nav .case-study-container {
+    text-align: left;
+}
+.case-study-detail.dark .case-study-nav {
+  border-color: #334155;
 }
 
 .back-link {
@@ -375,3 +383,49 @@ h3.property-category-title {
     margin-top: 3rem; /* Use a slightly tighter margin on mobile */
   }
 }
+
+
+.case-study-nav {
+  position: relative; 
+  z-index: 100;     
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  
+  /* 1. FIX: Change 'cover' to 'contain' to stop the zoom effect */
+  object-fit: contain;
+
+  /* 2. FIX: Restore the orange gradient background */
+  background: linear-gradient(135deg, #fc9e07, #ffbb45);
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-section-title {
+  position: relative;
+  padding-bottom: 10px; /* Add some space for the underline */
+}
+
+/* 
+  This is the new rule that creates the underline,
+  matching the style of your "About" title.
+*/
+
+
+.project-title {
+  position: relative;
+  display: inline-block; /* Ensures the underline only spans the text width */
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+
+/* 
+  This is the corrected, more general rule. By removing ".skills-title",
+  it now applies the underline to ANY element with the class ".project-title".
+*/

@@ -12,7 +12,14 @@ const Portfolio = forwardRef((props, ref) => {
   const [projects, setProjects] = useState(data);
     const [selectedProject, setSelectedProject] = useState(null); 
 
-  const categories = ["All",  "Case Studies",...new Set(data.map((item) => item.category))];
+  const categories = [ 'All',
+  'Case Studies',
+  'HTML Email',
+  'Frontend',
+  'Landing Pages',
+  'In Development...',
+  'Fullstack',
+  'Wordpress'];
   
   const navigate = useNavigate()
 
@@ -21,7 +28,7 @@ const Portfolio = forwardRef((props, ref) => {
       setProjects(data);
     } else if (category === "Case Studies") {
       // Filter for case studies
-      setProjects(data.filter((project) => project.category.includes("Case Study")));
+      setProjects(data.filter((project) => project.category.includes("Case Studies")));
     } else {
       setProjects(data.filter((project) => project.category === category));
     }

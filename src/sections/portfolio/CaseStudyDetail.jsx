@@ -82,11 +82,13 @@ const parseAboutText = (about) => {
   return (
     <div className={`case-study-detail ${theme}`}>
       {/* Navigation */}
-      <div className="case-study-nav">
-        <Link to="/" className={`back-link ${theme}`}>
-          ← Back to Portfolio
-        </Link>
-      </div>
+    <nav className="case-study-nav">
+  <div className="case-study-container">
+    <Link to="/" className="back-link">
+      ← Back to Portfolio
+    </Link>
+  </div>
+</nav>
 
       {/* Hero Section */}
       <section className={`case-study-hero ${theme}`}>

@@ -13,7 +13,7 @@ import Image12 from '../../assets/images/wth_cover1.webp'
 import Image13 from '../../assets/images/bazaar2.webp'
 import Image14 from '../../assets/images/vanlife-cover.webp'
 import Image15 from '../../assets/images/attira_hero.webp'
-import Image16 from '../../assets/images/h1_2.webp' // ADD this import
+import Image16 from '../../assets/images/h2_1.webp' // ADD this import
 import h2_1 from "../../assets/images/h2_1.webp"
 import h2_2 from "../../assets/images/h2_2.webp"
 import h2_3 from "../../assets/images/h2_3.webp"
@@ -256,7 +256,7 @@ const data = [
 
 {
   id: 16,
-  category: 'Case Study - PM',
+  category: 'Case Studies',
   image: Image16,
   title: 'Cozy Stayz',
   desc: 'A new hospitality product developed for an underserved niche in Osaka.',
@@ -366,7 +366,7 @@ const data = [
 },
   {
     id: 17,
-    category: 'Case Study - PM', // Move English PhraseCamp here as a case study
+    category: 'Case Studies', // Move English PhraseCamp here as a case study
     image: Image9,
     title: 'English PhraseCamp',
     desc: 'Building & scaling an Education channel from 0 to 80K subscribers.',
