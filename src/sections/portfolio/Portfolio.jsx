@@ -53,7 +53,7 @@ const Portfolio = forwardRef((props, ref) => {
 <div className={`portfolio-overlay ${theme}`}></div>
       <div className='portfolio-content'>
         <div className='skills-title'>
-          <h3 className={`project-title ${theme}`}>Projects</h3>
+          <h3 className={`title ${theme}`}>Projects</h3>
         </div>
         <ProjectsCategories
           categories={categories}
