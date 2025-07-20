@@ -34,6 +34,8 @@ const parseAboutText = (about) => {
     details: ''
   };
 
+
+
   // Extract key results if they exist
   const resultsSection = sections.find(section => section.includes('EXPECTED OUTCOMES:'));
   if (resultsSection) {
@@ -55,6 +57,28 @@ const parseAboutText = (about) => {
 
   const parsedData = parseAboutText(caseStudy.about);
 
+  
+   const approachSteps = [
+    {
+      title: '1. Market Research & User Segmentation',
+      content: parsedData.approach
+    },
+    {
+      title: '2. Product Strategy Development',
+      content: parsedData.productStrategy
+    },
+    {
+      title: '3. Feature Prioritization & Implementation',
+      content: parsedData.implementation
+    },
+    {
+      title: '4. Marketing Strategy',
+      content: parsedData.marketingStrategy
+    }
+  ];
+
+
+  
   return (
     <div className={`case-study-detail ${theme}`}>
       {/* Navigation */}
@@ -109,7 +133,7 @@ const parseAboutText = (about) => {
         </div>
       </section>
 
-<div className="big-section-container">
+  <div className="big-section-container">
       {/* Problem Section */}
       {parsedData.problem && (
         <section className={`content-section ${theme}`}>
@@ -127,50 +151,30 @@ const parseAboutText = (about) => {
 </div>
       
       {/* Approach Section */}
-      {parsedData.approach && (
-        <section className={`content-section ${theme}`}>
-          <div className="case-study-container">
-            <h2 className={`case-title ${theme}`}>My Approach</h2>
-             <p className="" style={ {color: "black", fontWeight: "bold", fontSize: "22px"}}>1. MARKETING STRATEGY </p>
-            <div className={`content-text ${theme}`}>
-              <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
-                {parsedData.approach}
-              </pre>
-            </div>
+       <section className={`content-section approach-section ${theme}`}>
+        <div className="case-study-container">
+          <h2 className={`case-title ${theme}`}>My Approach</h2>
+          
+          <div className="approach-grid">
+            {approachSteps.map((step, index) => (
+              <div key={index} className={`approach-card ${theme}`}>
+                <h3 className="approach-card-title">{step.title}</h3>
+                <div className="content-text">
+                  {step.content.split('\n').map((line, i) => (
+                    <p key={i}>{line}</p>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
-        </section>
-      )}
 
-
-  {/* Strategy Section */}
-  {parsedData.productStrategy  && (
-    <section className={`content-section ${theme}`}>
-      <div className="case-study-container">
-        {/* <h2 className={`case-title ${theme}`}>2. Product Strategy</h2> */}
-        <p className="" style={ {color: "black", fontWeight: "bold", fontSize: "22px"}}>2. PRODUCT STRATEGY DEVELOPMENT</p>
-        <div className={`content-text ${theme}`}>
-          <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
-            {parsedData.productStrategy}
-          </pre>
         </div>
-      </div>
-    </section>
-  )}
+      </section>
 
 
-  {/* Implementation Section */}
-{parsedData.implementation && (
-  <section className={`content-section ${theme}`}>
-    <div className="case-study-container">
-      <p className="" style={ {color: "black", fontWeight: "bold", fontSize: "22px"}}>3. FEATURE PRIORITIZATION & IMPLEMENTATION </p>
-      <div className={`content-text ${theme}`}>
-        <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
-          {parsedData.implementation}
-        </pre>
-      </div>
-    </div>
-  </section>
-)}
+
+
+  
 
 
 {/* Property Gallery Section */}
@@ -206,20 +210,7 @@ const parseAboutText = (about) => {
 
 <div className="big-section-container">
  
- {/* Marketing Strategy Section */}
-{parsedData.marketingStrategy && (
-  <section className={`content-section ${theme}`}>
-    <div className="case-study-container">
-      {/* <h2 className={`case-title ${theme}`}>Marketing Strategy</h2> */}
-      <p className="" style={ {color: "black", fontWeight: "bold", fontSize: "22px"}}>4. MARKETING STRATEGY </p>
-      <div className={`content-text ${theme}`}>
-        <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
-          {parsedData.marketingStrategy}
-        </pre>
-      </div>
-    </div>
-  </section>
-)}
+
 
 
 {/* Key Decisions Section */}
@@ -259,7 +250,7 @@ const parseAboutText = (about) => {
 
       {/* Learning Outcomes */}
       {parsedData.learnings && (
-        <section className={`content-section ${theme}`}>
+        <section className={`content-section learning-outcomes ${theme}`}>
           <div className="case-study-container">
             <h2 className={`case-title ${theme}`}>Learning Outcomes</h2>
             <div className={`content-text ${theme}`}>
