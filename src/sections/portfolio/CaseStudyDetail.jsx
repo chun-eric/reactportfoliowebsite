@@ -6,21 +6,63 @@ import './portfolio.css'; // Use your existing styles
 const CaseStudyDetail = ({ theme }) => {
   const { id } = useParams();
   
-  // FIXED: Use === instead of includes() for string comparison
-  const caseStudy = data.find(item => 
-    item.id === parseInt(id) && item.category === "case_studies"
-  );
+  console.log('=== DEBUG CaseStudyDetail ===');
+  console.log('URL ID:', id);
+  console.log('All data:', data);
+  console.log('Looking for ID:', parseInt(id));
+  
+  // FIXED: Check for both possible category formats
+  const caseStudy = data.find(item => {
+    const itemId = parseInt(item.id);
+    const urlId = parseInt(id);
+    const isCorrectId = itemId === urlId;
+    
+    // Check for different possible category formats
+    const isCaseStudy = item.category === "Case Studies" || 
+                       item.category === "case_studies" ||
+                       item.category === "Case Study";
+    
+    console.log(`Item ${item.id}: ID match=${isCorrectId}, Category="${item.category}", IsCaseStudy=${isCaseStudy}`);
+    
+    return isCorrectId && isCaseStudy;
+  });
+
+  console.log('Found case study:', caseStudy);
+
+  // Function to format category for display
+  const formatCategoryForDisplay = (category) => {
+    const categoryMap = {
+      'case_studies': 'Case Study',
+      'html_email': 'HTML Email',
+      'frontend': 'Frontend',
+      'landing_pages': 'Landing Page',
+      'in_development': 'In Development',
+      'fullstack': 'Full Stack',
+      'wordpress': 'WordPress'
+    };
+    return categoryMap[category] || category;
+  };
 
   if (!caseStudy) {
+    console.log('=== Case Study Not Found Debug ===');
+    const allItems = data.map(item => ({
+      id: item.id,
+      title: item.title,
+      category: item.category
+    }));
+    console.log('All available items:', allItems);
+    
     return (
       <div className={`case-study-not-found ${theme}`}>
         <div className="not-found-content">
           <h1>Case Study Not Found</h1>
-          <p>ID: {id}</p>
-          <p>Available case studies:</p>
+          <p>Looking for ID: {id}</p>
+          <p>Available items in data:</p>
           <ul>
-            {data.filter(item => item.category === "case_studies").map(item => (
-              <li key={item.id}>ID: {item.id}, Title: {item.title}</li>
+            {data.map(item => (
+              <li key={item.id}>
+                ID: {item.id}, Title: {item.title}, Category: "{item.category}"
+              </li>
             ))}
           </ul>
           <Link to="/" className={`back-link ${theme}`}>
@@ -84,11 +126,31 @@ const CaseStudyDetail = ({ theme }) => {
   ];
 
   return (
-    <div className={`case-study-detail ${theme}`} style={{ paddingTop: '80px' }}>
+    <div className={`case-study-detail ${theme}`} style={{ paddingTop: '100px' }}>
       {/* Navigation */}
-      <nav className="case-study-nav">
-        <div className="case-study-container">
-          <Link to="/" className="back-link">
+       {/* Navigation */}
+      <nav style={{
+        padding: '1rem 0',
+        
+        marginBottom: '2rem'
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 2rem'
+        }}>
+          <Link 
+            to="/" 
+            style={{
+              color: '#000',
+              textDecoration: 'none',
+              fontSize: '16px',
+              fontWeight: '500',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}
+          >
             ← Back to Portfolio
           </Link>
         </div>
@@ -100,7 +162,7 @@ const CaseStudyDetail = ({ theme }) => {
           <div className="hero-content">
             <div className="hero-text">
               <span className={`case-study-category-badge ${theme}`}>
-                {caseStudy.category}
+                {formatCategoryForDisplay(caseStudy.category)}
               </span>
               <h1 className={`case-study-main-title ${theme}`}>{caseStudy.title}</h1>
               <p className={`case-study-description ${theme}`}>{caseStudy.desc}</p>
