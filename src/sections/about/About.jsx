@@ -37,17 +37,16 @@ const About = ({ theme }) => {
           </div>
           <div className='bio-container'>
             <p className={`bio-info ${theme}`}>
-              I am a product-focused leader driven by a simple belief: the best products are born from a deep understanding of real-world user problems. My journey has taken me from the classroom, where I gained firsthand empathy for learners, to founding and scaling from the ground up.
+               I am an educator-turned-product builder who bridges the gap between learning science and commercial success. With 10 years of teaching experience across corporate training and vocational schools, I've witnessed firsthand how great learning design transforms both individual learners skills and confidence.
             </p>
             
             <p className={`bio-info ${theme}`}>
-              Whether it was building an ESL learning channel to nearly 80,000 users or an automated rental business with 95% customer satisfaction, my approach has always been the same: listen to the customer, understand the commercial realities, and build a solution that delivers genuine value. I thrive on owning the entire process, from initial vision to final execution.
+              My unique perspective combines teaching expertise with proven product and business acumen. From designing curriculum for diverse learning environments to building an ESL learning channel that reached nearly 80,000 users, I apply the same user-centered design and outcome-based methodology that helped me even scale a semi-automated rental business to 95% customer satisfaction.
             </p>
-
             
 
             <p className={`bio-info ${theme}`}>
-              I am looking for a product leadership opportunity that allows me to integrate my background in development and my insights from organic marketing to build products that are not only technically sound but also commercially successful.
+              I'm seeking opportunities in edtech product development/leadership, instructional design, or learning experience roles where I can leverage my unique combination of educational expertise, technical development skills, and organic marketing insights to build learning solutions that truly serve both learners and business objectives.
             </p>
 
            
