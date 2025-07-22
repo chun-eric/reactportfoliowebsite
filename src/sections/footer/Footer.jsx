@@ -60,7 +60,7 @@ const Footer = ({ theme }) => {
                 />
               </div>
               <p className='short_description'>
-                Digital Marketing • Content Strategy • Web Development
+                Product Manager • Content Strategy • Development • Instructional Design
               </p>
             </div>
           </div>
