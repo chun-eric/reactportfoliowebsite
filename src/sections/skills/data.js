@@ -30,41 +30,41 @@ const skillsData = {
       title: 'Instructional Design',
       src: content, // Use content icon or create new one
       category: 'learning',
-      description: 'ADDIE Methodology, Bloom\'s Taxonomy'
+      description: 'Developing Content & Learning experiences based off ADDIE Methodology, Bloom\'s Taxonomy'
     },
     {
       id: 2,
-      title: 'Learning Analytics',
+      title: 'Blog Post Content Creation',
       src: ga,
       category: 'learning',
-      description: 'Outcome Measurement & Optimization'
+      description: 'Making blog content easy to understand and practical for students'
     },
     {
       id: 3,
-      title: 'Educational Content',
+      title: 'Video Creation & Editing',
       src: video,
       category: 'learning',
-      description: 'Multimedia Learning Design'
+      description: 'Able to create and edit Professional level Vyond animation videos'
     },
     {
       id: 4,
-      title: 'Assessment Design',
+      title: 'Cirriculum Design',
       src: abTesting,
       category: 'learning',
-      description: 'Learning Evaluation & Testing'
+      description: 'Cirriculum Development, Assessment & Evaluation'
     },
     {
       id: 5,
-      title: 'Cross-Cultural Design',
+      title: 'Cross-Cultural Communication',
       src: userResearch,
       category: 'learning',
-      description: 'Global Learning Experiences'
+      description: 'Adapting content for specific niches and cultures'
     }
   ],
   technicalProduct: [
     {
       id: 6,
-      title: 'Frontend Development',
+      title: 'Frontend Web Development',
       src: react,
       category: 'technical',
       description: 'React, TypeScript, Next.js'
@@ -81,7 +81,7 @@ const skillsData = {
       title: 'Performance Optimization',
       src: ga,
       category: 'technical',
-      description: 'Analytics & A/B Testing'
+      description: 'Google Analytics, YouTube Analytics & A/B Testing'
     },
     {
       id: 9,

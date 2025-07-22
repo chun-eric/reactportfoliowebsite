@@ -178,7 +178,7 @@
   align-items: center;
   text-decoration: none;
   font-weight: 500;
-  color: #0ea5e9;
+  color: #272727;
   transition: transform 0.3s ease;
 }
 .back-link:hover { transform: translateX(-5px); }

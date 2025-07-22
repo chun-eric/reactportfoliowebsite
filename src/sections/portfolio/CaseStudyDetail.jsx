@@ -84,7 +84,7 @@ const CaseStudyDetail = ({ theme }) => {
   ];
 
   return (
-    <div className={`case-study-detail ${theme}`}>
+    <div className={`case-study-detail ${theme}`} style={{ paddingTop: '80px' }}>
       {/* Navigation */}
       <nav className="case-study-nav">
         <div className="case-study-container">
