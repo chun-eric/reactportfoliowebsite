@@ -5,8 +5,10 @@ import './portfolio.css'; // Use your existing styles
 
 const CaseStudyDetail = ({ theme }) => {
   const { id } = useParams();
+  
+  // FIXED: Use === instead of includes() for string comparison
   const caseStudy = data.find(item => 
-    item.id === parseInt(id) && item.category.includes("Case Study")
+    item.id === parseInt(id) && item.category === "Case Studies"
   );
 
   if (!caseStudy) {
@@ -14,6 +16,13 @@ const CaseStudyDetail = ({ theme }) => {
       <div className={`case-study-not-found ${theme}`}>
         <div className="not-found-content">
           <h1>Case Study Not Found</h1>
+          <p>ID: {id}</p>
+          <p>Available case studies:</p>
+          <ul>
+            {data.filter(item => item.category === "Case Studies").map(item => (
+              <li key={item.id}>ID: {item.id}, Title: {item.title}</li>
+            ))}
+          </ul>
           <Link to="/" className={`back-link ${theme}`}>
             ← Back to Portfolio
           </Link>
@@ -23,42 +32,39 @@ const CaseStudyDetail = ({ theme }) => {
   }
 
   // Parse the about text to extract structured information
-const parseAboutText = (about) => {
-  const sections = about.split('\n\n');
-  const parsed = {
-    summary: sections[0] || '',
-    role: about.match(/ROLE: ([^\n]+)/)?.[1] || '',
-    duration: about.match(/DURATION: ([^\n]+)/)?.[1] || '',
-    scope: about.match(/SCOPE: ([^\n]+)/)?.[1] || '',
-    keyResults: [],
-    details: ''
+  const parseAboutText = (about) => {
+    const sections = about.split('\n\n');
+    const parsed = {
+      summary: sections[0] || '',
+      role: about.match(/ROLE: ([^\n]+)/)?.[1] || '',
+      duration: about.match(/DURATION: ([^\n]+)/)?.[1] || '',
+      scope: about.match(/SCOPE: ([^\n]+)/)?.[1] || '',
+      keyResults: [],
+      details: ''
+    };
+
+    // Extract key results if they exist
+    const resultsSection = sections.find(section => section.includes('EXPECTED OUTCOMES:'));
+    if (resultsSection) {
+      const resultLines = resultsSection.split('\n').filter(line => line.startsWith('•'));
+      parsed.keyResults = resultLines.map(line => line.replace('•', '').trim());
+    }
+
+    // Get sections - fixed to properly extract each section
+    parsed.problem = sections.find(section => section.includes('THE PROBLEM:'))?.replace('THE PROBLEM:', '').trim() || '';
+    parsed.approach = sections.find(section => section.includes('MY APPROACH:'))?.replace('MY APPROACH:', '').trim() || '';
+    parsed.productStrategy = sections.find(section => section.includes('2. PRODUCT STRATEGY DEVELOPMENT'))?.replace('2. PRODUCT STRATEGY DEVELOPMENT', '').trim() || '';
+    parsed.implementation = sections.find(section => section.includes('3. FEATURE PRIORITIZATION & IMPLEMENTATION'))?.replace('3. FEATURE PRIORITIZATION & IMPLEMENTATION', '').trim() || '';
+    parsed.marketingStrategy = sections.find(section => section.includes('4. MARKETING STRATEGY:'))?.replace('4. MARKETING STRATEGY:', '').trim() || '';
+    parsed.keyDecisions = sections.find(section => section.includes('KEY DECISIONS:'))?.replace('5. KEY DECISIONS:', '').trim() || '';
+    parsed.learnings = sections.find(section => section.includes('LEARNING OUTCOMES:'))?.replace('LEARNING OUTCOMES:', '').trim() || '';
+
+    return parsed;
   };
-
-
-
-  // Extract key results if they exist
-  const resultsSection = sections.find(section => section.includes('EXPECTED OUTCOMES:'));
-  if (resultsSection) {
-    const resultLines = resultsSection.split('\n').filter(line => line.startsWith('•'));
-    parsed.keyResults = resultLines.map(line => line.replace('•', '').trim());
-  }
-
-  // Get sections - fixed to properly extract each section
-  parsed.problem = sections.find(section => section.includes('THE PROBLEM:'))?.replace('THE PROBLEM:', '').trim() || '';
-  parsed.approach = sections.find(section => section.includes('MY APPROACH:'))?.replace('MY APPROACH:', '').trim() || '';
-  parsed.productStrategy = sections.find(section => section.includes('2. PRODUCT STRATEGY DEVELOPMENT'))?.replace('2. PRODUCT STRATEGY DEVELOPMENT', '').trim() || '';
-  parsed.implementation = sections.find(section => section.includes('3. FEATURE PRIORITIZATION & IMPLEMENTATION'))?.replace('3. FEATURE PRIORITIZATION & IMPLEMENTATION', '').trim() || '';
-  parsed.marketingStrategy = sections.find(section => section.includes('4. MARKETING STRATEGY:'))?.replace('4. MARKETING STRATEGY:', '').trim() || '';
-  parsed.keyDecisions = sections.find(section => section.includes('KEY DECISIONS:'))?.replace('5. KEY DECISIONS:', '').trim() || '';
-  parsed.learnings = sections.find(section => section.includes('LEARNING OUTCOMES:'))?.replace('LEARNING OUTCOMES:', '').trim() || '';
-
-  return parsed;
-};
 
   const parsedData = parseAboutText(caseStudy.about);
 
-  
-   const approachSteps = [
+  const approachSteps = [
     {
       title: '1. Market Research & User Segmentation',
       content: parsedData.approach
@@ -77,18 +83,16 @@ const parseAboutText = (about) => {
     }
   ];
 
-
-  
   return (
     <div className={`case-study-detail ${theme}`}>
       {/* Navigation */}
-    <nav className="case-study-nav">
-  <div className="case-study-container">
-    <Link to="/" className="back-link">
-      ← Back to Portfolio
-    </Link>
-  </div>
-</nav>
+      <nav className="case-study-nav">
+        <div className="case-study-container">
+          <Link to="/" className="back-link">
+            ← Back to Portfolio
+          </Link>
+        </div>
+      </nav>
 
       {/* Hero Section */}
       <section className={`case-study-hero ${theme}`}>
@@ -135,25 +139,25 @@ const parseAboutText = (about) => {
         </div>
       </section>
 
-  <div className="big-section-container">
-      {/* Problem Section */}
-      {parsedData.problem && (
-        <section className={`content-section ${theme}`}>
-          <div className="case-study-container">
-            <h2 className={`case-title ${theme}`}>The Problem</h2>
-            
-            <div className={`content-text ${theme}`}>
-              <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
-                {parsedData.problem}
-              </pre>
+      <div className="big-section-container">
+        {/* Problem Section */}
+        {parsedData.problem && (
+          <section className={`content-section ${theme}`}>
+            <div className="case-study-container">
+              <h2 className={`case-title ${theme}`}>The Problem</h2>
+              
+              <div className={`content-text ${theme}`}>
+                <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
+                  {parsedData.problem}
+                </pre>
+              </div>
             </div>
-          </div>
-        </section>
-      )}
-</div>
+          </section>
+        )}
+      </div>
       
       {/* Approach Section */}
-       <section className={`content-section approach-section ${theme}`}>
+      <section className={`content-section approach-section ${theme}`}>
         <div className="case-study-container">
           <h2 className={`case-title ${theme}`}>My Approach</h2>
           
@@ -169,105 +173,93 @@ const parseAboutText = (about) => {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
-
-
-
-  
-
-
-{/* Property Gallery Section */}
-{caseStudy.propertyImages && (
-  <section className={`property-gallery-section ${theme}`}>
-    <div className="case-study-container">
-      <h2 className={`case-title product-line-title ${theme}`}>Product Lines</h2>
-      <p className={`gallery-intro ${theme}`}>
-        Each property was designed to serve a specific traveler persona with tailored amenities and experiences.
-      </p>
-      
-      {caseStudy.propertyImages.map((propertyType, index) => (
-        <div key={index} className={`property-category ${theme}`}>
-          <h3 className={`property-category-title ${theme}`}>{propertyType.category}</h3>
-          
-          <div className="property-images-grid">
-            {propertyType.images.map((image, imgIndex) => (
-              <div key={imgIndex} className={`property-image-card ${theme}`}>
-                <img 
-                  src={image.src} 
-                  alt={image.caption}
-                  className="property-image"
-                />
-               
+      {/* Property Gallery Section */}
+      {caseStudy.propertyImages && (
+        <section className={`property-gallery-section ${theme}`}>
+          <div className="case-study-container">
+            <h2 className={`case-title product-line-title ${theme}`}>Product Lines</h2>
+            <p className={`gallery-intro ${theme}`}>
+              Each property was designed to serve a specific traveler persona with tailored amenities and experiences.
+            </p>
+            
+            {caseStudy.propertyImages.map((propertyType, index) => (
+              <div key={index} className={`property-category ${theme}`}>
+                <h3 className={`property-category-title ${theme}`}>{propertyType.category}</h3>
+                
+                <div className="property-images-grid">
+                  {propertyType.images.map((image, imgIndex) => (
+                    <div key={imgIndex} className={`property-image-card ${theme}`}>
+                      <img 
+                        src={image.src} 
+                        alt={image.caption}
+                        className="property-image"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
-        </div>
-      ))}
-    </div>
-  </section>
-)}
+        </section>
+      )}
 
-<div className="big-section-container">
- 
-
-
-
-{/* Key Decisions Section */}
-{parsedData.keyDecisions && (
-  <section className={`content-section key-decisions ${theme}`}>
-    <div className="case-study-container">
-      <h2 className={`case-title ${theme}`}>Key Decisions</h2>
-      <div className={`content-text approach-card ${theme}`}>
-        {parsedData.keyDecisions.split('\n').map((line, index) => (
-          <p key={index} className={
-            line.trim().startsWith('•') ? 'subsection-bullet' : ''
-          }>
-            {line}
-          </p>
-        ))}
-      </div>
-    </div>
-  </section>
-)}
-
-     
-      {/* Key Results */}
-      {parsedData.keyResults.length > 0 && (
-        <section className={`key-results-section ${theme}`}>
-          <div className="case-study-container">
-            <h2 className={`case-title keyoutcome-title ${theme}`}>Key Outcomes</h2>
-            <div className="results-grid key-outcomes-grid">
-              {parsedData.keyResults.map((result, index) => (
-                <div key={index} className={`result-card ${theme}`}>
-                  <div className="result-content">{result}</div>
-                </div>
-              ))}
+      <div className="big-section-container">
+        {/* Key Decisions Section */}
+        {parsedData.keyDecisions && (
+          <section className={`content-section key-decisions ${theme}`}>
+            <div className="case-study-container">
+              <h2 className={`case-title ${theme}`}>Key Decisions</h2>
+              <div className={`content-text approach-card ${theme}`}>
+                {parsedData.keyDecisions.split('\n').map((line, index) => (
+                  <p key={index} className={
+                    line.trim().startsWith('•') ? 'subsection-bullet' : ''
+                  }>
+                    {line}
+                  </p>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
+           
+        {/* Key Results */}
+        {parsedData.keyResults.length > 0 && (
+          <section className={`key-results-section ${theme}`}>
+            <div className="case-study-container">
+              <h2 className={`case-title keyoutcome-title ${theme}`}>Key Outcomes</h2>
+              <div className="results-grid key-outcomes-grid">
+                {parsedData.keyResults.map((result, index) => (
+                  <div key={index} className={`result-card ${theme}`}>
+                    <div className="result-content">{result}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
-      {/* Learning Outcomes */}
-      {parsedData.learnings && (
-        <section className={`content-section learning-outcomes ${theme}`}>
-          <div className="case-study-container">
-            <h2 className={`case-title ${theme}`}>Learning Outcomes</h2>
-             <div className={`content-text approach-card ${theme}`}>
-        {parsedData.learnings.split('\n').map((line, index) => (
-          <p key={index} className={
-            line.trim().startsWith('•') ? 'subsection-bullet' : ''
-          }>
-            {line}
-          </p>
-        ))}
+        {/* Learning Outcomes */}
+        {parsedData.learnings && (
+          <section className={`content-section learning-outcomes ${theme}`}>
+            <div className="case-study-container">
+              <h2 className={`case-title ${theme}`}>Learning Outcomes</h2>
+              <div className={`content-text approach-card ${theme}`}>
+                {parsedData.learnings.split('\n').map((line, index) => (
+                  <p key={index} className={
+                    line.trim().startsWith('•') ? 'subsection-bullet' : ''
+                  }>
+                    {line}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </div>
-          </div>
-        </section>
-      )}
-</div>
+      
       {/* Tech Stack */}
       {caseStudy.stack && caseStudy.stack.length > 0 && (
         <section className={`content-section tools-methods-section ${theme}`}>

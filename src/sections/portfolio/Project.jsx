@@ -4,6 +4,7 @@ import PortfolioCard from "./PortfolioCard";
 
 
 const Project = ({ project, theme, onCardClick }) => {
+  console.log("Project", project)
   return (
     <PortfolioCard
       project={project}

@@ -9,12 +9,25 @@ import { useRef, useEffect } from "react";
 import { useTheme } from "./sections/customHooks/localStorage";
 import GoogleAnalytics from "./GoogleAnalytics";
 import { Analytics } from "@vercel/analytics/react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import CaseStudyDetail from "./sections/portfolio/CaseStudyDetail";
+
+// Simple Test Component
+const SimpleTest = () => {
+  return (
+    <div style={{ padding: '2rem', background: 'yellow', minHeight: '100vh' }}>
+      <h1>🎉 ROUTE TEST WORKS!</h1>
+      <p>This proves that React Router is working correctly.</p>
+      <p>The case study navigation should work too.</p>
+      <a href="/">← Go back to home</a>
+    </div>
+  );
+};
 
 // Home Page Component - defined OUTSIDE of App function
 const HomePage = ({ theme, setTheme, refs, scrollToSection, scrollToSectionById }) => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Debug: Log all available refs
@@ -86,8 +99,29 @@ const HomePage = ({ theme, setTheme, refs, scrollToSection, scrollToSectionById 
     }
   }, [refs, location, scrollToSection]);
 
+  // ADD TEST BUTTON
+  const testCaseStudyNavigation = () => {
+    console.log('🚀 Test button clicked - navigating to case study');
+    navigate('/case-study/16');
+  };
+
   return (
     <>
+      {/* ADD THIS TEST BUTTON */}
+      <div style={{
+        position: 'fixed',
+        top: '10px',
+        right: '10px',
+        zIndex: 9999,
+        background: 'red',
+        color: 'white',
+        padding: '10px',
+        borderRadius: '5px',
+        cursor: 'pointer'
+      }} onClick={testCaseStudyNavigation}>
+        🧪 TEST: Go to Case Study
+      </div>
+
       <Header theme={theme} ref={refs.headerRef} />
       <Skills theme={theme} ref={refs.skillsRef} />
       <About theme={theme} />
@@ -199,6 +233,11 @@ function App() {
                 scrollToSectionById={scrollToSectionById}
               />
             } 
+          />
+          {/* ADD TEST ROUTE */}
+          <Route 
+            path="/test" 
+            element={<SimpleTest />} 
           />
           <Route 
             path="/case-study/:id" 

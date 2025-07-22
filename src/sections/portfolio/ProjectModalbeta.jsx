@@ -148,7 +148,7 @@ ProjectModalbeta.propTypes = {
     image: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
     about: PropTypes.string.isRequired,
-    demo: PropTypes.string.isRequired,
+    demo: PropTypes.string,
     github: PropTypes.string.isRequired,
     stack: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,

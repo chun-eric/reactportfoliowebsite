@@ -1,3 +1,4 @@
+// Updated skills data with Learning Experience Designer focus
 import html from '../../assets/logos/png/html-5-min.png'
 import css from '../../assets/logos/png/css-min.png'
 import javascript from '../../assets/logos/png/js-min.png'
@@ -7,8 +8,8 @@ import wordpress from '../../assets/logos/png/wordpress-min.png'
 import git from '../../assets/logos/png/git-min.png'
 import tailwind from '../../assets/logos/png/tailwind-min.png'
 import react from '../../assets/logos/png/react-icon-min.png'
-import nextjs from '../../assets/logos/png/nextjs-min.png' // You'll need this
-import typescript from '../../assets/logos/png/typescript-min.png' // You'll need this
+import nextjs from '../../assets/logos/png/nextjs-min.png'
+import typescript from '../../assets/logos/png/typescript-min.png'
 import youtube from '../../assets/icons/youtube.png'
 import seo from '../../assets/icons/seo_icon.png'
 import genai from '../../assets/icons/gen_ai.png'
@@ -17,126 +18,153 @@ import content from '../../assets/icons/content_icon.png'
 import ga from '../../assets/icons/ga.png'
 import video from '../../assets/icons/video.png'
 import api from '../../assets/icons/api.png'
-// You'll need to add these icons or create placeholder ones
 import projectMgmt from '../../assets/icons/project-mgmt.png'
 import abTesting from '../../assets/icons/ab-testing.png'
 import userResearch from '../../assets/icons/user-research.png'
 
-
+// Reorganized skills data with Learning Experience Designer focus
 const skillsData = {
-  productStrategy:[
+  learningDesign: [
     {
       id: 1,
-      title: 'Project Management',
-      src: projectMgmt,
-      category: 'strategy'
+      title: 'Instructional Design',
+      src: content, // Use content icon or create new one
+      category: 'learning',
+      description: 'ADDIE Methodology, Bloom\'s Taxonomy'
     },
     {
       id: 2,
-      title: 'Content Strategy',
-      src: content,
-      category: 'strategy'
+      title: 'Learning Analytics',
+      src: ga,
+      category: 'learning',
+      description: 'Outcome Measurement & Optimization'
     },
     {
       id: 3,
-      title: 'User Research',
-      src: userResearch,
-      category: 'strategy'
+      title: 'Educational Content',
+      src: video,
+      category: 'learning',
+      description: 'Multimedia Learning Design'
     },
     {
       id: 4,
-      title: 'A/B Testing',
+      title: 'Assessment Design',
       src: abTesting,
-      category: 'strategy'
-    }
-  ],
-  growthMarketing: [
-    {
-      id: 5,
-      title: 'Google Analytics',
-      src: ga,
-      category: 'growth'
+      category: 'learning',
+      description: 'Learning Evaluation & Testing'
     },
     {
+      id: 5,
+      title: 'Cross-Cultural Design',
+      src: userResearch,
+      category: 'learning',
+      description: 'Global Learning Experiences'
+    }
+  ],
+  technicalProduct: [
+    {
       id: 6,
-      title: 'YouTube Growth',
-      src: youtube,
-      category: 'growth'
+      title: 'Frontend Development',
+      src: react,
+      category: 'technical',
+      description: 'React, TypeScript, Next.js'
     },
     {
       id: 7,
-      title: 'SEO',
-      src: seo,
-      category: 'growth'
+      title: 'Product Management',
+      src: projectMgmt,
+      category: 'technical',
+      description: 'User Research & Strategy'
     },
     {
       id: 8,
-      title: 'Video Production',
-      src: video,
-      category: 'growth'
-    }
-  ],
-  technical: [
-    {
-      id: 9,
-      title: 'React',
-      src: react,
-      category: 'technical'
+      title: 'Performance Optimization',
+      src: ga,
+      category: 'technical',
+      description: 'Analytics & A/B Testing'
     },
     {
+      id: 9,
+      title: 'Platform Development',
+      src: wordpress,
+      category: 'technical',
+      description: 'Educational Platform Architecture'
+    }
+  ],
+  implementation: [
+    {
       id: 10,
-      title: 'Next.js',
-      src: nextjs,
-      category: 'technical'
+      title: 'React Development',
+      src: react,
+      category: 'tools',
+      description: 'Modern Frontend Framework'
     },
     {
       id: 11,
-      title: 'TypeScript',
-      src: typescript,
-      category: 'technical'
+      title: 'Design Systems',
+      src: figma,
+      category: 'tools',
+      description: 'Figma, UI/UX Design'
     },
     {
       id: 12,
-      title: 'JavaScript',
-      src: javascript,
-      category: 'technical'
-    }
-  ],
-  toolsDesign: [
+      title: 'Content Management',
+      src: wordpress,
+      category: 'tools',
+      description: 'WordPress, CMS Development'
+    },
     {
       id: 13,
-      title: 'Figma',
-      src: figma,
-      category: 'tools'
+      title: 'AI Integration',
+      src: genai,
+      category: 'tools',
+      description: 'Generative AI for Learning'
     },
     {
       id: 14,
-      title: 'WordPress',
-      src: wordpress,
-      category: 'tools'
+      title: 'SEO & Growth',
+      src: seo,
+      category: 'tools',
+      description: 'Educational Content Discovery'
     },
     {
       id: 15,
-      title: 'Generative AI',
-      src: genai,
-      category: 'tools'
-    },
-    {
-      id: 16,
-      title: 'API Integration',
+      title: 'API Development',
       src: api,
-      category: 'tools'
+      category: 'tools',
+      description: 'System Integration'
     }
   ]
 }
 
-// flatten component
+// Category configuration with Learning Experience Designer focus
+const categoryConfig = {
+  learning: {
+    title: "🎓 Learning Experience Design",
+    subtitle: "Systematic instructional design with proven outcomes",
+    order: 1,
+    highlight: true
+  },
+  technical: {
+    title: "💻 Technical Product Development", 
+    subtitle: "Full-stack capability from design to implementation",
+    order: 2,
+    highlight: false
+  },
+  tools: {
+    title: "🛠️ Implementation & Tools",
+    subtitle: "Modern platforms and optimization systems",
+    order: 3,
+    highlight: false
+  }
+}
+
+// Flatten all skills for the existing component logic
 const data = [
-  ...skillsData.productStrategy,
-  ...skillsData.growthMarketing,
-  ...skillsData.technical,
-  ...skillsData.toolsDesign,
+  ...skillsData.learningDesign,
+  ...skillsData.technicalProduct,
+  ...skillsData.implementation,
 ]
 
-
-export default data
+export default data;
+export { skillsData, categoryConfig };

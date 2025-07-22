@@ -10,7 +10,7 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
   const closeModal = () => setShowModal(false);
 
   // Check if its a case study
-  const isCaseStudy = project.category && project.category.includes("Case Study")
+  const isCaseStudy = project.category && project.category === "Case Study"
 
   // Check if demo exists and is valid
   const hasValidDemo = project.demo && 
@@ -63,7 +63,7 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
             <p className='card-description'>{project.desc}</p>
             <div className='button-card-container'>
               {/* Only show demo button if there's a valid demo */}
-              {hasValidDemo && (
+             {hasValidDemo && (
                 <button className='btn button-card demo'>
                   <p>
                     <a
@@ -89,7 +89,7 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
       </div>
 
        {/* Only show modal for non-case-study projects */}
-      {!isCaseStudy && (
+     {!isCaseStudy && (
         <ProjectModalbeta
           project={project}
           onClose={closeModal}
@@ -112,6 +112,7 @@ PortfolioCard.propTypes = {
     stack: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
   theme: PropTypes.string.isRequired,
+  onCardClick: PropTypes.func, // Added missing prop type
 };
 
 export default PortfolioCard;

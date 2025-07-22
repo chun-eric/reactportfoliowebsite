@@ -6,60 +6,79 @@ import ProjectsCategories from "./ProjectsCategories";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 
-
-
 const Portfolio = forwardRef((props, ref) => {
   const [projects, setProjects] = useState(data);
-    const [selectedProject, setSelectedProject] = useState(null); 
-
-  const categories = [ 'All',
-  'Case Studies',
-  'HTML Email',
-  'Frontend',
-  'Landing Pages',
-  'In Development...',
-  'Fullstack',
-  'Wordpress'];
-  
+  const [selectedProject, setSelectedProject] = useState(null); 
   const navigate = useNavigate()
 
-  const filterProjectsHandler = (category) => {
-    if (category === "All") {
+  const CATEGORY_LABELS = {
+    'all': 'All',
+    'case_studies': 'Case Studies',
+    'html_email': 'HTML Email',
+    'frontend': 'Frontend',
+    'landing_pages': 'Landing Pages',
+    'in_development': 'In Development...',
+    'fullstack': 'Fullstack',
+    'wordpress': 'WordPress'
+  };
+
+  // Use Object.values for button display names
+  const categories = Object.values(CATEGORY_LABELS);
+  console.log("Categories", categories);  
+
+  // Create reverse mapping: display name -> data category
+  const DISPLAY_TO_DATA = {};
+  Object.entries(CATEGORY_LABELS).forEach(([dataCategory, displayName]) => {
+    DISPLAY_TO_DATA[displayName] = dataCategory;
+  });
+
+  const filterProjectsHandler = (displayCategory) => {
+    console.log("Filter called with display category:", displayCategory);
+    
+    // Convert display name back to data category
+    const dataCategory = DISPLAY_TO_DATA[displayCategory];
+    console.log("Converted to data category:", dataCategory);
+    
+    if (dataCategory === "all") {
       setProjects(data);
-    } else if (category === "Case Studies") {
-      // Filter for case studies
-      setProjects(data.filter((project) => project.category.includes("Case Studies")));
+      return;
+    }
+    
+    const filteredProjects = data.filter(project => {
+      console.log(`Comparing: project.category (${project.category}) === dataCategory (${dataCategory})`);
+      return project.category === dataCategory;
+    });
+    
+    console.log("Filtered projects:", filteredProjects);
+    setProjects(filteredProjects);
+  };
+
+  const handleCardClick = (item) => {
+    console.log("Card clicked, category:", item.category);
+    
+    if (item.category === "case_studies") {
+      navigate(`/case-study/${item.id}`);
     } else {
-      setProjects(data.filter((project) => project.category === category));
+      setSelectedProject(item);
     }
   };
 
-
-  // Case study click and routing
-  const handleCardClick = (item) => {
-    if (item.category && item.category.includes("Case Study")) {
-      navigate(`/case-study/${item.id}`)
-    } else {
-      setSelectedProject(item)
-    }
-  }
-
-
   const { theme } = props;
 
-  
   return (
     <section id='portfolio' className={theme} ref={ref}>
-<div className={`portfolio-overlay ${theme}`}></div>
+      <div className={`portfolio-overlay ${theme}`}></div>
       <div className='portfolio-content'>
         <div className='skills-title'>
-          <h3 className={`title ${theme}`}>Projects</h3>
+          <h3 className={`title project-title ${theme}`}>Projects</h3>
         </div>
+        
         <ProjectsCategories
-          categories={categories}
+          categories={categories} // This is now ['All', 'Case Studies', 'HTML Email', ...]
           onFilterProjects={filterProjectsHandler}
           theme={theme}
         />
+        
         <div className={`container portfolio__container ${theme}`}>
           <Projects 
             projects={projects} 

@@ -36,7 +36,7 @@ const data = [
   // Keep ALL your existing data exactly as is - no changes needed
   {
     id: 1,
-    category: 'HTML Email',
+    category: 'html_email',
     image: Image1,
     title: 'Japan Bliss',
     desc: 'A newsletter email for a Japanese travel sightseeing newsletter.',
@@ -48,7 +48,7 @@ const data = [
   },
   {
     id: 2,
-    category: 'HTML Email',
+    category: 'html_email',
     image: Image2,
     title: '8-Bits',
     desc: 'A newsletter email for a NFT Crypto specialising in 8-Bit Art.',
@@ -60,7 +60,7 @@ const data = [
   },
   {
     id: 3,
-    category: 'HTML Email',
+    category: 'html_email',
     image: Image3,
     title: 'Sleek Furniture',
     desc: 'A promotional email for an upmarket modern furniture store.',
@@ -72,7 +72,7 @@ const data = [
   },
   {
     id: 4,
-    category: 'HTML Email',
+    category: 'html_email',
     image: Image4,
     title: 'Chic Estate',
     desc: 'A promotional email for an E-commerce fashion store.',
@@ -84,7 +84,7 @@ const data = [
   },
   {
     id: 5,
-    category: 'HTML Email',
+    category: 'html_email',
     image: Image5,
     title: 'Shoe Maven',
     desc: 'A transactional email for an E-commerce shore store.',
@@ -96,7 +96,7 @@ const data = [
   },
   {
     id: 6,
-    category: 'HTML Email',
+    category: 'html_email',
     image: Image6,
     title: 'Streamify',
     desc: 'A transactional email for an music streaming store.',
@@ -108,7 +108,7 @@ const data = [
   },
   {
     id: 7,
-    category: 'Frontend',
+    category: 'frontend',
     image: Image7,
     title: 'React Portfolio Website',
     desc: 'A React Frontend website showcasing my portfolio and projects.',
@@ -130,7 +130,7 @@ const data = [
   },
   {
     id: 8,
-    category: 'Frontend',
+    category: 'frontend',
     image: Image8,
     title: 'La Trattoria',
     desc: 'A highend Italian restaurant website in the heart of Osaka, Japan.',
@@ -156,7 +156,7 @@ const data = [
   // },
   {
     id: 10,
-    category: 'Landing Pages',
+    category: 'landing_pages',
     image: Image10,
     title: 'Osaka Hometown',
     desc: 'A custom designed landing page for my hometown of Osaka.',
@@ -170,7 +170,7 @@ const data = [
   },
   {
     id: 11,
-    category: 'In Development...',
+    category: 'in_development',
     image: Image11,
     title: 'OkinawaMee',
     desc: 'A custom designed E-Commerce store selling Okinawa Kariyushi Hawaiian Shirts. (Still In Development)',
@@ -184,7 +184,7 @@ const data = [
   },
   {
     id: 12,
-    category: 'In Development...',
+    category: 'in_development',
     image: Image12,
     title: 'What The Hack',
     desc: 'A custom designed News Website that grabs the latest news from a REST API. (Still In Development)',
@@ -198,7 +198,7 @@ const data = [
   },
   {
     id: 13,
-    category: 'Frontend',
+    category: 'frontend',
     image: Image13,
     title: 'Bazaar',
     desc: 'A modern fashion e-commerce platform delivering seamless shopping experiences with stunning aesthetics and fast performance.',
@@ -212,7 +212,7 @@ const data = [
   },
   {
     id: 14,
-    category: 'Fullstack',
+    category: 'fullstack',
     image: Image14,
     title: 'Van Life',
     desc: 'A modern Van rental website that allows users to search and book vans for their next adventure trip.',
@@ -229,7 +229,7 @@ const data = [
   },
   {
     id: 15,
-    category: 'Wordpress',
+    category: 'wordpress',
     image: Image15,
     title: 'Attira Fashion',
     desc: 'A fashion ecommerce store for professional working women focusing on simplicity and elegance.',
@@ -256,7 +256,7 @@ const data = [
 
 {
   id: 16,
-  category: 'Case Studies',
+  category: 'case_studies',
   image: Image16,
   title: 'Cozy Stayz',
   desc: 'A new hospitality product developed for an underserved niche in Osaka.',
@@ -366,7 +366,7 @@ const data = [
 },
   {
     id: 17,
-    category: 'Case Studies', // Move English PhraseCamp here as a case study
+    category: 'case_studies', // Move English PhraseCamp here as a case study
     image: Image9,
     title: 'English PhraseCamp',
     desc: 'Building & scaling an Education channel from 0 to 80K subscribers.',

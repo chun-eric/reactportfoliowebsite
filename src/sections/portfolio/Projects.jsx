@@ -5,14 +5,14 @@ import PropTypes from "prop-types";
 // we need to render a single project component
 const Projects = ({ projects, theme, onCardClick  }) => {
   console.log('Project component - onCardClick received:', !!onCardClick);
-  return (
+return (
     <div className='portfolio__projects'>
       {projects.map((project, index) => (
         <Project
           key={project.id}
           project={project}
           theme={theme}
-          aosDeloy={index * 100}
+          aosDelay={index * 100} // <-- CORRECTED TYPO: "Delay" instead of "Deloy"
           onCardClick={onCardClick}
         />
       ))}
