@@ -10,7 +10,7 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
   const closeModal = () => setShowModal(false);
 
   // Check if its a case study
-  const isCaseStudy = project.category && project.category === "Case Study"
+  const isCaseStudy = project.category && project.category === "case_studies"
 
   // Check if demo exists and is valid
   const hasValidDemo = project.demo && 

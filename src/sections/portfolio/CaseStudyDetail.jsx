@@ -8,7 +8,7 @@ const CaseStudyDetail = ({ theme }) => {
   
   // FIXED: Use === instead of includes() for string comparison
   const caseStudy = data.find(item => 
-    item.id === parseInt(id) && item.category === "Case Studies"
+    item.id === parseInt(id) && item.category === "case_studies"
   );
 
   if (!caseStudy) {
@@ -19,7 +19,7 @@ const CaseStudyDetail = ({ theme }) => {
           <p>ID: {id}</p>
           <p>Available case studies:</p>
           <ul>
-            {data.filter(item => item.category === "Case Studies").map(item => (
+            {data.filter(item => item.category === "case_studies").map(item => (
               <li key={item.id}>ID: {item.id}, Title: {item.title}</li>
             ))}
           </ul>
