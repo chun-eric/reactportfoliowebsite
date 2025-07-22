@@ -82,9 +82,12 @@ const Skills = forwardRef((prop, ref) => {
                       isIntersecting ? "visible" : ""
                     }`}
                   >
+                  <div className="">
+                    <span>{config.icon}</span>
                     <h4 className={`column-title ${theme}`}>
                       {config.title}
                     </h4>
+                  </div>
                     <p className={`column-subtitle ${theme}`}>
                       {config.subtitle}
                     </p>
@@ -115,9 +118,12 @@ const Skills = forwardRef((prop, ref) => {
                             />
                           </div>
                           <div className="skill-content">
+                          <div className="">
+                            {/* <span className="">{skill.icon}</span> */}
                             <span className={`skill-name ${theme}`}>
                               {skill.title}
                             </span>
+                          </div>
                             {skill.description && (
                               <span className={`skill-description ${theme}`}>
                                 {skill.description}

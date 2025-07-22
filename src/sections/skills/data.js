@@ -140,19 +140,22 @@ const skillsData = {
 // Category configuration with Learning Experience Designer focus
 const categoryConfig = {
   learning: {
-    title: "🎓 Learning Experience Design",
+    icon: "🎓",
+    title: "Learning Experience Design",
     subtitle: "Systematic instructional design with proven outcomes",
     order: 1,
     highlight: true
   },
   technical: {
-    title: "💻 Technical Product Development", 
+      icon: "💻",
+    title: "Technical Product Development", 
     subtitle: "Full-stack capability from design to implementation",
     order: 2,
     highlight: false
   },
   tools: {
-    title: "🛠️ Implementation & Tools",
+      icon: "🛠️",
+    title: "Implementation & Tools",
     subtitle: "Modern platforms and optimization systems",
     order: 3,
     highlight: false
