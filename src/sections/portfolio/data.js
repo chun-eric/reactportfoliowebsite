@@ -190,6 +190,8 @@ const data = [
     desc: 'A custom designed News Website that grabs the latest news from a REST API. (Still In Development)',
     about:
       'What The Hack is a News Website made with React and Tailwind CSS currently in development. The goal of building this news website is to showcase the latest news from around the world via a REST API. I tried to build something that showcases how a website would grab information from a lot of different REST APIs endpoints and then display it in a user-friendly way.  \n\n' +
+      "\n\n" +
+       'Also embedded in the website is an instructional design for users to guide them to take the right course of action during a cyber breach.  \n\n' +
       ' \n\n' +
       'What The Hack News is still a work in progress.',
     demo: 'https://what-the-hack-news.vercel.app//',
