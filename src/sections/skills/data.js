@@ -67,7 +67,7 @@ const skillsData = {
       title: 'Frontend Web Development',
       src: react,
       category: 'technical',
-      description: 'React, TypeScript, Next.js'
+      description: 'React, JavaScript, TypeScript, Next.js'
     },
     {
       id: 7,

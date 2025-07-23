@@ -403,7 +403,7 @@ const data = [
   ,
   demo: null, // Changed from 'none' to null
   github: 'n/a',
-  stack: ['Product Strategy', 'Market Research', 'User Segmentation',  'A/B Testing', 'Stakeholder Management'] // Added missing stack
+  stack: ['Product Strategy', 'Market Research', 'User Segmentation',  'A/B Testing', 'Stakeholder Management', 'Needs Analysis' , "User Journey Mapping" , "Persona Development", "Feedback Collection", "Iterative Design" , "Performance Measurement", "Learning Design"] // Added missing stack
 },
   {
     id: 17,

@@ -73,7 +73,7 @@ const CaseStudyDetail = ({ theme }) => {
     );
   }
 
-  // Parse the about text to extract structured information
+
 // Parse the about text to extract structured information
 const parseAboutText = (about) => {
   const sections = about.split('\n\n');
@@ -93,7 +93,7 @@ const parseAboutText = (about) => {
     parsed.keyResults = resultLines.map(line => line.replace('•', '').trim());
   }
 
-  // FIXED: Better section extraction that gets all content between markers
+  // Gets all content between markers
   const extractSection = (startMarker, endMarkers = []) => {
     const startIndex = about.indexOf(startMarker);
     if (startIndex === -1) return '';
@@ -108,7 +108,6 @@ const parseAboutText = (about) => {
         break;
       }
     }
-    
     return content.trim();
   };
 
@@ -118,17 +117,12 @@ const parseAboutText = (about) => {
   parsed.productStrategy = extractSection('2. PRODUCT STRATEGY DEVELOPMENT', ['3. FEATURE PRIORITIZATION']);
   parsed.implementation = extractSection('3. FEATURE PRIORITIZATION & IMPLEMENTATION', ['4. MARKETING STRATEGY']);
   parsed.marketingStrategy = extractSection('4. MARKETING STRATEGY:', ['5. INSTRUCTIONAL DESIGN']);
-  
-  // FIXED: Get all instructional design content
   parsed.instructionStrategy = extractSection('5. INSTRUCTIONAL DESIGN:', ['KEY DECISIONS:', 'EXPECTED OUTCOMES:', 'LEARNING OUTCOMES:']);
-  
   parsed.keyDecisions = extractSection('KEY DECISIONS:', ['EXPECTED OUTCOMES:', 'LEARNING OUTCOMES:']);
   parsed.learnings = extractSection('LEARNING OUTCOMES:', []);
 
   return parsed;
 };
-
-
 
   const parsedData = parseAboutText(caseStudy.about);
 
@@ -155,7 +149,6 @@ const parseAboutText = (about) => {
     }
   ];
 
-    // Add this right after const parsedData = parseAboutText(caseStudy.about);
 
 
   return (
