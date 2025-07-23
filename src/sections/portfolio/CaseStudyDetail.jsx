@@ -74,36 +74,61 @@ const CaseStudyDetail = ({ theme }) => {
   }
 
   // Parse the about text to extract structured information
-  const parseAboutText = (about) => {
-    const sections = about.split('\n\n');
-    const parsed = {
-      summary: sections[0] || '',
-      role: about.match(/ROLE: ([^\n]+)/)?.[1] || '',
-      duration: about.match(/DURATION: ([^\n]+)/)?.[1] || '',
-      scope: about.match(/SCOPE: ([^\n]+)/)?.[1] || '',
-      keyResults: [],
-      details: ''
-    };
-
-    // Extract key results if they exist
-    const resultsSection = sections.find(section => section.includes('EXPECTED OUTCOMES:'));
-    if (resultsSection) {
-      const resultLines = resultsSection.split('\n').filter(line => line.startsWith('•'));
-      parsed.keyResults = resultLines.map(line => line.replace('•', '').trim());
-    }
-
-    // Get sections - fixed to properly extract each section
-    parsed.problem = sections.find(section => section.includes('THE PROBLEM:'))?.replace('THE PROBLEM:', '').trim() || '';
-    parsed.approach = sections.find(section => section.includes('MY APPROACH:'))?.replace('MY APPROACH:', '').trim() || '';
-    parsed.productStrategy = sections.find(section => section.includes('2. PRODUCT STRATEGY DEVELOPMENT'))?.replace('2. PRODUCT STRATEGY DEVELOPMENT', '').trim() || '';
-    parsed.implementation = sections.find(section => section.includes('3. FEATURE PRIORITIZATION & IMPLEMENTATION'))?.replace('3. FEATURE PRIORITIZATION & IMPLEMENTATION', '').trim() || '';
-    parsed.marketingStrategy = sections.find(section => section.includes('4. MARKETING STRATEGY:'))?.replace('4. MARKETING STRATEGY:', '').trim() || '';
-    parsed.instructionStrategy = sections.find(section => section.includes('5. INSTRUCTIONAL DESIGN:'))?.replace('5. INSTRUCTIONAL DESIGN:', '').trim() || '';
-    parsed.keyDecisions = sections.find(section => section.includes('KEY DECISIONS:'))?.replace('KEY DECISIONS:', '').trim() || '';
-    parsed.learnings = sections.find(section => section.includes('LEARNING OUTCOMES:'))?.replace('LEARNING OUTCOMES:', '').trim() || '';
-
-    return parsed;
+// Parse the about text to extract structured information
+const parseAboutText = (about) => {
+  const sections = about.split('\n\n');
+  const parsed = {
+    summary: sections[0] || '',
+    role: about.match(/ROLE: ([^\n]+)/)?.[1] || '',
+    duration: about.match(/DURATION: ([^\n]+)/)?.[1] || '',
+    scope: about.match(/SCOPE: ([^\n]+)/)?.[1] || '',
+    keyResults: [],
+    details: ''
   };
+
+  // Extract key results if they exist
+  const resultsSection = sections.find(section => section.includes('EXPECTED OUTCOMES:'));
+  if (resultsSection) {
+    const resultLines = resultsSection.split('\n').filter(line => line.startsWith('•'));
+    parsed.keyResults = resultLines.map(line => line.replace('•', '').trim());
+  }
+
+  // FIXED: Better section extraction that gets all content between markers
+  const extractSection = (startMarker, endMarkers = []) => {
+    const startIndex = about.indexOf(startMarker);
+    if (startIndex === -1) return '';
+    
+    let content = about.substring(startIndex + startMarker.length);
+    
+    // Find the next section marker to stop at
+    for (const endMarker of endMarkers) {
+      const endIndex = content.indexOf(endMarker);
+      if (endIndex !== -1) {
+        content = content.substring(0, endIndex);
+        break;
+      }
+    }
+    
+    return content.trim();
+  };
+
+  // Get sections with proper boundaries
+  parsed.problem = extractSection('THE PROBLEM:', ['MY APPROACH:', 'ROLE:']);
+  parsed.approach = extractSection('MY APPROACH:', ['2. PRODUCT STRATEGY DEVELOPMENT']);
+  parsed.productStrategy = extractSection('2. PRODUCT STRATEGY DEVELOPMENT', ['3. FEATURE PRIORITIZATION']);
+  parsed.implementation = extractSection('3. FEATURE PRIORITIZATION & IMPLEMENTATION', ['4. MARKETING STRATEGY']);
+  parsed.marketingStrategy = extractSection('4. MARKETING STRATEGY:', ['5. INSTRUCTIONAL DESIGN']);
+  
+  // FIXED: Get all instructional design content
+  parsed.instructionStrategy = extractSection('5. INSTRUCTIONAL DESIGN:', ['KEY DECISIONS:', 'EXPECTED OUTCOMES:', 'LEARNING OUTCOMES:']);
+  
+  parsed.keyDecisions = extractSection('KEY DECISIONS:', ['EXPECTED OUTCOMES:', 'LEARNING OUTCOMES:']);
+  parsed.learnings = extractSection('LEARNING OUTCOMES:', []);
+
+  return parsed;
+};
+
+
 
   const parsedData = parseAboutText(caseStudy.about);
 
@@ -129,6 +154,9 @@ const CaseStudyDetail = ({ theme }) => {
       content: parsedData.instructionStrategy
     }
   ];
+
+    // Add this right after const parsedData = parseAboutText(caseStudy.about);
+
 
   return (
     <div className={`case-study-detail ${theme}`} style={{ paddingTop: '100px' }}>
@@ -232,11 +260,18 @@ const CaseStudyDetail = ({ theme }) => {
             {approachSteps.map((step, index) => (
               <div key={index} className={`approach-card ${theme}`}>
                 <h3 className="approach-card-title">{step.title}</h3>
-                <div className="content-text">
-                  {step.content.split('\n').map((line, i) => (
-                    <p key={i}>{line}</p>
-                  ))}
-                </div>
+              <div className="content-text">
+            {/* FIXED: Use pre-wrap to preserve formatting */}
+            <pre style={{ 
+              whiteSpace: 'pre-wrap', 
+              fontFamily: 'inherit',
+              margin: 0,
+              fontSize: '1rem',
+              lineHeight: '1.7'
+            }}>
+              {step.content}
+            </pre>
+          </div>
               </div>
             ))}
           </div>

@@ -301,10 +301,10 @@ const data = [
   ],
  about: 'Led end-to-end product strategy for Cozy Stayz, transforming a generic vacation rental platform into a market-leading, persona-driven experience with three distinct product lines.\n\n' +
     
-    'ROLE: Head of Product Development and Operations\n' +
+    'ROLE: Head of Product Development, Instructional Design and Operations\n' +
     'DURATION: 6 years (2014-2020)\n' +
     'TEAM: 2 Co-founders, Administrative Assistant, Team of 6 Cleaners\n' +
-    'SCOPE: End-to-end product strategy and operations\n\n' +
+    'SCOPE: End-to-end product strategy, instructional design and operations\n\n' +
     'THE PROBLEM:\n' +
     '• Most short-term rentals in Osaka targeted individual travelers or couples\n' +
     '• Families and groups struggled to find suitable accommodations with proper amenities\n' +
@@ -338,12 +338,40 @@ const data = [
     '• Personalized emails helped retain customers by 30-40%\n\n' +
    
 
-    '5. INSTRUCTIONAL DESIGN:\n' +
-    '• Focused on underserved family and group segments rather than competing for individual travelers\n' +
-    '• Positioned Traditional Tatami Home as cultural experience, not just accommodation\n' +
-    '• Standardized amenities (full kitchen, dining space, WiFi) across all properties\n' +
-    '• Implemented dynamic pricing strategy based on seasonality and local events\n' +
-    '• Created detailed property guides and local recommendations for each target persona\n\n' +
+  '5. INSTRUCTIONAL DESIGN:\n' +
+'I treated each guest interaction as an instructional design opportunity, creating step-by-step learning experiences that helped customers succeed at every stage of their stay.\n\n' +
+
+'BEFORE ARRIVAL - SETTING EXPECTATIONS:\n' +
+'• Created clear booking confirmations that taught guests what to expect\n' +
+'• Sent helpful emails with essential information (not all at once to avoid overwhelm)\n' +
+'• Made simple visual guides showing how to find and enter the property\n' +
+'• Explained unique features so guests knew what made each property special\n\n' +
+
+'ARRIVAL & CHECK-IN - GETTING STARTED:\n' +
+'• Designed easy-to-follow check-in instructions with pictures and simple steps\n' +
+'• Created welcome materials that helped guests navigate the space safely\n' +
+'• Made simple guides for WiFi, keys, and any tech features\n' +
+'• Explained house rules in a friendly way that helped guests understand expectations\n\n' +
+
+'DURING STAY - ONGOING SUPPORT:\n' +
+'• Built helpful guides for using kitchen appliances, laundry, and entertainment\n' +
+'• Provided local recommendations and neighborhood information\n' +
+'• Created troubleshooting tips for common questions\n' +
+'• Gave guests information exactly when they needed it (not all upfront)\n\n' +
+
+'CHECKOUT & FOLLOW-UP - FINISHING STRONG:\n' +
+'• Made checkout instructions simple and clear\n' +
+'• Asked for feedback to understand what worked and what didn\'t\n' +
+'• Sent follow-up messages to encourage future bookings\n\n' +
+
+'HOW I APPLIED LEARNING PRINCIPLES:\n' +
+'• Right timing - Gave information when guests actually needed it\n' +
+'• Not too much at once - Broke information into small, manageable pieces\n' +
+'• Different formats - Used pictures and text for different learning styles\n' +
+'• Measured success - Tracked guest satisfaction to see if my approach worked\n' +
+'• Kept improving - Changed things based on guest feedback survey and what I learned\n\n' +
+
+'This approach to teaching customers resulted in 95% satisfaction rates, fewer support questions, and smoother operations across all properties.\n\n' +
 
 
     'KEY DECISIONS:\n' +
