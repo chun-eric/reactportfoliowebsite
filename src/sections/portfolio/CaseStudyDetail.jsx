@@ -98,7 +98,8 @@ const CaseStudyDetail = ({ theme }) => {
     parsed.productStrategy = sections.find(section => section.includes('2. PRODUCT STRATEGY DEVELOPMENT'))?.replace('2. PRODUCT STRATEGY DEVELOPMENT', '').trim() || '';
     parsed.implementation = sections.find(section => section.includes('3. FEATURE PRIORITIZATION & IMPLEMENTATION'))?.replace('3. FEATURE PRIORITIZATION & IMPLEMENTATION', '').trim() || '';
     parsed.marketingStrategy = sections.find(section => section.includes('4. MARKETING STRATEGY:'))?.replace('4. MARKETING STRATEGY:', '').trim() || '';
-    parsed.keyDecisions = sections.find(section => section.includes('KEY DECISIONS:'))?.replace('5. KEY DECISIONS:', '').trim() || '';
+    parsed.instructionStrategy = sections.find(section => section.includes('5. INSTRUCTIONAL DESIGN:'))?.replace('5. INSTRUCTIONAL DESIGN:', '').trim() || '';
+    parsed.keyDecisions = sections.find(section => section.includes('KEY DECISIONS:'))?.replace('KEY DECISIONS:', '').trim() || '';
     parsed.learnings = sections.find(section => section.includes('LEARNING OUTCOMES:'))?.replace('LEARNING OUTCOMES:', '').trim() || '';
 
     return parsed;
@@ -122,6 +123,10 @@ const CaseStudyDetail = ({ theme }) => {
     {
       title: '4. Marketing Strategy',
       content: parsedData.marketingStrategy
+    },
+       {
+      title: '5. Instructional Design',
+      content: parsedData.instructionStrategy
     }
   ];
 

@@ -338,12 +338,23 @@ const data = [
     '• Personalized emails helped retain customers by 30-40%\n\n' +
    
 
-     '5. KEY DECISIONS:\n' +
+    '5. INSTRUCTIONAL DESIGN:\n' +
     '• Focused on underserved family and group segments rather than competing for individual travelers\n' +
     '• Positioned Traditional Tatami Home as cultural experience, not just accommodation\n' +
     '• Standardized amenities (full kitchen, dining space, WiFi) across all properties\n' +
     '• Implemented dynamic pricing strategy based on seasonality and local events\n' +
     '• Created detailed property guides and local recommendations for each target persona\n\n' +
+
+
+    'KEY DECISIONS:\n' +
+    '• Focused on underserved family and group segments rather than competing for individual travelers\n' +
+    '• Positioned Traditional Tatami Home as cultural experience, not just accommodation\n' +
+    '• Standardized amenities (full kitchen, dining space, WiFi) across all properties\n' +
+    '• Implemented dynamic pricing strategy based on seasonality and local events\n' +
+    '• Created detailed property guides and local recommendations for each target persona\n\n' +
+
+  
+
     
     'EXPECTED OUTCOMES:\n' +
     '• Higher occupancy rates through targeted positioning\n' +
