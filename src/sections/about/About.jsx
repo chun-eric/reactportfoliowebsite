@@ -46,11 +46,11 @@ const About = ({ theme }) => {
             
 
             <p className={`bio-info ${theme}`}>
-              I'm seeking opportunities in edtech product development/leadership, instructional design, or learning experience roles where I can leverage and collaborate my unique combination of educational expertise, technical development skills, and organic marketing insights to build learning solutions that truly serve both learners and business objectives.
+              I'm seeking opportunities in edtech or ecommerce product development/leadership, instructional design, or learning experience roles where I can leverage and collaborate my unique combination of visual design, technical development skills, and organic marketing insights to build solutions that truly serve both learners and business objectives.
             </p>
 
              <p className={`bio-info ${theme}`}>
-When I'm not designing or building learning experiences, I'm either researching the latest edtech innovations or planning my next trip to Okinawa's pristine beaches.           </p>
+When I'm not designing or building user learning experiences, I'm either researching the latest tech innovations or planning my next trip to Okinawa's pristine beaches.           </p>
 
            
             <div className='button-container'>

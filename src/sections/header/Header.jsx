@@ -44,10 +44,10 @@ const Header = forwardRef((props, ref) => {
                     </span>
                   </h1>
                   <h3 className={`job ${theme}`}>
-  I design and develop educational experiences, grow learning communities, and build the technical infrastructure that supports them"               </h3>
+  I design and develop user learning experiences, grow communities, and build the technical infrastructure that supports them"               </h3>
                   <h4 className={`sub-hero-heading ${theme}`}>
                  
-                   Content Strategist | Instructional Designer | Frontend Developer
+                   Content Strategist & Producer | Instructional Designer | Developer 
                   </h4>
                   {/* <h4 className={`sub-hero-heading ${theme}`}>80K users grown • End-to-end execution <br/>• 10+ years experience</h4> */}
 
