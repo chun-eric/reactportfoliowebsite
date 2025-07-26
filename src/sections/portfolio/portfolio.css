@@ -429,3 +429,114 @@ h3.property-category-title {
   This is the corrected, more general rule. By removing ".skills-title",
   it now applies the underline to ANY element with the class ".project-title".
 */
+
+/* Problem Section - Custom Bullets */
+.content-section .problem-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.content-section .problem-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.content-section .problem-list li::before {
+  content: "•";
+  color: #007bff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Key Decisions - Custom Bullets */
+.key-decisions .decisions-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.key-decisions .decisions-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.key-decisions .decisions-list li::before {
+  content: "•";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Learning Outcomes - Custom Bullets */
+.learning-outcomes .learnings-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.learning-outcomes .learnings-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.learning-outcomes .learnings-list li::before {
+  content: "•";
+  color: #ffc107;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Approach Cards - Custom Bullets */
+.approach-card .content-text ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.approach-card .content-text li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.approach-card .content-text li::before {
+  content: "•";
+  color: #6c757d;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Dark mode bullet colors */
+.case-study-detail.dark .content-section .problem-list li::before {
+  color: #38bdf8;
+}
+
+.case-study-detail.dark .key-decisions .decisions-list li::before {
+  color: #4ade80;
+}
+
+.case-study-detail.dark .learning-outcomes .learnings-list li::before {
+  color: #fbbf24;
+}
+
+.case-study-detail.dark .approach-card .content-text li::before {
+  color: #94a3b8;
+}
