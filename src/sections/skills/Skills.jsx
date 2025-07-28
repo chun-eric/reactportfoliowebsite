@@ -140,13 +140,13 @@ const Skills = forwardRef((prop, ref) => {
           </div>
 
           {/* Proof Points Section */}
-          <div className={`proof-points fade-in ${
+          {/* <div className={`proof-points fade-in ${
             isIntersecting ? "visible" : ""
-          }`}>
-            <div className="proof-item">
+          }`}> */}
+            {/* <div className="proof-item">
               <span className="proof-number">80K</span>
               <span className="proof-label">Global Learners</span>
-            </div>
+            </div> */}
             {/* <div className="proof-item">
               <span className="proof-number">78%</span>
               <span className="proof-label">Retention Rate</span>
@@ -155,11 +155,11 @@ const Skills = forwardRef((prop, ref) => {
               <span className="proof-number">45%</span>
               <span className="proof-label">Confidence Improvement</span>
             </div> */}
-            <div className="proof-item">
+            {/* <div className="proof-item">
               <span className="proof-number">50+</span>
               <span className="proof-label">Countries Reached</span>
-            </div>
-          </div>
+            {/* </div> */}
+          {/* </div> */} 
         </div>
       </div>
     </section>

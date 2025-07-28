@@ -15,8 +15,9 @@ import seo from '../../assets/icons/seo_icon.png'
 import genai from '../../assets/icons/gen_ai.png'
 import prompt from '../../assets/icons/prompt.png'
 import content from '../../assets/icons/content_icon.png'
+import blog from '../../assets/icons/blogpost_icon.png'
 import ga from '../../assets/icons/ga.png'
-import video from '../../assets/icons/video.png'
+import video from '../../assets/icons/adobe_icon.png'
 import api from '../../assets/icons/api.png'
 import projectMgmt from '../../assets/icons/project-mgmt.png'
 import abTesting from '../../assets/icons/ab-testing.png'
@@ -35,9 +36,9 @@ const skillsData = {
     {
       id: 2,
       title: 'Blog Post Content Creation',
-      src: ga,
+      src: blog,
       category: 'learning',
-      description: 'SEO optimized content for easier discovery and learning'
+      description: 'Practical content to help students and learners'
     },
     {
       id: 3,
