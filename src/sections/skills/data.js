@@ -42,10 +42,10 @@ const skillsData = {
     },
     {
       id: 3,
-      title: 'Video Creation & Editing',
+      title: 'Video and Audio Creation & Editing',
       src: video,
       category: 'learning',
-      description: 'Adobe After Effects, Adobe Premiere Pro, Professional level Vyond'
+      description: 'Adobe After Effects, Adobe Premiere Pro, Professional level Vyond, Adobe Audition, Audacity'
     },
     {
       id: 4,
