@@ -24,7 +24,7 @@ const Portfolio = forwardRef((props, ref) => {
 
   // Use Object.values for button display names
   const categories = Object.values(CATEGORY_LABELS);
-  console.log("Categories", categories);  
+  // console.log("Categories", categories);  
 
   // Create reverse mapping: display name -> data category
   const DISPLAY_TO_DATA = {};
@@ -33,11 +33,11 @@ const Portfolio = forwardRef((props, ref) => {
   });
 
   const filterProjectsHandler = (displayCategory) => {
-    console.log("Filter called with display category:", displayCategory);
+    // console.log("Filter called with display category:", displayCategory);
     
     // Convert display name back to data category
     const dataCategory = DISPLAY_TO_DATA[displayCategory];
-    console.log("Converted to data category:", dataCategory);
+    // console.log("Converted to data category:", dataCategory);
     
     if (dataCategory === "all") {
       setProjects(data);
@@ -45,16 +45,16 @@ const Portfolio = forwardRef((props, ref) => {
     }
     
     const filteredProjects = data.filter(project => {
-      console.log(`Comparing: project.category (${project.category}) === dataCategory (${dataCategory})`);
+      // console.log(`Comparing: project.category (${project.category}) === dataCategory (${dataCategory})`);
       return project.category === dataCategory;
     });
     
-    console.log("Filtered projects:", filteredProjects);
+    // console.log("Filtered projects:", filteredProjects);
     setProjects(filteredProjects);
   };
 
   const handleCardClick = (item) => {
-    console.log("Card clicked, category:", item.category);
+    // console.log("Card clicked, category:", item.category);
     
     if (item.category === "case_studies") {
       navigate(`/case-study/${item.id}`);

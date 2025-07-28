@@ -23,21 +23,21 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
 
   // Handle details button click
   const handleDetailsClick = () => {
-    console.log('=== DEBUG: Details button clicked ===');
-  console.log('Project title:', project.title);
-  console.log('Project category:', project.category);
-  console.log('Is case study:', isCaseStudy);
-  console.log('onCardClick function exists:', !!onCardClick);
-  console.log('onCardClick type:', typeof onCardClick);
+  //   console.log('=== DEBUG: Details button clicked ===');
+  // console.log('Project title:', project.title);
+  // console.log('Project category:', project.category);
+  // console.log('Is case study:', isCaseStudy);
+  // console.log('onCardClick function exists:', !!onCardClick);
+  // console.log('onCardClick type:', typeof onCardClick);
   
   if (isCaseStudy && onCardClick) {
-    console.log('✅ About to call onCardClick for case study');
+    // console.log('✅ About to call onCardClick for case study');
     onCardClick(project);
-    console.log('✅ onCardClick called successfully');
+    // console.log('✅ onCardClick called successfully');
   } else {
-    console.log('❌ Opening modal instead because:');
-    console.log('   - isCaseStudy:', isCaseStudy);
-    console.log('   - onCardClick exists:', !!onCardClick);
+    // console.log('❌ Opening modal instead because:');
+    // console.log('   - isCaseStudy:', isCaseStudy);
+    // console.log('   - onCardClick exists:', !!onCardClick);
     openModal();
   }
   }
@@ -106,7 +106,7 @@ PortfolioCard.propTypes = {
     title: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
-    about: PropTypes.string.isRequired,
+    // about: PropTypes.string.isRequired,
     demo: PropTypes.string,
     github: PropTypes.string.isRequired,
     stack: PropTypes.arrayOf(PropTypes.string).isRequired,

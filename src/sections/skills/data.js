@@ -30,21 +30,21 @@ const skillsData = {
       title: 'Instructional Design',
       src: content, // Use content icon or create new one
       category: 'learning',
-      description: 'Developing Content & Learning experiences based off ADDIE Methodology, Bloom\'s Taxonomy'
+      description: 'Developing Content & Learning experiences based off ADDIE Methodology'
     },
     {
       id: 2,
       title: 'Blog Post Content Creation',
       src: ga,
       category: 'learning',
-      description: 'Making blog content easy to understand and practical for students'
+      description: 'SEO optimized content for easier discovery and learning'
     },
     {
       id: 3,
       title: 'Video Creation & Editing',
       src: video,
       category: 'learning',
-      description: 'Able to create and edit Professional level Vyond animation videos'
+      description: 'Adobe After Effects, Adobe Premiere Pro, Professional level Vyond'
     },
     {
       id: 4,

@@ -106,8 +106,34 @@ const data = [
     github: 'https://github.com/chun-eric/transactional_2',
     stack: ['HTML', 'CSS', 'Email on Acid', 'Photoshop', 'Figma']
   },
+    {
+    id: 8,
+    category: 'landing_pages',
+    image: Image10,
+    title: 'Osaka Hometown',
+    desc: 'A custom designed landing page for my hometown of Osaka.',
+    about:
+      "This landing page was part of an project with Scrimba's Professional Frontend Developer course with Mozilla Developer Network. The goal of this landing page was to showcase the uniqueness of my current hometown of Osaka. I used HTML, CSS, and JavaScript to create this landing page.\n\n" +
+      'The design of the landing page was created by me and also with the help of generative AI for specific images.\n\n' +
+      'I went a little overboard with this project, adding a sign-in and signup form, mobile side menu, featured cards and a responsive design.',
+    demo: 'https://hometown-osaka.vercel.app/',
+    github: 'https://github.com/chun-eric/hometown-osaka',
+    stack: ['HTML', 'CSS', 'JavaScript']
+  },
+    {
+    id: 9,
+    category: 'frontend',
+    image: Image8,
+    title: 'La Trattoria',
+    desc: 'A highend Italian restaurant website in the heart of Osaka, Japan.',
+    about:
+      'La Trattoria is a website I made based on one of my favorite Italian restaurants in Osaka, Japan. The food and customer service are top-notch. Everything was built from scratch with HTML, CSS, JavaScript and no frameworks and based on many different designs I used as inspiration online. I used Claude AI for my AI assistant for a whole lot of debugging issues when I got really stuck. Making this website, was a lot of work and really pushed my CSS and JavaScript skills.',
+    demo: 'https://latrattoria.vercel.app',
+    github: 'https://github.com/chun-eric/latrattoria',
+    stack: ['HTML', 'CSS', 'JavaScript']
+  },
   {
-    id: 7,
+    id: 10,
     category: 'frontend',
     image: Image7,
     title: 'React Portfolio Website',
@@ -128,18 +154,7 @@ const data = [
       'Vercel'
     ]
   },
-  {
-    id: 8,
-    category: 'frontend',
-    image: Image8,
-    title: 'La Trattoria',
-    desc: 'A highend Italian restaurant website in the heart of Osaka, Japan.',
-    about:
-      'La Trattoria is a website I made based on one of my favorite Italian restaurants in Osaka, Japan. The food and customer service are top-notch. Everything was built from scratch with HTML, CSS, JavaScript and no frameworks and based on many different designs I used as inspiration online. I used Claude AI for my AI assistant for a whole lot of debugging issues when I got really stuck. Making this website, was a lot of work and really pushed my CSS and JavaScript skills.',
-    demo: 'https://latrattoria.vercel.app',
-    github: 'https://github.com/chun-eric/latrattoria',
-    stack: ['HTML', 'CSS', 'JavaScript', 'Claude AI']
-  },
+
   // {
   //   id: 9,
   //   category: 'Wordpress',
@@ -154,20 +169,7 @@ const data = [
   //   github: 'n/a',
   //   stack: ['Wordpress', 'Elementor', 'CSS']
   // },
-  {
-    id: 10,
-    category: 'landing_pages',
-    image: Image10,
-    title: 'Osaka Hometown',
-    desc: 'A custom designed landing page for my hometown of Osaka.',
-    about:
-      "This landing page was part of an project with Scrimba's Professional Frontend Developer course with Mozilla Developer Network. The goal of this landing page was to showcase the uniqueness of my current hometown of Osaka. I used HTML, CSS, and JavaScript to create this landing page.\n\n" +
-      'The design of the landing page was created by me and also with the help of generative AI for specific images.\n\n' +
-      'I went a little overboard with this project, adding a sign-in and signup form, mobile side menu, featured cards and a responsive design.',
-    demo: 'https://hometown-osaka.vercel.app/',
-    github: 'https://github.com/chun-eric/hometown-osaka',
-    stack: ['HTML', 'CSS', 'JavaScript']
-  },
+
   {
     id: 11,
     category: 'in_development',
@@ -405,7 +407,7 @@ const data = [
   desc: 'Building & scaling an Education channel from 0 to 80K subscribers.',
 
   projectInfo: {
-    role: 'Product Owner, Content Strategist, Developer',
+    role: 'Product Owner, Content Strategist, Instructional Design, Developer',
     duration: '4+ years (2021-Present)',
     team: 'Solo project with occasional freelance video editors, voice over artists and graphic designers',
     scope: 'End-to-end product strategy, content creation, community building and platform development'
