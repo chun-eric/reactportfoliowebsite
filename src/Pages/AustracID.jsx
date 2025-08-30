@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import './AustracID.css';
 import image1 from "../assets/images/tranche2_cover.webp"
+import scenarioDesign1 from "../assets/images/scenario_design.png"
+import scenarioDesign2 from "../assets/images/scenario_design2.png"
+import visualMocks from "../assets/images/visual_mockups.png"
+import prototype from "../assets/images/prototyping_1.png"
+import component from "../assets/images/development_tranche2.png"
+import component2 from "../assets/images/development_tranche3.png"
+import component3 from "../assets/images/development_tranche.png"
 
 const Tranche2Portfolio = () => {
   const [showPlayer, setShowPlayer] = useState(false);
@@ -224,18 +231,24 @@ const Tranche2Portfolio = () => {
                   Used Action Mapping process to focus on what professionals need to do, not just know. Identified three key behavioral changes: recognizing red flags, applying proper procedures, and making compliant decisions under pressure.
                 </p>
               </div>
-              <div className=""></div>
+              <div className="austrac-project-image"></div>
             </div>
 
             <div className="austrac-process-step">
               <div className="austrac-step-number">3</div>
               <div className="austrac-step-content">
                 <h4>Scenario Design</h4>
+                
                 <p>
                   Created an interconnected 7 section storyline showing the same criminal network exploiting different professionals. This approach demonstrates cross-sector money laundering while teaching profession-specific compliance skills.
                 </p>
+                  <div className="austrac-project-image">
+                  <img src={scenarioDesign1} alt="visual style guide" />
+                  <div className=""></div>
+                  <img src={scenarioDesign2} alt="scene development" />
+             </div>
               </div>
-              <div className=""></div>
+           
             </div>
 
             <div className="austrac-process-step">
@@ -245,11 +258,16 @@ const Tranche2Portfolio = () => {
                 <p>
                   Developed characters, interface mockups, and interactive components using AUSTRAC's existing design system. Created prototypes to test key interactions before full development.
                 </p>
+                  <div className="austrac-project-image">
+                  <img src={visualMocks} alt="visual mockup" />
+                  <div className=""></div>
+                  <img src={prototype} alt="prototype" />
+             </div>
               </div>
-                <div className=""></div>
+                  
             </div>
 
-            <div className=""></div>
+               <div className="austrac-project-image"></div>
 
             <div className="austrac-process-step">
               <div className="austrac-step-number">5</div>
@@ -258,8 +276,14 @@ const Tranche2Portfolio = () => {
                 <p>
                   Built the complete module in Storyline 360 with WCAG accessibility compliance. Implemented branching scenarios, interactive document analysis, and immediate feedback systems.
                 </p>
+                 <div className="austrac-project-image">
+                  <img src={component3} alt="development testing" />
+                  {/* <img src={component} alt="development" /> */}
+                  <div className=""></div>
+                  <img src={component2} alt="prototype" />
+             </div>
               </div>
-              <div className=""></div>
+              
             </div>
           </div>
 

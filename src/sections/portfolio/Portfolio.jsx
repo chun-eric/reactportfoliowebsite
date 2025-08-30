@@ -13,7 +13,7 @@ const Portfolio = forwardRef((props, ref) => {
 
   const CATEGORY_LABELS = {
     'all': 'All',
-    'instructional_design': 'Instructional Design',
+    'instructional_design': 'Instructional Design & E-Learning',
     'html_email': 'Email',
     'frontend': 'Frontend',
     'landing_pages': 'Landing Page',
