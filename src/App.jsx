@@ -11,6 +11,8 @@ import GoogleAnalytics from "./GoogleAnalytics";
 import { Analytics } from "@vercel/analytics/react";
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import CaseStudyDetail from "./sections/portfolio/CaseStudyDetail";
+import { Link } from "react-router-dom"
+import AustracID from "./Pages/AustracID"
 
 // Simple Test Component
 const SimpleTest = () => {
@@ -242,6 +244,10 @@ function App() {
           <Route 
             path="/case-study/:id" 
             element={<CaseStudyDetail theme={theme} />} 
+          />
+          <Route
+            path="/austrac-tranche2"
+            element={<AustracID />} 
           />
         </Routes>
         <Footer theme={theme} />

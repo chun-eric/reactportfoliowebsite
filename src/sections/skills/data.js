@@ -22,6 +22,7 @@ import api from '../../assets/icons/api.png'
 import projectMgmt from '../../assets/icons/project-mgmt.png'
 import abTesting from '../../assets/icons/ab-testing.png'
 import userResearch from '../../assets/icons/user-research.png'
+import articulate from '../../assets/icons/articulate.png'
 
 // Reorganized skills data with Learning Experience Designer focus
 const skillsData = {
@@ -95,7 +96,7 @@ const skillsData = {
   implementation: [
     {
       id: 10,
-      title: 'React Development',
+      title: 'React Frontend Development',
       src: react,
       category: 'tools',
       description: 'Modern Frontend Framework'
@@ -134,6 +135,13 @@ const skillsData = {
       src: api,
       category: 'tools',
       description: 'System Integration'
+    },
+      {
+      id: 16,
+      title: 'Authoring Tools',
+      src: articulate,
+      category: 'tools',
+      description: 'Articulate Storyline 360'
     }
   ]
 }

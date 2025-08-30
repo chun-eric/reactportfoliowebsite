@@ -34,7 +34,8 @@ const CaseStudyDetail = ({ theme }) => {
       'landing_pages': 'Landing Page',
       'in_development': 'In Development',
       'fullstack': 'Full Stack',
-      'wordpress': 'WordPress'
+      'wordpress': 'WordPress',
+      "instructional_design": "Instructional Design"
     };
     return categoryMap[category] || category;
   };

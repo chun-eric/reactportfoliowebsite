@@ -37,16 +37,16 @@ const About = ({ theme }) => {
           </div>
           <div className='bio-container'>
             <p className={`bio-info ${theme}`}>
-               Hi, I'm Eric an educator turned product builder, instructional designer and frontend developer who bridges the gap between learning science and business. With 10 years of teaching experience across corporate training and vocational schools, I've witnessed firsthand how great learning design transforms both individual learners skills and confidence.
+               Hi, I'm Eric an educator turned content creator/product builder, instructional designer and frontend web developer who bridges the gap between learning development and technical skills. With 10 years of teaching experience across adult corporate training, vocational schools and online multimedia education, I've witnessed firsthand how can great learning design can transform both individual learners skills and confidence.
             </p>
             
             <p className={`bio-info ${theme}`}>
-              My unique perspective combines teaching expertise with proven product and business acumen. From designing curriculum for diverse learning environments to building an ESL learning channel at English PhraseCamp that reached nearly 80,000 subscribers or designing developing web applications, I apply the same user-centered design and outcome-based methodology that helped me to also scale a semi-automated rental business to 95% customer satisfaction.
+               From designing curriculum for diverse learning environments to building an ESL multimedia learning YouTube channel for English PhraseCamp thats reached 80,000 subscribers or  developing user-focused web applications, I apply the same user-centered design and outcome-based methodology.
             </p>
             
 
             <p className={`bio-info ${theme}`}>
-              I'm seeking opportunities in edtech or ecommerce product development/leadership, instructional design, or learning experience roles where I can leverage and collaborate my unique combination of visual design, technical development skills, and organic marketing insights to build solutions that truly serve both learners and business objectives.
+              I'm seeking opportunities in edtech, e-learning development, education awareness leadership, instructional design, learning & design experience roles where I can leverage and collaborate my unique combination of visual design, technical development, and educational multimedia content creation skills to build solutions that truly serve both learners and organization objectives.
             </p>
 
              <p className={`bio-info ${theme}`}>

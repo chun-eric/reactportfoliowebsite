@@ -1,0 +1,386 @@
+/* AustracID Portfolio Unique Styles */
+
+.austrac-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 180px 20px;
+}
+
+.austrac-project-header {
+  text-align: center;
+  margin-bottom: 60px;
+
+  padding-bottom: 40px;
+}
+
+.austrac-project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1E3A5F;
+}
+
+.austrac-project-subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.austrac-project-meta {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  margin-top: 80px;
+}
+
+.austrac-project-image {}
+
+.austrac-meta-item-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  
+}
+
+.austrac-meta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.austrac-meta-label {
+  font-size: 1.2rem;
+  color: #4ECDC4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.austrac-meta-value {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.austrac-disclaimer {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #4ECDC4;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.austrac-section {
+  margin-bottom: 60px;
+}
+
+.austrac-section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #1E3A5F;
+  border-bottom: 2px solid #4ECDC4;
+  padding-bottom: 10px;
+  text-align: left
+}
+
+.austrac-section-content p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.austrac-highlight-box {
+  background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.austrac-highlight-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.austrac-problem-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 50px 0;
+  margin-bottom: 80px;
+}
+
+.austrac-stat-box {
+  text-align: center;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-top: 4px solid #4ECDC4;
+}
+
+.austrac-stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1E3A5F;
+  margin-bottom: 10px;
+}
+
+.austrac-stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.austrac-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.austrac-tool-item {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #353535;
+  border: 1px solid #e9ecef;
+}
+
+.austrac-process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.austrac-process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 5px solid #4ECDC4;
+}
+
+.austrac-step-number {
+  background: #4ECDC4;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.austrac-step-content h4 {
+  font-size: 1.2rem;
+  color: #1E3A5F;
+  margin-bottom: 10px;
+}
+
+.austrac-step-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.austrac-characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.austrac-character-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-top: 4px solid #4ECDC4;
+  text-align: center;
+}
+
+.austrac-character-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1E3A5F;
+  margin-bottom: 10px;
+}
+
+.austrac-character-role {
+  color: #4ECDC4;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.austrac-character-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.austrac-key-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.austrac-section.solution-section {
+  margin-bottom: 100px;
+}
+
+.austrac-section.process-section {
+  margin-bottom: 100px;
+}
+
+.austrac-section.keyfeatures-section {
+  margin-bottom: 100px;
+}
+
+
+.austrac-section.results-section, .austrac-section.takeaway-section {
+  margin-bottom: 100px;
+}
+
+.austrac-feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-left: 4px solid #4ECDC4;
+}
+
+.austrac-feature-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1E3A5F;
+  margin-bottom: 15px;
+}
+
+.austrac-feature-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.austrac-experience-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.austrac-experience-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+.austrac-experience-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(78, 205, 196, 0.3);
+}
+
+.austrac-experience-button:active {
+  transform: translateY(0);
+}
+
+.austrac-ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.austrac-li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .austrac-container {
+    padding: 20px 15px;
+  }
+  
+  .austrac-project-title {
+    font-size: 2rem;
+  }
+  
+  .austrac-project-meta {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .austrac-process-step {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .austrac-characters-grid,
+  .austrac-key-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .austrac-problem-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .austrac-tools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .austrac-project-title {
+    font-size: 1.8rem;
+  }
+  
+  .austrac-project-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .austrac-section-title {
+    font-size: 1.5rem;
+  }
+  
+  .austrac-stat-number {
+    font-size: 2rem;
+  }
+  
+  .austrac-process-step {
+    padding: 20px;
+  }
+  
+  .austrac-character-card,
+  .austrac-feature-card {
+    padding: 20px;
+  }
+}

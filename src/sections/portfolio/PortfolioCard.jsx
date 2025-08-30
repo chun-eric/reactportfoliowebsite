@@ -1,10 +1,13 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import ProjectModalbeta from "./ProjectModalbeta";
+import { useNavigate } from "react-router-dom";
 
 const PortfolioCard = ({ project, theme, onCardClick }) => {
   const [showModal, setShowModal] = useState(false);
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
+  const isInstructionalDesign = project.category === "instructional_design";
 
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
@@ -22,25 +25,22 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
 
 
   // Handle details button click
-  const handleDetailsClick = () => {
-  //   console.log('=== DEBUG: Details button clicked ===');
-  // console.log('Project title:', project.title);
-  // console.log('Project category:', project.category);
-  // console.log('Is case study:', isCaseStudy);
-  // console.log('onCardClick function exists:', !!onCardClick);
-  // console.log('onCardClick type:', typeof onCardClick);
-  
-  if (isCaseStudy && onCardClick) {
-    // console.log('✅ About to call onCardClick for case study');
-    onCardClick(project);
-    // console.log('✅ onCardClick called successfully');
-  } else {
-    // console.log('❌ Opening modal instead because:');
-    // console.log('   - isCaseStudy:', isCaseStudy);
-    // console.log('   - onCardClick exists:', !!onCardClick);
-    openModal();
-  }
-  }
+ const handleDetailsClick = () => {
+    if (isCaseStudy && onCardClick) {
+      onCardClick(project);
+    } else if (isInstructionalDesign) {
+      // Navigate to a dedicated page, e.g., /phrasecamp or /austrac-tranche2
+      // You can use project.title or project.id to determine the route
+      if (project.title === "AUSTRAC Tranche 2 Cross Sector Implementation") {
+        navigate("/austrac-tranche2");
+      } else if (project.title === "English PhraseCamp") {
+        navigate("/phrasecamp");
+      }
+      // Add more conditions for other instructional design projects
+    } else {
+      openModal();
+    }
+  };
 
   return (
     <div
