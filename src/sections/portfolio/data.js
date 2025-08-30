@@ -15,6 +15,7 @@ import Image14 from '../../assets/images/vanlife-cover.webp'
 import Image15 from '../../assets/images/attira_hero.webp'
 import Image17 from '../../assets/images/tranche2_cover.webp'  
 import Image16 from '../../assets/images/h1_1.webp' // ADD this import
+import Image18 from "../../assets/logos/png/phrasecamp.png"
 import h2_1 from "../../assets/images/h2_1.webp"
 import h2_2 from "../../assets/images/h2_2.webp"
 import h2_3 from "../../assets/images/h2_3.webp"
@@ -403,7 +404,7 @@ const data = [
 {
   id: 17,
   category: 'instructional_design',
-  image: Image9,
+  image: Image18,
   title: 'English PhraseCamp',
   desc: 'Building & scaling an Education channel from 0 to 80K subscribers.',
 
@@ -415,11 +416,8 @@ const data = [
   },
 
   problem: [
-    'Existing ESL content was either too academic or too simplistic for intermediate learners',
-    'Learners struggled to find practical, real-world English conversation practice',
-    'Most educational content lacked engaging, scenario-based learning approaches',
-    'Limited access to authentic English usage in everyday situations',
-    'Generic language learning platforms failed to address specific cultural contexts'
+    'Existing ESL content was either too academic or too simplistic for intermediate learners who struggled to find practical, real-world English conversation practice',
+    'Most educational content lacked engaging, scenario-based learning approaches and limited access to authentic English usage in everyday situations. Futhermore generic language learning platforms failed to address specific cultural contexts'
   ],
 
   approach: [
