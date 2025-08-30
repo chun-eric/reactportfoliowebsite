@@ -46,18 +46,33 @@ const Tranche2Portfolio = () => {
           </div>
           <div className="austrac-meta-item">
             <span className="austrac-meta-label">Tools</span>
-            <span className="austrac-meta-value">Articulate Storyline 360, HTML, CSS, ReactJS, Canva, Grok AI, Anthropic AI, Google Gemini AI, AUSTRAC Official Website, AUSTRAC E-learning portal, Midjourney, Excalidraw (mindmapping), Leonardo AI, ElevenLabs, Miro (mindmapping), VS Code, Vercel (deployment), Github </span>
+            <span className="austrac-meta-value">Articulate Storyline 360, HTML, CSS, ReactJS, Canva, Grok AI, Anthropic AI, Google Gemini AI, AUSTRAC Official Website, AUSTRAC E-learning portal, Midjourney, Excalidraw (mindmapping), Leonardo AI, ElevenLabs, Miro (mindmapping), VS Code, Vercel (deployment) </span>
           </div></div>
       
    <div className="austrac-experience-section">
-<a
-  href="/scorm/austrac/story.html"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="austrac-experience-button"
->
-  Experience the Project
-</a>
+ <div className="austrac-course-card">
+    <div className="austrac-course-header">
+      <div className="austrac-course-icon-alt"></div>
+      <div className="austrac-course-title">
+        11. Tranche 2:<br />
+        New Cross Sector Compliance
+      </div>
+    </div>
+    <div className="austrac-course-body">
+      <h3>Financial Crime Module 11 – Tranche 2 New Industries AML/CTF Compliance Reporting</h3>
+      <p>
+        Learn how to detect, report and to be compliant with the new Tranche 2 legislation update..
+      </p>
+      <a
+        href="/scorm/austrac/story.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="austrac-course-btn"
+      >
+        Experience this Project
+      </a>
+    </div>
+  </div>
       </div>
       
         </div>
@@ -87,7 +102,7 @@ const Tranche2Portfolio = () => {
 
      
 
-      <section className="austrac-section">
+      <section className="austrac-section problem-section">
         <h2 className="austrac-section-title">The Problem</h2>
         <div className="austrac-section-content">
           <p>
@@ -228,7 +243,7 @@ const Tranche2Portfolio = () => {
               <div className="austrac-step-content">
                 <h4>Visual Design & Prototyping</h4>
                 <p>
-                  Developed characters, interface mockups, and interactive components using AUSTRAC's design system. Created prototypes to test key interactions before full development.
+                  Developed characters, interface mockups, and interactive components using AUSTRAC's existing design system. Created prototypes to test key interactions before full development.
                 </p>
               </div>
                 <div className=""></div>
@@ -288,7 +303,7 @@ const Tranche2Portfolio = () => {
         <h2 className="austrac-section-title">Results & Impact</h2>
         <div className="austrac-section-content">
           <p>
-            This training module addresses AUSTRAC's most critical educational challenge by providing targeted, practical guidance for the 100,000 new entities entering regulation. The interconnected narrative approach is novel in compliance training while remaining grounded in sound instructional design principles.
+            This training module addresses AUSTRAC's most critical educational challenge by providing targeted, practical guidance for the 100,000 new entities entering regulation. 
           </p>
 
           {/* <div className="austrac-highlight-box">
@@ -315,20 +330,20 @@ const Tranche2Portfolio = () => {
           </p>
           <br/>
           <p>
-            The interconnected narrative approach proved effective for demonstrating complex money laundering schemes while keeping individual sections focused and digestible. Most importantly, grounding the design in actual AUSTRAC priorities and visual standards ensured the solution addressed real organizational needs rather than theoretical learning objectives.
+            The interconnected narrative approach seems more effective for demonstrating complex money laundering schemes while keeping individual sections focused and digestible. Most importantly, grounding the design in actual AUSTRAC priorities and visual standards ensured the solution addressed real organizational needs rather than theoretical learning objectives.
           </p>
         </div>
       </section>
 
       <div className="austrac-experience-section">
-        <a
-  href="/scorm/austrac/story.html"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="austrac-experience-button"
->
-  Experience the Project
-</a>
+      <a
+        href="/scorm/austrac/story.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="austrac-course-btn"
+      >
+        Experience this Project
+      </a>
       </div>
 
    

@@ -28,6 +28,25 @@
   background-image: radial-gradient(#fefefe 1px, #3d3d3d 1px);
 }
 
+.container.portfolio__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Ensures centering on desktop too */
+  gap: 2rem;
+}
+
+/* Responsive fix for < 1024px */
+@media (max-width: 1024px) {
+  .container.portfolio__container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+
 .portfolio-content {
   position: relative;
   z-index: 2;
@@ -66,11 +85,20 @@
   width: 100%;
   max-width: 1440px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
   gap: 2rem;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 0 10px;
+  text-align: center;
 }
+@media (max-width: 330px) {
+  .portfolio__projects {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+    gap: 1rem;
+    padding: 0 2px;
+  }
+}
+
 
 .card-container {
   position: relative;
@@ -539,4 +567,54 @@ h3.property-category-title {
 
 .case-study-detail.dark .approach-card .content-text li::before {
   color: #94a3b8;
+}
+
+
+/* Card hover description styles */
+.project-cards-container:hover .project-description {
+  /* Example: increase font size on hover */
+  font-size: 1.15rem;
+}
+
+.project-cards-container:hover .project-title {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+.project-cards-container:hover .card-description {
+  font-size: 1.1rem; /* Adjust as needed */
+}
+
+
+@media (max-width: 400px) {
+  .project-cards-container:hover .project-title {
+    font-size: 1.2rem;
+  }
+  .project-cards-container:hover .card-description,
+  .project-cards-container:hover .project-description {
+    font-size: 0.95rem;
+  }
+  .button-card-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .button-card-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .btn.button-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .btn.button-card a {
+    display: block;
+    width: 100%;
+  }
 }

@@ -83,7 +83,7 @@
 }
 
 .austrac-section {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .austrac-section-title {
@@ -114,6 +114,116 @@
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.austrac-course-card {
+  background: linear-gradient(135deg, #2c5aa0 0%, #15577b 100%);
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(21, 87, 123, 0.2);
+  padding: 0;
+  margin: 40px auto;
+  max-width: 400px;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.austrac-course-header {
+  background: #01426A;
+  padding: 24px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.austrac-course-header::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 400px solid #01426A;
+  border-bottom: 20px solid transparent;
+}
+
+.austrac-course-icon {
+  background: #01426A;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.austrac-course-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.austrac-course-body {
+  padding: 40px 20px 24px;
+  background: white;
+  text-align: center;
+}
+
+.austrac-course-body h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #7a7a7a;
+  line-height: 1.6;
+}
+
+.austrac-course-body p {
+  font-size: 0.9rem;
+  color: #5d5e5e;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.austrac-course-btn {
+  display: inline-block;
+  background: #01426A;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.austrac-course-btn:hover {
+  background: #01426A;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 150, 199, 0.3);
+}
+
+/* Alternative version with document icon */
+.austrac-course-icon-alt {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.austrac-course-icon-alt::before {
+  content: '📄';
+  font-size: 1.5rem;
 }
 
 .austrac-problem-stats {
@@ -179,6 +289,10 @@
   background: #f8f9fa;
   border-radius: 10px;
   border-left: 5px solid #4ECDC4;
+}
+
+.austrac-process-step:last-child {
+  margin-top: -30px;
 }
 
 .austrac-step-number {
@@ -247,22 +361,40 @@
   margin: 30px 0;
 }
 
-.austrac-section.solution-section {
-  margin-bottom: 100px;
+.austrac-section.solution-section, .austrac-section.process-section, .austrac-section.keyfeatures-section, .austrac-section.results-section, .austrac-section.takeaway-section{
+  margin-bottom: 80px;
 }
 
-.austrac-section.process-section {
-  margin-bottom: 100px;
+@media (max-width: 1024px) {
+  .austrac-section.solution-section, 
+  .austrac-section.process-section, 
+  .austrac-section.keyfeatures-section, 
+  .austrac-section.results-section, 
+  .austrac-section.takeaway-section {
+    margin-bottom: 30px; /* Reduced from 80px */
+  }
 }
 
-.austrac-section.keyfeatures-section {
-  margin-bottom: 100px;
+@media (max-width: 768px) {
+  .austrac-section.solution-section, 
+  .austrac-section.process-section, 
+  .austrac-section.keyfeatures-section, 
+  .austrac-section.results-section, 
+  .austrac-section.takeaway-section {
+    margin-bottom: 30px; /* Even smaller for tablets */
+  }
 }
 
-
-.austrac-section.results-section, .austrac-section.takeaway-section {
-  margin-bottom: 100px;
+@media (max-width: 480px) {
+  .austrac-section.solution-section, 
+  .austrac-section.process-section, 
+  .austrac-section.keyfeatures-section, 
+  .austrac-section.results-section, 
+  .austrac-section.takeaway-section {
+    margin-bottom: 20px; /* Smallest for mobile */
+  }
 }
+
 
 .austrac-feature-card {
   background: white;

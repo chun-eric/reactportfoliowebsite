@@ -234,7 +234,7 @@ const data = [
   },
   {
     id: 15,
-    category: 'wordpress',
+    category: 'fullstack',
     image: Image15,
     title: 'Attira Fashion',
     desc: 'A fashion ecommerce store for professional working women focusing on simplicity and elegance.',
@@ -503,7 +503,7 @@ const data = [
     'Building owned media assets alongside platform-dependent content creates long-term value'
   ],
 
-  demo: 'https://www.phrasecamp.com',
+  demo: 'https://www.youtube.com/englishphrasecamp',
   github: 'n/a',
   stack: ['Content Strategy', 'Content Producer', 'WordPress', 'YouTube', 'SEO', 'Community Building', 'Google Analytics', 'YouTube Analytics', 'Video Production', 'Instructional Design', 'Email Marketing', 'A/B Testing']
 },
@@ -511,105 +511,105 @@ const data = [
   id: 18,
   category: 'instructional_design',
   image: Image17,
-  title: 'AUSTRAC Tranche 2 Cross Sector Implementation',
+  title: 'AUSTRAC Tranche 2 Implementation',
   desc: 'An interactive e-learning module for Australia\'s new AML/CTF Tranche 2 Cross Sector Compliance',
 
-  projectInfo: {
-    role: 'Instructional Designer, Content Strategist, Instructional Design, Developer',
-    duration: '1 month',
-    team: 'Solo personal portfolio project',
-    scope: 'End-to-end product strategy, content creation, community building and platform development'
-  },
+  // projectInfo: {
+  //   role: 'Instructional Designer, Content Strategist, Instructional Design, Developer',
+  //   duration: '1 month',
+  //   team: 'Solo personal portfolio project',
+  //   scope: 'End-to-end product strategy, content creation, community building and platform development'
+  // },
 
-  problem: [
-    'Existing ESL content was either too academic or too simplistic for intermediate learners',
-    'Learners struggled to find practical, real-world English conversation practice',
-    'Most educational content lacked engaging, scenario-based learning approaches',
-    'Limited access to authentic English usage in everyday situations',
-    'Generic language learning platforms failed to address specific cultural contexts'
-  ],
+  // problem: [
+  //   'Existing ESL content was either too academic or too simplistic for intermediate learners',
+  //   'Learners struggled to find practical, real-world English conversation practice',
+  //   'Most educational content lacked engaging, scenario-based learning approaches',
+  //   'Limited access to authentic English usage in everyday situations',
+  //   'Generic language learning platforms failed to address specific cultural contexts'
+  // ],
 
-  approach: [
-    {
-      title: 'Market Research & User Segmentation',
-      content: [
-        'Analyzed competitor YouTube channels and educational platforms in ESL space',
-        'Identified gaps in practical, scenario-based English learning content',
-        'Defined primary target persona: intermediate ESL learners seeking real-world application',
-        'Validated assumptions through YouTube comments analysis and direct learner feedback',
-        'Researched trending topics and search keywords in English learning niche'
-      ]
-    },
-    {
-      title: 'Product Strategy Development',
-      content: [
-        'Developed content pillars around practical English scenarios (airport, restaurant, business)',
-        'Created systematic approach to video production with consistent quality and branding',
-        'Established multi-platform presence: YouTube as primary channel, website as secondary resource hub',
-        'Implemented SEO-driven content strategy to maximize organic discovery',
-        'Built sustainable content creation workflow for long-term growth'
-      ]
-    },
-    {
-      title: 'Feature Prioritization & Implementation',
-      content: [
-        'Prioritized high-engagement video formats: conversational scenarios, phrase breakdowns',
-        'Implemented consistent video structure: introduction, scenario, breakdown, practice',
-        'Created supplementary materials: downloadable PDFs, practice exercises, transcripts',
-        'Developed responsive website with organized learning resources and easy navigation',
-        'Integrated analytics tracking across all platforms for data-driven optimization'
-      ]
-    },
-    {
-      title: 'Content & Marketing Strategy',
-      content: [
-        'Executed weekly content publishing schedule with strategic topic planning',
-        'Utilized YouTube SEO best practices: keyword optimization, engaging thumbnails, compelling titles',
-        'Fostered community engagement through consistent comment responses and community posts',
-        'Cross-promoted content between YouTube and website to maximize reach and retention',
-        'Analyzed YouTube and Google Analytics engagement for continuous optimization'
-      ]
-    },
-    {
-      title: 'Instructional Design Methodology',
-      content: [
-        'Applied proven adult learning principles to create effective educational experiences',
-        'Content Structure: Clear learning objectives, scaffolding approach, visual/auditory materials',
-        'Engagement Techniques: Real-world scenarios, interactive elements, compelling thumbnails',
-        'Learning Reinforcement: Downloadable materials, video series building on concepts',
-        'Feedback & Iteration: YouTube analytics monitoring, learner feedback collection, pattern analysis',
+  // approach: [
+  //   {
+  //     title: 'Market Research & User Segmentation',
+  //     content: [
+  //       'Analyzed competitor YouTube channels and educational platforms in ESL space',
+  //       'Identified gaps in practical, scenario-based English learning content',
+  //       'Defined primary target persona: intermediate ESL learners seeking real-world application',
+  //       'Validated assumptions through YouTube comments analysis and direct learner feedback',
+  //       'Researched trending topics and search keywords in English learning niche'
+  //     ]
+  //   },
+  //   {
+  //     title: 'Product Strategy Development',
+  //     content: [
+  //       'Developed content pillars around practical English scenarios (airport, restaurant, business)',
+  //       'Created systematic approach to video production with consistent quality and branding',
+  //       'Established multi-platform presence: YouTube as primary channel, website as secondary resource hub',
+  //       'Implemented SEO-driven content strategy to maximize organic discovery',
+  //       'Built sustainable content creation workflow for long-term growth'
+  //     ]
+  //   },
+  //   {
+  //     title: 'Feature Prioritization & Implementation',
+  //     content: [
+  //       'Prioritized high-engagement video formats: conversational scenarios, phrase breakdowns',
+  //       'Implemented consistent video structure: introduction, scenario, breakdown, practice',
+  //       'Created supplementary materials: downloadable PDFs, practice exercises, transcripts',
+  //       'Developed responsive website with organized learning resources and easy navigation',
+  //       'Integrated analytics tracking across all platforms for data-driven optimization'
+  //     ]
+  //   },
+  //   {
+  //     title: 'Content & Marketing Strategy',
+  //     content: [
+  //       'Executed weekly content publishing schedule with strategic topic planning',
+  //       'Utilized YouTube SEO best practices: keyword optimization, engaging thumbnails, compelling titles',
+  //       'Fostered community engagement through consistent comment responses and community posts',
+  //       'Cross-promoted content between YouTube and website to maximize reach and retention',
+  //       'Analyzed YouTube and Google Analytics engagement for continuous optimization'
+  //     ]
+  //   },
+  //   {
+  //     title: 'Instructional Design Methodology',
+  //     content: [
+  //       'Applied proven adult learning principles to create effective educational experiences',
+  //       'Content Structure: Clear learning objectives, scaffolding approach, visual/auditory materials',
+  //       'Engagement Techniques: Real-world scenarios, interactive elements, compelling thumbnails',
+  //       'Learning Reinforcement: Downloadable materials, video series building on concepts',
+  //       'Feedback & Iteration: YouTube analytics monitoring, learner feedback collection, pattern analysis',
       
-      ]
-    }
-  ],
+  //     ]
+  //   }
+  // ],
 
-  keyDecisions: [
-    'Focused on intermediate learners rather than competing in oversaturated beginner market',
-    'Prioritized practical, scenario-based content over traditional grammar-focused lessons',
+  // keyDecisions: [
+  //   'Focused on intermediate learners rather than competing in oversaturated beginner market',
+  //   'Prioritized practical, scenario-based content over traditional grammar-focused lessons',
    
-    'Built website platform alongside rented media (YouTube) for platform diversification',
-    'Maintained consistent publishing schedule to build audience expectations and loyalty',
-    'Chose evergreen content topics that would remain relevant and searchable long-term'
-  ],
+  //   'Built website platform alongside rented media (YouTube) for platform diversification',
+  //   'Maintained consistent publishing schedule to build audience expectations and loyalty',
+  //   'Chose evergreen content topics that would remain relevant and searchable long-term'
+  // ],
 
-  outcomes: [
-    'Grew YouTube channel from 0 to nearly 80,000 subscribers organically',
-    'Generated 4M+ total video views across all content',
-    'Established PhraseCamp as recognized brand in ESL learning space',
-    'Developed scalable content creation processes for potential team expansion'
-  ],
+  // outcomes: [
+  //   'Grew YouTube channel from 0 to nearly 80,000 subscribers organically',
+  //   'Generated 4M+ total video views across all content',
+  //   'Established PhraseCamp as recognized brand in ESL learning space',
+  //   'Developed scalable content creation processes for potential team expansion'
+  // ],
 
-  learnings: [
-    'Niche positioning in educational content is more effective than broad targeting',
-    'Consistent quality and publishing schedule are crucial for audience building',
-    'Community engagement and feedback loops drive better content decisions',
-    'SEO optimization significantly impacts organic content discovery and growth',
+  // learnings: [
+  //   'Niche positioning in educational content is more effective than broad targeting',
+  //   'Consistent quality and publishing schedule are crucial for audience building',
+  //   'Community engagement and feedback loops drive better content decisions',
+  //   'SEO optimization significantly impacts organic content discovery and growth',
 
-    'Data-driven content optimization leads to higher engagement and subscriber retention',
-    'Instructional design principles directly correlate with learning effectiveness and user satisfaction',
-    'Building owned media assets alongside platform-dependent content creates long-term value'
-  ],
-
+  //   'Data-driven content optimization leads to higher engagement and subscriber retention',
+  //   'Instructional design principles directly correlate with learning effectiveness and user satisfaction',
+  //   'Building owned media assets alongside platform-dependent content creates long-term value'
+  // ],
+  details: "",
   demo: 'https://www.phrasecamp.com',
   github: 'n/a',
   stack: ['Content Strategy', 'Content Producer', 'WordPress', 'YouTube', 'SEO', 'Community Building', 'Google Analytics', 'YouTube Analytics', 'Video Production', 'Instructional Design', 'Email Marketing', 'A/B Testing']

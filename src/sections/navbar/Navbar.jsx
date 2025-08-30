@@ -95,7 +95,7 @@ const Navbar = ({ theme, setTheme, scrollToSection, refs }) => {
         </ul>
 
         <div className='navbar__btns'>
-          <button
+          {/* <button
             onClick={toggle_mode}
             className='icon_dark_button no-animation theme-toggle'
           >
@@ -104,7 +104,7 @@ const Navbar = ({ theme, setTheme, scrollToSection, refs }) => {
             ) : (
               <Moon size={30} className='theme-icon' />
             )}
-          </button>
+          </button> */}
 
           {/* Contact Button */}
           <button className='btn-contact'>

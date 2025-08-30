@@ -13,13 +13,14 @@ const Portfolio = forwardRef((props, ref) => {
 
   const CATEGORY_LABELS = {
     'all': 'All',
-    'case_studies': 'Case Studies',
-    'html_email': 'HTML Email',
+    'instructional_design': 'Instructional Design',
+    'html_email': 'Email',
     'frontend': 'Frontend',
-    'landing_pages': 'Landing Pages',
-    'in_development': 'In Development...',
+    'landing_pages': 'Landing Page',
+  
     'fullstack': 'Fullstack',
-    'wordpress': 'WordPress'
+      'in_development': 'In Development...',
+  
   };
 
   // Use Object.values for button display names

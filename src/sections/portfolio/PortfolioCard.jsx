@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import ProjectModalbeta from "./ProjectModalbeta";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const PortfolioCard = ({ project, theme, onCardClick }) => {
   const [showModal, setShowModal] = useState(false);
@@ -31,7 +32,7 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
     } else if (isInstructionalDesign) {
       // Navigate to a dedicated page, e.g., /phrasecamp or /austrac-tranche2
       // You can use project.title or project.id to determine the route
-      if (project.title === "AUSTRAC Tranche 2 Cross Sector Implementation") {
+      if (project.title === "AUSTRAC Tranche 2 Implementation") {
         navigate("/austrac-tranche2");
       } else if (project.title === "English PhraseCamp") {
         navigate("/phrasecamp");
