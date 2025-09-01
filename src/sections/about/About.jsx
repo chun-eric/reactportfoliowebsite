@@ -37,7 +37,7 @@ const About = ({ theme }) => {
           </div>
           <div className='bio-container'>
             <p className={`bio-info ${theme}`}>
-               Hi, I'm Eric an educator turned content creator/product builder, instructional designer and frontend web developer who bridges the gap between learning development and technical skills. With 10 years of teaching experience across adult corporate training, vocational schools and online multimedia education, I've witnessed firsthand how can great learning design can transform both individual learners skills and confidence.
+               Hi, I'm Eric an educator turned content creator/product builder, instructional designer and frontend web and e-learning developer who bridges the gap between learning development and technical skills. With 10 years of teaching experience across adult corporate training, vocational schools and online multimedia education, I've witnessed firsthand how can great learning design can transform both individual learners skills and confidence.
             </p>
             
             <p className={`bio-info ${theme}`}>
