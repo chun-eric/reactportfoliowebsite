@@ -19,28 +19,28 @@ const PhraseCampID = () => {
 const featuredVideos = [
   {
     id: "9AKSnNUu-C4",
-    title: "Professional English Conversation - Vyond Animation",
-    description: "Advanced workplace scenarios with character-driven storytelling"
+    title: "At The Airport - Vyond Animation",
+    description: "Advanced airport scenario e-learning with character-driven storytelling from checking in to going through immigration and customs"
   },
   {
     id: "HxPiXCxKGKE",
-    title: "Travel English Phrases - Interactive Learning",
-    description: "Context-based learning through animated scenarios"
+    title: "At The Hotel - Vyond Animation",
+    description: "Hotel based scenario e-learning from making a reservation to checking out"
   },
   {
     id: "zqRDbDiXwxs",
-    title: "Business Meeting English - Scenario-Based Training",
-    description: "Professional communication skills through guided practice"
+    title: "At The Restaurant - Vyond Animation",
+    description: "Restauarant based scenario e-learning from booking to paying for the meal"
   },
   {
     id: "i2Fo4vTk7Vs",
-    title: "Daily Conversation Practice - Structured Learning",
-    description: "Progressive skill building with immediate application"
+    title: "Going Traveling - Vyond Animation",
+    description: "Scenario based e-learning when one goes traveling."
   },
   {
     id: "1M-FaZQdFUs",
-    title: "Full Portfolio Demo",
-    description: "Showcase of advanced Vyond animation techniques"
+    title: "About Directions - Vyond Animation",
+    description: "Scenario based e-learning of the many ways to ask about directions."
   }
 ];
 
@@ -138,7 +138,7 @@ const featuredVideos = [
         <h2 className="phrasecamp-section-title">Instructional Design Process</h2>
         <div className="phrasecamp-section-content">
           <p>
-            I followed a systematic ADDIE approach, adapted for video-based eLearning. Each video underwent rigorous planning from learning objectives to post-production, ensuring maximum educational impact. Weekly schedules included content planning, production, and feedback iteration for consistent releases.
+            I followed an ADDIE approach, adapted for video-based eLearning. Each video underwent rigorous planning from learning objectives, script writing, storyboarding, character and scenario design to post-production, ensuring maximum educational impact. Weekly schedules included content planning, production, and feedback iteration for consistent releases.
           </p>
 
           <div className="phrasecamp-process-steps">
@@ -147,7 +147,7 @@ const featuredVideos = [
               <div className="phrasecamp-step-content">
                 <h4>Analysis & Learning Objectives</h4>
                 <p>
-                  Conducted learner analysis based on Google Search Intent and keyword queries to identify communication gaps. Defined measurable objectives focusing on practical application (e.g., "Learners will apply 5 travel phrases in a simulated scenario"). Mapped to CEFR levels.
+                  Conducted learner analysis based on Google Search Intent and keyword queries online to identify communication skill gaps. Defined measurable objectives focusing on practical application mapped to CEFR levels. (e.g., "Learners will apply 5 travel phrases in a situation based scenario"). 
                 </p>
                 <div className="phrasecamp-process-image">
                   <img src={""} alt="Learning objectives mapping" />
