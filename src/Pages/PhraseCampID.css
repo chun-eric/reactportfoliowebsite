@@ -384,6 +384,7 @@
 
 .phrasecamp-step-content {
   flex: 1;
+  height: auto;
 }
 
 .phrasecamp-step-content h4 {
@@ -402,13 +403,22 @@
 .phrasecamp-process-image {
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
+ flex-wrap: wrap;
   gap: 15px;
+  max-width: 600px;
+  min-height: 0;
+  height: auto; /* Explicitly allow height to adjust */
+  overflow: auto;
+
 }
 
 .phrasecamp-process-image img {
-  border-radius: 8px;
+ border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+ 
 }
 
 /* Video Showcase */
@@ -468,7 +478,7 @@
 
 .phrasecamp-full-showcase {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 /* Features Grid */
@@ -637,9 +647,11 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {esl englishlearn
   .phrasecamp-container {
-    padding: 80px 15px;
+    padding: 120px 15px;
+    padding-bottom: 60px;
+    padding-top: 140px;
   }
   
   .phrasecamp-project-title {
