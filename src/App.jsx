@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from
 import CaseStudyDetail from "./sections/portfolio/CaseStudyDetail";
 import { Link } from "react-router-dom"
 import AustracID from "./Pages/AustracID"
+import PhraseCampID from "./Pages/PhraseCampID";
 
 // Simple Test Component
 const SimpleTest = () => {
@@ -248,6 +249,10 @@ function App() {
           <Route
             path="/austrac-tranche2"
             element={<AustracID />} 
+          />
+            <Route
+            path="/phrasecamp"
+            element={<PhraseCampID />} 
           />
         </Routes>
         <Footer theme={theme} />
