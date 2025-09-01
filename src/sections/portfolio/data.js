@@ -608,7 +608,7 @@ const data = [
   //   'Building owned media assets alongside platform-dependent content creates long-term value'
   // ],
   details: "",
-  demo: 'https://www.phrasecamp.com',
+  demo: 'https://www.ecdevportfolio.com/scorm/austrac/story.html',
   github: 'n/a',
   stack: ['Content Strategy', 'Content Producer', 'WordPress', 'YouTube', 'SEO', 'Community Building', 'Google Analytics', 'YouTube Analytics', 'Video Production', 'Instructional Design', 'Email Marketing', 'A/B Testing']
 }
