@@ -469,10 +469,12 @@
 @media (max-width: 768px) {
   .austrac-container {
     padding: 20px 15px;
+    margin-bottom: 100px;
   }
   
   .austrac-project-title {
     font-size: 2rem;
+    margin-top: 140px;
   }
   
   .austrac-project-meta {
