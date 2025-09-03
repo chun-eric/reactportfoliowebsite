@@ -71,7 +71,7 @@ const Tranche2Portfolio = () => {
         Learn how to detect, report and to be compliant with the new Tranche 2 legislation update..
       </p>
       <a
-        href="/scorm/austrac/story.html"
+        href="/lrs/story.html"
         target="_blank"
         rel="noopener noreferrer"
         className="austrac-course-btn"
@@ -361,7 +361,7 @@ const Tranche2Portfolio = () => {
 
       <div className="austrac-experience-section">
       <a
-        href="/scorm/austrac/story.html"
+        href="/lrs/story.html"
         target="_blank"
         rel="noopener noreferrer"
         className="austrac-course-btn"
