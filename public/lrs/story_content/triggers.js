@@ -2,13 +2,13 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "68Epoo9BjAE":
+      case "6SN9ZoY0ehz":
         Script1();
         break;
-      case "6YEmBTY3lE7":
+      case "60QTXcF2mlO":
         Script2();
         break;
-      case "64cs6uOboyk":
+      case "6HuTzQOrM45":
         Script3();
         break;
   }
@@ -38,11 +38,14 @@ function findLMSAPI(win) {
 
 function getActor() {
     var lmsAPI = findLMSAPI(this);
-    var myName = lmsAPI ? lmsAPI.GetStudentName() : "Anonymous Learner"; // Fallback
+    var myName = lmsAPI ? lmsAPI.GetStudentName() : "Guest Learner"; // Fallback if no LMS
+    if (!myName || myName.trim() === "") {
+        myName = "Guest Learner"; // Double-check for empty
+    }
     return {
         "objectType": "Agent",
         "account": {
-            "homePage": "https://www.ecdevportfolio.com", // Your domain
+            "homePage": "https://www.ecdevportfolio.com",
             "name": myName
         }
     };
