@@ -8,6 +8,10 @@ import prototype from "../assets/images/prototyping_1.png"
 import component from "../assets/images/development_tranche2.png"
 import component2 from "../assets/images/development_tranche3.png"
 import component3 from "../assets/images/development_tranche.png"
+import course1 from "../assets/images/courses_1.png"
+import course2 from "../assets/images/courses_2.png"
+import evaluate1 from "../assets/images/evaluate_1.png"
+import evaluate3 from "../assets/images/evaluate_3.png"
 
 const Tranche2Portfolio = () => {
   const [showPlayer, setShowPlayer] = useState(false);
@@ -53,7 +57,7 @@ const Tranche2Portfolio = () => {
           </div>
           <div className="austrac-meta-item">
             <span className="austrac-meta-label">Tools</span>
-            <span className="austrac-meta-value">Articulate Storyline 360, HTML, CSS, ReactJS, Canva, Grok AI, Anthropic AI, Google Gemini AI, AUSTRAC Official Website, AUSTRAC E-learning portal, Midjourney, Excalidraw (mindmapping), Leonardo AI, ElevenLabs, Miro (mindmapping), VS Code, Vercel (deployment) </span>
+            <span className="austrac-meta-value">Articulate Storyline 360, Watershed LRS, xAPI, HTML, CSS, ReactJS, Canva, Grok AI, Anthropic AI, Google Gemini AI, AUSTRAC Official Website, AUSTRAC E-learning portal, Midjourney, Excalidraw (mindmapping), Leonardo AI, ElevenLabs, Miro (mindmapping), VS Code, Vercel (deployment) </span>
           </div></div>
       
    <div className="austrac-experience-section">
@@ -83,28 +87,6 @@ const Tranche2Portfolio = () => {
       </div>
       
         </div>
-              {/* <div className="austrac-highlight-box">
-     
-            <div className="austrac-tools-grid">
-              <div className="austrac-tool-item">Articulate Storyline 360</div>
-              <div className="austrac-tool-item">Midjourney AI</div>
-              <div className="austrac-tool-item">Leonardo AI</div>
-              <div className="austrac-tool-item">ElevenLabs</div>
-              <div className="austrac-tool-item">Canva</div>
-              <div className="austrac-tool-item">ReactJS</div>
-              <div className="austrac-tool-item">Claude AI</div>
-              <div className="austrac-tool-item">Grok AI</div>
-              <div className="austrac-tool-item">Grok AI</div>
-              <div className="austrac-tool-item">Mindmeister</div>
-              <div className="austrac-tool-item">Miro</div>
-              <div className="austrac-tool-item">Excel</div>
-              <div className="austrac-tool-item">ReactJS</div>
-              <div className="austrac-tool-item">ElevenLabs</div>
-              <div className="austrac-tool-item">HTML</div>
-              <div className="austrac-tool-item">CSS</div>
-              <div className="austrac-tool-item">JavaScript</div>
-            </div>
-          </div> */}
       </div>
 
      
@@ -220,6 +202,11 @@ const Tranche2Portfolio = () => {
                 <p>
                   Conducted research of AUSTRAC's regulatory priorities utilizing AUSTRAC's website and E-learning portal with deep research AI, analyzed existing training materials, and identified the critical implementation gap affecting 100,000 new entities. Defined target audience needs across three professional sectors.
                 </p>
+                 <div className="austrac-project-image">
+                  <img src={course1} alt="austrac website" />
+                  <div className=""></div>
+                  <img src={course2} alt="e-learning portal" />
+                  </div>
               </div>
             </div>
 
@@ -231,14 +218,12 @@ const Tranche2Portfolio = () => {
                   Used Action Mapping process to focus on what professionals need to do, not just know. Identified three key behavioral changes: recognizing red flags, applying proper procedures, and making compliant decisions under pressure.
                 </p>
               </div>
-              <div className="austrac-project-image"></div>
             </div>
 
             <div className="austrac-process-step">
               <div className="austrac-step-number">3</div>
               <div className="austrac-step-content">
                 <h4>Scenario Design</h4>
-                
                 <p>
                   Created an interconnected 7 section storyline showing the same criminal network exploiting different professionals. This approach demonstrates cross-sector money laundering while teaching profession-specific compliance skills.
                 </p>
@@ -246,9 +231,8 @@ const Tranche2Portfolio = () => {
                   <img src={scenarioDesign1} alt="visual style guide" />
                   <div className=""></div>
                   <img src={scenarioDesign2} alt="scene development" />
-             </div>
+                  </div>
               </div>
-           
             </div>
 
             <div className="austrac-process-step">
@@ -262,12 +246,10 @@ const Tranche2Portfolio = () => {
                   <img src={visualMocks} alt="visual mockup" />
                   <div className=""></div>
                   <img src={prototype} alt="prototype" />
-             </div>
+                  </div>
               </div>
-                  
             </div>
 
-               <div className="austrac-project-image"></div>
 
             <div className="austrac-process-step">
               <div className="austrac-step-number">5</div>
@@ -281,10 +263,26 @@ const Tranche2Portfolio = () => {
                   {/* <img src={component} alt="development" /> */}
                   <div className=""></div>
                   <img src={component2} alt="prototype" />
-             </div>
+                  </div>
               </div>
-              
             </div>
+
+             <div className="austrac-process-step">
+              <div className="austrac-step-number">1</div>
+              <div className="austrac-step-content">
+                <h4>Evaulate and Assess</h4>
+                <p>
+                    Conducted a comprehensive evaluation using Watershed LRS to monitor learner interactions and performance data through xAPI integration with Articulate Storyline. Setup key metrics including completion rates, decision-making patterns, and knowledge retention to evaluate the module's effectiveness. Hosted the course on a personal website and web server, where user behavior data is captured and sent to Watershed LRS upon clicking "Experience the Project." Developed custom variables and xAPI triggers to track navigation, time spent, and drop-off points, enhancing the training's adaptability and user experience. Full implementation still in progress.
+                </p>
+                 <div className="austrac-project-image">
+                  <img src={evaluate1} alt="watershed LRS" />
+                  <div className=""></div>
+               <img src={evaluate3} alt="storyline variables" />
+                  </div>
+              </div>
+            </div>
+
+
           </div>
 
      
