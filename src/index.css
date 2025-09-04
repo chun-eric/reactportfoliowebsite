@@ -90,18 +90,16 @@ html {
   --overlay-background-color: #f55555;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --overlay-background-color: #191919;
   }
-}
+} */
 
 #root {
   margin: 0 auto;
 }
-#root.dark {
-  color: #fff;
-}
+
 
 /* Dark theme styles */
 #root.dark,
