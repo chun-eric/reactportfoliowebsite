@@ -272,7 +272,7 @@ const Tranche2Portfolio = () => {
               <div className="austrac-step-content">
                 <h4>Evaulate and Assess</h4>
                 <p>
-                    Conducted a comprehensive evaluation using Watershed LRS to monitor learner interactions and performance data through xAPI integration with Articulate Storyline. Setup key metrics including completion rates, decision-making patterns, and knowledge retention to evaluate the module's effectiveness. Hosted the course on a personal website and web server, where user behavior data is captured and sent to Watershed LRS upon clicking "Experience the Project." Developed custom variables and xAPI triggers to track navigation, time spent, and drop-off points, enhancing the training's adaptability and user experience. Full implementation still in progress.
+                    Setup evaluation and assessment using Watershed LRS to monitor learner interactions and performance data through xAPI integration with Articulate Storyline. Setup key metrics including completion rates, decision-making patterns, and knowledge retention to evaluate the module's effectiveness. Hosted the course on a personal website and web server, where user behavior data is captured and sent to Watershed LRS upon clicking "Experience the Project." Developed custom variables and xAPI triggers to track navigation, time spent, and drop-off points, enhancing the training's adaptability and user experience. Full implementation still in progress.
                 </p>
                  <div className="austrac-project-image">
                   <img src={evaluate1} alt="watershed LRS" />
