@@ -339,7 +339,7 @@ const Tranche2Portfolio = () => {
           </div> */}
          <br/>
           <p>
-            The next phase would involve testing with real professionals from each sector, gathering feedback to refine scenarios, and analyzing completion rates and knowledge retention. Success metrics would include reduced compliance violations, increased SMR reporting accuracy, and demonstrated ability to identify money laundering red flags.
+            The next phase would involve testing with real professionals from each sector, gathering feedback to refine scenarios, and analyzing data from Watershed LRS such as completion rates and knowledge retention. Success metrics would include reduced compliance violations, increased SMR reporting accuracy, and demonstrated ability to identify money laundering red flags.
           </p>
         </div>
       </section>
