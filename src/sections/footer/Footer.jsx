@@ -60,7 +60,7 @@ const Footer = ({ theme }) => {
                 />
               </div>
               <p className='short_description'>
-                Content Strategist & Producer • Web & E-Learning Developer • Instructional Design 
+                Content Strategist & Producer • Web & E-Learning Developer • Instructional Design • Learning & Design  
               </p>
             </div>
           </div>
