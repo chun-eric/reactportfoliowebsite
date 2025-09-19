@@ -49,7 +49,7 @@ const Tranche2Portfolio = () => {
           </div>
           <div className="austrac-meta-item">
             <span className="austrac-meta-label">Role</span>
-            <span className="austrac-meta-value">Instructional Designer</span>
+            <span className="austrac-meta-value">Instructional Designer, Learning & Development & E-Learning Developer</span>
           </div>
           <div className="austrac-meta-item">
             <span className="austrac-meta-label">Duration</span>
