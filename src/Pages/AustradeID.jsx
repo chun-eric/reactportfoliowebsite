@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./AustradeID.css";
 import image1 from "../assets/images/austrade_portfolio_image.webp";
 import image2 from "../assets/images/austrade.webp";
+import image3 from "../assets/images/pdf_icon.jpg";
 
 // Placeholder for actual video URL - replace with your hosted video
 const VIDEO_URL =
@@ -97,7 +98,7 @@ const AustradeID = () => {
 
           <div className="japan-challenge-stats">
             <div className="japan-stat-box">
-              <div className="japan-stat-icon">🇯🇵</div>
+              <div className="japan-stat-icon">🗾</div>
               <div className="japan-stat-label">Major Trading Partner</div>
               <div className="japan-stat-detail">
                 Critical market for Australian exports
@@ -195,7 +196,7 @@ const AustradeID = () => {
 
           <div className="japan-video-cards">
             <div className="japan-video-card">
-              <div className="japan-video-icon">🎎</div>
+              <div className="japan-video-icon">⛩️</div>
               <h4>Japanese Business Etiquette</h4>
               <p className="final-details">
                 Focuses on essential etiquette including the bow (o-jigi),
@@ -204,7 +205,7 @@ const AustradeID = () => {
               </p>
             </div>
             <div className="japan-video-card">
-              <div className="japan-video-icon">🤝</div>
+              <div className="japan-video-icon">📄</div>
               <h4>Quick Reference Guide (Downloadable)</h4>
               <p className="final-details">
                 A professionally designed job aid that summarizes all key
@@ -483,7 +484,7 @@ const AustradeID = () => {
         </div>
       </section>
 
-      <div className="japan-footer-cta">
+      {/* <div className="japan-footer-cta">
         <button
           className="japan-experience-btn"
           onClick={() => {
@@ -491,9 +492,9 @@ const AustradeID = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Experience the Training
+          s Watch the Training
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

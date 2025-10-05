@@ -550,7 +550,7 @@ const data = [
   },
   {
     id: 19,
-    category: "learning design",
+    category: "instructional_design",
     image: Image20,
     title: "Austrade Business Etiquette in Japan",
     desc: "An interactive e-learning H5P video module & quick reference guide for Austrade helping Australian Exporters understand Japanese business etiquette.",

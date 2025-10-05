@@ -14,19 +14,18 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
   const closeModal = () => setShowModal(false);
 
   // Check if its a case study
-  const isCaseStudy = project.category && project.category === "case_studies"
+  const isCaseStudy = project.category && project.category === "case_studies";
 
   // Check if demo exists and is valid
-  const hasValidDemo = project.demo && 
-                      project.demo !== null && 
-                      project.demo !== 'n/a' && 
-                      project.demo !== '#' && 
-                      project.demo.trim() !== '';
-
-
+  const hasValidDemo =
+    project.demo &&
+    project.demo !== null &&
+    project.demo !== "n/a" &&
+    project.demo !== "#" &&
+    project.demo.trim() !== "";
 
   // Handle details button click
- const handleDetailsClick = () => {
+  const handleDetailsClick = () => {
     if (isCaseStudy && onCardClick) {
       onCardClick(project);
     } else if (isInstructionalDesign) {
@@ -36,6 +35,8 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
         navigate("/austrac-tranche2");
       } else if (project.title === "English PhraseCamp") {
         navigate("/phrasecamp");
+      } else if (project.title === "Austrade Business Etiquette in Japan") {
+        navigate("/austrade-japan");
       }
       // Add more conditions for other instructional design projects
     } else {
@@ -45,13 +46,13 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
 
   return (
     <div
-      className='project-cards-container'
+      className="project-cards-container"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <div className={`card-container gradient-border ${theme}`}>
         <img
-          className='cover-image'
+          className="cover-image"
           src={project.image}
           alt={`${project.title} Project ${theme}`}
         />
@@ -59,27 +60,27 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
           className={`overlay ${theme} ${hovered ? "overlay-hover" : ""}`}
         ></div>
         {hovered && (
-          <div className='project-description fade-in'>
-            <p className='portfolio-card project-title'>{project.title}</p>
-            <p className='card-description'>{project.desc}</p>
-            <div className='button-card-container'>
+          <div className="project-description fade-in">
+            <p className="portfolio-card project-title">{project.title}</p>
+            <p className="card-description">{project.desc}</p>
+            <div className="button-card-container">
               {/* Only show demo button if there's a valid demo */}
-             {hasValidDemo && (
-                <button className='btn button-card demo'>
+              {hasValidDemo && (
+                <button className="btn button-card demo">
                   <p>
                     <a
                       href={project.demo}
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Demo
                     </a>
                   </p>
                 </button>
               )}
-              
+
               {/* Details button - changes behavior for case studies */}
-              <button className='btn button-card' onClick={handleDetailsClick}>
+              <button className="btn button-card" onClick={handleDetailsClick}>
                 <p style={{ color: "white", fontSize: "18px" }}>
                   {isCaseStudy ? "View Case" : "Details"}
                 </p>
@@ -89,8 +90,8 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
         )}
       </div>
 
-       {/* Only show modal for non-case-study projects */}
-     {!isCaseStudy && (
+      {/* Only show modal for non-case-study projects */}
+      {!isCaseStudy && (
         <ProjectModalbeta
           project={project}
           onClose={closeModal}
