@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./AustradeID.css";
-import image1 from "../assets/images/tranche2_cover.webp";
+import image1 from "../assets/images/austrade_portfolio_image.webp";
 
 // Placeholder for actual video URL - replace with your hosted video
 const VIDEO_URL = "https://your-video-host.com/austrade-japan-video.mp4";
 // Placeholder for PDF URL - replace with your hosted PDF
-const PDF_URL = "https://your-pdf-host.com/japan-quick-reference-guide.pdf";
+const PDF_URL =
+  "https://www.ecdevportfolio.com/austrade/japanese_business_qrg.pdf";
 
 const AustradeID = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -15,7 +16,8 @@ const AustradeID = () => {
     <div className="japan-container">
       <div className="japan-project-header">
         <h1 className="japan-project-title">
-          Austrade - Cultural Business Training for Japan Exporters
+          Austrade - Japanese Business Etiquette Training for Australian
+          Exporters
         </h1>
         <p className="japan-project-subtitle">
           Modern microlearning solution to help Australian exporters succeed in
@@ -49,7 +51,7 @@ const AustradeID = () => {
             <div className="japan-meta-item">
               <span className="japan-meta-label">Audience</span>
               <span className="japan-meta-value">
-                Australian Exporters who wants to business in Japan
+                Australian Exporters who wants to do business in Japan
               </span>
             </div>
             <div className="japan-meta-item">
@@ -130,7 +132,7 @@ const AustradeID = () => {
           <div className="japan-sam-phases">
             <div className="japan-phase-card">
               <div className="japan-phase-content">
-                <h4>Savvy Start (Preparation & Prototyping)</h4>
+                <h4>Research and Analysis (Preparation & Prototyping)</h4>
                 <p>
                   Conducted rapid research into Austrade's strategic goals and
                   the specific pain points of Australian exporters targeting
@@ -182,7 +184,9 @@ const AustradeID = () => {
         <div className="japan-section-content">
           <p>
             The output is a high-fidelity prototype of an interactive video
-            designed to transform passive viewing into active learning:
+            designed to transform passive viewing into active learning and a
+            supporting Quick Reference Guide to help exporters quickly reference
+            key etiquette points during real business interactions.:
           </p>
 
           <div className="japan-video-cards">
@@ -245,8 +249,8 @@ const AustradeID = () => {
               </div>
               <div className="japan-feature-description">
                 Iterative process allowed rapid development and refinement,
-                moving from needs analysis to high-fidelity prototype in just
-                four days.
+                moving from needs analysis to high-fidelity prototype in just 7
+                days.
               </div>
             </div>
 
@@ -407,7 +411,7 @@ const AustradeID = () => {
             <div className="japan-impact-card">
               <h4>Rapid Development</h4>
               <p>
-                High-fidelity prototype delivered in 4 days using agile SAM
+                High-fidelity prototype delivered in 7 days using agile SAM
                 methodology
               </p>
             </div>
