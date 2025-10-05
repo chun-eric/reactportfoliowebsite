@@ -1,0 +1,621 @@
+/*
+=====================================================
+  SECTION 1: MAIN PORTFOLIO PAGE STYLES
+  (Project Grid, Cards, Filters, etc.)
+=====================================================
+*/
+
+#portfolio {
+  position: relative;
+  width: 100%;
+  padding: 120px 0; /* Adjusted padding */
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #fefefe;
+  opacity: 0.3;
+  background-image: radial-gradient(#00baff 1px, #fefefe 1px);
+  background-size: 19px 19px;
+  z-index: 0;
+}
+
+/* .portfolio-overlay.dark {
+  background-color: rgb(56, 56, 56);
+  opacity: 0.1;
+  background-image: radial-gradient(#fefefe 1px, #3d3d3d 1px);
+} */
+
+.container.portfolio__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Ensures centering on desktop too */
+  gap: 2rem;
+}
+
+/* Responsive fix for < 1024px */
+@media (max-width: 1024px) {
+  .container.portfolio__container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+
+.portfolio-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio__categories {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+.btn.cat__btn.category-btn {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem 1.5rem;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn.cat__btn.category-btn.active,
+.btn.cat__btn.category-btn:hover {
+  background-color: var(--primary-brand-color-400);
+  color: #fff;
+  border-color: var(--primary-brand-color-400);
+}
+
+.portfolio__projects {
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 2rem;
+  margin: 40px auto;
+  padding: 0 10px;
+  text-align: center;
+}
+@media (max-width: 330px) {
+  .portfolio__projects {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+    gap: 1rem;
+    padding: 0 2px;
+  }
+}
+
+
+.card-container {
+  position: relative;
+  height: 470px;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(240, 240, 240);
+}
+
+/* .card-container.dark {
+  border: 1px solid #fdfdfd;
+  box-shadow: rgba(255, 255, 255, 0.45) 0px 3px 3px 0px;
+} */
+
+.cover-image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover .cover-image {
+  transform: scale(1.05);
+}
+
+.project-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.card-container:hover .project-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-card.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #e2e8f0;
+  margin-top: 0.5rem;
+}
+
+.button-card-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn.button-card a {
+  color: white;
+  text-decoration: none;
+}
+
+/*
+=====================================================
+  SECTION 2: CASE STUDY DETAIL PAGE STYLES
+=====================================================
+*/
+
+/* --- Base Layout & Light Mode --- */
+.case-study-detail {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.case-study-nav {
+   padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.case-study-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.case-study-nav .case-study-container {
+    text-align: left;
+}
+.case-study-detail.dark .case-study-nav {
+  border-color: #334155;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #272727;
+  transition: transform 0.3s ease;
+}
+.back-link:hover { transform: translateX(-5px); }
+
+.case-study-hero { background-color: #f8fafc; }
+.hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.hero-text { text-align: left; }
+.case-study-category-badge { display: inline-block; padding: 0.75rem 1.5rem; background: #0ea5e9; color: #ffffff; border-radius: 25px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1.5rem; }
+.case-study-main-title { font-size: 3rem; font-weight: bold; margin-bottom: 1.5rem; color: #1e293b; text-align: left; }
+.case-study-description { font-size: 1.25rem; line-height: 1.6; margin-bottom: 2rem; color: #475569; }
+.project-overview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; }
+.overview-card { background: #ffffff; padding: 1.5rem; border-radius: 10px; border: 1px solid #e2e8f0; }
+.overview-card h4 { font-weight: 600; text-transform: uppercase; font-size: 0.9rem; color: #0ea5e9; margin-bottom: 0.5rem; }
+.overview-card p { color: #475569; }
+.case-study-hero-image { width: 100%; height: 100%; object-fit: cover; border-radius: 1px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.hero-image-container {
+  height: 85%;
+  border-radius: 2px;
+  display: flex;
+  justify-content: baseline;
+
+
+}
+  .hero-content {
+ 
+  align-items: end;
+}
+/* --- General Content Section --- */
+.content-section { background-color: #ffffff; }
+.case-title { font-size: 2rem; font-weight: bold; margin-bottom: 2rem; color: #1e293b; text-align: center; }
+.content-text { max-width: 700px; margin: 0 auto; text-align: left; }
+.content-text p { line-height: 1.8; margin-bottom: 1rem; color: #334155; }
+
+/* --- My Approach Grid --- */
+.approach-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 2rem; }
+.approach-card { border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 8px; text-align: left; background-color: #f8fafc; }
+.approach-card-title { font-size: 1.2rem; font-weight: bold; color: #1e293b; margin-bottom: 1rem; }
+.approach-card .content-text { margin: 0; max-width: 100%; }
+.approach-card .content-text p { font-size: 1rem; line-height: 1.7; }
+
+/* --- Other Sections --- */
+.key-results-section { background-color: #f8fafc; padding-top: 2rem; padding-bottom: 2rem; }
+.results-grid { display: grid; grid-template-columns:  repeat(3, 1fr); gap: 1rem !important; margin-top: 2rem; max-width: 800px; margin: 0 auto; }
+.result-card { background-color: white; padding: 1.6rem; border-radius: 15px; border: 1px solid #e2e8f0; }
+.result-content { font-weight: bold; color: #1e293b; }
+.property-gallery-section { background: #ffffff; }
+.gallery-intro { color: #64748b; text-align: center; max-width: 600px; margin: 0 auto 4rem auto; }
+.property-category-title { font-size: 1.6rem; font-weight: bold; color: #1e293b; margin-bottom: 0.8rem; text-align: left;  margin-top: 1rem;}
+.property-images-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.property-image-card { height: 300px; border-radius: 4px; overflow: hidden; border: 1px solid #383838; }
+.property-image { width: 100%; height: 100%; object-fit: cover; }
+.tools-methods-section { background-color: #f8fafc; }
+.tech-stack-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 1rem; }
+.tech-badge { padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; background: #ffffff; color: #2b2b2b; border: 1px solid #252525; transition: all 0.3s ease; }
+.tech-badge:hover { background: #0ea5e9; color: #ffffff; }
+.cta-section { background: #f8fafc; }
+.cta-content { text-align: center; max-width: 600px; margin: 0 auto; }
+.cta-title { font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; color: #1e293b; }
+.cta-text { font-size: 1.2rem; margin-bottom: 2rem; color: #475569; }
+.cta-buttons { display: flex; gap: 1rem; justify-content: center; }
+.cta-button { padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; }
+.cta-button.primary { background: #0ea5e9; color: #ffffff; border-color: #0ea5e9; }
+.cta-button.secondary { border: 2px solid #0ea5e9; color: #0ea5e9; background: transparent; }
+.cta-button.secondary:hover { background: #0ea5e9; color: #ffffff; }
+
+/*
+=====================================================
+  SECTION 3: DARK MODE OVERRIDES
+=====================================================
+*/
+.case-study-detail.dark { background-color: #0f172a; color: #cbd5e1; }
+.case-study-detail.dark .case-study-nav { background-color: #1e293b; border-color: #334155; }
+.case-study-detail.dark .back-link { color: #38bdf8; }
+.case-study-detail.dark .case-study-hero { background-color: #242424; }
+.case-study-detail.dark .case-title, .case-study-detail.dark .case-study-main-title { color: #f1f5f9; }
+.case-study-detail.dark .case-study-description { color: #ffffff; }
+.case-study-detail.dark .overview-card { background-color: #334155; border-color: #475569; }
+.case-study-detail.dark .overview-card h4 { color: #7dd3fc; }
+.case-study-detail.dark .overview-card p { color: #ffffff; }
+.case-study-detail.dark .content-section { background-color: #242424; border-color: #334155; }
+.case-study-detail.dark .content-text p { color: #cbd5e1; }
+.case-study-detail.dark .approach-card { background-color: #1e293b; border-color: #475569; }
+.case-study-detail.dark .approach-card-title { color: #f1f5f9; }
+.case-study-detail.dark .key-results-section, .case-study-detail.dark .tools-methods-section { background-color: #1e293b; }
+.case-study-detail.dark .result-card { background-color: #f8fafc; }
+.case-study-detail.dark .result-card .result-content { color: #1e293b; }
+.case-study-detail.dark .property-gallery-section { background-color: #0f172a; }
+.case-study-detail.dark .gallery-intro { color: #94a3b8; }
+.case-study-detail.dark .property-category-title { color: #f1f5f9; }
+.case-study-detail.dark .property-image-card { background-color: #1e293b; border-color: #334155; }
+
+h3.property-category-title:nth-child(2) {
+  padding-top: 8rem !important;
+}
+
+.case-study-detail.dark .tech-badge { background-color: #334155; border-color: #475569; color: #ffffff; }
+.case-study-detail.dark .tech-badge:hover { background-color: #0ea5e9; color: #ffffff; }
+.case-study-detail.dark .cta-section { background-color: #1e293b; }
+.case-study-detail.dark .cta-title { color: #f1f5f9; }
+.case-study-detail.dark .cta-text { color: #94a3b8; }
+
+/*
+=====================================================
+  SECTION 4: RESPONSIVE & SPACING FIXES
+=====================================================
+*/
+
+/* --- Base Section Spacing --- */
+.case-study-hero, .content-section, .property-gallery-section, .key-results-section, .tools-methods-section, .cta-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin: 0;
+  border: 0;
+}
+
+.approach-section  .approach-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --- Tablet (1024px and below) --- */
+@media (max-width: 1024px) {
+  .case-study-container { padding: 0 1.5rem; }
+  .case-study-main-title { font-size: 2.5rem; }
+  .case-study-hero, .content-section, .property-gallery-section, .key-results-section, .tools-methods-section, .cta-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .key-results-section {
+ padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .key-decisions {
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .property-gallery-section {
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .approach-section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  
+}
+
+/* --- Mobile (820px and below for Approach Grid) --- */
+@media (max-width: 820px) {
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Mobile (768px and below) --- */
+@media (max-width: 768px) {
+  .portfolio__projects { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .hero-content { grid-template-columns: 1fr; gap: 2rem; }
+  .case-study-main-title { font-size: 2rem; }
+  .case-study-description { font-size: 1.1rem; }
+  .results-grid { grid-template-columns: 1fr; gap: 0.5rem !important }
+  .property-images-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .cta-buttons { flex-direction: column; align-items: center; }
+  .cta-title { font-size: 2rem; }
+
+  .case-study-hero, .content-section, .property-gallery-section, .key-results-section, .tools-methods-section, .cta-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+
+
+.learning-outcomes, .tools-methods-section, .interested-section {
+  padding-bottom: 4rem !important;
+}
+
+ 
+.case-study-detail.dark .content-text p {
+  color: white !important;
+}
+
+/* 1. Reduce the space BELOW all property titles for a tighter look */
+h3.property-category-title {
+  margin-bottom: 1.5rem; /* Reduced from 2rem */
+}
+
+/* 
+  2. Add space ABOVE the 2nd and 3rd property categories.
+  The `+` selector targets a .property-category that immediately
+  follows another .property-category. This will NOT affect the first one.
+*/
+.property-category + .property-category {
+  margin-top: 4rem; /* Adjust this value to get the desired spacing */
+}
+
+/* --- Responsive adjustment for smaller screens --- */
+@media (max-width: 768px) {
+  .property-category + .property-category {
+    margin-top: 3rem; /* Use a slightly tighter margin on mobile */
+  }
+}
+
+
+.case-study-nav {
+  position: relative; 
+  z-index: 100;     
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  
+  /* 1. FIX: Change 'cover' to 'contain' to stop the zoom effect */
+  object-fit: contain;
+
+  /* 2. FIX: Restore the orange gradient background */
+  background: white;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-section-title {
+  position: relative;
+  padding-bottom: 10px; /* Add some space for the underline */
+}
+
+/* 
+  This is the new rule that creates the underline,
+  matching the style of your "About" title.
+*/
+
+
+.project-title {
+  position: relative;
+  display: inline-block; /* Ensures the underline only spans the text width */
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+
+/* 
+  This is the corrected, more general rule. By removing ".skills-title",
+  it now applies the underline to ANY element with the class ".project-title".
+*/
+
+/* Problem Section - Custom Bullets */
+.content-section .problem-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.content-section .problem-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.content-section .problem-list li::before {
+  content: "•";
+  color: #007bff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Key Decisions - Custom Bullets */
+.key-decisions .decisions-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.key-decisions .decisions-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.key-decisions .decisions-list li::before {
+  content: "•";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Learning Outcomes - Custom Bullets */
+.learning-outcomes .learnings-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.learning-outcomes .learnings-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.learning-outcomes .learnings-list li::before {
+  content: "•";
+  color: #ffc107;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Approach Cards - Custom Bullets */
+.approach-card .content-text ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.approach-card .content-text li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.approach-card .content-text li::before {
+  content: "•";
+  color: #6c757d;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Dark mode bullet colors */
+.case-study-detail.dark .content-section .problem-list li::before {
+  color: #38bdf8;
+}
+
+.case-study-detail.dark .key-decisions .decisions-list li::before {
+  color: #4ade80;
+}
+
+.case-study-detail.dark .learning-outcomes .learnings-list li::before {
+  color: #fbbf24;
+}
+
+.case-study-detail.dark .approach-card .content-text li::before {
+  color: #94a3b8;
+}
+
+
+/* Card hover description styles */
+.project-cards-container:hover .project-description {
+  /* Example: increase font size on hover */
+  font-size: 1.15rem;
+}
+
+.project-cards-container:hover .project-title {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+.project-cards-container:hover .card-description {
+  font-size: 1.1rem; /* Adjust as needed */
+}
+
+
+@media (max-width: 400px) {
+  .project-cards-container:hover .project-title {
+    font-size: 1.2rem;
+  }
+  .project-cards-container:hover .card-description,
+  .project-cards-container:hover .project-description {
+    font-size: 0.95rem;
+  }
+  .button-card-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .button-card-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .btn.button-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .btn.button-card a {
+    display: block;
+    width: 100%;
+  }
+}

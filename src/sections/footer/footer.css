@@ -1,0 +1,267 @@
+.footer {
+  width: 100vw;
+  margin: 0;
+  background: transparent;
+  padding: 2rem 0px;
+  z-index: 144 !important;
+}
+
+.footer-container {
+  color: var(--secondary-brand-color-alternate-600);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  display: block;
+  z-index: 144 !important;
+  width: 100%;
+}
+
+.main-footer.dark {
+  /* background: #151515; */
+  background: transparent;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.social-heading {
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.social-heading.dark {
+  color: #ffffff;
+}
+
+.social-icons {
+  /* margin-right: 10px; */
+}
+
+.icon > svg {
+  font-size: 2rem;
+  color: var(--primary-opposite-text-color-800);
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px 0;
+}
+
+/* dark mode icons */
+.icon.dark svg {
+  color: #ffffff;
+}
+
+img.dark {
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 22px;
+}
+
+.main-footer__upper {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main-footer__row.main-footer__row-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__row-1 {
+  order: 2;
+}
+
+.main-footer__row-2 {
+  order: 1;
+  /* width: 40%;
+  max-width: 700px; */
+}
+
+.main-footer__row-2 {
+  /* width: 140px; */
+  height: auto;
+}
+
+.footer-name-background {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.short_description {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+  display: inline-block;
+  max-width: 400px;
+  padding-left: 13px;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* visitor counter */
+.visit-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.visitor-counter p {
+  font-weight: bold;
+  height: 40px;
+  text-align: left;
+  margin-left: 10px;
+}
+.visitor-count {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.main-footer__lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-top: 0.5px solid #5f5f5f;
+  margin-top: 10px;
+  padding: 2.5rem 0;
+  width: 75%;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .main-footer__upper {
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+  }
+  .main-footer__lower {
+    width: 80%;
+    margin-left: 30px;
+    text-align: center;
+  }
+  .main-footer__row {
+    margin: 30px auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main-footer__row-1 {
+    margin-bottom: 30px;
+    order: 1 !important;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .main-footer__row-2 {
+    margin-bottom: 30px;
+    order: 2 !important;
+    text-align: left;
+    align-items: left;
+    justify-content: center;
+  }
+
+  .social-heading {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .social-icons {
+    text-align: left;
+  }
+
+  .footer-name-background .footer-logo {
+    margin-left: 2px;
+  }
+
+  .footer-logo.footer-name-image {
+    height: 35px;
+    width: 35px;
+  }
+  .footer-name-background {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+
+  p.short_description {
+    width: 40%;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .main-footer__lower {
+    /* aligns the content at the begining*/
+    justify-content: flex-start;
+  }
+
+  .visit-counter {
+  }
+}
+
+
+/* 1. Fix for the short description text */
+.main-footer.dark .short_description {
+  color: #e2e8f0 !important; /* A pleasant off-white for readability */
+}
+
+/* 2. Fix for the visitor counter text */
+.main-footer.dark .visitor-counter p,
+.main-footer.dark .visitor-count {
+  color: #ffffff !important;
+}
+
+/* 3. Fix for the copyright text in the lower footer */
+.main-footer.dark .main-footer__lower {
+  color: #e2e8f0 !important; /* Sets a base color for all text inside */
+  border-top-color: #334155; /* Makes the border line lighter in dark mode */
+}
+
+/* This makes sure the bold name is also the correct color */
+.main-footer.dark .name {
+  color: #ffffff !important;
+}
+
+
+.footer-name-background .short_description.dark {
+  color: #ffffff !important;
+}

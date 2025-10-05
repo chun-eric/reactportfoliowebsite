@@ -1,0 +1,694 @@
+/* Austrade Japan Portfolio Unique Styles */
+
+.japan-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 180px 20px 80px;
+}
+
+.japan-project-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+}
+
+.japan-project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #300050;
+  line-height: 1.2;
+}
+
+.japan-project-subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.japan-project-meta {
+  margin: 50px 0;
+}
+
+.austrade-project-image {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.japan-meta-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 40px;
+}
+
+.japan-meta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.japan-meta-label {
+  font-size: 1.2rem;
+  color: #893c94;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.japan-meta-value {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.austrade-disclaimer {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #893c94;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.japan-tools-section {
+  margin: 40px 0;
+  padding: 30px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+}
+
+.japan-tools-title {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.japan-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.japan-tool-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  border: 1px solid #dee2e6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.japan-tool-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(196, 30, 58, 0.1);
+}
+
+.japan-section {
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.japan-section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #300050;
+  border-bottom: 2px solid #893c94;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.japan-section-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.japan-challenge-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.japan-stat-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #893c94;
+  transition: transform 0.3s ease;
+}
+
+.japan-stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(196, 30, 58, 0.15);
+}
+
+.japan-stat-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.japan-stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.japan-stat-detail {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.japan-sam-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.japan-phase-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  border-left: 5px solid #893c94;
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.japan-phase-content h4 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.japan-phase-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.japan-phase-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.japan-phase-list li {
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.japan-phase-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #893c94;
+  font-weight: 600;
+}
+
+.japan-video-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.japan-video-card {
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border: 2px solid #e9ecef;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.japan-video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(196, 30, 58, 0.15);
+  border-color: #893c94;
+}
+
+.japan-video-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.japan-video-card h4 {
+  font-size: 1.3rem;
+  color: #893c94;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.japan-video-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.japan-experience-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.japan-experience-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #893c94 0%, #893c94 100%);
+  color: white;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
+}
+
+.japan-experience-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(196, 30, 58, 0.4);
+  background: linear-gradient(135deg, #893c94 0%, #893c94 100%);
+}
+
+.japan-experience-btn:active {
+  transform: translateY(0);
+}
+
+.japan-video-player {
+  margin: 40px 0;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.japan-video-element {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.japan-video-note {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+.japan-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.japan-feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #893c94;
+  transition: transform 0.3s ease;
+}
+
+.japan-feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.japan-feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.japan-feature-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.japan-feature-description {
+  font-size: 1.05rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+.japan-pdf-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.japan-pdf-btn {
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.japan-view-btn {
+  background: linear-gradient(135deg, #893c94 0%, #893c94 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
+}
+
+.japan-view-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(196, 30, 58, 0.4);
+}
+
+.japan-download-btn {
+  background: white;
+  color: #893c94;
+  border: 2px solid #893c94;
+}
+
+.japan-download-btn:hover {
+  background: #893c94;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
+}
+
+.japan-pdf-viewer {
+  margin: 40px 0;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.japan-pdf-frame {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.japan-pdf-note {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+.japan-gagne-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.japan-gagne-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.japan-gagne-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(196, 30, 58, 0.1);
+}
+
+.japan-gagne-number {
+  background: linear-gradient(135deg, #893c94 0%, #893c94 100%);
+  color: white;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.japan-gagne-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.japan-impact-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.japan-impact-card {
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  padding: 25px;
+  border-radius: 12px;
+  border-top: 4px solid #893c94;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.japan-impact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(196, 30, 58, 0.15);
+}
+
+.japan-impact-card h4 {
+  font-size: 1.2rem;
+  color: #893c94;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.japan-impact-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.japan-footer-cta {
+  text-align: center;
+  margin: 60px 0 40px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .japan-section {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .japan-container {
+    padding: 140px 15px 60px;
+  }
+
+  .japan-project-title {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .japan-project-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .japan-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .japan-tools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .japan-section {
+    margin-bottom: 50px;
+  }
+
+  .japan-section-title {
+    font-size: 1.5rem;
+  }
+
+  .japan-section-content p {
+    font-size: 1.1rem;
+  }
+
+  .japan-challenge-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .japan-phase-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .japan-phase-number {
+    margin: 0 auto 20px;
+  }
+
+  .japan-video-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .japan-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .japan-pdf-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .japan-pdf-btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .japan-pdf-frame {
+    height: 500px;
+  }
+
+  .japan-gagne-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .japan-impact-highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .japan-container {
+    padding: 120px 10px 40px;
+  }
+
+  .japan-project-title {
+    font-size: 1.6rem;
+  }
+
+  .japan-project-subtitle {
+    font-size: 1rem;
+  }
+
+  .japan-section-title {
+    font-size: 1.3rem;
+  }
+
+  .japan-section-content p {
+    font-size: 1rem;
+  }
+
+  .japan-stat-icon {
+    font-size: 2.5rem;
+  }
+
+  .japan-phase-number {
+    min-width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  .japan-phase-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .japan-video-icon {
+    font-size: 2.5rem;
+  }
+
+  .japan-video-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .japan-experience-btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+
+  .japan-pdf-frame {
+    height: 400px;
+  }
+
+  .japan-feature-icon {
+    font-size: 2rem;
+  }
+
+  .japan-feature-title {
+    font-size: 1.1rem;
+  }
+
+  .japan-feature-description {
+    font-size: 0.95rem;
+  }
+
+  .japan-tools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .japan-tool-item {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}

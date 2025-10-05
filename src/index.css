@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: var(---);
+}
+
+html {
+  overflow-x: hidden;
+}
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Main Color Palette */
+  --primary-brand-color-300: #33c9ff;
+  --primary-brand-color-400: #00baff;
+  --primary-brand-color-600: #00a2ff;
+  --primary-brand-color-800: #00a2ff;
+  --primary-brand-color-900: #0499f0;
+  --primary-background-color: #fff;
+  --primary-brand-color-alternate-600: #fff;
+  --primary-brand-color-alternate-800: #fff;
+  --primary-brand-color-alternate-400-light: #cff;
+  --secondary-brand-color-400: #ffea00;
+  --secondary-brand-color-600: #ffdf4f;
+  --secondary-brand-color-800: #ffdb3c;
+  --secondary-brand-color-900: #face09;
+  --secondary-brand-color-alternate-400: #0b212a;
+  --secondary-brand-color-alternate-600: #0b212a;
+  --secondary-brand-color-alternate-800: #0b212a;
+  --primary-background-color: #fff;
+  --primary-text-color-800: #202730;
+  --primary-text-color-500: #66686b;
+  --primary-text-color-200: #7990a1;
+  --primary-opposite-background-color-300: #10303d;
+  --primary-opposite-background-color-400: #0b212a;
+  --primary-opposite-text-color-800: #202730;
+  --primary-opposite-text-color-200: #7990a1;
+  --primary-opposite-text-color-300: #63707a;
+  --primary-opposite-link-color: var(--primary-brand-color-400);
+  --primary-opposite-link-hover-color: var(--primary-brand-color-800);
+
+  /* light mode on root */
+  --background: var(--primary-background-color);
+  --text-primary: var(--primary-text-color-800);
+  --button-bg: var(--primary-brand-color-400);
+  --button-text: var(--primary-background-color);
+
+  /* Backup colors */
+  --primary-hue: 197;
+  --black-lightness: 15%;
+  --dark-lightness: 44%;
+  --light-lightness: 94%;
+  --white-lightness: 100%;
+  --color-primary: hsl(var(--primary-hue), 10%, 10%);
+  --color-white: hsl(0, 5%, var(--white-lightness));
+  --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+  --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+
+  /* GENERAL CONTAINER VARIABLES */
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+
+  /* BORDER RADIUS VARIABLES */
+  --border-radius-1: 0.8rem;
+  --border-radius-2: 0.4rem;
+  --border-radius-3: 0.2rem;
+
+  /* GENERAL TRANSITION VARIABLE */
+  --transition: all 500ms ease;
+
+  /* BACKGROUND GRADIENT OVERLAY COLOR */
+  --overlay-background-color: #f55555;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --overlay-background-color: #191919;
+  }
+} */
+
+#root {
+  margin: 0 auto;
+}
+
+
+/* Dark theme styles */
+#root.dark,
+body.dark,
+.container.dark,
+section.dark {
+  background: #151515;
+  color: #fff;
+}
+
+h2.project-main-title-modal.dark {
+  color: #fff;
+}
+
+body {
+  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  color-scheme: light dark;
+  line-height: 1.6;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+  overflow: auto;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+body.dark {
+  background: #151515;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.no-animation {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/* General Container Class */
+.container {
+  width: 100%;
+  margin: 0;
+  transition: 0.5s;
+  background: white;
+}
+
+.container.dark {
+  background: #151515;
+}
+
+.container.dark > * {
+  background: #151515;
+  color: #fff;
+}
+
+.container.dark h3.title,
+.container.dark h2.title,
+.container.dark p {
+  color: #fff;
+}
+
+.container.dark h1,
+.container.dark h2,
+.container.dark h3,
+.container.dark h4,
+.container.dark h5,
+.container.dark h6 {
+  color: #ffffff;
+}
+
+/* General Section styles */
+section {
+  width: 100vw;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+section.dark {
+  background: #161515;
+  color: #fff !important;
+}
+
+section:nth-child(even) {
+  background-color: var(--color-white);
+}
+
+section > h2,
+h1 {
+  text-align: center;
+}
+
+section > h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+section > p {
+  text-align: center;
+  margin: 0.5rem auto 4rem;
+  width: 40%;
+}
+
+a {
+  /* color: var(--color-white); */
+  transition: var(--transition);
+}
+
+/* General Heading Styles */
+
+nav, 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', 'Segoe UI', Arial, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+/* General Image styles */
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* General Button Styles */
+button {
+  background: var(--background);
+  color: var(--text-primary);
+  border-radius: 0.31rem;
+  letter-spacing: 1px;
+  border: none;
+  padding: 0.6rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  font-family: inherit;
+  background-color: var(--primary-brand-color-400);
+  cursor: pointer;
+  width: fit-content;
+  display: inline-block;
+  display: flex;
+  padding: 16px 28px;
+  align-items: center;
+  border: none;
+  gap: 1rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* GENERAL BACKGROUND OVERLAY */
+.backgroud-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Responsive Media Queries (tablets) */
+@media screen and (min-width: 1440px) {
+  section {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 6rem 0;
+    width: 100% !important;
+  }
+
+  section > p {
+    width: 72%;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .btn--theme.about,
+  .btn.portfolio-btn {
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* Responsive Media Queries (Phones) */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  button {
+    padding: 1.2rem 1.5rem;
+  }
+
+  section > p {
+    width: var(--container-width-md);
+  }
+  .btn--theme.about,
+  .btn.portfolio-btn {
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+
+.bio-container.dark {
+  color: #fff ;
+}
+
+p.bio-info.dark  {
+  color: #fff !important;
+}

@@ -1,0 +1,744 @@
+/* PhraseCamp ID Portfolio Unique Styles */
+
+.phrasecamp-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 180px 20px;
+}
+
+.phrasecamp-project-header {
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.phrasecamp-project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #3b3f3d;
+  line-height: 1.2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.phrasecamp-project-subtitle {
+  font-size: 1.4rem;
+  color: #666;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phrasecamp-disclaimer {
+  background: #f0f8f0;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #0CC9A7;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  margin-bottom: 70px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phrasecamp-project-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+ padding-top: 40px;
+  margin: 80px 0;
+ 
+}
+
+.phrasecamp-project-image {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 500px;
+}
+
+.phrasecamp-meta-item-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.phrasecamp-meta-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.phrasecamp-meta-label {
+  font-size: 1.1rem;
+  color: #0CC9A7;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.phrasecamp-meta-value {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+/* Platform Showcase Card */
+.phrasecamp-showcase-section {
+  margin: 50px 0;
+}
+
+.phrasecamp-platform-card {
+ 
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(18, 100, 52, 0.3);
+  padding: 0;
+  margin: 40px auto;
+  max-width: 500px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.phrasecamp-platform-header {
+  background: #0aac8e;
+  padding: 30px 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.phrasecamp-platform-header::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 500px solid #0aac8e;
+  border-bottom: 15px solid transparent;
+}
+
+.phrasecamp-platform-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.phrasecamp-platform-icon::before {
+  content: '🎥';
+  font-size: 1.8rem;
+}
+
+.phrasecamp-platform-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.phrasecamp-platform-body {
+  padding: 50px 30px 35px;
+  background: white;
+  color: #2c3e50;
+}
+
+.phrasecamp-platform-body h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #3b3f3d;
+  line-height: 1.4;
+}
+
+.phrasecamp-platform-body p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.phrasecamp-platform-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.phrasecamp-platform-btn {
+  display: inline-block;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.phrasecamp-platform-btn.primary {
+  background: #0CC9A7;
+  color: #fff;
+}
+
+.phrasecamp-platform-btn.primary:hover {
+  background: #0CC9A7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+.phrasecamp-platform-btn.secondary {
+  background: transparent;
+  color: #0CC9A7;
+  border: 2px solid #0CC9A7;
+}
+
+.phrasecamp-platform-btn.secondary:hover {
+  background: #0CC9A7;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.phrasecamp-platform-btn.large {
+  padding: 18px 35px;
+  font-size: 1.1rem;
+}
+
+/* Section Styles */
+.phrasecamp-section {
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;
+}
+
+.phrasecamp-section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #3b3f3d;
+  border-bottom: 3px solid #0CC9A7;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.phrasecamp-section-content p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Challenge Section */
+.phrasecamp-challenge-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin: 50px 0;
+}
+
+.phrasecamp-stat-box {
+  text-align: center;
+  padding: 30px 20px;
+  background: #f8fff8;
+  border-radius: 12px;
+  border-top: 5px solid #0CC9A7;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.phrasecamp-stat-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a472a;
+  margin-bottom: 12px;
+}
+
+.phrasecamp-stat-label {
+  font-size: 0.95rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.phrasecamp-challenge-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.phrasecamp-challenge-point {
+  background: #f8fff8;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #0CC9A7;
+}
+
+.phrasecamp-challenge-point h4 {
+  font-size: 1.3rem;
+  color: #3b3f3d;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.phrasecamp-challenge-point p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Solution Framework */
+.phrasecamp-solution-framework {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.phrasecamp-framework-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border-left: 5px solid #27ae60;
+  transition: transform 0.3s ease;
+}
+
+.phrasecamp-framework-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.phrasecamp-framework-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3b3f3d;
+  margin-bottom: 15px;
+}
+
+.phrasecamp-framework-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Process Steps */
+.phrasecamp-process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin: 40px 0;
+}
+
+.phrasecamp-process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 30px;
+  background: #f8fff8;
+  border-radius: 12px;
+  border-left: 6px solid #0CC9A7;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.phrasecamp-step-number {
+  background: #0CC9A7;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.phrasecamp-step-content {
+  flex: 1;
+  height: auto;
+}
+
+.phrasecamp-step-content h4 {
+  font-size: 1.5rem;
+  color: #3b3f3d;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.phrasecamp-step-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.phrasecamp-process-image {
+  margin-top: 20px;
+  display: flex;
+ flex-wrap: wrap;
+  gap: 15px;
+  max-width: 600px;
+  min-height: 0;
+  height: auto; /* Explicitly allow height to adjust */
+  overflow: auto;
+
+}
+
+.phrasecamp-process-image img {
+ border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+/* Video Showcase */
+.phrasecamp-video-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.phrasecamp-video-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.phrasecamp-video-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.phrasecamp-video-wrapper {
+  position: relative;
+  width: 100%;
+  background: #f8fff8;
+}
+
+.phrasecamp-video-thumbnail {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.phrasecamp-video-thumbnail iframe {
+  border-radius: 0;
+}
+
+.phrasecamp-video-info {
+  padding: 20px;
+}
+
+.phrasecamp-video-info h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3b3f3d;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.phrasecamp-video-info p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.phrasecamp-full-showcase {
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* Features Grid */
+.phrasecamp-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.phrasecamp-feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  border-left: 5px solid #0CC9A7;
+  transition: transform 0.3s ease;
+}
+
+.phrasecamp-feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+}
+
+.phrasecamp-feature-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3b3f3d;
+  margin-bottom: 15px;
+}
+
+.phrasecamp-feature-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Results Section */
+.phrasecamp-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.phrasecamp-result-item {
+  text-align: center;
+  padding: 35px 25px;
+  background: linear-gradient(135deg, #f8fff8 0%, #e8f5e8 100%);
+  border-radius: 15px;
+  border-top: 4px solid #0CC9A7;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.phrasecamp-result-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #3b3f3d;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.phrasecamp-result-description {
+  font-size: 1rem;
+  color: #2c3e50;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.phrasecamp-impact-statement {
+  background: #f0f8f0;
+  padding: 35px;
+  border-radius: 12px;
+  border-left: 5px solid #0CC9A7;
+  margin: 40px 0;
+}
+
+.phrasecamp-impact-statement h4 {
+  font-size: 1.4rem;
+  color: #3b3f3d;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.phrasecamp-impact-statement p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Skills Demonstration */
+.phrasecamp-skills-demonstration {
+  margin-top: 40px;
+}
+
+.phrasecamp-skills-demonstration h4 {
+  font-size: 1.4rem;
+  color: #3b3f3d;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.phrasecamp-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.phrasecamp-skill-item {
+  background: #0CC9A7;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.phrasecamp-skill-item:hover {
+  background: #08a78a;
+  transform: translateY(-2px);
+}
+
+/* Final Showcase */
+.phrasecamp-final-showcase {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 0;
+  
+  border-radius: 15px;
+}
+
+/* Section-specific spacing */
+.phrasecamp-section.challenge-section,
+.phrasecamp-section.solution-section,
+.phrasecamp-section.process-section,
+.phrasecamp-section.showcase-section,
+.phrasecamp-section.features-section,
+.phrasecamp-section.results-section,
+.phrasecamp-section.takeaways-section {
+  margin-bottom: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .phrasecamp-container {
+    padding: 100px 20px;
+  }
+  
+  .phrasecamp-project-meta {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .phrasecamp-section.challenge-section,
+  .phrasecamp-section.solution-section,
+  .phrasecamp-section.process-section,
+  .phrasecamp-section.showcase-section,
+  .phrasecamp-section.features-section,
+  .phrasecamp-section.results-section,
+  .phrasecamp-section.takeaways-section {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {esl englishlearn
+  .phrasecamp-container {
+    padding: 120px 15px;
+    padding-bottom: 60px;
+    padding-top: 140px;
+  }
+  
+  .phrasecamp-project-title {
+    font-size: 2rem;
+  }
+  
+  .phrasecamp-project-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .phrasecamp-section-title {
+    font-size: 1.7rem;
+  }
+  
+  .phrasecamp-process-step {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .phrasecamp-video-showcase {
+    grid-template-columns: 1fr;
+  }
+  
+  .phrasecamp-features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .phrasecamp-results-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .phrasecamp-challenge-points {
+    grid-template-columns: 1fr;
+  }
+  
+  .phrasecamp-platform-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .phrasecamp-section.challenge-section,
+  .phrasecamp-section.solution-section,
+  .phrasecamp-section.process-section,
+  .phrasecamp-section.showcase-section,
+  .phrasecamp-section.features-section,
+  .phrasecamp-section.results-section,
+  .phrasecamp-section.takeaways-section {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .phrasecamp-project-title {
+    font-size: 1.8rem;
+  }
+  
+  .phrasecamp-project-subtitle {
+    font-size: 1rem;
+  }
+  
+  .phrasecamp-section-title {
+    font-size: 1.5rem;
+  }
+  
+  .phrasecamp-stat-number {
+    font-size: 2.2rem;
+  }
+  
+  .phrasecamp-process-step {
+    padding: 20px;
+  }
+  
+  .phrasecamp-feature-card,
+  .phrasecamp-framework-card {
+    padding: 20px;
+  }
+  
+  .phrasecamp-platform-card {
+    margin: 20px 10px;
+  }
+  
+  .phrasecamp-platform-body {
+    padding: 30px 20px 25px;
+  }
+  
+  .phrasecamp-skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

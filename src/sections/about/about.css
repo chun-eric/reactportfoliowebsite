@@ -1,0 +1,246 @@
+/* About me */
+
+#about {
+  width: 100%;
+  min-height: 100vh; /* Ensure full viewport height */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position: relative;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; */
+}
+
+.about-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.about-me {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-me.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-background-overlay {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 100% 50%,
+      transparent 20%,
+      #00d4f0 21%,
+      #00d4f0 34%,
+      transparent 30%,
+      transparent
+    ),
+    radial-gradient(
+        circle at 0% 50%,
+        transparent 20%,
+        #00d4f0 21%,
+        #00d4f0 34%,
+        transparent 30%,
+        transparent
+      )
+      0 -50px;
+  background-color: #eeeeee;
+  background-size: 75px 100px;
+  opacity: 0.03;
+}
+
+.about-background-overlay.dark {
+  background-color: #333333;
+  opacity: 0.03;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 160px;
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px 0 30px 0;
+}
+
+.title {
+  display: inline-block;
+  font-size: 42px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 6px;
+  font-weight: bold;
+  color: black;
+}
+
+.title::after {
+  content: " ";
+  position: absolute;
+  bottom: 2px;
+  height: 6px;
+  left: 48%;
+  width: 60%;
+  transform: translateX(-48%);
+  background-color: var(--primary-brand-color-400);
+  border-radius: 10px;
+}
+
+.bio-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  z-index: 5 !important;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bio-info {
+    font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  overflow-x: hidden;
+  max-width: 800px;
+  width: 37%;
+  height: auto;
+  font-size: 17px;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  font-weight: normal;
+  justify-content: center;
+  text-align: justify;
+  color: var(--primary-opposite-background-color-300);
+  line-height: 1.55;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-indent: 1rem;
+}
+
+.bio-info.dark {
+  color: #fff !important;
+}
+
+.bio-info:nth-child(6) {
+  margin-bottom: 40px;
+}
+
+.subscriber-count {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+button.btn--theme--about {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: none;
+  color: white;
+  font-size: 1.2rem;
+  width: fit-content;
+}
+
+button.btn--theme a {
+  /* font-size: 1.2rem; */
+}
+
+.about {
+  margin: 100px 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: var(--primary-brand-color-400);
+  color: var(--primary-brand-color-alternate-400);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .about-me .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    height: 80%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .bio-info {
+    width: 75%;
+  }
+  .bio-container .bio-info {
+    width: 75%;
+  }
+
+  .about-me .bio button.btn--theme--about a {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  .button-container {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .bio-info {
+    width: 90%;
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1025px) {
+  section#about {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 499px) {
+  .about-me {
+    padding: 80px 0px;
+  }
+  .bio-info {
+    width: 95%;
+    text-align: left;
+    font-size: 18px;
+  }
+  .bio-container {
+    padding-left: 10px;
+  }
+}
