@@ -17,7 +17,7 @@ import Image17 from "../../assets/images/tranche2_cover.webp";
 import Image16 from "../../assets/images/h1_1.webp"; // ADD this import
 import Image18 from "../../assets/logos/png/phrasecamp.png";
 import Image19 from "../../assets/images/austrade.webp";
-import Image20 from "../../assets/images/austrade_mockup.png";
+import Image20 from "../../assets/images/austrade_portfolio_image.webp";
 import h2_1 from "../../assets/images/h2_1.webp";
 import h2_2 from "../../assets/images/h2_2.webp";
 import h2_3 from "../../assets/images/h2_3.webp";
@@ -555,9 +555,10 @@ const data = [
     title: "Austrade Business Etiquette in Japan",
     desc: "An interactive e-learning H5P video module & quick reference guide for Austrade helping Australian Exporters understand Japanese business etiquette.",
     details: "",
-    demo: typeof window !== 'undefined' && window.location.hostname === 'localhost' ?
-      'http://localhost:5173/austrade-japan' :
-      'https://www.ecdevportfolio.com/austrade-japan',
+    demo:
+      typeof window !== "undefined" && window.location.hostname === "localhost"
+        ? "http://localhost:5173/austrade-japan"
+        : "https://www.ecdevportfolio.com/austrade-japan",
     github: "n/a",
     stack: [
       "Learning Experience Design",

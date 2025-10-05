@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "./AustradeID.css";
 import image1 from "../assets/images/austrade_portfolio_image.webp";
+import image2 from "../assets/images/austrade.webp";
 
 // Placeholder for actual video URL - replace with your hosted video
-const VIDEO_URL = "https://your-video-host.com/austrade-japan-video.mp4";
-// Placeholder for PDF URL - replace with your hosted PDF
+const VIDEO_URL =
+  "https://englishphrasecamp.h5p.com/content/1292711050670460119/embed";
+// PDF URL: use local path in development, full URL in production
 const PDF_URL =
-  "https://www.ecdevportfolio.com/austrade/japanese_business_qrg.pdf";
+  window.location.hostname === "localhost"
+    ? "/austrade/japanese_business_qrg.pdf"
+    : "https://www.ecdevportfolio.com/austrade/japanese_business_qrg.pdf";
 
 const AustradeID = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -204,34 +208,96 @@ const AustradeID = () => {
               <h4>Quick Reference Guide (Downloadable)</h4>
               <p className="final-details">
                 A professionally designed job aid that summarizes all key
-                learning points for practical, on-the-go support during actual
-                business interactions.
+                learning points for practical, on-the-go support. Serves as a
+                critical performance support tool, allowing exporters to quickly
+                reference key business etiquette protocols.
               </p>
             </div>
           </div>
 
-          <div className="japan-experience-section">
+          {/* <div className="japan-experience-section">
             <button
               className="japan-experience-btn"
               onClick={() => setShowVideo(!showVideo)}
             >
               {showVideo ? "Hide Video" : "Watch Training Video"}
             </button>
+          </div> */}
+
+          <div className="japan-video-player">
+            <iframe
+              src="https://englishphrasecamp.h5p.com/content/1292711050670460119/embed"
+              width="100%"
+              height="637"
+              frameBorder="0"
+              allowFullScreen
+              title="Understanding Japanese Business Etiquette"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="japan-section japan-resources-section">
+        <div className="japan-section-content">
+          <div
+            className=""
+            style={{
+              display: "flex", // 1. Make this outer div a flex container
+              justifyContent: "center", // 2. Center its children horizontally
+              alignItems: "center", // 3. Center its children vertically (optional, but good practice)
+              padding: "2rem 0", // Optional: Adds some space above and below
+            }}
+          >
+            <div
+              style={{
+                width: "500px", // Set the width of the container
+                height: "800px", // Set the height of the container
+                border: "1px solid #ddd",
+                borderRadius: "8px",
+                overflow: "hidden", // Ensures the image corners are rounded if the image is rectangular
+              }}
+            >
+              <img
+                src={image2}
+                alt="pdf"
+                style={{
+                  width: "100%", // Image fills 100% of the container's width
+                  height: "100%", // Image fills 100% of the container's height
+                  objectFit: "cover", // This will cover the area, cropping if necessary to maintain aspect ratio.
+                  // Use "contain" if you want to see the whole image, which might leave empty space.
+                }}
+              />
+            </div>
+          </div>
+          <div className="japan-pdf-actions">
+            <button
+              className="japan-pdf-btn japan-view-btn"
+              onClick={() => setShowPDF(!showPDF)}
+            >
+              {showPDF ? "Hide PDF" : "Download Quick Reference Guide"}
+            </button>
+            {/* <a
+              href={PDF_URL}
+              download="Japan-Quick-Reference-Guide.pdf"
+              className="japan-pdf-btn japan-download-btn"
+            >
+              Download Quick Reference Guide
+            </a> */}
           </div>
 
-          {showVideo && (
-            <div className="japan-video-player">
-              <video
-                controls
-                className="japan-video-element"
-                poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Crect fill='%23f0f0f0' width='800' height='450'/%3E%3Ctext fill='%23666' font-family='Arial' font-size='24' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EAustrade Japan Training Video%3C/text%3E%3C/svg%3E"
-              >
-                <source src={VIDEO_URL} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p className="japan-video-note">
-                Note: Replace VIDEO_URL constant with your actual hosted video
-                URL
+          {showPDF && (
+            <div className="japan-pdf-viewer">
+              <iframe
+                src={PDF_URL}
+                className="japan-pdf-frame"
+                title="Japan Quick Reference Guide"
+                width="100%"
+                height="600px"
+                style={{ border: "1px solid #ddd", borderRadius: "8px" }}
+              />
+              <p className="japan-pdf-note">
+                If the PDF doesn't display, try downloading it using the button
+                above.
               </p>
             </div>
           )}
@@ -288,48 +354,6 @@ const AustradeID = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="japan-section japan-resources-section">
-        <h2 className="japan-section-title">Performance Support Resources</h2>
-        <div className="japan-section-content">
-          <p>
-            The Quick Reference Guide serves as a critical performance support
-            tool, allowing exporters to quickly reference key business etiquette
-            protocols.
-          </p>
-
-          <div className="japan-pdf-actions">
-            <button
-              className="japan-pdf-btn japan-view-btn"
-              onClick={() => setShowPDF(!showPDF)}
-            >
-              {showPDF ? "Hide PDF" : "View Quick Reference Guide"}
-            </button>
-            <a
-              href="https://www.ecdevportfolio.com/austrade/japanese_business_qrg.pdf"
-              download="Japan-Quick-Reference-Guide.pdf"
-              className="japan-pdf-btn japan-download-btn"
-            >
-              Download Quick Reference Guide
-            </a>
-          </div>
-
-          {showPDF && (
-            <div className="japan-pdf-viewer">
-              <iframe
-                src="https://www.ecdevportfolio.com/austrade/japanese_business_qrg.pdf"
-                className="japan-pdf-frame"
-                title="Japan Quick Reference Guide"
-              />
-              <p className="japan-pdf-note">
-                {/* Note: Replace PDF_URL constant with your actual hosted PDF URL.
-                If PDF doesn't load, ensure it's hosted with proper CORS
-                headers. */}
-              </p>
-            </div>
-          )}
         </div>
       </section>
 

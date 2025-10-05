@@ -317,7 +317,7 @@
 
 .japan-video-player {
   margin: 40px 0;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
