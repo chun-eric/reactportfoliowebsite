@@ -139,16 +139,12 @@
   font-weight: normal;
   justify-content: center;
   text-align: justify;
-  color: var(--primary-opposite-background-color-300);
+  color: black;
   line-height: 1.55;
   margin: 0 auto;
   margin-bottom: 20px;
   text-indent: 1rem;
 }
-
-/* .bio-info.dark {
-  color: #fff !important;
-} */
 
 .bio-info:nth-child(6) {
   margin-bottom: 40px;
