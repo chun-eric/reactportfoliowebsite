@@ -13,8 +13,6 @@
   z-index: 13500;
   background: white;
   text-align: center;
-   
-
 }
 
 .container.nav__container {
@@ -26,17 +24,17 @@
   padding: 0 20px;
 }
 
-.navbar.dark {
+/* .navbar.dark {
   color: #fff;
-}
+} */
 
-.container.dark .nav__container .nav__item {
+/* .container.dark .nav__container .nav__item {
   align-items: center;
   color: #fff;
   background: transparent !important;
-}
+} */
 
-.container.dark .nav__container .nav__logo {
+.nav__container .nav__logo {
   background: #fff;
   width: 2.5rem;
   height: 2.5rem;
@@ -49,12 +47,12 @@
   padding: 4px;
 }
 
-.nav__logo.dark img {
+/* .nav__logo.dark img {
   vertical-align: auto;
   padding-bottom: 10px;
-}
+} */
 
-.container.dark .nav__container .nav__item:hover::after {
+.nav__container .nav__item:hover::after {
   content: " ";
   height: 4px;
   width: 75%;
@@ -65,13 +63,13 @@
   transition: all 0.3s ease-in;
 }
 
-.container.dark .nav__container .nav__item.dark:hover::after {
+/* .container.dark .nav__container .nav__item.dark:hover::after {
   background-color: var(--primary-brand-color-400);
-}
+} */
 
-.container.dark .nav__container .navbar__btns svg {
+/* .container.dark .nav__container .navbar__btns svg {
   color: #fff;
-}
+} */
 
 /**/
 .nav__logo {
@@ -122,9 +120,9 @@
   transition: all 0.3s ease-in;
 }
 
-.nav__item.dark:hover::after {
+/* .nav__item.dark:hover::after {
   background-color: var(--primary-brand-color-400);
-}
+} */
 
 .navbar__btns {
   display: flex;
@@ -217,9 +215,9 @@
   transition: all 0.8s ease-in-out;
 }
 
-.navbarmodal-overlay.dark {
+/* .navbarmodal-overlay.dark {
   background: rgba(49, 49, 49, 0.3);
-}
+} */
 
 .navbarmodal-container {
   width: 250px;
@@ -248,16 +246,16 @@
  */
 
 /* dark mode */
-.navbarmodal-container.dark {
+/* .navbarmodal-container.dark {
   background: #1b1b1b;
   color: #ffffff;
-}
+} */
 
 /* dark mode */
-.navbarmodal-container.dark {
-  /* border-left: 0.5px solid #fefefe; */
-  box-shadow: -5px 0 5px -5px rgba(228, 228, 228, 0.5);
-}
+/* .navbarmodal-container.dark { */
+/* border-left: 0.5px solid #fefefe; */
+/* box-shadow: -5px 0 5px -5px rgba(228, 228, 228, 0.5); */
+/* } */
 
 .close-icon {
   position: absolute;
@@ -297,9 +295,9 @@
   font-size: 24px;
 }
 
-.nav__item.dark {
+/* .nav__item.dark {
   color: #fefefe;
-}
+} */
 
 .navbar-modal-contact {
   padding: 1px;
@@ -408,9 +406,9 @@
 }
 
 @media screen and (min-width: 450px) {
-  .nav__logo.dark img {
+  /* .nav__logo.dark img {
     padding-bottom: 7px;
-  }
+  } */
   .navbar {
     position: fixed !important;
   }
