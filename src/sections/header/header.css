@@ -172,16 +172,16 @@
 }
 
 /* dark mode */
-.highlight-dark {
+/* .highlight-dark {
   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=00baff) !important;
   color: #ffffff;
-}
+} */
 
 /* dark mode */
-.firstName.changeColor,
+/* .firstName.changeColor,
 .icons .icon.changeColor svg {
   color: #ffffff;
-}
+} */
 
 .icons {
   padding: 20px 0;
