@@ -63,10 +63,10 @@
   opacity: 0.03;
 }
 
-.about-background-overlay.dark {
+/* .about-background-overlay.dark {
   background-color: #333333;
   opacity: 0.03;
-}
+} */
 
 .about-me {
   display: flex;
@@ -128,7 +128,7 @@
 }
 
 .bio-info {
-    font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
   overflow-x: hidden;
   max-width: 800px;
   width: 37%;
@@ -146,9 +146,9 @@
   text-indent: 1rem;
 }
 
-.bio-info.dark {
+/* .bio-info.dark {
   color: #fff !important;
-}
+} */
 
 .bio-info:nth-child(6) {
   margin-bottom: 40px;
