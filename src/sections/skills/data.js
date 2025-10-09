@@ -112,10 +112,10 @@ const skillsData = {
     },
     {
       id: 12,
-      title: "Content Management",
+      title: "Content & Learning Management Systems",
       src: wordpress,
       category: "tools",
-      description: "WordPress, CMS Development",
+      description: "WordPress CMS, Canvas LMS",
     },
     {
       id: 13,
