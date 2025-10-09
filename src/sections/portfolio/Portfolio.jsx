@@ -14,7 +14,7 @@ const Portfolio = forwardRef((props, ref) => {
   const CATEGORY_LABELS = {
     all: "All",
     instructional_design:
-      "Instructional & Learning Design, E-Learning Development",
+      "Instructional Design, Learning Experience, E-Learning",
     html_email: "Email",
     frontend: "Frontend",
     landing_pages: "Landing Page",
