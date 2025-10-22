@@ -401,12 +401,6 @@ const Cyber = () => {
             busy schedules.
           </p>
           <br />
-          <p>
-            The combination of visual storytelling through animation and
-            practical reference materials ensures both knowledge transfer and
-            on-the-job performance support, creating a comprehensive learning
-            experience that extends beyond the training moment.
-          </p>
         </div>
       </section>
     </div>
