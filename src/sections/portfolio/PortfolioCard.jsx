@@ -37,6 +37,10 @@ const PortfolioCard = ({ project, theme, onCardClick }) => {
         navigate("/phrasecamp");
       } else if (project.title === "Austrade Business Etiquette in Japan") {
         navigate("/austrade-japan");
+      } else if (
+        project.title === "Cybersecurity Awareness Employee Microlearning"
+      ) {
+        navigate("/cyber");
       }
       // Add more conditions for other instructional design projects
     } else {

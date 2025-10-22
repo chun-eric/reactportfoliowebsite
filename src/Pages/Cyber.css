@@ -1,0 +1,531 @@
+/* Base Styles */
+.cyber-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem;
+  font-family: "Manrope", system-ui, Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Project Header Styles */
+.cyber-project-header {
+  margin-bottom: 5rem;
+  text-align: center; /* Center on large screens */
+  max-width: 900px; /* Slightly smaller than container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cyber-project-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 8rem 0 1rem 0;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.cyber-project-subtitle {
+  font-size: 1.3rem;
+  margin: 0 0 2rem 0;
+  color: #666;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.cyber-disclaimer {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 100%);
+  border-left: 4px solid #1e3a8a;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  text-align: left; /* Reset text alignment for disclaimer */
+}
+
+.cyber-disclaimer strong {
+  color: #1e3a8a;
+}
+
+/* Project Meta Styles */
+.cyber-project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #fafbff 0%, #f1f5f9 100%);
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.cyber-project-image {
+  width: 100%;
+}
+
+.cyber-project-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cyber-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.cyber-meta-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cyber-meta-label {
+  font-weight: 700;
+  color: #1e3a8a;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.cyber-meta-value {
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Section Styles */
+.cyber-section {
+  margin: 8rem 0;
+  text-align: center;
+  max-width: 900px; /* Match the header width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cyber-section:first-of-type {
+  margin-top: 8rem;
+}
+
+.cyber-section:last-of-type {
+  margin-bottom: 8rem;
+}
+
+.cyber-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  color: #1a1a1a;
+  border-bottom: 3px solid #1e3a8a;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.cyber-section-content {
+  font-size: 1rem;
+  color: #4a5568;
+  text-align: left;
+  max-width: 100%; /* Use full width of the section */
+}
+
+.cyber-section-content p {
+  padding: 0 1rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Challenge Section */
+.cyber-challenge-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 100%; /* Use full width of the section */
+}
+
+.cyber-stat-box {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cyber-stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(30, 58, 138, 0.15);
+}
+
+.cyber-stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cyber-stat-label {
+  font-weight: 700;
+  color: #1e40af;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.cyber-stat-detail {
+  font-size: 0.9rem;
+  color: #1e3a8a;
+}
+
+/* Approach Phase Cards */
+.cyber-approach-phases {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 100%; /* Use full width of the section */
+}
+
+.cyber-phase-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cyber-phase-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cyber-phase-content {
+  padding: 2rem;
+}
+
+.cyber-phase-content h4 {
+  color: #1e3a8a;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+.cyber-phase-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.cyber-phase-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cyber-phase-list li:last-child {
+  border-bottom: none;
+}
+
+.cyber-phase-list strong {
+  color: #1e3a8a;
+}
+
+/* Video Cards */
+.cyber-video-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  max-width: 100%; /* Use full width of the section */
+}
+
+.cyber-video-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid #e2e8f0;
+  transition: transform 0.3s ease;
+}
+
+.cyber-video-card:hover {
+  transform: translateY(-5px);
+}
+
+.cyber-video-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cyber-video-card h4 {
+  color: #1e40af;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+.final-details {
+  color: #1e3a8a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.video-error-fallback {
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  height: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-error-fallback p {
+  margin: 0;
+  color: #6c757d;
+}
+
+.video-error-fallback a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.video-error-fallback a:hover {
+  text-decoration: underline;
+}
+
+/* Video Grid Styles */
+.cyber-videos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns on large screens */
+  gap: 2rem;
+  margin: 2rem 0;
+  max-width: 100%; /* Use full width of the section */
+}
+
+.cyber-video-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cyber-video-item iframe {
+  border-radius: 8px;
+  width: 100%;
+  height: 315px;
+}
+
+/* PDF Styles */
+.cyber-pdf-actions {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cyber-pdf-btn {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cyber-pdf-btn:hover {
+  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3);
+}
+
+.cyber-pdf-viewer {
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cyber-pdf-note {
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Features Grid */
+.cyber-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 100%; /* Use full width of the section */
+}
+
+.cyber-feature-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cyber-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cyber-feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cyber-feature-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.cyber-feature-description {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Impact Highlights */
+.cyber-impact-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 100%; /* Use full width of the section */
+}
+
+.cyber-impact-card {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #93c5fd;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cyber-impact-card:hover {
+  transform: translateY(-3px);
+}
+
+.cyber-impact-card h4 {
+  color: #1e40af;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.cyber-impact-card p {
+  color: #1e3a8a;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .cyber-container {
+    padding: 2rem 2rem; /* Reduce padding on medium-large screens */
+  }
+}
+
+@media (max-width: 1200px) {
+  .cyber-container {
+    padding: 2rem 1.5rem; /* Further reduce padding */
+  }
+
+  .cyber-project-header,
+  .cyber-section {
+    max-width: 100%; /* Use full container width on smaller screens */
+  }
+
+  .cyber-project-meta {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .cyber-project-image img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cyber-videos-grid {
+    grid-template-columns: 1fr; /* Single column on medium screens */
+    gap: 1.5rem;
+  }
+
+  .cyber-challenge-stats {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .cyber-container {
+    padding: 1rem 1rem;
+  }
+
+  .cyber-project-header {
+    text-align: left; /* Left align on smaller screens */
+    margin-bottom: 3rem;
+  }
+
+  .cyber-section {
+    margin: 3rem 0;
+    text-align: left;
+  }
+
+  .cyber-section-title {
+    text-align: left;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .cyber-project-title {
+    font-size: 2rem;
+  }
+
+  .cyber-project-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cyber-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cyber-challenge-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .cyber-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cyber-video-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cyber-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .cyber-project-title {
+    font-size: 1.5rem;
+  }
+}

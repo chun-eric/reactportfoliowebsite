@@ -18,6 +18,7 @@ import Image16 from "../../assets/images/h1_1.webp"; // ADD this import
 import Image18 from "../../assets/logos/png/phrasecamp.png";
 import Image19 from "../../assets/images/austrade.webp";
 import Image20 from "../../assets/images/austrade_portfolio_image.webp";
+import Image21 from "../../assets/images/cyber_mockup.webp";
 import h2_1 from "../../assets/images/h2_1.webp";
 import h2_2 from "../../assets/images/h2_2.webp";
 import h2_3 from "../../assets/images/h2_3.webp";
@@ -575,6 +576,30 @@ const data = [
       "Instructional Design",
       "E-Learning Development",
       "Veed.io",
+    ],
+  },
+  // ...existing code...
+  {
+    id: 20,
+    category: "instructional_design",
+    image: Image21,
+    title: "Cybersecurity Awareness Employee Microlearning",
+    desc: "Microlearning for Email Phishing & AWS S3 Misconfigurations",
+    about:
+      "A concise, action‑oriented awareness module for all staff that combines two short animated videos. The first video teaches easy-to-spot phishing indicators and safe email handling (verify sender, avoid risky links/attachments, report suspicious messages). The second video demonstrates common misconfigurations in AWS S3 that lead to data exposure and shows simple remediation and verification steps (bucket permissions, public access settings, least privilege). Designed for 10–15 minute completion to maximise engagement and retention; focused on behaviour change and practical, auditable checks teams can adopt immediately.",
+    demo:
+      typeof window !== "undefined" && window.location.hostname === "localhost"
+        ? "http://localhost:5173/cyber"
+        : "https://www.ecdevportfolio.com/cyber",
+    github: "n/a",
+    stack: [
+      "Instructional Design",
+      "Microlearning",
+      "Vyond",
+      "YouTube",
+      "React",
+      "Canva",
+      "Vercel",
     ],
   },
 ];

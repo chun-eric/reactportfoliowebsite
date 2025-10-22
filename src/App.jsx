@@ -21,6 +21,7 @@ import { Link } from "react-router-dom";
 import AustracID from "./Pages/AustracID";
 import PhraseCampID from "./Pages/PhraseCampID";
 import AustradeID from "./Pages/AustradeID";
+import Cyber from "./Pages/Cyber";
 
 // Simple Test Component
 const SimpleTest = () => {
@@ -47,22 +48,23 @@ const HomePage = ({
 
   useEffect(() => {
     // Debug: Log all available refs
-    console.log("Available refs:", refs);
-    console.log("headerRef:", refs.headerRef?.current);
-    console.log("skillsRef:", refs.skillsRef?.current);
-    console.log("portfolioRef:", refs.portfolioRef?.current);
+    // console.log("Available refs:", refs);
+    // console.log("headerRef:", refs.headerRef?.current);
+    // console.log("skillsRef:", refs.skillsRef?.current);
+    // console.log("portfolioRef:", refs.portfolioRef?.current);
 
     // Check if we received a "scrollTo" message in the navigation state
     const { state } = location;
-    console.log("Location state:", state); // Debug log
+    // console.log("Location state:", state);
+    // Debug log
 
     if (state && state.scrollTo) {
       const sectionId = state.scrollTo;
       const targetRef = refs[sectionId + "Ref"]; // e.g., refs['portfolioRef']
 
-      console.log(`Looking for section: ${sectionId}`); // Debug log
-      console.log(`Target ref name: ${sectionId + "Ref"}`); // Debug log
-      console.log(`Target ref:`, targetRef); // Debug log
+      // console.log(`Looking for section: ${sectionId}`); // Debug log
+      // console.log(`Target ref name: ${sectionId + "Ref"}`); // Debug log
+      // console.log(`Target ref:`, targetRef); // Debug log
 
       // Function to attempt scrolling with retries
       const attemptScroll = (attempts = 0) => {
@@ -73,7 +75,8 @@ const HomePage = ({
           window.history.replaceState({}, document.title);
         } else {
           // Try alternative method using document.getElementById
-          console.log(`Trying alternative scroll method for ${sectionId}`); // Debug log
+          // console.log(`Trying alternative scroll method for ${sectionId}`);
+          // Debug log
           const scrollSuccess = scrollToSectionById(sectionId);
 
           if (scrollSuccess) {
@@ -269,6 +272,7 @@ function App() {
           <Route path="/austrac-tranche2" element={<AustracID />} />
           <Route path="/phrasecamp" element={<PhraseCampID />} />
           <Route path="/austrade-japan" element={<AustradeID />} />
+          <Route path="/cyber" element={<Cyber />} />
         </Routes>
         <Footer theme={theme} />
       </div>
