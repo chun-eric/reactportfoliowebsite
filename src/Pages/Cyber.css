@@ -8,6 +8,43 @@
   line-height: 1.6;
 }
 
+/* Back Button Styles */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 2px solid #1e3a8a;
+  color: #1e3a8a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem; /* Remove the margin-top: 6rem */
+  font-family: "Manrope", system-ui, Arial, sans-serif;
+  position: relative;
+  top: 10rem; /* Add some space from the actual top */
+}
+
+.back-button:hover {
+  background: #1e3a8a;
+  color: white;
+  transform: translateX(-5px);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+}
+
+.back-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.back-button:hover .back-arrow {
+  transform: translateX(-3px);
+}
+
 /* Project Header Styles */
 .cyber-project-header {
   margin-bottom: 5rem;
@@ -20,7 +57,7 @@
 .cyber-project-title {
   font-size: 2.8rem;
   font-weight: 800;
-  margin: 8rem 0 1rem 0;
+  margin: 12rem 0 1rem 0;
   color: #1a1a1a;
   line-height: 1.2;
 }

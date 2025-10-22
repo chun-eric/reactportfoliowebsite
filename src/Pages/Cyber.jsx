@@ -1,6 +1,7 @@
 import React from "react";
 import "./Cyber.css";
 import image1 from "../assets/images/cyber_mockup.webp";
+import { useNavigate } from "react-router-dom";
 // import image2 from "../assets/images/cyber_qrg.webp";
 // Add this image for PDF preview
 
@@ -15,6 +16,7 @@ const YT_SECOND = "https://www.youtube-nocookie.com/embed/MFxIpmqld-w";
 //     : "https://www.ecdevportfolio.com/cyber/cyber_awareness_guide.pdf";
 
 const Cyber = () => {
+  const navigate = useNavigate();
   //   const [showPDF, setShowPDF] = useState(false);
   //   const [videoError, setVideoError] = useState({});
   //   const [videosLoaded, setVideosLoaded] = useState(false);
@@ -34,6 +36,20 @@ const Cyber = () => {
 
   return (
     <div className="cyber-container">
+      <button className="back-button" onClick={() => navigate("/")}>
+        <svg
+          className="back-arrow"
+          width="10"
+          height="10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        Back
+      </button>
       <div className="cyber-project-header">
         <h1 className="cyber-project-title">
           Cybersecurity Awareness <br /> Employee Microlearning
