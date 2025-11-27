@@ -22,6 +22,7 @@ import AustracID from "./Pages/AustracID";
 import PhraseCampID from "./Pages/PhraseCampID";
 import AustradeID from "./Pages/AustradeID";
 import Cyber from "./Pages/Cyber";
+import CBA from "./Pages/CBA";
 
 // Simple Test Component
 const SimpleTest = () => {
@@ -273,6 +274,7 @@ function App() {
           <Route path="/phrasecamp" element={<PhraseCampID />} />
           <Route path="/austrade-japan" element={<AustradeID />} />
           <Route path="/cyber" element={<Cyber />} />
+          <Route path="/cba" element={<CBA />} />
         </Routes>
         <Footer theme={theme} />
       </div>
