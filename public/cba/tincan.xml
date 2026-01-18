@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://cba.com/compliance/fcc-training-v5" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">FCC-CBA-Final-v5</name>
+			<description lang="und">CBA FCC Compliance Project with AI integration</description>
+			<launch lang="und">index_lms.html</launch>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6eWsH8qGgcx" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">FCC-CBA-Final-v5</name>
+			<description lang="und">FCC-CBA-Final-v5</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6LUXhvmEGIW" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">FCC-CBA-Final-v5</name>
+			<description lang="und">FCC-CBA-Final-v5</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/61iW2FYI2EQ" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">FCC-CBA-Final-v5</name>
+			<description lang="und">FCC-CBA-Final-v5</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5t30AttVoNV" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">FCC-CBA-Final-v5</name>
+			<description lang="und">FCC-CBA-Final-v5</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6EJUdU5uvyH" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Managing-insider-collusion-training</name>
+			<description lang="und">Managing-insider-collusion-training</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6KTGRNIZoZZ" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Emerging-risk</name>
+			<description lang="und">Emerging-risk</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6D4yjxmOGZH" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Understanding-risk-vectors</name>
+			<description lang="und">Understanding-risk-vectors</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6AmYtHcfaGn" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Managerial-failures</name>
+			<description lang="und">Managerial-failures</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5aS1UQCr9cr" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Reflection-question</name>
+			<description lang="und">Reflection-question</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6PgiOuDH2HB" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Effective-Oversight-Begins-with-Data</name>
+			<description lang="und">Effective-Oversight-Begins-with-Data</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6BrlCM43iQA" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Analyzing-the-dashboard</name>
+			<description lang="und">Analyzing-the-dashboard</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5n9SOtd1n9K" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Quick-knowledge-check-q1</name>
+			<description lang="und">Quick-knowledge-check-q1</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5n9SOtd1n9K/5axBXgaU1iR" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6aq8f1ovTNl</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5homy6en8aC</id>
+					<description lang="und">Velocity</description>
+				</component>
+				<component>
+					<id>choice_6aq8f1ovTNl</id>
+					<description lang="und">Concentration</description>
+				</component>
+				<component>
+					<id>choice_6f7MYJVqfXa</id>
+					<description lang="und">Policy Deviation</description>
+				</component>
+				<component>
+					<id>choice_5VZflIBZ3vt</id>
+					<description lang="und">Behavioural</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6Gt3ZRMglB7" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Quick-knowledge-check-q2</name>
+			<description lang="und">Quick-knowledge-check-q2</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6Gt3ZRMglB7/6owlGQEkDDc" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6Lgx3i3ByvD</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6Lgx3i3ByvD</id>
+					<description lang="und">Velocity</description>
+				</component>
+				<component>
+					<id>choice_6kc3OxgpMOr</id>
+					<description lang="und">Concentration</description>
+				</component>
+				<component>
+					<id>choice_5sbqf0FJoZs</id>
+					<description lang="und">Policy Deviation</description>
+				</component>
+				<component>
+					<id>choice_6eByRrTsIWr</id>
+					<description lang="und">Behavioural</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5zZGylJqWT6" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Quick-knowledge-check-q3</name>
+			<description lang="und">Quick-knowledge-check-q3</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5zZGylJqWT6/6YoSnpEtTk3" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5lKBp8s1hQv</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6fAYLaVlfty</id>
+					<description lang="und">Velocity</description>
+				</component>
+				<component>
+					<id>choice_5a7x8xdhA4q</id>
+					<description lang="und">Concentration</description>
+				</component>
+				<component>
+					<id>choice_5lKBp8s1hQv</id>
+					<description lang="und">Policy Deviation</description>
+				</component>
+				<component>
+					<id>choice_6JkHqT9wasj</id>
+					<description lang="und">Behavioural</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6pl5Hq3mNlv" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Quiz-results</name>
+			<description lang="und">Quiz-results</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6pk7Nug0E6q" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Red-flags-key-summary</name>
+			<description lang="und">Red-flags-key-summary</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5iDcmdnz2Nm" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">From-data-to-dialogue</name>
+			<description lang="und">From-data-to-dialogue</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5qMDvizV6FJ" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Coaching-compliance-framework</name>
+			<description lang="und">Coaching-compliance-framework</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5uLLs4sxzag" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Step-1-Observation</name>
+			<description lang="und">Step-1-Observation</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6Ge9Dc0Mwrp" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Step-2-Open-Question</name>
+			<description lang="und">Step-2-Open-Question</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6jIbvhnFA8y" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Step-3-Realignment</name>
+			<description lang="und">Step-3-Realignment</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5V5WowtWsS7" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Sequence-activity</name>
+			<description lang="und">Sequence-activity</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5V5WowtWsS7/5r2H4R0aOW4" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_5ltayY2MauD[.]choice_61ajYa6x6Ta</correctResponsePattern>
+				<correctResponsePattern>statement_5XbIXMpD49O[.]choice_6kj4leGQjxo</correctResponsePattern>
+				<correctResponsePattern>statement_6GE7Rqscsuc[.]choice_69mCoOZ2v7k</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_5ltayY2MauD</id>
+					<description lang="und">step-1 - Group</description>
+				</component>
+				<component>
+					<id>statement_5XbIXMpD49O</id>
+					<description lang="und">step-2 - Group</description>
+				</component>
+				<component>
+					<id>statement_6GE7Rqscsuc</id>
+					<description lang="und">step-3 - Group</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_61ajYa6x6Ta</id>
+					<description lang="und">Rectangle 1 - Observation</description>
+				</component>
+				<component>
+					<id>choice_6kj4leGQjxo</id>
+					<description lang="und">Rectangle 2 - Open Question</description>
+				</component>
+				<component>
+					<id>choice_69mCoOZ2v7k</id>
+					<description lang="und">Rectangle 3 - Re-alignment</description>
+				</component>
+			</target>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6AoCh6zjKmo" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Sequence-activity-phrases</name>
+			<description lang="und">Sequence-activity-phrases</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6AoCh6zjKmo/64Ba7NDooMO" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_67zuWolXAq6[.]choice_6arPPn8dsRK</correctResponsePattern>
+				<correctResponsePattern>statement_5lREb06gCmF[.]choice_6GJikFFHJNs</correctResponsePattern>
+				<correctResponsePattern>statement_5nJgO79zE6k[.]choice_6VkSVehM86G</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_67zuWolXAq6</id>
+					<description lang="und">step-2 - Group</description>
+				</component>
+				<component>
+					<id>statement_5lREb06gCmF</id>
+					<description lang="und">step-3 - Group</description>
+				</component>
+				<component>
+					<id>statement_5nJgO79zE6k</id>
+					<description lang="und">step-1 - Group</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_6arPPn8dsRK</id>
+					<description lang="und">Rectangle 1 - Can you walk me through what's causing the delay in submitting it?</description>
+				</component>
+				<component>
+					<id>choice_6GJikFFHJNs</id>
+					<description lang="und">Rectangle 2 - I understand. It's a mandatory task, so the next step is to submit it by end of day.</description>
+				</component>
+				<component>
+					<id>choice_6VkSVehM86G</id>
+					<description lang="und">Rectangle 3 - Hi Sarah, I've observed the weekly compliance checklist is overdue.</description>
+				</component>
+			</target>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6rGjJGkULTn" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Sequence-activity-results</name>
+			<description lang="und">Sequence-activity-results</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6cBtBw6Yz2T" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">scenario-overview</name>
+			<description lang="und">scenario-overview</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5wvtQJX2H26" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">scenario-details</name>
+			<description lang="und">scenario-details</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/666MFJbNEhZ" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">writing-the-observation</name>
+			<description lang="und">writing-the-observation</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6XTHwIaQag1" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">writing-the-open-question</name>
+			<description lang="und">writing-the-open-question</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/62gZF42du7a" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">writing-the-realignment</name>
+			<description lang="und">writing-the-realignment</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6eOHOrDeYv9" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">formulating-your-response</name>
+			<description lang="und">formulating-your-response</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6p3ksbmKzej" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">custom-feedback</name>
+			<description lang="und">custom-feedback</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6B2AmdwiVJe" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">feedback-quality-check</name>
+			<description lang="und">feedback-quality-check</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5qZ8nECITHx" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">simulation-overview</name>
+			<description lang="und">simulation-overview</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/64tx6TFK4g7" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">performance-review</name>
+			<description lang="und">performance-review</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/64tx6TFK4g7/6YfVnSEwWWV" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick Many</name>
+			<description lang="und">Pick Many</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5oUfhwvKrIZ</correctResponsePattern>
+				<correctResponsePattern>choice_62hzD80J2tJ</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5oUfhwvKrIZ</id>
+					<description lang="und">Check Box 2</description>
+				</component>
+				<component>
+					<id>choice_62hzD80J2tJ</id>
+					<description lang="und">Check Box 4</description>
+				</component>
+				<component>
+					<id>choice_6KoiYJua6YG</id>
+					<description lang="und">Check Box 1</description>
+				</component>
+				<component>
+					<id>choice_5Yclq0jDGSU</id>
+					<description lang="und">Check Box 3</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5bAAZy6Ll9z" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">performance-results-slide</name>
+			<description lang="und">performance-results-slide</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5mWHBN1Rmw6" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">choose-your-case</name>
+			<description lang="und">choose-your-case</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5oYMZoFMiuf" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">pressure-path</name>
+			<description lang="und">pressure-path</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6OoSTKqTtE4" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">pressure-scenario-feedback</name>
+			<description lang="und">pressure-scenario-feedback</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6j3xMRTk0JY" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">pressure-scenario-final-decision</name>
+			<description lang="und">pressure-scenario-final-decision</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6j3xMRTk0JY/6Xc5HHi1jZI" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5dVFX33yYwg</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5dVFX33yYwg</id>
+					<description lang="und">Escalate for a 
+full review</description>
+				</component>
+				<component>
+					<id>choice_66IXYDny6Zq</id>
+					<description lang="und">Close the matter with a warning</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5zNtamvXJjk" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">principles-of-effective-oversight</name>
+			<description lang="und">principles-of-effective-oversight</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6dMYzMhdDw6" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Results Slide</name>
+			<description lang="und">Results Slide</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6ZEo88BfkvJ" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">document-override</name>
+			<description lang="und">document-override</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5r4loIYVDOg" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">document-scenario-feedback</name>
+			<description lang="und">document-scenario-feedback</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6WiYyhJZyXK" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">document-scenario-final-decision</name>
+			<description lang="und">document-scenario-final-decision</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6WiYyhJZyXK/5kKVtGiQ1Ri" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6QftqH4oYs9</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6QftqH4oYs9</id>
+					<description lang="und">Escalate for a 
+full review</description>
+				</component>
+				<component>
+					<id>choice_5yXkmlLnMjR</id>
+					<description lang="und">Close the matter with a warning</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/63Z4yW7jaft" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">conclusion</name>
+			<description lang="und">conclusion</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5kVBEjyL9mP" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">training-rating</name>
+			<description lang="und">training-rating</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5w8wPkdyJGE" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">ai-feedback</name>
+			<description lang="und">ai-feedback</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/6JZjcoJebMx" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">voicemail-feedback</name>
+			<description lang="und">voicemail-feedback</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/5mne31Y9IFy" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">persona-feedback</name>
+			<description lang="und">persona-feedback</description>
+		</activity>
+		<activity id="http://cba.com/compliance/fcc-training-v5/643vse4UQ02" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">final-slide</name>
+			<description lang="und">final-slide</description>
+		</activity>
+	</activities>
+</tincan>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AustracID.css";
+import "./CBA.css";
 import image1 from "../assets/images/tranche2_cover.webp";
 import scenarioDesign1 from "../assets/images/scenario_design.png";
 import scenarioDesign2 from "../assets/images/scenario_design2.png";
@@ -25,70 +25,70 @@ const CBA = () => {
   };
 
   return (
-    <div className="austrac-container">
-      <div className="austrac-project-header">
-        <h1 className="austrac-project-title">
-          AUSTRAC's Tranche 2 New Cross Sector Compliance Implementation
-        </h1>
-        <p className="austrac-project-subtitle">
-          An interactive e-learning module for Australia's new AML/CTF reporting
-          entities
+    <div className="cba-container">
+      <div className="cba-project-header">
+        <h1 className="cba-project-title">Reducing Insider Collusion</h1>
+        <p className="cba-project-subtitle">
+          An interactive e-learning module for identifying and preventing
+          insider collusion targeted at Relationship Managers in the banking
+          sector.
         </p>
 
-        <div className="austrac-disclaimer">
+        <div className="cba-disclaimer">
           <strong>Disclaimer:</strong> This is a hypothetical project module
-          designed and created as a portfolio piece by me, Eric Chun. AUSTRAC
-          does not endorse this project nor do I have any affiliation with
-          AUSTRAC at the time this project was made in August 2025. Please visit
-          the official AUSTRAC website for official information and supporting
-          materials.
+          designed and created as a portfolio piece by me, Eric Chun.
+          Commonwealth Bank Australia does not endorse this project nor did I
+          have any affiliation with Commonwealth Bank Australia at the time this
+          project was made in October 2025. Please visit the official
+          Commonwealth Bank Australia website for official information and
+          supporting materials.
         </div>
 
-        <div className="austrac-project-meta">
-          <div className="austrac-project-image">
+        <div className="cba-project-meta">
+          <div className="cba-project-image">
             <img src={image1} alt="tranche2 cover image" />
           </div>
-          <div className="austrac-meta-item-container">
-            <div className="austrac-meta-item">
-              <span className="austrac-meta-label">Audience</span>
-              <span className="austrac-meta-value">
-                Tranche 2 professionals
+          <div className="cba-meta-item-container">
+            <div className="cba-meta-item">
+              <span className="cba-meta-label">Audience</span>
+              <span className="cba-meta-value">
+                Relationship Managers in the Banking Sector
               </span>
             </div>
-            <div className="austrac-meta-item">
-              <span className="austrac-meta-label">Role</span>
-              <span className="austrac-meta-value">
+            <div className="cba-meta-item">
+              <span className="cba-meta-label">Role</span>
+              <span className="cba-meta-value">
                 Instructional Designer, Learning & Development & E-Learning
                 Developer
               </span>
             </div>
-            <div className="austrac-meta-item">
-              <span className="austrac-meta-label">Duration</span>
-              <span className="austrac-meta-value">20 minutes</span>
+            <div className="cba-meta-item">
+              <span className="cba-meta-label">Duration</span>
+              <span className="cba-meta-value">20 minutes</span>
             </div>
-            <div className="austrac-meta-item">
-              <span className="austrac-meta-label">Tools</span>
-              <span className="austrac-meta-value">
-                Articulate Storyline 360, Watershed LRS, xAPI, HTML, CSS,
-                ReactJS, Canva, Grok AI, Anthropic AI, Google Gemini AI, AUSTRAC
-                Official Website, AUSTRAC E-learning portal, Midjourney,
-                Excalidraw (mindmapping), Leonardo AI, ElevenLabs, Miro
-                (mindmapping), VS Code, Vercel (deployment){" "}
+            <div className="cba-meta-item">
+              <span className="cba-meta-label">Tools</span>
+              <span className="cba-meta-value">
+                Articulate Storyline 360, Talent LMS, xAPI, HTML, CSS, ReactJS,
+                Canva, Grok AI, Anthropic AI, Google Gemini AI, Commonwealth
+                Bank Australia Official Website, Midjourney, Excalidraw
+                (mindmapping), Leonardo AI, ElevenLabs, Miro (mindmapping), VS
+                Code, Vercel (deployment){" "}
               </span>
             </div>
           </div>
 
-          <div className="austrac-experience-section">
-            <div className="austrac-course-card">
-              <div className="austrac-course-header">
-                <div className="austrac-course-icon-alt"></div>
-                <div className="austrac-course-title">
+          <div className="cba-experience-section">
+            <div className="cba-course-card">
+              <div className="cba-course-header">
+                <div className="cba-course-icon-alt"></div>
+                <div className="cba-course-title">
                   11. Tranche 2:
                   <br />
                   New Cross Sector Compliance
                 </div>
               </div>
-              <div className="austrac-course-body">
+              <div className="cba-course-body">
                 <h3>
                   Financial Crime Module 11 – Tranche 2 New Industries AML/CTF
                   Compliance Reporting
@@ -101,7 +101,7 @@ const CBA = () => {
                   href="/lrs/story.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="austrac-course-btn"
+                  className="cba-course-btn"
                 >
                   Experience this Project
                 </a>
@@ -111,64 +111,48 @@ const CBA = () => {
         </div>
       </div>
 
-      <section className="austrac-section problem-section">
-        <h2 className="austrac-section-title">The Problem</h2>
-        <div className="austrac-section-content">
+      <section className="cba-section problem-section">
+        <h2 className="cba-section-title">The Problem</h2>
+        <div className="cba-section-content">
           <p>
-            AUSTRAC's regulatory expansion represents Australia's largest
-            compliance challenge, growing from 17,000 to 117,000 entities by
-            July 2026. Approximately 100,000 new businesses across legal,
-            accounting, and real estate sectors must achieve AML/CTF compliance
-            with zero prior experience. Currently there isn't an e-learning
-            module at AUSTRAC to help new businesses gain foundational knowledge
-            for Tranche 2 AML/CTF compliance.
             <br />
             <br />
-            This creates a perfect storm where new entities lack fundamental
-            AML/CTF understanding, smaller entities struggle with complex
-            compliance requirements, professionals face an 10-month
-            implementation timeline (as of August 2025) for intricate regulatory
-            frameworks, and different professional standards exist across legal,
-            accounting, and real estate sectors — all without targeted
-            educational resources to bridge these critical knowledge gaps.
           </p>
 
-          <div className="austrac-problem-stats">
-            <div className="austrac-stat-box">
-              <div className="austrac-stat-number">100K</div>
-              <div className="austrac-stat-label">
-                New entities needed to train
-              </div>
+          <div className="cba-problem-stats">
+            <div className="cba-stat-box">
+              <div className="cba-stat-number">Add number</div>
+              <div className="cba-stat-label">Relationship Managers</div>
             </div>
-            <div className="austrac-stat-box">
-              <div className="austrac-stat-number">10</div>
-              <div className="austrac-stat-label">
+            <div className="cba-stat-box">
+              <div className="cba-stat-number">10</div>
+              <div className="cba-stat-label">
                 Months remaining to comply (as of August 2025)
               </div>
             </div>
-            <div className="austrac-stat-box">
-              <div className="austrac-stat-number">0%</div>
-              <div className="austrac-stat-label">
-                Businesses that have prior AML/CTF experience
+            <div className="cba-stat-box">
+              <div className="cba-stat-number">0%</div>
+              <div className="cba-stat-label">
+                Current completion rate of new compliance training
               </div>
             </div>
           </div>
 
-          {/* <div className="austrac-highlight-box">
-            <div className="austrac-highlight-title">Root Cause Analysis</div>
-            <ul className="austrac-ul">
-              <li className="austrac-li"><strong>Knowledge Gap:</strong> New entities lack fundamental AML/CTF understanding</li>
-              <li className="austrac-li"><strong>Resource Constraints:</strong> Smaller entities struggle with complex compliance requirements</li>
-              <li className="austrac-li"><strong>Time Pressure:</strong> 18-month implementation timeline for complex regulatory framework</li>
-              <li className="austrac-li"><strong>Sector Diversity:</strong> Different professional standards across legal, accounting, and real estate</li>
+          {/* <div className="cba-highlight-box">
+            <div className="cba-highlight-title">Root Cause Analysis</div>
+            <ul className="cba-ul">
+              <li className="cba-li"><strong>Knowledge Gap:</strong> New entities lack fundamental AML/CTF understanding</li>
+              <li className="cba-li"><strong>Resource Constraints:</strong> Smaller entities struggle with complex compliance requirements</li>
+              <li className="cba-li"><strong>Time Pressure:</strong> 18-month implementation timeline for complex regulatory framework</li>
+              <li className="cba-li"><strong>Sector Diversity:</strong> Different professional standards across legal, accounting, and real estate</li>
             </ul>
           </div> */}
         </div>
       </section>
 
-      <section className="austrac-section solution-section">
-        <h2 className="austrac-section-title">The Solution</h2>
-        <div className="austrac-section-content">
+      <section className="cba-section solution-section">
+        <h2 className="cba-section-title">The Solution</h2>
+        <div className="cba-section-content">
           <p>
             I developed an interconnected narrative-based training module
             following three professionals from the real estate, accounting and
@@ -178,60 +162,54 @@ const CBA = () => {
             reporting skills.
           </p>
 
-          {/* <div className="austrac-characters-grid">
-            <div className="austrac-character-card">
-              <div className="austrac-character-name">Alex Chen</div>
-              <div className="austrac-character-role">Real Estate Agent</div>
-              <img className="austrac-character-image"/>
+          {/* <div className="cba-characters-grid">
+            <div className="cba-character-card">
+              <div className="cba-character-name">Alex Chen</div>
+              <div className="cba-character-role">Real Estate Agent</div>
+              <img className="cba-character-image"/>
                 
             </div>
-            <div className="austrac-character-card">
-              <div className="austrac-character-name">Dr. Sarah Mitchell</div>
-              <div className="austrac-character-role">Accountant</div>
-              <div className="austrac-character-description">
+            <div className="cba-character-card">
+              <div className="cba-character-name">Dr. Sarah Mitchell</div>
+              <div className="cba-character-role">Accountant</div>
+              <div className="cba-character-description">
                 Discovers transaction monitoring requirements while managing suspicious cash flow patterns
               </div>
             </div>
-            <div className="austrac-character-card">
-              <div className="austrac-character-name">James Rodriguez</div>
-              <div className="austrac-character-role">Corporate Lawyer</div>
-              <div className="austrac-character-description">
+            <div className="cba-character-card">
+              <div className="cba-character-name">James Rodriguez</div>
+              <div className="cba-character-role">Corporate Lawyer</div>
+              <div className="cba-character-description">
                 Navigates suspicious matter reporting while balancing legal professional privilege
               </div>
             </div>
           </div> */}
 
-          <div className="austrac-key-features">
-            <div className="austrac-feature-card">
-              <div className="austrac-feature-title">Authentic Scenarios</div>
-              <div className="austrac-feature-description">
+          <div className="cba-key-features">
+            <div className="cba-feature-card">
+              <div className="cba-feature-title">Authentic Scenarios</div>
+              <div className="cba-feature-description">
                 Based on real money laundering tactics that exploit professional
                 services, using actual red flags and compliance requirements
               </div>
             </div>
-            <div className="austrac-feature-card">
-              <div className="austrac-feature-title">
-                Cross-Sector Awareness
-              </div>
-              <div className="austrac-feature-description">
+            <div className="cba-feature-card">
+              <div className="cba-feature-title">Cross-Sector Awareness</div>
+              <div className="cba-feature-description">
                 Shows how the same criminal network exploits different
                 professions, building comprehensive threat recognition
               </div>
             </div>
-            <div className="austrac-feature-card">
-              <div className="austrac-feature-title">
-                Decision-Based Learning
-              </div>
-              <div className="austrac-feature-description">
+            <div className="cba-feature-card">
+              <div className="cba-feature-title">Decision-Based Learning</div>
+              <div className="cba-feature-description">
                 Learners face realistic compliance decisions under client
                 pressure with immediate consequence feedback
               </div>
             </div>
-            <div className="austrac-feature-card">
-              <div className="austrac-feature-title">
-                AUSTRAC-Aligned Design
-              </div>
-              <div className="austrac-feature-description">
+            <div className="cba-feature-card">
+              <div className="cba-feature-title">AUSTRAC-Aligned Design</div>
+              <div className="cba-feature-description">
                 Visual design and interaction patterns match AUSTRAC's existing
                 e-learning ecosystem for seamless integration
               </div>
@@ -240,9 +218,9 @@ const CBA = () => {
         </div>
       </section>
 
-      <section className="austrac-section process-section">
-        <h2 className="austrac-section-title">My Process</h2>
-        <div className="austrac-section-content">
+      <section className="cba-section process-section">
+        <h2 className="cba-section-title">My Process</h2>
+        <div className="cba-section-content">
           <p>
             I applied the ADDIE instructional design model, conducting research
             into AUSTRAC's priorities and current training gaps. I also utilized
@@ -307,11 +285,7 @@ const CBA = () => {
               <div className="austrac-step-number">4</div>
               <div className="austrac-step-content">
                 <h4>Visual Design & Prototyping</h4>
-                <p>
-                  Developed characters, interface mockups, and interactive
-                  components using AUSTRAC's existing design system. Created
-                  prototypes to test key interactions before full development.
-                </p>
+                <p></p>
                 <div className="austrac-project-image">
                   <img src={visualMocks} alt="visual mockup" />
                   <div className=""></div>
@@ -324,11 +298,7 @@ const CBA = () => {
               <div className="austrac-step-number">5</div>
               <div className="austrac-step-content">
                 <h4>Development & Testing</h4>
-                <p>
-                  Built the complete module in Storyline 360 with WCAG
-                  accessibility compliance. Implemented branching scenarios,
-                  interactive document analysis, and immediate feedback systems.
-                </p>
+                <p></p>
                 <div className="austrac-project-image">
                   <img src={component3} alt="development testing" />
                   {/* <img src={component} alt="development" /> */}
@@ -342,19 +312,7 @@ const CBA = () => {
               <div className="austrac-step-number">1</div>
               <div className="austrac-step-content">
                 <h4>Evaulate and Assess</h4>
-                <p>
-                  Setup evaluation and assessment using Watershed LRS to monitor
-                  learner interactions and performance data through xAPI
-                  integration with Articulate Storyline. Setup key metrics
-                  including completion rates, decision-making patterns, and
-                  knowledge retention to evaluate the module's effectiveness.
-                  Hosted the course on a personal website and web server, where
-                  user behavior data is captured and sent to Watershed LRS upon
-                  clicking "Experience the Project." Developed custom variables
-                  and xAPI triggers to track navigation, time spent, and
-                  drop-off points, enhancing the training's adaptability and
-                  user experience. Full implementation still in progress.
-                </p>
+                <p></p>
                 <div className="austrac-project-image">
                   <img src={evaluate1} alt="watershed LRS" />
                   <div className=""></div>
@@ -466,7 +424,7 @@ const CBA = () => {
 
       <div className="austrac-experience-section">
         <a
-          href="/lrs/story.html"
+          href="/cba/story.html"
           target="_blank"
           rel="noopener noreferrer"
           className="austrac-course-btn"
