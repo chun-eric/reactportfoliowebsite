@@ -4,9 +4,8 @@ import image1 from "../assets/images/austrade_portfolio_image.webp";
 import image2 from "../assets/images/austrade.webp";
 import image3 from "../assets/images/pdf_icon.jpg";
 
-// Placeholder for actual video URL - replace with your hosted video
-const VIDEO_URL =
-  "https://englishphrasecamp.h5p.com/content/1292711050670460119/embed";
+// YouTube video URL extracted from H5P content
+const VIDEO_URL = "https://www.youtube-nocookie.com/embed/DBgjh0ZgYlA";
 // PDF URL: use local path in development, full URL in production
 const PDF_URL =
   window.location.hostname === "localhost"
@@ -227,10 +226,11 @@ const AustradeID = () => {
 
           <div className="japan-video-player">
             <iframe
-              src="https://englishphrasecamp.h5p.com/content/1292711050670460119/embed"
+              src={VIDEO_URL}
               width="100%"
               height="637"
               frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="Understanding Japanese Business Etiquette"
             />

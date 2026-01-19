@@ -83,9 +83,9 @@ const CBA = () => {
               <div className="cba-course-header">
                 <div className="cba-course-icon-alt"></div>
                 <div className="cba-course-title">
-                  11. Tranche 2:
+                  Managing Insider
                   <br />
-                  New Cross Sector Compliance
+                  Collusion Risk Training
                 </div>
               </div>
               <div className="cba-course-body">
