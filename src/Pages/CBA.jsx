@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./CBA.css";
-import image1 from "../assets/images/tranche2_cover.webp";
+import image1 from "../assets/images/cba.webp";
 import scenarioDesign1 from "../assets/images/scenario_design.png";
 import scenarioDesign2 from "../assets/images/scenario_design2.png";
 import visualMocks from "../assets/images/visual_mockups.png";
