@@ -98,7 +98,7 @@ const CBA = () => {
                   Tranche 2 legislation update..
                 </p>
                 <a
-                  href="/lrs/story.html"
+                  href="/cba/story.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cba-course-btn"
@@ -424,7 +424,7 @@ const CBA = () => {
 
       <div className="austrac-experience-section">
         <a
-          href="/cba/story.html"
+          href="/public/cba_story.html"
           target="_blank"
           rel="noopener noreferrer"
           className="austrac-course-btn"
